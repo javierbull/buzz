@@ -18,7 +18,7 @@
   --info-dark: #041E49;
   --info-light: #C2E7FF;
   --warning: #FF9033;
-  --warning-dark: #6B3003;
+  --warning-dark: #840F01;
   --warning-light: #FFCF92;
   --success: #36AE7C;
   --success-dark: #094B28;
@@ -813,6 +813,21 @@ div.dataTables_wrapper div.dataTables_info {
 .tag-inactive {
   background-color: var(--gray-light);
   color: var(--dark);
+}
+
+.tag-success {
+  background-color: var(--success-light);
+  color: var(--success-dark);
+}
+
+.tag-danger {
+  background-color: var(--danger-light);
+  color: var(--danger-dark);
+}
+
+.tag-warning {
+  background-color: var(--warning-light);
+  color: var(--warning-dark);
 }
 /* END TAGS */
 
