@@ -40,12 +40,12 @@ btnToggle.addEventListener('click', function () {
 
 
 // Datatables
-$(document).ready(function () {
-  $('#tableEjemplo').DataTable();
-  $('#tableUsuarios').DataTable();
-});
+// $(document).ready(function () {
+//   $('#tableEjemplo').DataTable();
+//   $('#tableUsuarios').DataTable();
+// });
 
-$('.table').DataTable({
+$('.dtable').DataTable({
   // "scrollX": true,
   //para cambiar el lenguaje a español
   "language": {
@@ -73,18 +73,28 @@ $(".showDashboard").click(function() {
   $("#dashboard-panel").show();
   $("#usuarios-panel").hide();
   $("#crearUsuarios-panel").hide();
+  $("#reportesStock-panel").hide();
 });
 
 $(".showAdmninistracionUsuarios").click(function() {
   $("#dashboard-panel").hide();
   $("#usuarios-panel").show();
   $("#crearUsuarios-panel").hide();
+  $("#reportesStock-panel").hide();
 });
 
 $(".showCrearUsuarios").click(function() {
   $("#dashboard-panel").hide();
   $("#usuarios-panel").hide();
   $("#crearUsuarios-panel").show();
+  $("#reportesStock-panel").hide();
+});
+
+$(".showReporteStockDisponible").click(function() {
+  $("#dashboard-panel").hide();
+  $("#usuarios-panel").hide();
+  $("#crearUsuarios-panel").hide();
+  $("#reportesStock-panel").show();
 });
 // END SHOW HIDE PANELS
 
