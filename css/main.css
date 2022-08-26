@@ -691,6 +691,10 @@ video {
   font-weight: 600;
 }
 
+.table {
+  font-size: .75rem;
+}
+
 .table thead {
   border-bottom: 1px solid var(--dark);
 }
