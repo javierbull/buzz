@@ -705,12 +705,13 @@ video {
   vertical-align: middle;
 }
 
-.action-cell {
+.action-cell-btns {
+  /* background-color: salmon !important; */
   display: flex;
   align-items: center;
 }
 
-.action-cell .btn {
+.action-cell-btns .btn {
   margin-right: .5rem;
 }
 
