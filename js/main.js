@@ -101,7 +101,7 @@ $(".showReporteStockDisponible").click(function() {
   $("#detalleStock-panel").hide();
 });
 
-$(".showDetalleStock").click(function() {
+$("#showDetalleStock").click(function() {
   $("#dashboard-panel").hide();
   $("#usuarios-panel").hide();
   $("#crearUsuarios-panel").hide();
