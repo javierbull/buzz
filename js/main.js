@@ -74,6 +74,7 @@ $(".showDashboard").click(function() {
   $("#usuarios-panel").hide();
   $("#crearUsuarios-panel").hide();
   $("#reportesStock-panel").hide();
+  $("#detalleStock-panel").hide();
 });
 
 $(".showAdmninistracionUsuarios").click(function() {
@@ -81,6 +82,7 @@ $(".showAdmninistracionUsuarios").click(function() {
   $("#usuarios-panel").show();
   $("#crearUsuarios-panel").hide();
   $("#reportesStock-panel").hide();
+  $("#detalleStock-panel").hide();
 });
 
 $(".showCrearUsuarios").click(function() {
@@ -88,6 +90,7 @@ $(".showCrearUsuarios").click(function() {
   $("#usuarios-panel").hide();
   $("#crearUsuarios-panel").show();
   $("#reportesStock-panel").hide();
+  $("#detalleStock-panel").hide();
 });
 
 $(".showReporteStockDisponible").click(function() {
@@ -95,6 +98,15 @@ $(".showReporteStockDisponible").click(function() {
   $("#usuarios-panel").hide();
   $("#crearUsuarios-panel").hide();
   $("#reportesStock-panel").show();
+  $("#detalleStock-panel").hide();
+});
+
+$(".showDetalleStock").click(function() {
+  $("#dashboard-panel").hide();
+  $("#usuarios-panel").hide();
+  $("#crearUsuarios-panel").hide();
+  $("#reportesStock-panel").hide();
+  $("#detalleStock-panel").show();
 });
 // END SHOW HIDE PANELS
 

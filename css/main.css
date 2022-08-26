@@ -850,12 +850,24 @@ div.dataTables_wrapper div.dataTables_info {
   padding: 1rem;
   background-color: var(--white);
   border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .card-header h2 {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 0;
+}
+
+.card-header-title {
+  /* background-color: lavender; */
+  margin-right: 2rem;
+}
+
+.card-header-caption {
+  color: var(--dark-light);
 }
 
 .card-body {
