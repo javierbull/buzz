@@ -188,16 +188,18 @@
 						      <td><span class="tag-status tag-active">Activo</span></td>
 									<td>
 										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm">
+											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
 												<span class="material-icons-outlined">
 													edit
 												</span>
 											</button>
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalActivarUsuario">
-												<span class="material-icons-outlined">
-													delete
-												</span>
-											</button>
+											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cambiar estado">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDesactivarUsuario">
+													<span class="material-icons-outlined">
+														loop
+													</span>
+												</button>
+											</span>
 										</div>
 									</td>
 						    </tr>
@@ -208,16 +210,18 @@
 									<td><span class="tag-status tag-active">Activo</span></td>
 									<td>
 										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm">
+											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
 												<span class="material-icons-outlined">
 													edit
 												</span>
 											</button>
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalActivarUsuario">
-												<span class="material-icons-outlined">
-													delete
-												</span>
-											</button>
+											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cambiar estado">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDesactivarUsuario">
+													<span class="material-icons-outlined">
+														loop
+													</span>
+												</button>
+											</span>
 										</div>
 									</td>
 								</tr>
@@ -228,17 +232,18 @@
 									<td><span class="tag-status tag-active">Activo</span></td>
 									<td>
 										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm">
+											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
 												<span class="material-icons-outlined">
 													edit
 												</span>
 											</button>
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalActivarUsuario">
-												<span class="material-icons-outlined">
-													delete
-												</span>
-											</button>
-
+											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cambiar estado">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDesactivarUsuario">
+													<span class="material-icons-outlined">
+														loop
+													</span>
+												</button>
+											</span>
 										</div>
 									</td>
 								</tr>
@@ -249,16 +254,18 @@
 									<td><span class="tag-status tag-inactive">Inactivo</span></td>
 									<td>
 										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm">
+											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
 												<span class="material-icons-outlined">
 													edit
 												</span>
 											</button>
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalActivarUsuario">
-												<span class="material-icons-outlined">
-													delete
-												</span>
-											</button>
+											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cambiar estado">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalActivarUsuario">
+													<span class="material-icons-outlined">
+														loop
+													</span>
+												</button>
+											</span>
 										</div>
 									</td>
 								</tr>
@@ -266,19 +273,21 @@
 									<th scope="row">5</th>
 									<td>rnavarro</td>
 									<td>Randy Navarro</td>
-									<td><span class="tag-status tag-inactive">Inctivo</span></td>
+									<td><span class="tag-status tag-inactive">Inactivo</span></td>
 									<td>
 										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm">
+											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
 												<span class="material-icons-outlined">
 													edit
 												</span>
 											</button>
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalActivarUsuario">
-												<span class="material-icons-outlined">
-													delete
-												</span>
-											</button>
+											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cambiar estado">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalActivarUsuario">
+													<span class="material-icons-outlined">
+														loop
+													</span>
+												</button>
+											</span>
 										</div>
 									</td>
 								</tr>
@@ -645,6 +654,24 @@
 					</div>
 					<div class="modal-body">
 						¿Desea activar el usaurio?
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+						<button type="button" class="btn button-primary">Confirmar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modalDesactivarUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Inactivar Usuario</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						¿Desea inactivar al usuario?
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>

@@ -25,6 +25,8 @@
   --success-light: #C1F8CF;
 }
 
+/* ESTILOS GENERALES */
+
 html {
   font-size: 16px;
 }
@@ -420,6 +422,13 @@ input[type=number] {
   display: none !important;
 }
 
+/* SWITCH BTN */
+.switch-btn {
+ font-size: 1rem;
+}
+/* END SWITCH BTN */
+
+/* FIN ESTILOS GENERALES */
 
 
 /* LOGIN */
