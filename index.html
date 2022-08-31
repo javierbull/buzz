@@ -435,8 +435,11 @@
 							<thead>
 								<tr>
 									<th scope="col">#</th>
-									<th scope="col">Usuario</th>
+									<th scope="col">Documento</th>
 									<th scope="col">Nombre</th>
+									<th scope="col">Fecha</th>
+									<th scope="col">Tipo de pago</th>
+									<th scope="col">Monto</th>
 									<th scope="col">Estado</th>
 									<th scope="col">Acciones</th>
 								</tr>
@@ -444,117 +447,130 @@
 							<tbody>
 								<tr>
 									<th scope="row">1</th>
-									<td>mbicerra</td>
-									<td>Mónica Bicerra</td>
-									<td><span class="tag-status tag-active">Activo</span></td>
+									<td>45692587</td>
+									<td>María Gonzales</td>
+									<td>15/10/2022</td>
+									<td>Interbank</td>
+									<td>s/ 50.00</td>
+									<td><span class="tag-status tag-active">Pendiente</span></td>
 									<td>
 										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
+											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar" id="showDetallePedido">
 												<span class="material-icons-outlined">
 													edit
 												</span>
 											</button>
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cambiar estado">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDesactivarUsuario">
-													<span class="material-icons-outlined">
-														loop
-													</span>
-												</button>
-											</span>
 										</div>
 									</td>
 								</tr>
-								<tr>
-									<th scope="row">2</th>
-									<td>rarriaga</td>
-									<td>Roberto Arriaga</td>
-									<td><span class="tag-status tag-active">Activo</span></td>
-									<td>
-										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
-												<span class="material-icons-outlined">
-													edit
-												</span>
-											</button>
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cambiar estado">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDesactivarUsuario">
-													<span class="material-icons-outlined">
-														loop
-													</span>
-												</button>
-											</span>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">3</th>
-									<td>nbendezu</td>
-									<td>Natalie Bendezu</td>
-									<td><span class="tag-status tag-active">Activo</span></td>
-									<td>
-										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
-												<span class="material-icons-outlined">
-													edit
-												</span>
-											</button>
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cambiar estado">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDesactivarUsuario">
-													<span class="material-icons-outlined">
-														loop
-													</span>
-												</button>
-											</span>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">4</th>
-									<td>ealiaga</td>
-									<td>Erick Aliaga</td>
-									<td><span class="tag-status tag-inactive">Inactivo</span></td>
-									<td>
-										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
-												<span class="material-icons-outlined">
-													edit
-												</span>
-											</button>
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cambiar estado">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalActivarUsuario">
-													<span class="material-icons-outlined">
-														loop
-													</span>
-												</button>
-											</span>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">5</th>
-									<td>rnavarro</td>
-									<td>Randy Navarro</td>
-									<td><span class="tag-status tag-inactive">Inactivo</span></td>
-									<td>
-										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
-												<span class="material-icons-outlined">
-													edit
-												</span>
-											</button>
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cambiar estado">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalActivarUsuario">
-													<span class="material-icons-outlined">
-														loop
-													</span>
-												</button>
-											</span>
-										</div>
-									</td>
-								</tr>
+
 							</tbody>
 						</table>
 					</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="panel" id="detallePedido-panel">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item showOperacionesPedidos"><a href="#" class="button-link">Pedidos</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Detalle pedido</li>
+					</ol>
+				</nav>
+
+				<div class="row">
+					<div class="col-xl-4 col-lg-6 mx-auto">
+						<div class="card mx-auto">
+							<div class="card-header">
+								<h2>
+									Agregar Usuario
+								</h2>
+							</div>
+							<div class="card-body">
+								<form action="">
+									<fieldset class="fieldset-form">
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="radioTypeUser" id="radioTypeUserInhouse">
+											<label class="form-check-label" for="radioTypeUserInhouse">
+												Usuario In House
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="radioTypeUser" id="radioTypeUserAdmin">
+											<label class="form-check-label" for="radioTypeUserAdmin">
+												Usuario Administrador
+											</label>
+										</div>
+									</fieldset>
+									<fieldset class="fieldset-form fieldset-hide" id="fieldset-userInhouse">
+										<form>
+											<div class="form-group">
+												<label for="inputUserInhouseNew" class="form-label">Usuario</label>
+												<input type="text" class="form-control" id="inputUserInhouseNew" placeholder="Alias de usuario">
+											</div>
+											<div class="form-group">
+												<label for="inputNameUserInhouseNew" class="form-label">Nombre Usuario</label>
+												<input type="text" class="form-control" id="inputNameUserInhouseNew" placeholder="Nombre del usuario">
+											</div>
+											<div class="form-group">
+												<label for="inputSerieUserInhouseNew" class="form-label">Serie documento</label>
+												<input type="text" class="form-control" id="inputSerieUserInhouseNew" placeholder="Número de serie">
+											</div>
+											<button type="button" name="button" class="btn button-outline" data-bs-toggle="modal" data-bs-target="#modalPermisosModulosInhouseUser">Administrar permisos Inhouse</button>
+										</form>
+									</fieldset>
+									<fieldset class="fieldset-form fieldset-hide" id="fieldset-userAdmin">
+										<div class="wrap-options-userAdmin">
+											<div class="form-check">
+												<input class="form-check-input selectFalse" type="checkbox" value="" name="userAdminType" id="checkUserCloud">
+												<label class="form-check-label" for="checkUserCloud">
+													Usuario Cloud
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input selectFalse" type="checkbox" value="" name="userAdminType" id="checkUserValidador">
+												<label class="form-check-label" for="checkUserValidador">
+													Usuario Validador
+												</label>
+											</div>
+										</div>
+
+										<form>
+											<div class="form-group">
+												<label for="inputUserAdminNew" class="form-label">Usuario</label>
+												<input type="text" class="form-control" id="inputUserAdminNew" placeholder="Alias de usuario">
+											</div>
+											<div class="form-group">
+												<label for="inputNameUserAdminNew" class="form-label">Nombre</label>
+												<input type="text" class="form-control" id="inputNameUserAdminNew" placeholder="Ingrese nombre">
+											</div>
+											<div class="form-group">
+												<label for="inputNameUserAdminNew" class="form-label">Apellido Paterno</label>
+												<input type="text" class="form-control" id="inputNameUserAdminNew" placeholder="Ingrese apellido">
+											</div>
+										</form>
+									</fieldset>
+									<fieldset class="fieldset-form fieldset-hide" id="fieldset-formNewUserCloud">
+										<form>
+											<button type="button" name="button" class="btn button-outline" data-bs-toggle="modal" data-bs-target="#modalPermisosModulosAdminUser">
+												Administrar permisos Cloud
+											</button>
+										</form>
+									</fieldset>
+									<fieldset class="fieldset-form fieldset-hide" id="fieldset-formNewUserValidador">
+										<div class="form-check form-switch">
+											<input class="form-check-input" type="checkbox" role="switch" id="switchCheckUserValidadorMaestro">
+											<label class="form-check-label" for="switchCheckUserValidadorMaestro">Usuario Validador Maestro</label>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<div class="card-footer">
+								<button type="button" name="button" class="btn button-ghost showOperacionesPedidos">Cerrar</button>
+								<button type="button" name="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalSuccess">Guardar</button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
