@@ -488,7 +488,8 @@
 								</h2>
 							</div>
 							<div class="card-body">
-								<form>
+								<h3>Datos del cliente</h3>
+								<form class="marginBottom-1">
 									<div class="form-group">
 										<label for="inputPedidosNameUser" class="form-label">Nombre</label>
 										<input type="text" class="form-control" id="inputPedidosNameUser" value="María Gonzales" disabled>
@@ -515,6 +516,36 @@
 										</div>
 									</div>
 								</form>
+								<h3>Pedido</h3>
+								<table class="table table-hover">
+								  <thead>
+								    <tr>
+								      <th scope="col">#</th>
+								      <th scope="col">Producto</th>
+								      <th scope="col">Cantidad</th>
+											<th scope="col">P. Unitario</th>
+											<th scope="col">Total</th>
+								    </tr>
+								  </thead>
+								  <tbody>
+								    <tr>
+								      <th scope="row">1</th>
+								      <td>Entrada Full Online</td>
+								      <td>5</td>
+											<td>10.00</td>
+											<td>50.00</td>
+								    </tr>
+								  </tbody>
+									<tfoot>
+										<tr>
+											<th></th>
+											<th></th>
+											<th></th>
+											<th>Total</th>
+											<th>50.00</th>
+										</tr>
+									</tfoot>
+								</table>
 							</div>
 							<div class="card-footer">
 								<button type="button" name="button" class="btn button-ghost showOperacionesPedidos">Cerrar</button>
