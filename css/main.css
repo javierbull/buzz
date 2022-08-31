@@ -205,6 +205,10 @@ h3 {
 .success-color {
   color: var(--success);
 }
+
+.danger-color {
+  color: var(--danger);
+}
 /* End Colors */
 
 /* Buttons */
