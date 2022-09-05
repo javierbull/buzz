@@ -86,7 +86,7 @@
 					<div class="collapse" id="operation-collapse">
 						<ul class="btn-toggle-nav sidebar-list-collapse">
 							<li><a href="#" class="item-collapse rounded showOperacionesPedidos">Pedidos</a></li>
-							<li><a href="#" class="item-collapse rounded showOperacionesProcesoCarga">Proceso de carga</a></li>
+							<li><a href="#" class="item-collapse rounded showOperacionesProcesoCarga">PC - Envíos pendientes</a></li>
 							<li><a href="#" class="item-collapse rounded showOperacionesCompras">Compras</a></li>
 							<li><a href="#" class="item-collapse rounded showOperacionesVentaVirtual">Venta Virtual</a></li>
 							<li><a href="#" class="item-collapse rounded showOperacionesControlVenta">Control Venta</a></li>
@@ -655,13 +655,13 @@
 						<div class="card-dtable">
 						<div class="card-dtable-header">
 							<div class="title-dtable">
-								Proceso de carga - Envíos pendientes
+								PC - Envíos pendientes Inhouse
 							</div>
-							<button type="button" name="button" class="btn button-outline-icon d-none">
+							<button type="button" name="button" class="btn button-outline-icon">
 								<span class="material-icons-outlined">
-									download
+									send
 								</span>
-								Generar reporte
+								Enviar selección
 							</button>
 						</div>
 						<table class="table dtable table-hover" id="tableProcesoCarga">
@@ -688,47 +688,13 @@
 									<td><span class="tag-status tag-active">Pendiente</span></td>
 									<td>
 										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar" id="showDetallePedido">
-												<span class="material-icons-outlined">
-													edit
-												</span>
-											</button>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">2</th>
-									<td>42569874</td>
-									<td>Julio Torres</td>
-									<td>15/10/2022</td>
-									<td>Yape</td>
-									<td>s/ 200.00</td>
-									<td><span class="tag-status tag-success">Aprobado</span></td>
-									<td>
-										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
-												<span class="material-icons-outlined">
-													edit
-												</span>
-											</button>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">3</th>
-									<td>45895213</td>
-									<td>Pedro Rojas</td>
-									<td>15/10/2022</td>
-									<td>Scotiabank</td>
-									<td>s/ 120.00</td>
-									<td><span class="tag-status tag-danger">Anulado</span></td>
-									<td>
-										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
-												<span class="material-icons-outlined">
-													edit
-												</span>
-											</button>
+											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaInHouseEnvioPendiente">
+													<span class="material-icons-outlined">
+														visibility
+													</span>
+												</button>
+											</span>
 										</div>
 									</td>
 								</tr>
@@ -1348,6 +1314,55 @@
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn button-primary showAdmninistracionUsuarios" data-bs-dismiss="modal">Aceptar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modalVentaInHouseEnvioPendiente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Detalle venta inhouse</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<table class="table table-hover marginBottom-1">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Producto</th>
+									<th scope="col">Cantidad</th>
+									<th scope="col">P. Unitario</th>
+									<th scope="col">Total</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>EFO01 - Entrada Full Online</td>
+									<td>5</td>
+									<td>10.00</td>
+									<td>50.00</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<th></th>
+									<th></th>
+									<th></th>
+									<th>Total</th>
+									<th>50.00</th>
+								</tr>
+							</tfoot>
+						</table>
+						<div class="form-group">
+							<label for="inputClientEmail" class="form-label">Correo del cliente</label>
+							<input type="email" class="form-control" id="inputClientEmail" value="nlatifi" disabled>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
 					</div>
 				</div>
 			</div>
