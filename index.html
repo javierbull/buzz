@@ -642,7 +642,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="action-btns">
-							<button type="button" name="button" class="btn button-outline-icon" data-bs-toggle="modal" data-bs-target="#modalFiltrarPedidos">
+							<button type="button" name="button" class="btn button-outline-icon" data-bs-toggle="modal" data-bs-target="#modalFiltrarEnviosPendientes">
 								<span class="material-icons-outlined">
 									filter_list
 								</span>
@@ -928,7 +928,7 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Filtrar Usuarios</h5>
+						<h5 class="modal-title" id="exampleModalLabel">Filtrar usuarios</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
@@ -958,7 +958,7 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Filtrar Pedidos</h5>
+						<h5 class="modal-title" id="exampleModalLabel">Filtrar pedidos</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
@@ -1015,7 +1015,7 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Activar Usuario</h5>
+						<h5 class="modal-title" id="exampleModalLabel">Activar usuario</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
@@ -1033,7 +1033,7 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Inactivar Usuario</h5>
+						<h5 class="modal-title" id="exampleModalLabel">Inactivar usuario</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
@@ -1051,7 +1051,7 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Cambio de Contraseña</h5>
+						<h5 class="modal-title" id="exampleModalLabel">Cambio de contraseña</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
@@ -1091,7 +1091,7 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Administrar Permisos Cloud</h5>
+						<h5 class="modal-title" id="exampleModalLabel">Administrar permisos Cloud</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
@@ -1265,7 +1265,7 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Administrar Permisos In House</h5>
+						<h5 class="modal-title" id="exampleModalLabel">Administrar permisos In House</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
@@ -1307,7 +1307,7 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Datos Guardados</h5>
+						<h5 class="modal-title" id="exampleModalLabel">Datos guardados</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
@@ -1329,7 +1329,7 @@
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Detalle venta inhouse</h5>
+						<h5 class="modal-title" id="exampleModalLabel">Detalle venta In House</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
@@ -1378,7 +1378,7 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Enviar Códigos</h5>
+						<h5 class="modal-title" id="exampleModalLabel">Enviar códigos</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
@@ -1409,6 +1409,47 @@
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn button-primary" data-bs-dismiss="modal">Aceptar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modalFiltrarEnviosPendientes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Filtrar envíos pendientes</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="inputFilterEnviosPendientesCorrelativo" class="form-label">Correlativo</label>
+								<input type="number" class="form-control" id="inputFilterEnviosPendientesCorrelativo" placeholder="Ingrese correlativo">
+							</div>
+							<div class="form-group">
+								<label for="inputFilterEnviosPendientesId" class="form-label">Documento</label>
+								<input type="number" class="form-control" id="inputFilterEnviosPendientesId" placeholder="Ingrese número de documento">
+							</div>
+							<div class="form-group">
+								<label for="inputFilterEnviosPendientesName" class="form-label">Nombre</label>
+								<input type="text" class="form-control" id="inputFilterEnviosPendientesName" placeholder="Ingrese nombre">
+							</div>
+							<div class="row">
+								<div class="form-group col-md-6">
+									<label for="inputFilterEnviosPendientesInitDate" class="form-label">Fecha Inicio</label>
+									<input type="date" class="form-control" id="inputFilterEnviosPendientesInitDate" placeholder="Ingrese nombre">
+								</div>
+								<div class="form-group col-md-6">
+									<label for="inputFilterEnviosPendientesEndDate" class="form-label">Fecha Fin</label>
+									<input type="date" class="form-control" id="inputFilterEnviosPendientesEndDate" placeholder="Ingrese nombre">
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+						<button type="button" class="btn button-primary">Filtrar</button>
 					</div>
 				</div>
 			</div>
