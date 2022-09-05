@@ -77,7 +77,7 @@ $(".showDashboard").click(function() {
   $("#detalleStock-panel").hide();
   $("#pedidos-panel").hide();
   $("#detallePedido-panel").hide();
-  $("#procesoCarga-panel").hide();
+  $("#enviosPendientesInhouse-panel").hide();
 });
 
 $(".showAdmninistracionUsuarios").click(function() {
@@ -88,7 +88,7 @@ $(".showAdmninistracionUsuarios").click(function() {
   $("#detalleStock-panel").hide();
   $("#pedidos-panel").hide();
   $("#detallePedido-panel").hide();
-  $("#procesoCarga-panel").hide();
+  $("#enviosPendientesInhouse-panel").hide();
 });
 
 $(".showCrearUsuarios").click(function() {
@@ -99,7 +99,7 @@ $(".showCrearUsuarios").click(function() {
   $("#detalleStock-panel").hide();
   $("#pedidos-panel").hide();
   $("#detallePedido-panel").hide();
-  $("#procesoCarga-panel").hide();
+  $("#enviosPendientesInhouse-panel").hide();
 });
 
 $(".showReporteStockDisponible").click(function() {
@@ -110,7 +110,7 @@ $(".showReporteStockDisponible").click(function() {
   $("#detalleStock-panel").hide();
   $("#pedidos-panel").hide();
   $("#detallePedido-panel").hide();
-  $("#procesoCarga-panel").hide();
+  $("#enviosPendientesInhouse-panel").hide();
 });
 
 $("#showDetalleStock").click(function() {
@@ -121,7 +121,7 @@ $("#showDetalleStock").click(function() {
   $("#detalleStock-panel").show();
   $("#pedidos-panel").hide();
   $("#detallePedido-panel").hide();
-  $("#procesoCarga-panel").hide();
+  $("#enviosPendientesInhouse-panel").hide();
 });
 
 $(".showOperacionesPedidos").click(function() {
@@ -132,7 +132,7 @@ $(".showOperacionesPedidos").click(function() {
   $("#detalleStock-panel").hide();
   $("#pedidos-panel").show();
   $("#detallePedido-panel").hide();
-  $("#procesoCarga-panel").hide();
+  $("#enviosPendientesInhouse-panel").hide();
 });
 
 $("#showDetallePedido").click(function() {
@@ -143,10 +143,10 @@ $("#showDetallePedido").click(function() {
   $("#detalleStock-panel").hide();
   $("#pedidos-panel").hide();
   $("#detallePedido-panel").show();
-  $("#procesoCarga-panel").hide();
+  $("#enviosPendientesInhouse-panel").hide();
 });
 
-$(".showOperacionesProcesoCarga").click(function() {
+$(".showOperacionesEnviosPendientesInhouse").click(function() {
   $("#dashboard-panel").hide();
   $("#usuarios-panel").hide();
   $("#crearUsuarios-panel").hide();
@@ -154,7 +154,7 @@ $(".showOperacionesProcesoCarga").click(function() {
   $("#detalleStock-panel").hide();
   $("#pedidos-panel").hide();
   $("#detallePedido-panel").hide();
-  $("#procesoCarga-panel").show();
+  $("#enviosPendientesInhouse-panel").show();
 });
 // END SHOW HIDE PANELS
 
