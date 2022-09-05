@@ -695,6 +695,13 @@
 													</span>
 												</button>
 											</span>
+											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Enviar códigos">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalEnviarCodigos">
+													<span class="material-icons-outlined">
+														send
+													</span>
+												</button>
+											</span>
 										</div>
 									</td>
 								</tr>
@@ -1363,6 +1370,46 @@
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modalEnviarCodigos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Enviar Códigos</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						¿Está seguro de reenviar los códigos al cliente?
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+						<button type="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalSuccessEnvioCodigos">Confirmar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modalSuccessEnvioCodigos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Datos Guardados</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p class="d-flex align-items-center">
+							<span class="material-icons success-color marginRight-1">
+								done
+							</span>
+							Los datos se guardaron de manera exitosa
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn button-primary" data-bs-dismiss="modal">Aceptar</button>
 					</div>
 				</div>
 			</div>
