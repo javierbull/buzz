@@ -77,6 +77,7 @@ $(".showDashboard").click(function() {
   $("#detalleStock-panel").hide();
   $("#pedidos-panel").hide();
   $("#detallePedido-panel").hide();
+  $("#procesoCarga-panel").hide();
 });
 
 $(".showAdmninistracionUsuarios").click(function() {
@@ -87,6 +88,7 @@ $(".showAdmninistracionUsuarios").click(function() {
   $("#detalleStock-panel").hide();
   $("#pedidos-panel").hide();
   $("#detallePedido-panel").hide();
+  $("#procesoCarga-panel").hide();
 });
 
 $(".showCrearUsuarios").click(function() {
@@ -97,6 +99,7 @@ $(".showCrearUsuarios").click(function() {
   $("#detalleStock-panel").hide();
   $("#pedidos-panel").hide();
   $("#detallePedido-panel").hide();
+  $("#procesoCarga-panel").hide();
 });
 
 $(".showReporteStockDisponible").click(function() {
@@ -107,6 +110,7 @@ $(".showReporteStockDisponible").click(function() {
   $("#detalleStock-panel").hide();
   $("#pedidos-panel").hide();
   $("#detallePedido-panel").hide();
+  $("#procesoCarga-panel").hide();
 });
 
 $("#showDetalleStock").click(function() {
@@ -117,6 +121,7 @@ $("#showDetalleStock").click(function() {
   $("#detalleStock-panel").show();
   $("#pedidos-panel").hide();
   $("#detallePedido-panel").hide();
+  $("#procesoCarga-panel").hide();
 });
 
 $(".showOperacionesPedidos").click(function() {
@@ -127,6 +132,7 @@ $(".showOperacionesPedidos").click(function() {
   $("#detalleStock-panel").hide();
   $("#pedidos-panel").show();
   $("#detallePedido-panel").hide();
+  $("#procesoCarga-panel").hide();
 });
 
 $("#showDetallePedido").click(function() {
@@ -137,6 +143,18 @@ $("#showDetallePedido").click(function() {
   $("#detalleStock-panel").hide();
   $("#pedidos-panel").hide();
   $("#detallePedido-panel").show();
+  $("#procesoCarga-panel").hide();
+});
+
+$(".showOperacionesProcesoCarga").click(function() {
+  $("#dashboard-panel").hide();
+  $("#usuarios-panel").hide();
+  $("#crearUsuarios-panel").hide();
+  $("#reportesStock-panel").hide();
+  $("#detalleStock-panel").hide();
+  $("#pedidos-panel").hide();
+  $("#detallePedido-panel").hide();
+  $("#procesoCarga-panel").show();
 });
 // END SHOW HIDE PANELS
 
