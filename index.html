@@ -722,7 +722,7 @@
 												</button>
 											</span>
 											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Enviar códigos">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalStockInsuficiente">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaInHouseStockInsuficiente">
 													<span class="material-icons-outlined">
 														send
 													</span>
@@ -1556,7 +1556,54 @@
 			</div>
 		</div>
 
-
+		<div class="modal fade" id="modalVentaInHouseStockInsuficiente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Stock Insuficiente</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<table class="table table-hover">
+						  <thead>
+						    <tr>
+						      <th scope="col">#</th>
+						      <th scope="col">Código</th>
+						      <th scope="col">Producto</th>
+									<th scope="col">Stock activo</th>
+									<th scope="col">Stock reservado</th>
+									<th scope="col">Stock total</th>
+						      <th scope="col">Estado</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row">1</th>
+						      <td>CCP01</td>
+						      <td>Combo Corporativo de Película</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+						      <td><span class="tag-status tag-danger">Agotado</span></td>
+						    </tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>EPFO01</td>
+									<td>Entrada Prime Full Online Sin Restriccion</td>
+									<td>0</td>
+									<td>2</td>
+									<td>2</td>
+									<td><span class="tag-status tag-warning">Reponer</span></td>
+								</tr>
+						  </tbody>
+						</table>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
 	<!-- Modal -->
