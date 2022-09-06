@@ -158,7 +158,7 @@ $(".showOperacionesEnviosPendientesInhouse").click(function() {
 });
 // END SHOW HIDE PANELS
 
-// SHOW FORMS CERAR Usuario
+// SHOW FORMS CREAR Usuario
 $('#radioTypeUserInhouse').click(function(){
   $("#fieldset-userInhouse").show();
   $("#fieldset-userAdmin").hide();
@@ -187,7 +187,7 @@ $("#checkUserValidador").click(function () {
         $("#fieldset-formNewUserValidador").hide();
     }
 });
-// END SHOW FORMS CERAR USUARIO
+// END SHOW FORMS CREAR USUARIO
 
 // SELECT ALL CHECKBOXES
 $("#selectAllModulosAdministracion").click(function() {
@@ -233,11 +233,22 @@ $(".selectAllCheckboxesInhouse").click(function() {
 
 // CHECKBOX ACCORDION
 
+// ACTIVAR SELECT 2
+$('.select2').select2({
+  theme: "bootstrap-5",
+  width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+  placeholder: $(this).data('placeholder'),
+});
+
+// END ACTIVAR SELECT2
+
 // TOOLTIP
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 // END TOOLTIP
+
+
 
 });

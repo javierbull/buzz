@@ -16,6 +16,8 @@
 	<!-- CSS Files -->
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="js/plugin/select2/select2.min.css">
+	<link rel="stylesheet" href="js/plugin/select2/select2-bootstrap-5-theme.css">
 	<link rel="stylesheet" href="css/datatables.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/mq.css">
@@ -648,6 +650,16 @@
 								</span>
 								Filtrar
 							</button>
+						</div>
+
+						<div class="form-group">
+							<label for="inputBusiness" class="form-label">Código / Descripción producto</label>
+							<select class="form-select select2" data-placeholder="Buscar">
+								<option></option>
+								<option selected>EFO - Entrada Full Online</option>
+								<option>EPO - Entrada Plus Online</option>
+								<option>EEO - Entrada Estándar Online</option>
+							</select>
 						</div>
 					</div>
 
@@ -1414,8 +1426,8 @@
 			</div>
 		</div>
 
-		<div class="modal fade" id="modalFiltrarEnviosPendientes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
+		<div class="modal fade" id="modalFiltrarEnviosPendientes" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-scrollable">
 				<div class="modal-content">
 					<div class="modal-header">
 						<h5 class="modal-title" id="exampleModalLabel">Filtrar envíos pendientes</h5>
@@ -1423,6 +1435,17 @@
 					</div>
 					<div class="modal-body">
 						<form>
+
+							<div class="form-group">
+								<label class="form-label">Código / Descripción producto</label>
+								<select class="form-select select2" data-placeholder="Buscar">
+									<option></option>
+									<option selected>EFO - Entrada Full Online</option>
+									<option>EPO - Entrada Plus Online</option>
+									<option>EEO - Entrada Estándar Online</option>
+								</select>
+							</div>
+
 							<div class="form-group">
 								<label for="inputFilterEnviosPendientesCorrelativo" class="form-label">Correlativo</label>
 								<input type="number" class="form-control" id="inputFilterEnviosPendientesCorrelativo" placeholder="Ingrese correlativo">
@@ -1462,6 +1485,7 @@
 	<script src="js/bootstrap/jquery.3.2.1.min.js"></script>
 	<script src="js/plugin/datatables/datatables.min.js"></script>
 	<script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="js/plugin/select2/select2.min.js"></script>
 	<script src="js/plugin/chart.js/chart.min.js"></script>
 	<script src="js/charts.js"></script>
 	<script src="js/main.js"></script>
