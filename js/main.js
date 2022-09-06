@@ -281,7 +281,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 // END TOOLTIP
 
 // TABLE SELECT CHECKBOX
-$(".checkAll").on("click", function() {
+$(".checkAllDtable").on("click", function() {
    $(this)
      .closest("table")
      .find("tbody :checkbox")
@@ -298,7 +298,7 @@ $(".checkAll").on("click", function() {
 
    // add selected class on check all
    $(this).closest("table")
-     .find(".checkAll")
+     .find(".checkAllDtable")
      .prop("checked",
        $(this)
          .closest("table")
