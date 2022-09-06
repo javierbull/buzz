@@ -66,6 +66,30 @@ $('.dtable').DataTable({
 
 });
 
+$('#tableEnviosPendientesInhouse').DataTable({
+  "language": {
+    "lengthMenu": "Mostrar _MENU_ filas",
+    "zeroRecords": "No se encontraron resultados",
+    "info": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+    "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+    "infoFiltered": "(filtrado de un total de _MAX_ registros)",
+    "sSearch": "Buscar:",
+    "oPaginate": {
+      "sFirst": "Primero",
+      "sLast": "Último",
+      "sNext": "Siguiente",
+      "sPrevious": "Anterior"
+    },
+    "sProcessing": "Procesando...",
+  },
+  "columnDefs": [{
+    "orderable": false,
+    "targets": 0
+  }],
+  "order": [], // not set any order rule for any column.
+});
+
+
 // End datatables
 
 // SHOW HIDE panels
@@ -256,6 +280,35 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 // END TOOLTIP
 
+// TABLE SELECT CHECKBOX
+$(".checkAll").on("click", function() {
+   $(this)
+     .closest("table")
+     .find("tbody :checkbox")
+     .prop("checked", this.checked)
+     .closest("tr")
+     .toggleClass("selected", this.checked);
+ });
+
+ $("tbody :checkbox").on("click", function() {
+   // toggle selected class to the checkbox in a row
+   $(this)
+     .closest("tr")
+     .toggleClass("selected", this.checked);
+
+   // add selected class on check all
+   $(this).closest("table")
+     .find(".checkAll")
+     .prop("checked",
+       $(this)
+         .closest("table")
+         .find("tbody :checkbox:checked").length ==
+         $(this)
+           .closest("table")
+           .find("tbody :checkbox").length
+     );
+ });
+// END TABLE SELECT CHECKBOX
 
 
 });

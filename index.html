@@ -666,10 +666,12 @@
 								Enviar selección
 							</button>
 						</div>
-						<table class="table dtable table-hover" id="tableEnviosPendientesInhouse">
+						<table class="table table-hover" id="tableEnviosPendientesInhouse">
 							<thead>
 								<tr>
-									<th scope="col">#</th>
+									<th scope="col">
+                		<input type="checkbox" class="checkAll" name="checkAll" />
+									</th>
 									<th scope="col">Fecha</th>
 									<th scope="col">Correlativo</th>
 									<th scope="col">Documento</th>
@@ -680,9 +682,11 @@
 							</thead>
 							<tbody>
 								<tr>
-									<th scope="row">1</th>
+									<th scope="col">
+										<input type="checkbox" name="item[]" value="1">
+									</th>
 									<td>15/10/2022</td>
-									<td>BB12-00000162</td>
+									<td>BB12-00000161</td>
 									<td>45629658</td>
 									<td>María Gonzales</td>
 									<td>s/ 50.00</td>
@@ -706,7 +710,7 @@
 									</td>
 								</tr>
 								<tr>
-									<th scope="row">2</th>
+									<th scope="col"><input type="checkbox" name="item[]" value="2"></th>
 									<td>15/10/2022</td>
 									<td>BB12-00000162</td>
 									<td>75486524</td>
