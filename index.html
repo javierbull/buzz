@@ -705,7 +705,32 @@
 										</div>
 									</td>
 								</tr>
-
+								<tr>
+									<th scope="row">2</th>
+									<td>15/10/2022</td>
+									<td>BB12-00000162</td>
+									<td>75486524</td>
+									<td>Nicolás Latifi</td>
+									<td>s/ 100.00</td>
+									<td>
+										<div class="action-cell-btns">
+											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaInHouseEnvioPendiente2">
+													<span class="material-icons-outlined">
+														visibility
+													</span>
+												</button>
+											</span>
+											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Enviar códigos">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalStockInsuficiente">
+													<span class="material-icons-outlined">
+														send
+													</span>
+												</button>
+											</span>
+										</div>
+									</td>
+								</tr>
 							</tbody>
 						</table>
 					</div>
@@ -1366,7 +1391,63 @@
 						</table>
 						<div class="form-group">
 							<label for="inputClientEmail" class="form-label">Correo del cliente</label>
-							<input type="email" class="form-control" id="inputClientEmail" value="nlatifi" disabled>
+							<input type="email" class="form-control" id="inputClientEmail" value="mariagonzales@gmail.com" disabled>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modalVentaInHouseEnvioPendiente2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Detalle venta In House</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<table class="table table-hover marginBottom-1">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Producto</th>
+									<th scope="col">Cantidad</th>
+									<th scope="col">P. Unitario</th>
+									<th scope="col">Total</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>CCP01 - Combo Corporativo de Película</td>
+									<td>1</td>
+									<td>40.00</td>
+									<td>40.00</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>EPFO01 - Entrada Prime Full Online Sin Restricción</td>
+									<td>3</td>
+									<td>20.00</td>
+									<td>60.00</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<th></th>
+									<th></th>
+									<th></th>
+									<th>Total</th>
+									<th>100.00</th>
+								</tr>
+							</tfoot>
+						</table>
+						<div class="form-group">
+							<label for="inputClientEmail" class="form-label">Correo del cliente</label>
+							<input type="email" class="form-control" id="inputClientEmail" value="nlatifi@gmail.com" disabled>
 						</div>
 					</div>
 					<div class="modal-footer">
@@ -1474,6 +1555,10 @@
 				</div>
 			</div>
 		</div>
+
+
+
+
 	<!-- Modal -->
 
 	<!-- Fin Modals -->
