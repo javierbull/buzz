@@ -646,7 +646,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="action-btns">
-							<button type="button" name="button" class="btn button-outline-icon" data-bs-toggle="modal" data-bs-target="#modalFiltrarEnviosPendientes">
+							<button type="button" name="button" class="btn button-outline-icon" data-bs-toggle="modal" data-bs-target="#modalFiltrarEnvios">
 								<span class="material-icons-outlined">
 									filter_list
 								</span>
@@ -762,7 +762,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="action-btns">
-							<button type="button" name="button" class="btn button-outline-icon" data-bs-toggle="modal" data-bs-target="#modalFiltrarEnviosRealizados">
+							<button type="button" name="button" class="btn button-outline-icon" data-bs-toggle="modal" data-bs-target="#modalFiltrarEnvios">
 								<span class="material-icons-outlined">
 									filter_list
 								</span>
@@ -958,7 +958,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="action-btns">
-							<button type="button" name="button" class="btn button-outline-icon" data-bs-toggle="modal" data-bs-target="#modalFiltrarEnviosRealizados">
+							<button type="button" name="button" class="btn button-outline-icon" data-bs-toggle="modal" data-bs-target="#modalFiltrarReporteEnviosPc">
 								<span class="material-icons-outlined">
 									filter_list
 								</span>
@@ -973,6 +973,12 @@
 							<div class="title-dtable">
 								Reporte ventas con proceso de carga
 							</div>
+							<button type="button" name="button" class="btn button-outline-icon">
+								<span class="material-icons-outlined">
+									file_download
+								</span>
+								Descargar reporte
+							</button>
 						</div>
 						<table class="table dtable table-hover" id="tableEnviosPC">
 							<thead>
@@ -984,7 +990,7 @@
 									<th scope="col">Empresa - Sede</th>
 									<th scope="col">Documento</th>
 									<th scope="col">Nombre</th>
-									<th scope="col">Acciones</th>
+									<th scope="col">Estado</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -996,24 +1002,7 @@
 									<td>Nestle - San Isidro</td>
 									<td>45629658</td>
 									<td>María Gonzales</td>
-									<td>
-										<div class="action-cell-btns">
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaEnvioPendiente">
-													<span class="material-icons-outlined">
-														visibility
-													</span>
-												</button>
-											</span>
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Enviar códigos">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalReenviarCodigos">
-													<span class="material-icons-outlined">
-														send
-													</span>
-												</button>
-											</span>
-										</div>
-									</td>
+									<td><span class="tag-status tag-success">Enviado</span></td>
 								</tr>
 								<tr>
 									<td>000011</td>
@@ -1023,24 +1012,7 @@
 									<td>Empresas de Contact Center - Miraflores</td>
 									<td>75429635</td>
 									<td>Nicolás Latifi</td>
-									<td>
-										<div class="action-cell-btns">
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaEnvioPendiente2">
-													<span class="material-icons-outlined">
-														visibility
-													</span>
-												</button>
-											</span>
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Enviar códigos">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalReenviarCodigos">
-													<span class="material-icons-outlined">
-														send
-													</span>
-												</button>
-											</span>
-										</div>
-									</td>
+									<td><span class="tag-status tag-warning">Pendiente</span></td>
 								</tr>
 							</tbody>
 						</table>
@@ -1747,11 +1719,11 @@
 			</div>
 		</div>
 
-		<div class="modal fade" id="modalFiltrarEnviosPendientes" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal fade" id="modalFiltrarEnvios" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-scrollable">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Filtrar envíos pendientes</h5>
+						<h5 class="modal-title" id="exampleModalLabel">Filtrar envíos</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
@@ -1828,11 +1800,11 @@
 			</div>
 		</div>
 
-		<div class="modal fade" id="modalFiltrarEnviosRealizados" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal fade" id="modalFiltrarReporteEnviosPc" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-scrollable">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Filtrar envíos realizados</h5>
+						<h5 class="modal-title" id="exampleModalLabel">Filtrar envíos</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
@@ -1844,6 +1816,14 @@
 									<option>000010</option>
 									<option>000011</option>
 									<option>000012</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label class="form-label">Estado</label>
+								<select class="form-select">
+									<option>Seleccione</option>
+									<option>Enviado</option>
+									<option>Pendiente</option>
 								</select>
 							</div>
 							<div class="form-group">
