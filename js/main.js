@@ -102,6 +102,7 @@ $(".showDashboard").click(function() {
   $("#pedidos-panel").hide();
   $("#detallePedido-panel").hide();
   $("#enviosPendientesInhouse-panel").hide();
+  $("#enviosRealizadosInhouse-panel").hide();
 });
 
 $(".showAdmninistracionUsuarios").click(function() {
@@ -113,6 +114,7 @@ $(".showAdmninistracionUsuarios").click(function() {
   $("#pedidos-panel").hide();
   $("#detallePedido-panel").hide();
   $("#enviosPendientesInhouse-panel").hide();
+  $("#enviosRealizadosInhouse-panel").hide();
 });
 
 $(".showCrearUsuarios").click(function() {
@@ -124,6 +126,7 @@ $(".showCrearUsuarios").click(function() {
   $("#pedidos-panel").hide();
   $("#detallePedido-panel").hide();
   $("#enviosPendientesInhouse-panel").hide();
+  $("#enviosRealizadosInhouse-panel").hide();
 });
 
 $(".showReporteStockDisponible").click(function() {
@@ -135,6 +138,7 @@ $(".showReporteStockDisponible").click(function() {
   $("#pedidos-panel").hide();
   $("#detallePedido-panel").hide();
   $("#enviosPendientesInhouse-panel").hide();
+  $("#enviosRealizadosInhouse-panel").hide();
 });
 
 $("#showDetalleStock").click(function() {
@@ -146,6 +150,7 @@ $("#showDetalleStock").click(function() {
   $("#pedidos-panel").hide();
   $("#detallePedido-panel").hide();
   $("#enviosPendientesInhouse-panel").hide();
+  $("#enviosRealizadosInhouse-panel").hide();
 });
 
 $(".showOperacionesPedidos").click(function() {
@@ -157,6 +162,7 @@ $(".showOperacionesPedidos").click(function() {
   $("#pedidos-panel").show();
   $("#detallePedido-panel").hide();
   $("#enviosPendientesInhouse-panel").hide();
+  $("#enviosRealizadosInhouse-panel").hide();
 });
 
 $("#showDetallePedido").click(function() {
@@ -168,6 +174,7 @@ $("#showDetallePedido").click(function() {
   $("#pedidos-panel").hide();
   $("#detallePedido-panel").show();
   $("#enviosPendientesInhouse-panel").hide();
+  $("#enviosRealizadosInhouse-panel").hide();
 });
 
 $(".showOperacionesEnviosPendientesInhouse").click(function() {
@@ -179,6 +186,19 @@ $(".showOperacionesEnviosPendientesInhouse").click(function() {
   $("#pedidos-panel").hide();
   $("#detallePedido-panel").hide();
   $("#enviosPendientesInhouse-panel").show();
+  $("#enviosRealizadosInhouse-panel").hide();
+});
+
+$(".showReporteEnviosRealizadosInhouse").click(function() {
+  $("#dashboard-panel").hide();
+  $("#usuarios-panel").hide();
+  $("#crearUsuarios-panel").hide();
+  $("#reportesStock-panel").hide();
+  $("#detalleStock-panel").hide();
+  $("#pedidos-panel").hide();
+  $("#detallePedido-panel").hide();
+  $("#enviosPendientesInhouse-panel").hide();
+  $("#enviosRealizadosInhouse-panel").show();
 });
 // END SHOW HIDE PANELS
 
