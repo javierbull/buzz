@@ -66,7 +66,7 @@ $('.dtable').DataTable({
 
 });
 
-$('#tableEnviosPendientesInhouse').DataTable({
+$('#tableEnviosPendientes').DataTable({
   "language": {
     "lengthMenu": "Mostrar _MENU_ filas",
     "zeroRecords": "No se encontraron resultados",
@@ -103,6 +103,7 @@ $(".showDashboard").click(function() {
   $("#detallePedido-panel").hide();
   $("#enviosPendientes-panel").hide();
   $("#enviosRealizados-panel").hide();
+  $("#reportePc-panel").hide();
 });
 
 $(".showAdmninistracionUsuarios").click(function() {
@@ -115,6 +116,7 @@ $(".showAdmninistracionUsuarios").click(function() {
   $("#detallePedido-panel").hide();
   $("#enviosPendientes-panel").hide();
   $("#enviosRealizados-panel").hide();
+  $("#reportePc-panel").hide();
 });
 
 $(".showCrearUsuarios").click(function() {
@@ -127,6 +129,7 @@ $(".showCrearUsuarios").click(function() {
   $("#detallePedido-panel").hide();
   $("#enviosPendientes-panel").hide();
   $("#enviosRealizados-panel").hide();
+  $("#reportePc-panel").hide();
 });
 
 $(".showReporteStockDisponible").click(function() {
@@ -139,6 +142,7 @@ $(".showReporteStockDisponible").click(function() {
   $("#detallePedido-panel").hide();
   $("#enviosPendientes-panel").hide();
   $("#enviosRealizados-panel").hide();
+  $("#reportePc-panel").hide();
 });
 
 $("#showDetalleStock").click(function() {
@@ -151,6 +155,7 @@ $("#showDetalleStock").click(function() {
   $("#detallePedido-panel").hide();
   $("#enviosPendientes-panel").hide();
   $("#enviosRealizados-panel").hide();
+  $("#reportePc-panel").hide();
 });
 
 $(".showOperacionesPedidos").click(function() {
@@ -163,6 +168,7 @@ $(".showOperacionesPedidos").click(function() {
   $("#detallePedido-panel").hide();
   $("#enviosPendientes-panel").hide();
   $("#enviosRealizados-panel").hide();
+  $("#reportePc-panel").hide();
 });
 
 $("#showDetallePedido").click(function() {
@@ -175,6 +181,7 @@ $("#showDetallePedido").click(function() {
   $("#detallePedido-panel").show();
   $("#enviosPendientes-panel").hide();
   $("#enviosRealizados-panel").hide();
+  $("#reportePc-panel").hide();
 });
 
 $(".showOperacionesEnviosPendientes").click(function() {
@@ -187,6 +194,7 @@ $(".showOperacionesEnviosPendientes").click(function() {
   $("#detallePedido-panel").hide();
   $("#enviosPendientes-panel").show();
   $("#enviosRealizados-panel").hide();
+  $("#reportePc-panel").hide();
 });
 
 $(".showOperacionesEnviosRealizados").click(function() {
@@ -199,6 +207,20 @@ $(".showOperacionesEnviosRealizados").click(function() {
   $("#detallePedido-panel").hide();
   $("#enviosPendientes-panel").hide();
   $("#enviosRealizados-panel").show();
+  $("#reportePc-panel").hide();
+});
+
+$(".showReportePc").click(function() {
+  $("#dashboard-panel").hide();
+  $("#usuarios-panel").hide();
+  $("#crearUsuarios-panel").hide();
+  $("#reportesStock-panel").hide();
+  $("#detalleStock-panel").hide();
+  $("#pedidos-panel").hide();
+  $("#detallePedido-panel").hide();
+  $("#enviosPendientes-panel").hide();
+  $("#enviosRealizados-panel").hide();
+  $("#reportePc-panel").show();
 });
 // END SHOW HIDE PANELS
 
