@@ -284,29 +284,18 @@ h3 {
   box-shadow: 0 0 0 0.25rem rgba(20, 20, 43, 0.25);
 }
 
-.button-outline-icon {
-  background-color: var(--white);
-  color: var(--dark);
+.button-icon-left, .button-icon-right {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-color: 1px solid var(--dark);
 }
 
-.button-outline-icon span {
+.button-icon-left span {
   margin-right: .5rem;
 }
 
-.button-outline-icon:hover {
-  background-color: var(--dark);
-  color: var(--white);
-}
-
-.button-outline-icon:focus,.button-outline-icon:active  {
-  background-color: var(--white);
-  color: var(--dark);
-  border-color: 1px solid var(--dark);
-  box-shadow: 0 0 0 0.25rem rgba(20, 20, 43, 0.25);
+.button-icon-right span {
+  margin-left: .5rem;
 }
 
 .button-ghost {
