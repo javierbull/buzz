@@ -701,7 +701,7 @@ video {
   border-bottom: 1px solid var(--dark);
 }
 
-.table .body-table th {
+.table tbody th {
   /* background-color: pink; */
   vertical-align: middle;
 }
