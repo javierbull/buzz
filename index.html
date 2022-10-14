@@ -59,9 +59,9 @@
 		<div class="sidebar-admin" id="sidebar-admin">
 			<ul class="sidebar-admin-list">
 				<li class="item-sidebar">
-					<button class="btn btn-toggle collapsed showDashboard active-item-sidebar active">
+					<!-- <button class="btn btn-toggle collapsed showDashboard active-item-sidebar active">
 						Dashboard
-					</button>
+					</button> -->
 				</li>
 				<li class="item-sidebar">
 					<button class="btn btn-toggle collapsed btn-icon-sidebar" data-bs-toggle="collapse" data-bs-target="#admin-collapse" aria-expanded="true">
@@ -73,8 +73,8 @@
 					<div class="collapse" id="admin-collapse">
 						<ul class="btn-toggle-nav sidebar-list-collapse">
 							<li><a href="#" class="item-collapse rounded showAdmninistracionUsuarios">Usuarios</a></li>
-							<li><a href="#" class="item-collapse rounded showAdministracionEmpresas">Empresas</a></li>
-							<li><a href="#" class="item-collapse rounded showAdministracionSedes">Sedes</a></li>
+							<!-- <li><a href="#" class="item-collapse rounded showAdministracionEmpresas">Empresas</a></li> -->
+							<!-- <li><a href="#" class="item-collapse rounded showAdministracionSedes">Sedes</a></li> -->
 						</ul>
 					</div>
 				</li>
@@ -90,9 +90,9 @@
 							<li><a href="#" class="item-collapse rounded showOperacionesPedidos">Pedidos</a></li>
 							<li><a href="#" class="item-collapse rounded showOperacionesEnviosPendientes">PC - Envíos pendientes</a></li>
 							<li><a href="#" class="item-collapse rounded showOperacionesEnviosRealizados">PC - Envíos realizados</a></li>
-							<li><a href="#" class="item-collapse rounded showOperacionesCompras">Compras</a></li>
-							<li><a href="#" class="item-collapse rounded showOperacionesVentaVirtual">Venta Virtual</a></li>
-							<li><a href="#" class="item-collapse rounded showOperacionesControlVenta">Control Venta</a></li>
+							<!-- <li><a href="#" class="item-collapse rounded showOperacionesCompras">Compras</a></li> -->
+							<!-- <li><a href="#" class="item-collapse rounded showOperacionesVentaVirtual">Venta Virtual</a></li> -->
+							<!-- <li><a href="#" class="item-collapse rounded showOperacionesControlVenta">Control Venta</a></li> -->
 						</ul>
 					</div>
 				</li>
@@ -107,8 +107,8 @@
 						<ul class="btn-toggle-nav sidebar-list-collapse">
 							<li><a href="#" class="item-collapse rounded showReporteStockDisponible">Stock Disponible</a></li>
 							<li><a href="#" class="item-collapse rounded showReportePc">Ventas PC</a></li>
-							<li><a href="#" class="item-collapse rounded showReporteVentaInHouse">Venta In House </a></li>
-							<li><a href="#" class="item-collapse rounded showReporteCierrePromotor">Cierre Promotor</a></li>
+							<!-- <li><a href="#" class="item-collapse rounded showReporteVentaInHouse">Venta In House </a></li> -->
+							<!-- <li><a href="#" class="item-collapse rounded showReporteCierrePromotor">Cierre Promotor</a></li> -->
 						</ul>
 					</div>
 				</li>
@@ -440,7 +440,7 @@
 							<thead>
 								<tr>
 									<th scope="col">#</th>
-									<th scope="col">Documento</th>
+									<th scope="col">DNI / CE</th>
 									<th scope="col">Nombre</th>
 									<th scope="col">Fecha</th>
 									<th scope="col">Tipo de pago</th>
@@ -775,7 +775,7 @@
 									<th scope="col">Promotor</th>
 									<th scope="col">RUC</th>
 									<th scope="col">Empresa - Sede</th>
-									<th scope="col">Documento</th>
+									<th scope="col">DNI / CE</th>
 									<th scope="col">Nombre</th>
 									<th scope="col">Acciones</th>
 								</tr>
@@ -979,7 +979,7 @@
 									<th scope="col">Promotor</th>
 									<th scope="col">RUC</th>
 									<th scope="col">Empresa - Sede</th>
-									<th scope="col">Documento</th>
+									<th scope="col">DNI / CE</th>
 									<th scope="col">Nombre</th>
 									<th scope="col">Estado</th>
 									<th scope="col">Acciones</th>
@@ -1187,23 +1187,28 @@
 					</div>
 					<div class="modal-body">
 						<form>
-							<div class="form-group">
-								<label class="form-label">Documento</label>
-								<select class="form-select select2modal" data-placeholder="Buscar">
-									<option></option>
-									<option>12548975652</option>
-									<option>19854763259</option>
-									<option>9856324589</option>
-								</select>
+							<div class="row">
+								<div class="form-group col-md-6">
+									<label class="form-label">DNI / CE</label>
+									<select class="form-select select2modal" data-placeholder="Buscar">
+										<option></option>
+										<option>12548975652</option>
+										<option>19854763259</option>
+										<option>9856324589</option>
+									</select>
+								</div>
+
+								<div class="form-group col-md-6">
+									<label class="form-label">Nombre</label>
+									<select class="form-select select2modal" data-placeholder="Buscar">
+										<option></option>
+										<option>María Gonzales</option>
+										<option>Julio Torres</option>
+										<option>Pedro Rojas</option>
+									</select>
+								</div>
 							</div>
-							<div class="form-group">
-								<label for="inputFilterPedidosId" class="form-label">Documento</label>
-								<input type="number" class="form-control" id="inputFilterPedidosId" placeholder="Ingrese número de documento">
-							</div>
-							<div class="form-group">
-								<label for="inputFilterPedidosName" class="form-label">Nombre</label>
-								<input type="text" class="form-control" id="inputFilterPedidosName" placeholder="Ingrese nombre">
-							</div>
+
 							<div class="row">
 								<div class="form-group col-md-6">
 									<label for="inputFilterPedidosInitDate" class="form-label">Fecha Inicio</label>
@@ -1570,10 +1575,10 @@
 					<div class="modal-body">
 						<div class="d-flex justify-content-between pb-2">
 							<div>
-								Número de pedido: 000010
+								Número de pedido: <span>000010</span>
 							</div>
 							<div>
-								Correlativo: BB12-00000161
+								Correlativo: <span>BB12-00000161</span>
 							</div>
 						</div>
 						<table class="table table-hover marginBottom-1">
@@ -1789,24 +1794,26 @@
 								</select>
 							</div>
 
-							<div class="form-group">
-								<label class="form-label">DNI/CE</label>
-								<select class="form-select select2modal" data-placeholder="Buscar">
-									<option></option>
-									<option>45263658</option>
-									<option>74586352</option>
-									<option>01256984</option>
-								</select>
-							</div>
+							<div class="row">
+								<div class="form-group col-md-6">
+									<label class="form-label">DNI/CE</label>
+									<select class="form-select select2modal" data-placeholder="Buscar">
+										<option></option>
+										<option>45263658</option>
+										<option>74586352</option>
+										<option>01256984</option>
+									</select>
+								</div>
 
-							<div class="form-group">
-								<label class="form-label">Nombre</label>
-								<select class="form-select select2modal" data-placeholder="Buscar">
-									<option></option>
-									<option>María Gonzales</option>
-									<option>Nicolas Latifi</option>
-									<option>Alexander Albon</option>
-								</select>
+								<div class="form-group col-md-6">
+									<label class="form-label">Nombre</label>
+									<select class="form-select select2modal" data-placeholder="Buscar">
+										<option></option>
+										<option>María Gonzales</option>
+										<option>Nicolas Latifi</option>
+										<option>Alexander Albon</option>
+									</select>
+								</div>
 							</div>
 
 							<div class="row">
@@ -1876,24 +1883,26 @@
 								</select>
 							</div>
 
-							<div class="form-group">
-								<label class="form-label">DNI/CE</label>
-								<select class="form-select select2modal" data-placeholder="Buscar">
-									<option></option>
-									<option>45263658</option>
-									<option>74586352</option>
-									<option>01256984</option>
-								</select>
-							</div>
+							<div class="row">
+								<div class="form-group col-md-6">
+									<label class="form-label">DNI/CE</label>
+									<select class="form-select select2modal" data-placeholder="Buscar">
+										<option></option>
+										<option>45263658</option>
+										<option>74586352</option>
+										<option>01256984</option>
+									</select>
+								</div>
 
-							<div class="form-group">
-								<label class="form-label">Nombre</label>
-								<select class="form-select select2modal" data-placeholder="Buscar">
-									<option></option>
-									<option>María Gonzales</option>
-									<option>Nicolas Latifi</option>
-									<option>Alexander Albon</option>
-								</select>
+								<div class="form-group col-md-6">
+									<label class="form-label">Nombre</label>
+									<select class="form-select select2modal" data-placeholder="Buscar">
+										<option></option>
+										<option>María Gonzales</option>
+										<option>Nicolas Latifi</option>
+										<option>Alexander Albon</option>
+									</select>
+								</div>
 							</div>
 
 							<div class="row">
