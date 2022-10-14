@@ -361,5 +361,13 @@ $(".checkAllDtable").on("click", function() {
  });
 // END TABLE SELECT CHECKBOX
 
+// SHOW HIDE SELECT CANAL VENTA MODAL
+$('#selectCanalVentaModal').on('change', function(){
+  var demovalue = $(this).val();
+    $(".buscarPromotor").show();
+    $("#buscarPromotor"+demovalue).hide();
+});
+// END SHOW HIDE SELECT CANAL VENTA MODAL
+
 
 });
