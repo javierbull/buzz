@@ -947,7 +947,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="action-btns">
-							<button type="button" name="button" class="btn button-outline button-icon-left" data-bs-toggle="modal" data-bs-target="#modalFiltrarReporteEnviosPc">
+							<button type="button" name="button" class="btn button-outline button-icon-left" data-bs-toggle="modal" data-bs-target="#modalFiltrarEnvios">
 								<span class="material-icons-outlined">
 									filter_list
 								</span>
@@ -1012,7 +1012,7 @@
 									<td>000011</td>
 									<td>Plataforma</td>
 									<td>15/10/2022</td>
-									<td>Promotor 11</td>
+									<td></td>
 									<td>42569854785</td>
 									<td>Empresas de Contact Center - Miraflores</td>
 									<td>75429635</td>
@@ -1033,106 +1033,6 @@
 							</tbody>
 						</table>
 					</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="panel" id="detalleStock-panel">
-				<nav aria-label="breadcrumb">
-					<ol class="breadcrumb">
-						<li class="breadcrumb-item showReporteStockDisponible"><a href="#" class="button-link">Stock disponible</a></li>
-						<li class="breadcrumb-item active" aria-current="page">Detalle stock</li>
-					</ol>
-				</nav>
-
-				<div class="row">
-					<div class="col-lg-12 mx-auto">
-						<div class="card mx-auto">
-							<div class="card-header">
-								<div class="card-header-title">
-									<h2>
-										Detalle stock - <span>At Work</span>
-									</h2>
-									<div class="card-header-caption">
-										CCP01 - Combo Corporativo de Película
-									</div>
-								</div>
-								<span class="tag-status tag-danger">Agotado</span>
-							</div>
-							<div class="card-body">
-								<table class="table table-hover">
-								  <thead>
-								    <tr>
-								      <th scope="col">#</th>
-								      <th scope="col">Lote</th>
-								      <th scope="col">Inicio vigencia</th>
-											<th scope="col">Fin vigencia</th>
-											<th scope="col">Vencimiento días</th>
-											<th scope="col">Compra</th>
-								      <th scope="col">Venta</th>
-											<th scope="col">Stock activo</th>
-											<th scope="col">Stock reservado</th>
-											<th scope="col">Stock total</th>
-								    </tr>
-								  </thead>
-								  <tbody>
-								    <tr>
-								      <th scope="row">1</th>
-								      <td>77882</td>
-								      <td>15/11/2022</td>
-											<td>15/03/2023</td>
-											<td>120</td>
-											<td>350</td>
-											<td>350</td>
-											<td>0</td>
-											<td>0</td>
-											<td>0</td>
-								    </tr>
-										<tr>
-								      <th scope="row">2</th>
-								      <td>77881</td>
-								      <td>15/10/2022</td>
-											<td>15/01/2023</td>
-											<td>60</td>
-											<td>240</td>
-											<td>240</td>
-											<td>0</td>
-											<td>0</td>
-											<td>0</td>
-								    </tr>
-										<tr>
-								      <th scope="row">3</th>
-								      <td>77880</td>
-								      <td>15/09/2022</td>
-											<td>15/12/2022</td>
-											<td>0</td>
-											<td>300</td>
-											<td>300</td>
-											<td>0</td>
-											<td>0</td>
-											<td>0</td>
-								    </tr>
-								  </tbody>
-									<tfoot>
-										<tr>
-											<th></th>
-											<th></th>
-											<th></th>
-											<th></th>
-											<th>Totales</th>
-											<th>890</th>
-											<th>890</th>
-											<th>0</th>
-											<th>0</th>
-											<th>0</th>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-							<div class="card-footer">
-								<button type="button" name="button" class="btn button-ghost showReporteStockDisponible">Cerrar</button>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -1187,38 +1087,6 @@
 					</div>
 					<div class="modal-body">
 						<form>
-							<div class="row">
-								<div class="form-group col-md-6">
-									<label class="form-label">DNI / CE</label>
-									<select class="form-select select2modal" data-placeholder="Buscar">
-										<option></option>
-										<option>12548975652</option>
-										<option>19854763259</option>
-										<option>9856324589</option>
-									</select>
-								</div>
-
-								<div class="form-group col-md-6">
-									<label class="form-label">Nombre</label>
-									<select class="form-select select2modal" data-placeholder="Buscar">
-										<option></option>
-										<option>María Gonzales</option>
-										<option>Julio Torres</option>
-										<option>Pedro Rojas</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="form-group col-md-6">
-									<label for="inputFilterPedidosInitDate" class="form-label">Fecha Inicio</label>
-									<input type="date" class="form-control" id="inputFilterPedidosInitDate" placeholder="Ingrese nombre">
-								</div>
-								<div class="form-group col-md-6">
-									<label for="inputFilterPedidosEndDate" class="form-label">Fecha Fin</label>
-									<input type="date" class="form-control" id="inputFilterPedidosEndDate" placeholder="Ingrese nombre">
-								</div>
-							</div>
 							<div class="form-group">
 								<label for="inputUser" class="form-label">Tipo de pago</label>
 								<select class="form-select" aria-label="Default select example">
@@ -1239,6 +1107,18 @@
 									<option>Anulado</option>
 								</select>
 							</div>
+
+							<div class="row">
+								<div class="form-group col-md-6">
+									<label for="inputFilterPedidosInitDate" class="form-label">Fecha Inicio</label>
+									<input type="date" class="form-control" id="inputFilterPedidosInitDate" placeholder="Ingrese nombre">
+								</div>
+								<div class="form-group col-md-6">
+									<label for="inputFilterPedidosEndDate" class="form-label">Fecha Fin</label>
+									<input type="date" class="form-control" id="inputFilterPedidosEndDate" placeholder="Ingrese nombre">
+								</div>
+							</div>
+
 						</form>
 					</div>
 					<div class="modal-footer">
@@ -1757,7 +1637,7 @@
 			<div class="modal-dialog modal-dialog-scrollable">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Filtrar envíos</h5>
+						<h5 class="modal-title" id="exampleModalLabel">Filtrar</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
@@ -1779,95 +1659,6 @@
 									<option>Promotor11</option>
 									<option>Promotor12</option>
 								</select>
-							</div>
-
-							<div class="row">
-								<div class="form-group col-md-6">
-									<label for="inputFilterEnviosPendientesInitDate" class="form-label">Fecha Inicio</label>
-									<input type="date" class="form-control" id="inputFilterEnviosPendientesInitDate" placeholder="Ingrese nombre">
-								</div>
-								<div class="form-group col-md-6">
-									<label for="inputFilterEnviosPendientesEndDate" class="form-label">Fecha Fin</label>
-									<input type="date" class="form-control" id="inputFilterEnviosPendientesEndDate" placeholder="Ingrese nombre">
-								</div>
-							</div>
-						</form>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-						<button type="button" class="btn button-primary">Filtrar</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="modalFiltrarReporteEnviosPc" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-scrollable">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Filtrar envíos</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<form>
-							<div class="form-group">
-								<label class="form-label"># Pedido</label>
-								<select class="form-select select2modal" data-placeholder="Buscar">
-									<option></option>
-									<option>000010</option>
-									<option>000011</option>
-									<option>000012</option>
-								</select>
-							</div>
-							<div class="form-group">
-								<label class="form-label">Estado</label>
-								<select class="form-select">
-									<option>Seleccione</option>
-									<option>Enviado</option>
-									<option>Pendiente</option>
-								</select>
-							</div>
-							<div class="form-group">
-								<label class="form-label">RUC</label>
-								<select class="form-select select2modal" data-placeholder="Buscar">
-									<option></option>
-									<option>12548975652</option>
-									<option>19854763259</option>
-									<option>9856324589</option>
-								</select>
-							</div>
-
-							<div class="form-group">
-								<label class="form-label">Empresa - sede</label>
-								<select class="form-select select2modal" data-placeholder="Buscar">
-									<option></option>
-									<option>Nestle - San Isidro</option>
-									<option>Nestle - Miraflores</option>
-									<option>Empresas de Contact Center - Miraflores</option>
-									<option>Transa - San Juan de Lurigancho</option>
-								</select>
-							</div>
-
-							<div class="row">
-								<div class="form-group col-md-6">
-									<label class="form-label">DNI/CE</label>
-									<select class="form-select select2modal" data-placeholder="Buscar">
-										<option></option>
-										<option>45263658</option>
-										<option>74586352</option>
-										<option>01256984</option>
-									</select>
-								</div>
-
-								<div class="form-group col-md-6">
-									<label class="form-label">Nombre</label>
-									<select class="form-select select2modal" data-placeholder="Buscar">
-										<option></option>
-										<option>María Gonzales</option>
-										<option>Nicolas Latifi</option>
-										<option>Alexander Albon</option>
-									</select>
-								</div>
 							</div>
 
 							<div class="row">
