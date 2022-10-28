@@ -398,7 +398,7 @@ $('#selectCanalVentaModal').on('change', function(){
 tinymce.init({
   selector: "richtextarea",
   plugins: "lists advlist autolink autoresize charmap code emoticons hr image insertdatetime link media paste preview searchreplace table textpattern toc visualblocks visualchars wordcount quickbars",
-  toolbar: "preview | undo redo | fontsizeselect | bold italic underline strikethrough backcolor | numlist bullist | alignleft aligncenter alignright alignjustify | outdent indent | paste | link image charmap emoticons hr | table tabledelete",
+  toolbar: "preview | undo redo | fontsizeselect | bold italic underline strikethrough forecolor backcolor | numlist bullist | alignleft aligncenter alignright alignjustify | outdent indent | paste | link image charmap emoticons hr | table tabledelete",
   insertdatetime_element: true,
    media_scripts: [
    {filter: 'platform.twitter.com'},
