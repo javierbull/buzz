@@ -711,6 +711,10 @@ video {
   vertical-align: middle;
 }
 
+.tr-producto-agotado {
+  background-color: var(--danger-light);
+}
+
 tfoot {
   font-size: 1rem;
 }
