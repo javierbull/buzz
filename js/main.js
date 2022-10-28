@@ -104,6 +104,7 @@ $(".showDashboard").click(function() {
   $("#enviosPendientes-panel").hide();
   $("#enviosRealizados-panel").hide();
   $("#reportePc-panel").hide();
+  $("#pruebas-panel").hide();
 });
 
 $(".showAdmninistracionUsuarios").click(function() {
@@ -117,6 +118,7 @@ $(".showAdmninistracionUsuarios").click(function() {
   $("#enviosPendientes-panel").hide();
   $("#enviosRealizados-panel").hide();
   $("#reportePc-panel").hide();
+  $("#pruebas-panel").hide();
 });
 
 $(".showCrearUsuarios").click(function() {
@@ -130,6 +132,7 @@ $(".showCrearUsuarios").click(function() {
   $("#enviosPendientes-panel").hide();
   $("#enviosRealizados-panel").hide();
   $("#reportePc-panel").hide();
+  $("#pruebas-panel").hide();
 });
 
 $(".showReporteStockDisponible").click(function() {
@@ -143,6 +146,7 @@ $(".showReporteStockDisponible").click(function() {
   $("#enviosPendientes-panel").hide();
   $("#enviosRealizados-panel").hide();
   $("#reportePc-panel").hide();
+  $("#pruebas-panel").hide();
 });
 
 $("#showDetalleStock").click(function() {
@@ -156,6 +160,7 @@ $("#showDetalleStock").click(function() {
   $("#enviosPendientes-panel").hide();
   $("#enviosRealizados-panel").hide();
   $("#reportePc-panel").hide();
+  $("#pruebas-panel").hide();
 });
 
 $(".showOperacionesPedidos").click(function() {
@@ -169,6 +174,7 @@ $(".showOperacionesPedidos").click(function() {
   $("#enviosPendientes-panel").hide();
   $("#enviosRealizados-panel").hide();
   $("#reportePc-panel").hide();
+  $("#pruebas-panel").hide();
 });
 
 $("#showDetallePedido").click(function() {
@@ -182,6 +188,7 @@ $("#showDetallePedido").click(function() {
   $("#enviosPendientes-panel").hide();
   $("#enviosRealizados-panel").hide();
   $("#reportePc-panel").hide();
+  $("#pruebas-panel").hide();
 });
 
 $(".showOperacionesEnviosPendientes").click(function() {
@@ -195,6 +202,7 @@ $(".showOperacionesEnviosPendientes").click(function() {
   $("#enviosPendientes-panel").show();
   $("#enviosRealizados-panel").hide();
   $("#reportePc-panel").hide();
+  $("#pruebas-panel").hide();
 });
 
 $(".showOperacionesEnviosRealizados").click(function() {
@@ -208,6 +216,7 @@ $(".showOperacionesEnviosRealizados").click(function() {
   $("#enviosPendientes-panel").hide();
   $("#enviosRealizados-panel").show();
   $("#reportePc-panel").hide();
+  $("#pruebas-panel").hide();
 });
 
 $(".showReportePc").click(function() {
@@ -221,6 +230,21 @@ $(".showReportePc").click(function() {
   $("#enviosPendientes-panel").hide();
   $("#enviosRealizados-panel").hide();
   $("#reportePc-panel").show();
+  $("#pruebas-panel").hide();
+});
+
+$(".showPruebas").click(function() {
+  $("#dashboard-panel").hide();
+  $("#usuarios-panel").hide();
+  $("#crearUsuarios-panel").hide();
+  $("#reportesStock-panel").hide();
+  $("#detalleStock-panel").hide();
+  $("#pedidos-panel").hide();
+  $("#detallePedido-panel").hide();
+  $("#enviosPendientes-panel").hide();
+  $("#enviosRealizados-panel").hide();
+  $("#reportePc-panel").hide();
+  $("#pruebas-panel").show();
 });
 // END SHOW HIDE PANELS
 
@@ -303,15 +327,8 @@ $(".selectAllCheckboxesInhouse").click(function() {
 $('.select2').select2({
   theme: "bootstrap-5",
   width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
-  placeholder: $(this).data('placeholder'),
+  placeholder: $(this).data('placeholder')
 });
-
-// $('.select2modal').select2({
-//   theme: "bootstrap-5",
-//   width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
-//   placeholder: $(this).data('placeholder'),
-//   dropdownParent: $("#modalFiltrarEnviosPendientes")
-// });
 
 $('.select2modal').each(function() {
   $(this).select2({
@@ -321,6 +338,14 @@ $('.select2modal').each(function() {
     dropdownParent: $(this).parent()
   });
 });
+
+$( '.select2-multiple' ).select2( {
+    theme: "bootstrap-5",
+    width: $( this ).data( 'width' ) ? $( this ).data( 'width' ) : $( this ).hasClass( 'w-100' ) ? '100%' : 'style',
+    placeholder: $( this ).data( 'placeholder' ),
+    closeOnSelect: false,
+    allowClear: true,
+} );
 
 // END ACTIVAR SELECT2
 
