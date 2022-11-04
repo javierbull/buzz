@@ -585,7 +585,7 @@ video {
   border-radius: 0;
 }
 
-#sidebar-admin .item-sidebar:hover  {
+#sidebar-admin .item-sidebar .btn:hover  {
   background-color: var(--gray-light);
 }
 
