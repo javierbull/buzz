@@ -16,10 +16,15 @@ $(document).ready(function(){
 // END SHOW-HIDE PASSWORD
 
 // Admin Dashboard  active item sidebar
-$(".sidebar-admin button").click(function(){
+$("#menu-sidebar button").click(function(){
   $(".active").removeClass("active-item-sidebar");
 });
-// Admin Dashboard  active item sidebar
+
+$('#menu-sidebar .item-collapse').on('click', function() {
+  $('#menu-sidebar .item-collapse.active-item-collapse').removeClass('active-item-collapse');
+  $(this).addClass('active-item-collapse');
+});
+// // Admin Dashboard  active item sidebar
 
 // Admin panel
 $("#toggle-btn-sidebar").click(function(){
@@ -426,4 +431,6 @@ tinymce.init({
 });
 
 // End Rich text editor
+
+
 });

@@ -585,7 +585,7 @@ video {
   border-radius: 0;
 }
 
-.sidebar-admin-list .btn:hover  {
+#sidebar-admin .item-sidebar:hover  {
   background-color: var(--gray-light);
 }
 
@@ -596,6 +596,10 @@ video {
 
 .active-item-sidebar {
   background-color: var(--primary-light);
+}
+
+.active-item-collapse {
+  background-color: var(--gray-light);
 }
 
 .sidebar-admin-list {
@@ -622,11 +626,6 @@ video {
 .item-collapse:hover {
   background-color: var(--gray-light);
   color: var(--dark-light);
-}
-
-.item-collapse:focus {
-  background-color: var(--primary-light);
-  color: var(--dark);
 }
 
 .btn-icon-sidebar {
@@ -1015,3 +1014,8 @@ div.dataTables_wrapper div.dataTables_info {
   height: 400px !important;
 }
 /* END DASHBOARD */
+
+.current {
+  background-color: var(--dark);
+  color: var(--white);
+}
