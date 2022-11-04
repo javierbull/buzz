@@ -22,11 +22,6 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/mq.css">
 
-	<!-- Styles -->
-<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" /> -->
-<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" /> -->
-
-
 </head>
 
 <body>
@@ -93,8 +88,8 @@
 					<div class="collapse" id="operation-collapse">
 						<ul class="btn-toggle-nav sidebar-list-collapse">
 							<li><a href="#" class="item-collapse rounded showOperacionesPedidos">Pedidos</a></li>
-							<li><a href="#" class="item-collapse rounded showOperacionesEnviosPendientes">PC - Envíos pendientes</a></li>
-							<li><a href="#" class="item-collapse rounded showOperacionesEnviosRealizados">PC - Envíos realizados</a></li>
+							<li><a href="#" class="item-collapse rounded showOperacionesEnviosPendientes">PC - Envíos Pendientes</a></li>
+							<li><a href="#" class="item-collapse rounded showOperacionesEnviosRealizados">PC - Envíos Pealizados</a></li>
 							<!-- <li><a href="#" class="item-collapse rounded showOperacionesCompras">Compras</a></li> -->
 							<!-- <li><a href="#" class="item-collapse rounded showOperacionesVentaVirtual">Venta Virtual</a></li> -->
 							<!-- <li><a href="#" class="item-collapse rounded showOperacionesControlVenta">Control Venta</a></li> -->
@@ -128,33 +123,6 @@
 
 		<!-- Main panel -->
 		<div class="admin-panel ml-panel" id="admin-panel">
-			<div class="panel active-panel" id="dashboard-panel">
-				<div class="header-panel">
-					<h1>Dashboard</h1>
-				</div>
-
-				<div class="row row-cols-1 row-cols-md-2 g-4">
-					<div class="col">
-						<div class="card card-chart">
-							<div class="card-body">
-								<h4 class="card-title">Line chart</h4>
-								<canvas id="barChartExample"></canvas>
-							</div>
-						</div>
-				  </div>
-
-					<div class="col">
-						<div class="card card-chart">
-							<div class="card-body">
-								<h4 class="card-title">Pie chart</h4>
-								<canvas id="pieChartExample"></canvas>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
 			<!-- PRUEBAS -->
 			<div class="panel" id="pruebas-panel">
 				<div class="row">
@@ -206,6 +174,33 @@
 			</div>
 			<!-- END PRUEBAS -->
 
+			<div class="panel active-panel" id="dashboard-panel">
+				<div class="header-panel">
+					<h1>Dashboard</h1>
+				</div>
+
+				<div class="row row-cols-1 row-cols-md-2 g-4">
+					<div class="col">
+						<div class="card card-chart">
+							<div class="card-body">
+								<h4 class="card-title">Line chart</h4>
+								<canvas id="barChartExample"></canvas>
+							</div>
+						</div>
+				  </div>
+
+					<div class="col">
+						<div class="card card-chart">
+							<div class="card-body">
+								<h4 class="card-title">Pie chart</h4>
+								<canvas id="pieChartExample"></canvas>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
 			<!-- ADMINISTRACIÓN -->
 			<div class="panel" id="usuarios-panel">
 				<div class="row">
@@ -219,7 +214,7 @@
 							</button>
 
 							<button type="button" name="button" class="btn button-primary showCrearUsuarios">
-								Agregar usuario
+								Nuevo Usuario
 							</button>
 						</div>
 					</div>
@@ -369,7 +364,7 @@
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item showAdmninistracionUsuarios"><a href="#" class="button-link">Usuarios</a></li>
-						<li class="breadcrumb-item active" aria-current="page">Agregar Usuario</li>
+						<li class="breadcrumb-item active" aria-current="page">Nuevo Usuario</li>
 					</ol>
 				</nav>
 
@@ -378,7 +373,7 @@
 						<div class="card mx-auto">
 							<div class="card-header">
 								<h2>
-									Agregar Usuario
+									Nuevo Usuario
 								</h2>
 							</div>
 							<div class="card-body">
@@ -727,13 +722,13 @@
 						<div class="card-dtable">
 						<div class="card-dtable-header">
 							<div class="title-dtable">
-								PC - Envíos pendientes
+								PC - Envíos Pendientes
 							</div>
 							<button type="button" name="button" class="btn button-outline button-icon-left">
 								<span class="material-icons-outlined">
 									file_download
 								</span>
-								Descargar reporte
+								Descargar Reporte
 							</button>
 						</div>
 						<table class="table dtable table-hover" id="tableEnviosPendientes">
@@ -831,7 +826,7 @@
 						<div class="card-dtable">
 						<div class="card-dtable-header">
 							<div class="title-dtable">
-								PC - Envíos realizados
+								PC - Envíos Realizados
 							</div>
 						</div>
 						<table class="table dtable table-hover" id="tableEnviosRealizados">
@@ -926,7 +921,7 @@
 						<div class="card-dtable">
 						<div class="card-dtable-header">
 							<div class="title-dtable">
-								Stock disponible
+								Stock Disponible
 							</div>
 							<button type="button" name="button" class="btn button-outline button-icon-left d-none">
 								<span class="material-icons-outlined">
@@ -1027,13 +1022,13 @@
 						<div class="card-dtable">
 						<div class="card-dtable-header">
 							<div class="title-dtable">
-								Reporte ventas con proceso de carga
+								Reporte de Ventas con Proceso de Carga
 							</div>
 							<button type="button" name="button" class="btn button-outline button-icon-left">
 								<span class="material-icons-outlined">
 									file_download
 								</span>
-								Descargar reporte
+								Descargar Reporte
 							</button>
 						</div>
 						<table class="table dtable table-hover" id="tableEnviosPC">
@@ -1118,7 +1113,7 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Filtrar usuarios</h5>
+						<h5 class="modal-title" id="exampleModalLabel">Filtrar</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
@@ -1148,7 +1143,7 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Filtrar pedidos</h5>
+						<h5 class="modal-title" id="exampleModalLabel">Filtrar</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
@@ -1404,7 +1399,7 @@
 						  				<div class="form-check">
 						  					<input class="form-check-input selectAllCheckboxesReportes" type="checkbox" value="" id="checkReportModuleOption1" checked>
 						  					<label class="form-check-label" for="checkReportModuleOption1">
-						  						Stock disponible
+						  						Stock Disponible
 						  					</label>
 						  				</div>
 						  				<div class="form-check">
