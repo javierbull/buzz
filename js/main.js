@@ -246,6 +246,20 @@ $(".showPruebas").click(function() {
   $("#reportePc-panel").hide();
   $("#pruebas-panel").show();
 });
+
+$(".showDetalleStock").click(function() {
+  $("#dashboard-panel").hide();
+  $("#usuarios-panel").hide();
+  $("#crearUsuarios-panel").hide();
+  $("#reportesStock-panel").show();
+  $("#detalleStock-panel").hide();
+  $("#pedidos-panel").hide();
+  $("#detallePedido-panel").hide();
+  $("#enviosPendientes-panel").hide();
+  $("#enviosRealizados-panel").hide();
+  $("#reportePc-panel").hide();
+  $("#pruebas-panel").hide();
+});
 // END SHOW HIDE PANELS
 
 // SHOW FORMS CREAR Usuario
