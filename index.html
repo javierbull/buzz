@@ -919,6 +919,210 @@
 			</div>
 			<!-- END OPERACIONES -->
 
+			<!-- ATENCIÓN AL CLIENTE -->
+			<div class="panel" id="reenviosClientes-panel">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="action-btns">
+							<button type="button" name="button" class="btn button-outline button-icon-left" data-bs-toggle="modal" data-bs-target="#modalFiltrarPedidos">
+								<span class="material-icons-outlined">
+									filter_list
+								</span>
+								Filtrar
+							</button>
+						</div>
+					</div>
+
+					<div class="col-lg-12">
+						<div class="card-dtable">
+						<div class="card-dtable-header">
+							<div class="title-dtable">
+								Reenvíos
+							</div>
+							<button type="button" name="button" class="btn button-outline button-icon-left d-none">
+								<span class="material-icons-outlined">
+									download
+								</span>
+								Generar reporte
+							</button>
+						</div>
+						<table class="table dtable table-hover" id="tablePedidos">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">DNI / CE</th>
+									<th scope="col">Nombre</th>
+									<th scope="col">Fecha</th>
+									<th scope="col">Tipo de pago</th>
+									<th scope="col">Monto</th>
+									<th scope="col">Estado</th>
+									<th scope="col">Acciones</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>45692587</td>
+									<td>María Gonzales</td>
+									<td>15/10/2022</td>
+									<td>Interbank</td>
+									<td>s/ 50.00</td>
+									<td><span class="tag-status tag-active">Pendiente</span></td>
+									<td>
+										<div class="action-cell-btns">
+											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar" id="showDetallePedido">
+												<span class="material-icons-outlined">
+													edit
+												</span>
+											</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>42569874</td>
+									<td>Julio Torres</td>
+									<td>15/10/2022</td>
+									<td>Yape</td>
+									<td>s/ 200.00</td>
+									<td><span class="tag-status tag-success">Aprobado</span></td>
+									<td>
+										<div class="action-cell-btns">
+											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
+												<span class="material-icons-outlined">
+													edit
+												</span>
+											</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>45895213</td>
+									<td>Pedro Rojas</td>
+									<td>15/10/2022</td>
+									<td>Scotiabank</td>
+									<td>s/ 120.00</td>
+									<td><span class="tag-status tag-danger">Anulado</span></td>
+									<td>
+										<div class="action-cell-btns">
+											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
+												<span class="material-icons-outlined">
+													edit
+												</span>
+											</button>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="panel" id="datosClientes-panel">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="action-btns">
+							<button type="button" name="button" class="btn button-outline button-icon-left" data-bs-toggle="modal" data-bs-target="#modalFiltrarPedidos">
+								<span class="material-icons-outlined">
+									filter_list
+								</span>
+								Filtrar
+							</button>
+						</div>
+					</div>
+
+					<div class="col-lg-12">
+						<div class="card-dtable">
+						<div class="card-dtable-header">
+							<div class="title-dtable">
+								Clientes
+							</div>
+							<button type="button" name="button" class="btn button-outline button-icon-left d-none">
+								<span class="material-icons-outlined">
+									download
+								</span>
+								Generar reporte
+							</button>
+						</div>
+						<table class="table dtable table-hover" id="tablePedidos">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">DNI / CE</th>
+									<th scope="col">Nombre</th>
+									<th scope="col">Fecha</th>
+									<th scope="col">Tipo de pago</th>
+									<th scope="col">Monto</th>
+									<th scope="col">Estado</th>
+									<th scope="col">Acciones</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>45692587</td>
+									<td>María Gonzales</td>
+									<td>15/10/2022</td>
+									<td>Interbank</td>
+									<td>s/ 50.00</td>
+									<td><span class="tag-status tag-active">Pendiente</span></td>
+									<td>
+										<div class="action-cell-btns">
+											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar" id="showDetallePedido">
+												<span class="material-icons-outlined">
+													edit
+												</span>
+											</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>42569874</td>
+									<td>Julio Torres</td>
+									<td>15/10/2022</td>
+									<td>Yape</td>
+									<td>s/ 200.00</td>
+									<td><span class="tag-status tag-success">Aprobado</span></td>
+									<td>
+										<div class="action-cell-btns">
+											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
+												<span class="material-icons-outlined">
+													edit
+												</span>
+											</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>45895213</td>
+									<td>Pedro Rojas</td>
+									<td>15/10/2022</td>
+									<td>Scotiabank</td>
+									<td>s/ 120.00</td>
+									<td><span class="tag-status tag-danger">Anulado</span></td>
+									<td>
+										<div class="action-cell-btns">
+											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
+												<span class="material-icons-outlined">
+													edit
+												</span>
+											</button>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					</div>
+				</div>
+			</div>
+			<!-- END ATENCIÓN AL CLIENTE -->
+
 			<!-- REPORTES -->
 			<div class="panel" id="reportesStock-panel">
 				<div class="row">
