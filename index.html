@@ -968,21 +968,27 @@
 									<td>40.00</td>
 									<td>
 										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle Venta">
-												<span class="material-icons-outlined">
-													visibility
-												</span>
-											</button>
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Reenviar Códigos">
-												<span class="material-icons-outlined">
-													send
-												</span>
-											</button>
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Descargar Boleta">
-												<span class="material-icons-outlined">
-													file_download
-												</span>
-											</button>
+											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDetalleVenta">
+													<span class="material-icons-outlined">
+														visibility
+													</span>
+												</button>
+											</span>
+											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaEnvioPendiente">
+													<span class="material-icons-outlined">
+														send
+													</span>
+												</button>
+											</span>
+											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaEnvioPendiente">
+													<span class="material-icons-outlined">
+														file_download
+													</span>
+												</button>
+											</span>
 										</div>
 									</td>
 								</tr>
@@ -2131,11 +2137,57 @@
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-						<button type="button" class="btn button-primary">Filtrar</button>
+						<button type="button" class="btn button-primary">Buscar</button>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<div class="modal fade" id="modalDetalleVenta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div>
+							<h5 class="modal-title" id="exampleModalLabel">Detalle venta</h5>
+						</div>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<table class="table table-hover marginBottom-1">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Producto</th>
+									<th scope="col">Cantidad</th>
+									<th scope="col">P. Unitario</th>
+									<th scope="col">Subtotal</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>EFO01 - Entrada Full Online</td>
+									<td>4</td>
+									<td>10.00</td>
+									<td>40.00</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<th colspan="3"></th>
+									<th>Total</th>
+									<th>50.00</th>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	<!-- Modal -->
 
 	<!-- Fin Modals -->
