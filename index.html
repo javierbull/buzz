@@ -1070,6 +1070,35 @@
 										</div>
 									</td>
 								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>71549856</td>
+									<td>Alicia Cerna Pajuelo</td>
+									<td>acerna@colmenateam.com.pe</td>
+									<td>985365254</td>
+									<td>20603588488</td>
+									<td>COLMENA SOLUTIONS S.A.C.</td>
+									<td>AV. JUAN ALIAGA 427 MAGDALENA</td>
+									<td><span class="tag-status tag-inactive">Desactivada</span></td>
+									<td>
+										<div class="action-cell-btns">
+											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Estado Publicidad">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalActivarPublicidadCliente">
+													<span class="material-icons-outlined">
+														loop
+													</span>
+												</button>
+											</span>
+											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Datos Cliente">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalActualizarCliente">
+													<span class="material-icons-outlined">
+														manage_accounts
+													</span>
+												</button>
+											</span>
+										</div>
+									</td>
+								</tr>
 							</tbody>
 						</table>
 					</div>
@@ -2287,7 +2316,29 @@
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-						<button type="button" class="btn button-primary">Filtrar</button>
+						<button type="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalUpdateSuccess">Filtrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modalUpdateSuccess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Actualización Exitosa</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p class="d-flex align-items-top">
+							<span class="material-icons success-color marginRight-1">
+								done
+							</span>
+							Los datos del cliente se actualizaron
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn button-primary" data-bs-dismiss="modal">Aceptar</button>
 					</div>
 				</div>
 			</div>
