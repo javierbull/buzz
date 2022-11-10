@@ -1061,7 +1061,7 @@
 												</button>
 											</span>
 											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Datos Cliente">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDesactivarPublicidadCliente">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalActualizarCliente">
 													<span class="material-icons-outlined">
 														manage_accounts
 													</span>
@@ -2245,6 +2245,49 @@
 					<div class="modal-footer">
 						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
 						<button type="button" class="btn button-primary">Desactivar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modalActualizarCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Actualizar Datos Cliente</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="inputUserClient" class="form-label">Usuario</label>
+								<input type="text" class="form-control" id="inputUserClient" value="Alicia Cerna Pajuelo" disabled>
+							</div>
+							<div class="form-group">
+								<label for="inputEmailClient" class="form-label">Correo</label>
+								<input type="email" class="form-control" id="inputEmailClient" value="acerna@colmenateam.com.pe">
+							</div>
+							<div class="form-group">
+								<label for="inputbusinessClient" class="form-label">Empresa</label>
+								<select class="form-select select2modal" aria-label="Default select example" id="inputbusinessClient">
+									<option selected>20603588488 - COLMENA SOLUTIONS S.A.C.</option>
+									<option>54123658745 - LEALVA S.A.C.</option>
+									<option>65412568546 - PRIZE S.A.C.</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="inputCampusClient" class="form-label">Sede</label>
+								<select class="form-select select2modal" aria-label="Default select example" id="inputCampusClient">
+									<option selected>AV. JUAN ALIAGA 427 - MAGDALENA</option>
+									<option>AV. ARENALES 1912 - LINCE</option>
+								</select>
+							</div>
+
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+						<button type="button" class="btn button-primary">Filtrar</button>
 					</div>
 				</div>
 			</div>
