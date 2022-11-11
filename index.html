@@ -39,16 +39,16 @@
 				</a>
 			</div>
 			<div class="dropdown hidden-caret">
-			  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+				<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
 					Nicolas Latifi
 					<span class="material-icons-outlined">
 						expand_more
 					</span>
-			  </button>
-			  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
-			    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalCambiarContra">Cambiar contraseña</a></li>
-			    <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
-			  </ul>
+				</button>
+				<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+					<li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalCambiarContra">Cambiar contraseña</a></li>
+					<li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+				</ul>
 			</div>
 		</nav>
 
@@ -140,7 +140,6 @@
 			<!-- PRUEBAS -->
 			<div class="panel" id="pruebas-panel">
 				<div class="row">
-
 					<div class="col-lg-12">
 						<h1>Pruebas</h1>
 						<div>
@@ -201,7 +200,7 @@
 								<canvas id="barChartExample"></canvas>
 							</div>
 						</div>
-				  </div>
+					</div>
 
 					<div class="col">
 						<div class="card card-chart">
@@ -235,141 +234,141 @@
 
 					<div class="col-lg-12">
 						<div class="card-dtable">
-						<div class="card-dtable-header">
-							<div class="title-dtable">
-								Usuarios
+							<div class="card-dtable-header">
+								<div class="title-dtable">
+									Usuarios
+								</div>
+								<button type="button" name="button" class="btn button-outline button-icon-left d-none">
+									<span class="material-icons-outlined">
+										download
+									</span>
+									Generar reporte
+								</button>
 							</div>
-							<button type="button" name="button" class="btn button-outline button-icon-left d-none">
-								<span class="material-icons-outlined">
-									download
-								</span>
-								Generar reporte
-							</button>
+							<table class="table dtable table-hover" id="tableUsuarios">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">Usuario</th>
+										<th scope="col">Nombre</th>
+										<th scope="col">Estado</th>
+										<th scope="col">Acciones</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>mbicerra</td>
+										<td>Mónica Bicerra</td>
+										<td><span class="tag-status tag-active">Activo</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
+													<span class="material-icons-outlined">
+														edit
+													</span>
+												</button>
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cambiar estado">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDesactivarUsuario">
+														<span class="material-icons-outlined">
+															loop
+														</span>
+													</button>
+												</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>rarriaga</td>
+										<td>Roberto Arriaga</td>
+										<td><span class="tag-status tag-active">Activo</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
+													<span class="material-icons-outlined">
+														edit
+													</span>
+												</button>
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cambiar estado">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDesactivarUsuario">
+														<span class="material-icons-outlined">
+															loop
+														</span>
+													</button>
+												</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>nbendezu</td>
+										<td>Natalie Bendezu</td>
+										<td><span class="tag-status tag-active">Activo</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
+													<span class="material-icons-outlined">
+														edit
+													</span>
+												</button>
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cambiar estado">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDesactivarUsuario">
+														<span class="material-icons-outlined">
+															loop
+														</span>
+													</button>
+												</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">4</th>
+										<td>ealiaga</td>
+										<td>Erick Aliaga</td>
+										<td><span class="tag-status tag-inactive">Inactivo</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
+													<span class="material-icons-outlined">
+														edit
+													</span>
+												</button>
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cambiar estado">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalActivarUsuario">
+														<span class="material-icons-outlined">
+															loop
+														</span>
+													</button>
+												</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">5</th>
+										<td>rnavarro</td>
+										<td>Randy Navarro</td>
+										<td><span class="tag-status tag-inactive">Inactivo</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
+													<span class="material-icons-outlined">
+														edit
+													</span>
+												</button>
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cambiar estado">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalActivarUsuario">
+														<span class="material-icons-outlined">
+															loop
+														</span>
+													</button>
+												</span>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
-						<table class="table dtable table-hover" id="tableUsuarios">
-						  <thead>
-						    <tr>
-						      <th scope="col">#</th>
-						      <th scope="col">Usuario</th>
-						      <th scope="col">Nombre</th>
-						      <th scope="col">Estado</th>
-									<th scope="col">Acciones</th>
-						    </tr>
-						  </thead>
-						  <tbody>
-						    <tr>
-						      <th scope="row">1</th>
-						      <td>mbicerra</td>
-						      <td>Mónica Bicerra</td>
-						      <td><span class="tag-status tag-active">Activo</span></td>
-									<td>
-										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
-												<span class="material-icons-outlined">
-													edit
-												</span>
-											</button>
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cambiar estado">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDesactivarUsuario">
-													<span class="material-icons-outlined">
-														loop
-													</span>
-												</button>
-											</span>
-										</div>
-									</td>
-						    </tr>
-								<tr>
-									<th scope="row">2</th>
-									<td>rarriaga</td>
-									<td>Roberto Arriaga</td>
-									<td><span class="tag-status tag-active">Activo</span></td>
-									<td>
-										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
-												<span class="material-icons-outlined">
-													edit
-												</span>
-											</button>
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cambiar estado">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDesactivarUsuario">
-													<span class="material-icons-outlined">
-														loop
-													</span>
-												</button>
-											</span>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">3</th>
-									<td>nbendezu</td>
-									<td>Natalie Bendezu</td>
-									<td><span class="tag-status tag-active">Activo</span></td>
-									<td>
-										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
-												<span class="material-icons-outlined">
-													edit
-												</span>
-											</button>
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cambiar estado">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDesactivarUsuario">
-													<span class="material-icons-outlined">
-														loop
-													</span>
-												</button>
-											</span>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">4</th>
-									<td>ealiaga</td>
-									<td>Erick Aliaga</td>
-									<td><span class="tag-status tag-inactive">Inactivo</span></td>
-									<td>
-										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
-												<span class="material-icons-outlined">
-													edit
-												</span>
-											</button>
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cambiar estado">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalActivarUsuario">
-													<span class="material-icons-outlined">
-														loop
-													</span>
-												</button>
-											</span>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">5</th>
-									<td>rnavarro</td>
-									<td>Randy Navarro</td>
-									<td><span class="tag-status tag-inactive">Inactivo</span></td>
-									<td>
-										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
-												<span class="material-icons-outlined">
-													edit
-												</span>
-											</button>
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cambiar estado">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalActivarUsuario">
-													<span class="material-icons-outlined">
-														loop
-													</span>
-												</button>
-											</span>
-										</div>
-									</td>
-								</tr>
-						  </tbody>
-						</table>
-					</div>
 					</div>
 				</div>
 			</div>
@@ -495,88 +494,88 @@
 
 					<div class="col-lg-12">
 						<div class="card-dtable">
-						<div class="card-dtable-header">
-							<div class="title-dtable">
-								Pedidos
+							<div class="card-dtable-header">
+								<div class="title-dtable">
+									Pedidos
+								</div>
+								<button type="button" name="button" class="btn button-outline button-icon-left d-none">
+									<span class="material-icons-outlined">
+										download
+									</span>
+									Generar reporte
+								</button>
 							</div>
-							<button type="button" name="button" class="btn button-outline button-icon-left d-none">
-								<span class="material-icons-outlined">
-									download
-								</span>
-								Generar reporte
-							</button>
+							<table class="table dtable table-hover" id="tablePedidos">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">DNI / CE</th>
+										<th scope="col">Nombre</th>
+										<th scope="col">Fecha</th>
+										<th scope="col">Tipo de pago</th>
+										<th scope="col">Monto</th>
+										<th scope="col">Estado</th>
+										<th scope="col">Acciones</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>45692587</td>
+										<td>María Gonzales</td>
+										<td>15/10/2022</td>
+										<td>Interbank</td>
+										<td>s/ 50.00</td>
+										<td><span class="tag-status tag-active">Pendiente</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar" id="showDetallePedido">
+													<span class="material-icons-outlined">
+														edit
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>42569874</td>
+										<td>Julio Torres</td>
+										<td>15/10/2022</td>
+										<td>Yape</td>
+										<td>s/ 200.00</td>
+										<td><span class="tag-status tag-success">Aprobado</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
+													<span class="material-icons-outlined">
+														edit
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>45895213</td>
+										<td>Pedro Rojas</td>
+										<td>15/10/2022</td>
+										<td>Scotiabank</td>
+										<td>s/ 120.00</td>
+										<td><span class="tag-status tag-danger">Anulado</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
+													<span class="material-icons-outlined">
+														edit
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
-						<table class="table dtable table-hover" id="tablePedidos">
-							<thead>
-								<tr>
-									<th scope="col">#</th>
-									<th scope="col">DNI / CE</th>
-									<th scope="col">Nombre</th>
-									<th scope="col">Fecha</th>
-									<th scope="col">Tipo de pago</th>
-									<th scope="col">Monto</th>
-									<th scope="col">Estado</th>
-									<th scope="col">Acciones</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th scope="row">1</th>
-									<td>45692587</td>
-									<td>María Gonzales</td>
-									<td>15/10/2022</td>
-									<td>Interbank</td>
-									<td>s/ 50.00</td>
-									<td><span class="tag-status tag-active">Pendiente</span></td>
-									<td>
-										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar" id="showDetallePedido">
-												<span class="material-icons-outlined">
-													edit
-												</span>
-											</button>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">2</th>
-									<td>42569874</td>
-									<td>Julio Torres</td>
-									<td>15/10/2022</td>
-									<td>Yape</td>
-									<td>s/ 200.00</td>
-									<td><span class="tag-status tag-success">Aprobado</span></td>
-									<td>
-										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
-												<span class="material-icons-outlined">
-													edit
-												</span>
-											</button>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">3</th>
-									<td>45895213</td>
-									<td>Pedro Rojas</td>
-									<td>15/10/2022</td>
-									<td>Scotiabank</td>
-									<td>s/ 120.00</td>
-									<td><span class="tag-status tag-danger">Anulado</span></td>
-									<td>
-										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
-												<span class="material-icons-outlined">
-													edit
-												</span>
-											</button>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
 					</div>
 				</div>
 			</div>
@@ -628,24 +627,24 @@
 								</form>
 								<h3>Pedido</h3>
 								<table class="table table-hover marginBottom-1">
-								  <thead>
-								    <tr>
-								      <th scope="col">#</th>
-								      <th scope="col">Producto</th>
-								      <th scope="col">Cantidad</th>
+									<thead>
+										<tr>
+											<th scope="col">#</th>
+											<th scope="col">Producto</th>
+											<th scope="col">Cantidad</th>
 											<th scope="col">P. Unitario</th>
 											<th scope="col">Total</th>
-								    </tr>
-								  </thead>
-								  <tbody>
-								    <tr>
-								      <th scope="row">1</th>
-								      <td>Entrada Full Online</td>
-								      <td>5</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">1</th>
+											<td>Entrada Full Online</td>
+											<td>5</td>
 											<td>10.00</td>
 											<td>50.00</td>
-								    </tr>
-								  </tbody>
+										</tr>
+									</tbody>
 									<tfoot>
 										<tr>
 											<th></th>
@@ -668,7 +667,7 @@
 										</select>
 									</div>
 									<div class="form-group col-md-6">
-										<label  class="form-label">Archivo</label>
+										<label class="form-label">Archivo</label>
 										<button type="button" name="button" class="btn button-block button-outline button-icon-left">
 											<span class="material-icons danger-color">
 												image
@@ -734,91 +733,91 @@
 
 					<div class="col-lg-12">
 						<div class="card-dtable">
-						<div class="card-dtable-header">
-							<div class="title-dtable">
-								PC - Envíos Pendientes
+							<div class="card-dtable-header">
+								<div class="title-dtable">
+									PC - Envíos Pendientes
+								</div>
+								<button type="button" name="button" class="btn button-outline button-icon-left">
+									<span class="material-icons-outlined">
+										file_download
+									</span>
+									Descargar Reporte
+								</button>
 							</div>
-							<button type="button" name="button" class="btn button-outline button-icon-left">
-								<span class="material-icons-outlined">
-									file_download
-								</span>
-								Descargar Reporte
-							</button>
+							<table class="table dtable table-hover" id="tableEnviosPendientes">
+								<thead>
+									<tr>
+										<th scope="col">Canal</th>
+										<th scope="col">Fecha</th>
+										<th scope="col">Promotor</th>
+										<th scope="col">RUC</th>
+										<th scope="col">Empresa - Sede</th>
+										<th scope="col">DNI / CE</th>
+										<th scope="col">Nombre</th>
+										<th scope="col">Estado Stock</th>
+										<th scope="col">Acciones</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>In House</td>
+										<td>15/10/2022</td>
+										<td>Promotor 1</td>
+										<td>14523658954</td>
+										<td>Nestle - San Isidro</td>
+										<td>45629658</td>
+										<td>María Gonzales</td>
+										<td><span class="tag-status tag-success">Suficiente</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaEnvioPendiente">
+														<span class="material-icons-outlined">
+															visibility
+														</span>
+													</button>
+												</span>
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Enviar códigos">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalEnviarCodigos">
+														<span class="material-icons-outlined">
+															send
+														</span>
+													</button>
+												</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Plataforma</td>
+										<td>15/10/2022</td>
+										<td></td>
+										<td>11554785698</td>
+										<td>Empresas de Contact Center - Miraflores</td>
+										<td>75429635</td>
+										<td>Nicolás Latifi</td>
+										<td><span class="tag-status tag-danger">Agotado</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaEnvioPendiente2">
+														<span class="material-icons-outlined">
+															visibility
+														</span>
+													</button>
+												</span>
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Enviar códigos">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaInHouseStockInsuficiente">
+														<span class="material-icons-outlined">
+															send
+														</span>
+													</button>
+												</span>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
-						<table class="table dtable table-hover" id="tableEnviosPendientes">
-							<thead>
-								<tr>
-									<th scope="col">Canal</th>
-									<th scope="col">Fecha</th>
-									<th scope="col">Promotor</th>
-									<th scope="col">RUC</th>
-									<th scope="col">Empresa - Sede</th>
-									<th scope="col">DNI / CE</th>
-									<th scope="col">Nombre</th>
-									<th scope="col">Estado Stock</th>
-									<th scope="col">Acciones</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>In House</td>
-									<td>15/10/2022</td>
-									<td>Promotor 1</td>
-									<td>14523658954</td>
-									<td>Nestle - San Isidro</td>
-									<td>45629658</td>
-									<td>María Gonzales</td>
-									<td><span class="tag-status tag-success">Suficiente</span></td>
-									<td>
-										<div class="action-cell-btns">
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaEnvioPendiente">
-													<span class="material-icons-outlined">
-														visibility
-													</span>
-												</button>
-											</span>
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Enviar códigos">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalEnviarCodigos">
-													<span class="material-icons-outlined">
-														send
-													</span>
-												</button>
-											</span>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>Plataforma</td>
-									<td>15/10/2022</td>
-									<td></td>
-									<td>11554785698</td>
-									<td>Empresas de Contact Center - Miraflores</td>
-									<td>75429635</td>
-									<td>Nicolás Latifi</td>
-									<td><span class="tag-status tag-danger">Agotado</span></td>
-									<td>
-										<div class="action-cell-btns">
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaEnvioPendiente2">
-													<span class="material-icons-outlined">
-														visibility
-													</span>
-												</button>
-											</span>
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Enviar códigos">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaInHouseStockInsuficiente">
-													<span class="material-icons-outlined">
-														send
-													</span>
-												</button>
-											</span>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
 					</div>
 				</div>
 			</div>
@@ -838,82 +837,82 @@
 
 					<div class="col-lg-12">
 						<div class="card-dtable">
-						<div class="card-dtable-header">
-							<div class="title-dtable">
-								PC - Envíos Realizados
+							<div class="card-dtable-header">
+								<div class="title-dtable">
+									PC - Envíos Realizados
+								</div>
 							</div>
+							<table class="table dtable table-hover" id="tableEnviosRealizados">
+								<thead>
+									<tr>
+										<th scope="col">Canal</th>
+										<th scope="col">Fecha</th>
+										<th scope="col">Promotor</th>
+										<th scope="col">RUC</th>
+										<th scope="col">Empresa - Sede</th>
+										<th scope="col">DNI / CE</th>
+										<th scope="col">Nombre</th>
+										<th scope="col">Acciones</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>In House</td>
+										<td>15/10/2022</td>
+										<td>Promotor 1</td>
+										<td>14523658954</td>
+										<td>Nestle - San Isidro</td>
+										<td>45629658</td>
+										<td>María Gonzales</td>
+										<td>
+											<div class="action-cell-btns">
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaEnvioPendiente">
+														<span class="material-icons-outlined">
+															visibility
+														</span>
+													</button>
+												</span>
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Enviar códigos">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalReenviarCodigos">
+														<span class="material-icons-outlined">
+															send
+														</span>
+													</button>
+												</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Plataforma</td>
+										<td>15/10/2022</td>
+										<td></td>
+										<td>42569854785</td>
+										<td>Empresas de Contact Center - Miraflores</td>
+										<td>75429635</td>
+										<td>Nicolás Latifi</td>
+										<td>
+											<div class="action-cell-btns">
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaEnvioPendiente2">
+														<span class="material-icons-outlined">
+															visibility
+														</span>
+													</button>
+												</span>
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Enviar códigos">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalReenviarCodigos">
+														<span class="material-icons-outlined">
+															send
+														</span>
+													</button>
+												</span>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
-						<table class="table dtable table-hover" id="tableEnviosRealizados">
-							<thead>
-								<tr>
-									<th scope="col">Canal</th>
-									<th scope="col">Fecha</th>
-									<th scope="col">Promotor</th>
-									<th scope="col">RUC</th>
-									<th scope="col">Empresa - Sede</th>
-									<th scope="col">DNI / CE</th>
-									<th scope="col">Nombre</th>
-									<th scope="col">Acciones</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>In House</td>
-									<td>15/10/2022</td>
-									<td>Promotor 1</td>
-									<td>14523658954</td>
-									<td>Nestle - San Isidro</td>
-									<td>45629658</td>
-									<td>María Gonzales</td>
-									<td>
-										<div class="action-cell-btns">
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaEnvioPendiente">
-													<span class="material-icons-outlined">
-														visibility
-													</span>
-												</button>
-											</span>
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Enviar códigos">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalReenviarCodigos">
-													<span class="material-icons-outlined">
-														send
-													</span>
-												</button>
-											</span>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>Plataforma</td>
-									<td>15/10/2022</td>
-									<td></td>
-									<td>42569854785</td>
-									<td>Empresas de Contact Center - Miraflores</td>
-									<td>75429635</td>
-									<td>Nicolás Latifi</td>
-									<td>
-										<div class="action-cell-btns">
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaEnvioPendiente2">
-													<span class="material-icons-outlined">
-														visibility
-													</span>
-												</button>
-											</span>
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Enviar códigos">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalReenviarCodigos">
-													<span class="material-icons-outlined">
-														send
-													</span>
-												</button>
-											</span>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
 					</div>
 				</div>
 			</div>
@@ -935,66 +934,66 @@
 
 					<div class="col-lg-12">
 						<div class="card-dtable">
-						<div class="card-dtable-header">
-							<div class="title-dtable">
-								Reenvíos
+							<div class="card-dtable-header">
+								<div class="title-dtable">
+									Reenvíos
+								</div>
+								<button type="button" name="button" class="btn button-outline button-icon-left d-none">
+									<span class="material-icons-outlined">
+										download
+									</span>
+									Generar reporte
+								</button>
 							</div>
-							<button type="button" name="button" class="btn button-outline button-icon-left d-none">
-								<span class="material-icons-outlined">
-									download
-								</span>
-								Generar reporte
-							</button>
+							<table class="table dtable table-hover" id="tablePedidos">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">Fecha</th>
+										<th scope="col">Documento</th>
+										<th scope="col">Cliente</th>
+										<th scope="col">Correo</th>
+										<th scope="col">Total</th>
+										<th scope="col">Acciones</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>24/10/2022</td>
+										<td>BBB1-00004125</td>
+										<td>Alicia Cerna Pajuelo</td>
+										<td>acerna@colmenateam.com.pe</td>
+										<td>40.00</td>
+										<td>
+											<div class="action-cell-btns">
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDetalleVenta">
+														<span class="material-icons-outlined">
+															visibility
+														</span>
+													</button>
+												</span>
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalReenviarCodigos">
+														<span class="material-icons-outlined">
+															send
+														</span>
+													</button>
+												</span>
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaEnvioPendiente">
+														<span class="material-icons-outlined">
+															file_download
+														</span>
+													</button>
+												</span>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
-						<table class="table dtable table-hover" id="tablePedidos">
-							<thead>
-								<tr>
-									<th scope="col">#</th>
-									<th scope="col">Fecha</th>
-									<th scope="col">Documento</th>
-									<th scope="col">Cliente</th>
-									<th scope="col">Correo</th>
-									<th scope="col">Total</th>
-									<th scope="col">Acciones</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th scope="row">1</th>
-									<td>24/10/2022</td>
-									<td>BBB1-00004125</td>
-									<td>Alicia Cerna Pajuelo</td>
-									<td>acerna@colmenateam.com.pe</td>
-									<td>40.00</td>
-									<td>
-										<div class="action-cell-btns">
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDetalleVenta">
-													<span class="material-icons-outlined">
-														visibility
-													</span>
-												</button>
-											</span>
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalReenviarCodigos">
-													<span class="material-icons-outlined">
-														send
-													</span>
-												</button>
-											</span>
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaEnvioPendiente">
-													<span class="material-icons-outlined">
-														file_download
-													</span>
-												</button>
-											</span>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
 					</div>
 				</div>
 			</div>
@@ -1014,94 +1013,94 @@
 
 					<div class="col-lg-12">
 						<div class="card-dtable">
-						<div class="card-dtable-header">
-							<div class="title-dtable">
-								Clientes
+							<div class="card-dtable-header">
+								<div class="title-dtable">
+									Clientes
+								</div>
+								<button type="button" name="button" class="btn button-outline button-icon-left d-none">
+									<span class="material-icons-outlined">
+										download
+									</span>
+									Generar reporte
+								</button>
 							</div>
-							<button type="button" name="button" class="btn button-outline button-icon-left d-none">
-								<span class="material-icons-outlined">
-									download
-								</span>
-								Generar reporte
-							</button>
+							<table class="table dtable table-hover" id="tablePedidos">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">DNI / CE</th>
+										<th scope="col">Nombre</th>
+										<th scope="col">Correo</th>
+										<th scope="col">Celular</th>
+										<th scope="col">RUC</th>
+										<th scope="col">Razón Social</th>
+										<th scope="col">Sede</th>
+										<th scope="col">Publicidad Mailing</th>
+										<th scope="col">Acciones</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>71549856</td>
+										<td>Alicia Cerna Pajuelo</td>
+										<td>acerna@colmenateam.com.pe</td>
+										<td>985365254</td>
+										<td>20603588488</td>
+										<td>COLMENA SOLUTIONS S.A.C.</td>
+										<td>AV. JUAN ALIAGA 427 MAGDALENA</td>
+										<td><span class="tag-status tag-active">Activa</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Estado Publicidad">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDesactivarPublicidadCliente">
+														<span class="material-icons-outlined">
+															loop
+														</span>
+													</button>
+												</span>
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Datos Cliente">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalActualizarCliente">
+														<span class="material-icons-outlined">
+															manage_accounts
+														</span>
+													</button>
+												</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">1</th>
+										<td>71549856</td>
+										<td>Alicia Cerna Pajuelo</td>
+										<td>acerna@colmenateam.com.pe</td>
+										<td>985365254</td>
+										<td>20603588488</td>
+										<td>COLMENA SOLUTIONS S.A.C.</td>
+										<td>AV. JUAN ALIAGA 427 MAGDALENA</td>
+										<td><span class="tag-status tag-inactive">Desactivada</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Estado Publicidad">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalActivarPublicidadCliente">
+														<span class="material-icons-outlined">
+															loop
+														</span>
+													</button>
+												</span>
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Datos Cliente">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalActualizarCliente">
+														<span class="material-icons-outlined">
+															manage_accounts
+														</span>
+													</button>
+												</span>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
-						<table class="table dtable table-hover" id="tablePedidos">
-							<thead>
-								<tr>
-									<th scope="col">#</th>
-									<th scope="col">DNI / CE</th>
-									<th scope="col">Nombre</th>
-									<th scope="col">Correo</th>
-									<th scope="col">Celular</th>
-									<th scope="col">RUC</th>
-									<th scope="col">Razón Social</th>
-									<th scope="col">Sede</th>
-									<th scope="col">Publicidad Mailing</th>
-									<th scope="col">Acciones</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th scope="row">1</th>
-									<td>71549856</td>
-									<td>Alicia Cerna Pajuelo</td>
-									<td>acerna@colmenateam.com.pe</td>
-									<td>985365254</td>
-									<td>20603588488</td>
-									<td>COLMENA SOLUTIONS S.A.C.</td>
-									<td>AV. JUAN ALIAGA 427 MAGDALENA</td>
-									<td><span class="tag-status tag-active">Activa</span></td>
-									<td>
-										<div class="action-cell-btns">
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Estado Publicidad">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDesactivarPublicidadCliente">
-													<span class="material-icons-outlined">
-														loop
-													</span>
-												</button>
-											</span>
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Datos Cliente">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalActualizarCliente">
-													<span class="material-icons-outlined">
-														manage_accounts
-													</span>
-												</button>
-											</span>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">1</th>
-									<td>71549856</td>
-									<td>Alicia Cerna Pajuelo</td>
-									<td>acerna@colmenateam.com.pe</td>
-									<td>985365254</td>
-									<td>20603588488</td>
-									<td>COLMENA SOLUTIONS S.A.C.</td>
-									<td>AV. JUAN ALIAGA 427 MAGDALENA</td>
-									<td><span class="tag-status tag-inactive">Desactivada</span></td>
-									<td>
-										<div class="action-cell-btns">
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Estado Publicidad">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalActivarPublicidadCliente">
-													<span class="material-icons-outlined">
-														loop
-													</span>
-												</button>
-											</span>
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Datos Cliente">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalActualizarCliente">
-													<span class="material-icons-outlined">
-														manage_accounts
-													</span>
-												</button>
-											</span>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
 					</div>
 				</div>
 			</div>
@@ -1113,96 +1112,96 @@
 					<div class="col-lg-4">
 						<div class="action-btns">
 							<select class="form-select" aria-label="Default select example">
-							  <option value="1" selected>At Work</option>
-							  <option value="2">Bee Beneficios</option>
+								<option value="1" selected>At Work</option>
+								<option value="2">Bee Beneficios</option>
 							</select>
 						</div>
 					</div>
 
 					<div class="col-lg-12">
 						<div class="card-dtable">
-						<div class="card-dtable-header">
-							<div class="title-dtable">
-								Stock Disponible
+							<div class="card-dtable-header">
+								<div class="title-dtable">
+									Stock Disponible
+								</div>
+								<button type="button" name="button" class="btn button-outline button-icon-left d-none">
+									<span class="material-icons-outlined">
+										download
+									</span>
+									Generar reporte
+								</button>
 							</div>
-							<button type="button" name="button" class="btn button-outline button-icon-left d-none">
-								<span class="material-icons-outlined">
-									download
-								</span>
-								Generar reporte
-							</button>
+							<table class="table dtable table-hover" id="tableStock">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">Código</th>
+										<th scope="col">Producto</th>
+										<th scope="col">Stock activo</th>
+										<th scope="col">Stock reservado</th>
+										<th scope="col">Stock total</th>
+										<th scope="col">Estado</th>
+										<th scope="col">Acciones</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>CCP01</td>
+										<td>Combo Corporativo de Película</td>
+										<td>0</td>
+										<td>0</td>
+										<td>0</td>
+										<td><span class="tag-status tag-danger">Agotado</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn button-icon button-icon-sm" id="showDetalleStock">
+													<span class="material-icons-outlined">
+														visibility
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>EPRF1</td>
+										<td>Entrada Prime Full Online Sin Restricción</td>
+										<td>5</td>
+										<td>5</td>
+										<td>10</td>
+										<td><span class="tag-status tag-warning">Reponer</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn button-icon button-icon-sm">
+													<span class="material-icons-outlined">
+														visibility
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>EPRP1</td>
+										<td>Entrada Prime Plus Online Sin Restricción</td>
+										<td>180</td>
+										<td>20</td>
+										<td>200</td>
+										<td><span class="tag-status tag-success">Suficiente</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button" class="btn button-icon button-icon-sm">
+													<span class="material-icons-outlined">
+														visibility
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
-						<table class="table dtable table-hover" id="tableStock">
-						  <thead>
-						    <tr>
-						      <th scope="col">#</th>
-						      <th scope="col">Código</th>
-						      <th scope="col">Producto</th>
-									<th scope="col">Stock activo</th>
-									<th scope="col">Stock reservado</th>
-									<th scope="col">Stock total</th>
-						      <th scope="col">Estado</th>
-									<th scope="col">Acciones</th>
-						    </tr>
-						  </thead>
-						  <tbody>
-						    <tr>
-						      <th scope="row">1</th>
-						      <td>CCP01</td>
-						      <td>Combo Corporativo de Película</td>
-									<td>0</td>
-									<td>0</td>
-									<td>0</td>
-						      <td><span class="tag-status tag-danger">Agotado</span></td>
-									<td>
-										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm" id="showDetalleStock">
-												<span class="material-icons-outlined">
-													visibility
-												</span>
-											</button>
-										</div>
-									</td>
-						    </tr>
-								<tr>
-									<th scope="row">2</th>
-									<td>EPRF1</td>
-									<td>Entrada Prime Full Online Sin Restricción</td>
-									<td>5</td>
-									<td>5</td>
-									<td>10</td>
-									<td><span class="tag-status tag-warning">Reponer</span></td>
-									<td>
-										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm">
-												<span class="material-icons-outlined">
-													visibility
-												</span>
-											</button>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">3</th>
-									<td>EPRP1</td>
-									<td>Entrada Prime Plus Online Sin Restricción</td>
-									<td>180</td>
-									<td>20</td>
-									<td>200</td>
-									<td><span class="tag-status tag-success">Suficiente</span></td>
-									<td>
-										<div class="action-cell-btns">
-											<button type="button" name="button" class="btn button-icon button-icon-sm">
-												<span class="material-icons-outlined">
-													visibility
-												</span>
-											</button>
-										</div>
-									</td>
-								</tr>
-						  </tbody>
-						</table>
-					</div>
 					</div>
 				</div>
 			</div>
@@ -1231,25 +1230,25 @@
 							</div>
 							<div class="card-body">
 								<table class="table table-hover">
-								  <thead>
-								    <tr>
-								      <th scope="col">#</th>
-								      <th scope="col">Lote</th>
-								      <th scope="col">Inicio vigencia</th>
+									<thead>
+										<tr>
+											<th scope="col">#</th>
+											<th scope="col">Lote</th>
+											<th scope="col">Inicio vigencia</th>
 											<th scope="col">Fin vigencia</th>
 											<th scope="col">Vencimiento días</th>
 											<th scope="col">Compra</th>
-								      <th scope="col">Venta</th>
+											<th scope="col">Venta</th>
 											<th scope="col">Stock activo</th>
 											<th scope="col">Stock reservado</th>
 											<th scope="col">Stock total</th>
-								    </tr>
-								  </thead>
-								  <tbody>
-								    <tr>
-								      <th scope="row">1</th>
-								      <td>77882</td>
-								      <td>15/11/2022</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">1</th>
+											<td>77882</td>
+											<td>15/11/2022</td>
 											<td>15/03/2023</td>
 											<td>120</td>
 											<td>350</td>
@@ -1257,11 +1256,11 @@
 											<td>0</td>
 											<td>0</td>
 											<td>0</td>
-								    </tr>
+										</tr>
 										<tr>
-								      <th scope="row">2</th>
-								      <td>77881</td>
-								      <td>15/10/2022</td>
+											<th scope="row">2</th>
+											<td>77881</td>
+											<td>15/10/2022</td>
 											<td>15/01/2023</td>
 											<td>60</td>
 											<td>240</td>
@@ -1269,11 +1268,11 @@
 											<td>0</td>
 											<td>0</td>
 											<td>0</td>
-								    </tr>
+										</tr>
 										<tr>
-								      <th scope="row">3</th>
-								      <td>77880</td>
-								      <td>15/09/2022</td>
+											<th scope="row">3</th>
+											<td>77880</td>
+											<td>15/09/2022</td>
 											<td>15/12/2022</td>
 											<td>0</td>
 											<td>300</td>
@@ -1281,8 +1280,8 @@
 											<td>0</td>
 											<td>0</td>
 											<td>0</td>
-								    </tr>
-								  </tbody>
+										</tr>
+									</tbody>
 									<tfoot>
 										<tr>
 											<th></th>
@@ -1322,80 +1321,80 @@
 
 					<div class="col-lg-12">
 						<div class="card-dtable">
-						<div class="card-dtable-header">
-							<div class="title-dtable">
-								Reporte de Ventas con Proceso de Carga
+							<div class="card-dtable-header">
+								<div class="title-dtable">
+									Reporte de Ventas con Proceso de Carga
+								</div>
+								<button type="button" name="button" class="btn button-outline button-icon-left">
+									<span class="material-icons-outlined">
+										file_download
+									</span>
+									Descargar Reporte
+								</button>
 							</div>
-							<button type="button" name="button" class="btn button-outline button-icon-left">
-								<span class="material-icons-outlined">
-									file_download
-								</span>
-								Descargar Reporte
-							</button>
+							<table class="table dtable table-hover" id="tableEnviosPC">
+								<thead>
+									<tr>
+										<th scope="col"># Pedido</th>
+										<th scope="col">Canal</th>
+										<th scope="col">Fecha</th>
+										<th scope="col">Promotor</th>
+										<th scope="col">RUC</th>
+										<th scope="col">Empresa - Sede</th>
+										<th scope="col">DNI / CE</th>
+										<th scope="col">Nombre</th>
+										<th scope="col">Estado</th>
+										<th scope="col">Acciones</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>000010</td>
+										<td>In House</td>
+										<td>15/10/2022</td>
+										<td>Promotor 1</td>
+										<td>14523658954</td>
+										<td>Nestle - San Isidro</td>
+										<td>45629658</td>
+										<td>María Gonzales</td>
+										<td><span class="tag-status tag-success">Enviado</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaEnvioPendiente">
+														<span class="material-icons-outlined">
+															visibility
+														</span>
+													</button>
+												</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>000011</td>
+										<td>Plataforma</td>
+										<td>15/10/2022</td>
+										<td></td>
+										<td>42569854785</td>
+										<td>Empresas de Contact Center - Miraflores</td>
+										<td>75429635</td>
+										<td>Nicolás Latifi</td>
+										<td><span class="tag-status tag-warning">Pendiente</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaEnvioPendiente2">
+														<span class="material-icons-outlined">
+															visibility
+														</span>
+													</button>
+												</span>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
-						<table class="table dtable table-hover" id="tableEnviosPC">
-							<thead>
-								<tr>
-									<th scope="col"># Pedido</th>
-									<th scope="col">Canal</th>
-									<th scope="col">Fecha</th>
-									<th scope="col">Promotor</th>
-									<th scope="col">RUC</th>
-									<th scope="col">Empresa - Sede</th>
-									<th scope="col">DNI / CE</th>
-									<th scope="col">Nombre</th>
-									<th scope="col">Estado</th>
-									<th scope="col">Acciones</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>000010</td>
-									<td>In House</td>
-									<td>15/10/2022</td>
-									<td>Promotor 1</td>
-									<td>14523658954</td>
-									<td>Nestle - San Isidro</td>
-									<td>45629658</td>
-									<td>María Gonzales</td>
-									<td><span class="tag-status tag-success">Enviado</span></td>
-									<td>
-										<div class="action-cell-btns">
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaEnvioPendiente">
-													<span class="material-icons-outlined">
-														visibility
-													</span>
-												</button>
-											</span>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>000011</td>
-									<td>Plataforma</td>
-									<td>15/10/2022</td>
-									<td></td>
-									<td>42569854785</td>
-									<td>Empresas de Contact Center - Miraflores</td>
-									<td>75429635</td>
-									<td>Nicolás Latifi</td>
-									<td><span class="tag-status tag-warning">Pendiente</span></td>
-									<td>
-										<div class="action-cell-btns">
-											<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
-												<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaEnvioPendiente2">
-													<span class="material-icons-outlined">
-														visibility
-													</span>
-												</button>
-											</span>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
 					</div>
 				</div>
 			</div>
@@ -1410,939 +1409,950 @@
 	<!-- Modals -->
 
 	<!-- Modal -->
-		<div class="modal fade" id="modalFiltrarUsuarios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Filtrar</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<form>
-							<div class="form-group">
-								<label for="inputUser" class="form-label">Usuario</label>
-								<input type="text" class="form-control" id="inputUser" placeholder="Ingrese nombre de usuario">
-							</div>
-							<div class="form-group">
-								<label for="inputUser" class="form-label">Estado</label>
-								<select class="form-select" aria-label="Default select example">
-									<option selected>Activo</option>
-									<option>Inactivo</option>
-								</select>
-							</div>
-						</form>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-						<button type="button" class="btn button-primary">Filtrar</button>
-					</div>
+	<div class="modal fade" id="modalFiltrarUsuarios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Filtrar</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="modalFiltrarPedidos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Filtrar</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<form>
-							<div class="form-group">
-								<label for="inputUser" class="form-label">Tipo de pago</label>
-								<select class="form-select" aria-label="Default select example">
-									<option selected>Seleccione</option>
-									<option>Yape</option>
-									<option>BCP</option>
-									<option>Interbank</option>
-									<option>Scotiabank</option>
-									<option>BBVA</option>
-								</select>
-							</div>
-							<div class="form-group">
-								<label for="inputUser" class="form-label">Estado</label>
-								<select class="form-select" aria-label="Default select example">
-									<option selected>Seleccione</option>
-									<option>Pendiente</option>
-									<option>Aprobado</option>
-									<option>Anulado</option>
-								</select>
-							</div>
-
-							<div class="row">
-								<div class="form-group col-md-6">
-									<label for="inputFilterPedidosInitDate" class="form-label">Fecha Inicio</label>
-									<input type="date" class="form-control" id="inputFilterPedidosInitDate" placeholder="Ingrese nombre">
-								</div>
-								<div class="form-group col-md-6">
-									<label for="inputFilterPedidosEndDate" class="form-label">Fecha Fin</label>
-									<input type="date" class="form-control" id="inputFilterPedidosEndDate" placeholder="Ingrese nombre">
-								</div>
-							</div>
-
-						</form>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-						<button type="button" class="btn button-primary">Filtrar</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="modalActivarUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Activar usuario</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						¿Desea activar al usaurio?
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-						<button type="button" class="btn button-primary">Confirmar</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="modalDesactivarUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Desactivar usuario</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						¿Desea desactivar al usuario?
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-						<button type="button" class="btn button-primary">Confirmar</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="modalCambiarContra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Cambio de contraseña</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<form>
-							<div class="form-group">
-								<label for="inputUser" class="form-label">Usuario</label>
-								<input type="text" class="form-control" id="inputUser" value="nlatifi" disabled>
-							</div>
-							<div class="form-group">
-								<label for="inputUserName" class="form-label">Nombre</label>
-								<input type="text" class="form-control" id="inputUserName" value="Nicolas Latifi" disabled>
-							</div>
-							<div class="form-group">
-								<label for="inputUserPassword" class="form-label">Contraseña</label>
-								<input type="password" class="form-control" id="inputUserPassword" value="123456">
-							</div>
-							<div class="form-group">
-								<label for="inputUserPasswordNew" class="form-label">Nueva Contraseña</label>
-								<input type="password" class="form-control" id="inputUserPasswordNew">
-							</div>
-							<div class="form-group">
-								<label for="inputUserPasswordNewConfirm" class="form-label">Pepetir Nueva Contraseña</label>
-								<input type="password" class="form-control" id="inputUserPasswordNewConfirm">
-							</div>
-
-						</form>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-						<button type="button" class="btn button-primary">Guardar</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="modalPermisosModulosAdminUser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Administrar permisos Cloud</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<div class="accordion accordion-checkbox" id="accordionPermisosModulos">
-							<div class="accordion-item">
-						  	<div class="accordion-header" id="headingZero">
-						  		<div class="form-check">
-						  			<input class="form-check-input selectAllCheckboxesDashboard" type="checkbox" value="" id="selectAllModulosDashboard" checked>
-						  			<label class="form-check-label" for="selectAllModulosDashboard">
-						  				Dashboard
-						  			</label>
-						  		</div>
-						  		<button class="accordion-button accordion-button-not" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZeroPermisosModulos" aria-expanded="true" aria-controls="collapseZeroPermisosModulos"></button>
-						  	</div>
-						  </div>
-
-						  <div class="accordion-item">
-						  	<div class="accordion-header" id="headingOne">
-						  		<div class="form-check">
-						  			<input class="form-check-input selectAllCheckboxesAdministracion" type="checkbox" value="" id="selectAllModulosAdministracion" checked>
-						  			<label class="form-check-label" for="selectAllModulosAdministracion">
-						  				Administración
-						  			</label>
-						  		</div>
-						  		<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnePermisosModulos" aria-expanded="true" aria-controls="collapseOnePermisosModulos"></button>
-						  	</div>
-						  	<div id="collapseOnePermisosModulos" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionPermisosModulos">
-						  		<div class="accordion-body">
-						  			<ul class="mb-0">
-						  				<div class="form-check">
-						  					<input class="form-check-input selectAllCheckboxesAdministracion" type="checkbox" value="" id="checkAdminModuleOption1" checked>
-						  					<label class="form-check-label" for="checkAdminModuleOption1">
-						  						Usuario
-						  					</label>
-						  				</div>
-						  				<div class="form-check">
-						  					<input class="form-check-input selectAllCheckboxesAdministracion" type="checkbox" value="" id="checkAdminModuleOption2" checked>
-						  					<label class="form-check-label" for="checkAdminModuleOption2">
-						  						Ejecutivo
-						  					</label>
-						  				</div>
-						  				<div class="form-check">
-						  					<input class="form-check-input selectAllCheckboxesAdministracion" type="checkbox" value="" id="checkAdminModuleOption3" checked>
-						  					<label class="form-check-label" for="checkAdminModuleOption3">
-						  						Empresa
-						  					</label>
-						  				</div>
-						  				<div class="form-check">
-						  					<input class="form-check-input selectAllCheckboxesAdministracion" type="checkbox" value="" id="checkAdminModuleOption4" checked>
-						  					<label class="form-check-label" for="checkAdminModuleOption4">
-						  						Sede
-						  					</label>
-						  				</div>
-						  				<div class="form-check">
-						  					<input class="form-check-input selectAllCheckboxesAdministracion" type="checkbox" value="" id="checkAdminModuleOption5" checked>
-						  					<label class="form-check-label" for="checkAdminModuleOption5">
-						  						Programaciones
-						  					</label>
-						  				</div>
-						  				<div class="form-check">
-						  					<input class="form-check-input selectAllCheckboxesAdministracion" type="checkbox" value="" id="checkAdminModuleOption6" checked>
-						  					<label class="form-check-label" for="checkAdminModuleOption6">
-						  						Producto
-						  					</label>
-						  				</div>
-						  				<div class="form-check">
-						  					<input class="form-check-input selectAllCheckboxesAdministracion" type="checkbox" value="" id="checkAdminModuleOption7" checked>
-						  					<label class="form-check-label" for="checkAdminModuleOption7">
-						  						Cliente
-						  					</label>
-						  				</div>
-						  			</ul>
-						  		</div>
-						  	</div>
-						  </div>
-
-						  <div class="accordion-item">
-						  	<div class="accordion-header" id="headingTwo">
-						  		<div class="form-check">
-						  			<input class="form-check-input selectAllCheckboxesOperaciones" type="checkbox" value="" id="selectAllModulosOperaciones" checked>
-						  			<label class="form-check-label" for="selectAllModulosOperaciones">
-						  				Operaciones
-						  			</label>
-						  		</div>
-						  		<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoPermisosModulos" aria-expanded="true" aria-controls="collapseTwoPermisosModulos"></button>
-						  	</div>
-						  	<div id="collapseTwoPermisosModulos" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionPermisosModulos">
-						  		<div class="accordion-body">
-						  			<ul class="mb-0">
-						  				<div class="form-check">
-						  					<input class="form-check-input selectAllCheckboxesOperaciones" type="checkbox" value="" id="checkOperationModuleOption1" checked>
-						  					<label class="form-check-label" for="checkOperationModuleOption1">
-						  						Compra
-						  					</label>
-						  				</div>
-						  				<div class="form-check">
-						  					<input class="form-check-input selectAllCheckboxesOperaciones" type="checkbox" value="" id="checkOperationModuleOption2" checked>
-						  					<label class="form-check-label" for="checkOperationModuleOption2">
-						  						Venta virtual
-						  					</label>
-						  				</div>
-						  				<div class="form-check">
-						  					<input class="form-check-input selectAllCheckboxesOperaciones" type="checkbox" value="" id="checkOperationModuleOption3" checked>
-						  					<label class="form-check-label" for="checkOperationModuleOption3">
-						  						Control venta
-						  					</label>
-						  				</div>
-						  			</ul>
-						  		</div>
-						  	</div>
-						  </div>
-
-							<div class="accordion-item">
-						  	<div class="accordion-header" id="headingThree">
-						  		<div class="form-check">
-						  			<input class="form-check-input selectAllCheckboxesReportes" type="checkbox" value="" id="selectAllModulosReportes" checked>
-						  			<label class="form-check-label" for="selectAllModulosReportes">
-						  				Reportes
-						  			</label>
-						  		</div>
-						  		<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreePermisosModulos" aria-expanded="true" aria-controls="collapseThreePermisosModulos"></button>
-						  	</div>
-						  	<div id="collapseThreePermisosModulos" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionPermisosModulos">
-						  		<div class="accordion-body">
-						  			<ul class="mb-0">
-						  				<div class="form-check">
-						  					<input class="form-check-input selectAllCheckboxesReportes" type="checkbox" value="" id="checkReportModuleOption1" checked>
-						  					<label class="form-check-label" for="checkReportModuleOption1">
-						  						Stock Disponible
-						  					</label>
-						  				</div>
-						  				<div class="form-check">
-						  					<input class="form-check-input selectAllCheckboxesReportes" type="checkbox" value="" id="checkReportModuleOption2" checked>
-						  					<label class="form-check-label" for="checkReportModuleOption2">
-						  						Venta In House
-						  					</label>
-						  				</div>
-						  				<div class="form-check">
-						  					<input class="form-check-input selectAllCheckboxesReportes" type="checkbox" value="" id="checkReportModuleOption3" checked>
-						  					<label class="form-check-label" for="checkReportModuleOption3">
-						  						Cierre promotor
-						  					</label>
-						  				</div>
-											<div class="form-check">
-												<input class="form-check-input selectAllCheckboxesReportes" type="checkbox" value="" id="checkReportModuleOption4" checked>
-												<label class="form-check-label" for="checkReportModuleOption4">
-													Cierre promotor
-												</label>
-											</div>
-											<div class="form-check">
-												<input class="form-check-input selectAllCheckboxesReportes" type="checkbox" value="" id="checkReportModuleOption5" checked>
-												<label class="form-check-label" for="checkReportModuleOption5">
-													Activación promotor
-												</label>
-											</div>
-						  			</ul>
-						  		</div>
-						  	</div>
-						  </div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-						<button type="button" class="btn button-primary">Guardar</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="modalPermisosModulosInhouseUser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Administrar permisos In House</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<div class="accordion accordion-checkbox" id="accordionPermisosModulosInhouse">
-							<div class="accordion-item">
-								<div class="accordion-header" id="headingOne">
-									<div class="form-check">
-										<input class="form-check-input selectAllCheckboxesInhouse" type="checkbox" value="" id="selectAllModulosInhouse" checked>
-										<label class="form-check-label" for="selectAllModulosInhouse">
-											Reportes
-										</label>
-									</div>
-									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnePermisosModulosInhouse" aria-expanded="true" aria-controls="collapseOnePermisosModulos"></button>
-								</div>
-								<div id="collapseOnePermisosModulosInhouse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionPermisosModulosInhouse">
-									<div class="accordion-body">
-										<ul class="mb-0">
-											<div class="form-check">
-												<input class="form-check-input selectAllCheckboxesInhouse" type="checkbox" value="" id="checkVentaModuleOption1" checked>
-												<label class="form-check-label" for="checkVentaModuleOption1">
-													Venta
-												</label>
-											</div>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-						<button type="button" class="btn button-primary">Guardar</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="modalSuccess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Datos guardados</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<p class="d-flex align-items-top">
-							<span class="material-icons success-color marginRight-1">
-								done
-							</span>
-							Los datos se guardaron de manera exitosa
-						</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-primary showAdmninistracionUsuarios" data-bs-dismiss="modal">Aceptar</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="modalVentaEnvioPendiente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-lg">
-				<div class="modal-content">
-					<div class="modal-header">
-						<div>
-							<h5 class="modal-title" id="exampleModalLabel">Detalle venta</h5>
-						</div>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<div class="d-flex justify-content-between pb-2">
-							<div>
-								Número de pedido: <span>000010</span>
-							</div>
-							<div>
-								Correlativo: <span>BB12-00000161</span>
-							</div>
-						</div>
-						<table class="table table-hover marginBottom-1">
-							<thead>
-								<tr>
-									<th scope="col">#</th>
-									<th scope="col">Producto</th>
-									<th scope="col">Cantidad</th>
-									<th scope="col">P. Unitario</th>
-									<th scope="col">Total</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th scope="row">1</th>
-									<td>EFO01 - Entrada Full Online</td>
-									<td>5</td>
-									<td>10.00</td>
-									<td>50.00</td>
-								</tr>
-							</tbody>
-							<tfoot>
-								<tr>
-									<th colspan="3"></th>
-									<th>Total</th>
-									<th>50.00</th>
-								</tr>
-							</tfoot>
-						</table>
-						<div class="row">
-							<div class="form-group col-8">
-								<label for="inputClientEmail" class="form-label">Correo del cliente</label>
-								<input type="email" class="form-control" id="inputClientEmail" value="mariagonzales@gmail.com" disabled>
-							</div>
-							<div class="form-group col-4">
-								<label for="inputClientPhone" class="form-label">Teléfono del cliente</label>
-								<input type="number" class="form-control" id="inputClientPhone" value="966554987" disabled>
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="modalVentaEnvioPendiente2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-lg">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Detalle venta</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<div class="d-flex justify-content-between pb-2">
-							<div>
-								Número de pedido: 000010
-							</div>
-							<div>
-								Correlativo: BB12-00000161
-							</div>
-						</div>
-						<table class="table table-hover marginBottom-1">
-							<thead>
-								<tr>
-									<th scope="col">#</th>
-									<th scope="col">Producto</th>
-									<th scope="col">Cantidad</th>
-									<th scope="col">P. Unitario</th>
-									<th scope="col">Total</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr class="tr-producto-agotado">
-									<th scope="row">1</th>
-									<td>CCP01 - Combo Corporativo de Película</td>
-									<td>1</td>
-									<td>40.00</td>
-									<td>40.00</td>
-								</tr>
-								<tr>
-									<th scope="row">2</th>
-									<td>EPFO01 - Entrada Prime Full Online Sin Restricción</td>
-									<td>3</td>
-									<td>20.00</td>
-									<td>60.00</td>
-								</tr>
-							</tbody>
-							<tfoot>
-								<tr>
-									<th colspan="3"></th>
-									<th>Total</th>
-									<th>100.00</th>
-								</tr>
-							</tfoot>
-						</table>
-						<div class="row">
-							<div class="form-group col-8">
-								<label for="inputClientEmail" class="form-label">Correo del cliente</label>
-								<input type="email" class="form-control" id="inputClientEmail" value="nlatifi@gmail.com" disabled>
-							</div>
-							<div class="form-group col-4">
-								<label for="inputClientPhone" class="form-label">Teléfono del cliente</label>
-								<input type="number" class="form-control" id="inputClientPhone" value="966554987" disabled>
-							</div>
-						</div>
-
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="modalEnviarCodigos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Enviar códigos</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<p>
-							¿Está seguro de enviar los códigos al cliente?
-						</p>
-						<ul>
-							<li>Combo</li>
-							<li>Entrada</li>
-							<li>Postre</li>
-						</ul>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-						<button type="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalSuccessEnvioCodigos">Confirmar</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="modalReenviarCodigos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Reenviar códigos</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<p>
-							¿Está seguro de reenviar los códigos al cliente?
-						</p>
+				<div class="modal-body">
+					<form>
 						<div class="form-group">
-							<label for="inputClientEmail" class="form-label">Correo del cliente</label>
-							<input type="email" class="form-control" id="inputClientEmail" value="mariagonzales@gmail.com">
+							<label for="inputUser" class="form-label">Usuario</label>
+							<input type="text" class="form-control" id="inputUser" placeholder="Ingrese nombre de usuario">
+						</div>
+						<div class="form-group">
+							<label for="inputUser" class="form-label">Estado</label>
+							<select class="form-select" aria-label="Default select example">
+								<option selected>Activo</option>
+								<option>Inactivo</option>
+							</select>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Filtrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalFiltrarPedidos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Filtrar</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="inputUser" class="form-label">Tipo de pago</label>
+							<select class="form-select" aria-label="Default select example">
+								<option selected>Seleccione</option>
+								<option>Yape</option>
+								<option>BCP</option>
+								<option>Interbank</option>
+								<option>Scotiabank</option>
+								<option>BBVA</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="inputUser" class="form-label">Estado</label>
+							<select class="form-select" aria-label="Default select example">
+								<option selected>Seleccione</option>
+								<option>Pendiente</option>
+								<option>Aprobado</option>
+								<option>Anulado</option>
+							</select>
+						</div>
+
+						<div class="row">
+							<div class="form-group col-md-6">
+								<label for="inputFilterPedidosInitDate" class="form-label">Fecha Inicio</label>
+								<input type="date" class="form-control" id="inputFilterPedidosInitDate" placeholder="Ingrese nombre">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="inputFilterPedidosEndDate" class="form-label">Fecha Fin</label>
+								<input type="date" class="form-control" id="inputFilterPedidosEndDate" placeholder="Ingrese nombre">
+							</div>
+						</div>
+
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Filtrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalActivarUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Activar usuario</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					¿Desea activar al usaurio?
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Confirmar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalDesactivarUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Desactivar usuario</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					¿Desea desactivar al usuario?
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Confirmar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalCambiarContra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Cambio de contraseña</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="inputUser" class="form-label">Usuario</label>
+							<input type="text" class="form-control" id="inputUser" value="nlatifi" disabled>
+						</div>
+						<div class="form-group">
+							<label for="inputUserName" class="form-label">Nombre</label>
+							<input type="text" class="form-control" id="inputUserName" value="Nicolas Latifi" disabled>
+						</div>
+						<div class="form-group">
+							<label for="inputUserPassword" class="form-label">Contraseña</label>
+							<input type="password" class="form-control" id="inputUserPassword" value="123456">
+						</div>
+						<div class="form-group">
+							<label for="inputUserPasswordNew" class="form-label">Nueva Contraseña</label>
+							<input type="password" class="form-control" id="inputUserPasswordNew">
+						</div>
+						<div class="form-group">
+							<label for="inputUserPasswordNewConfirm" class="form-label">Pepetir Nueva Contraseña</label>
+							<input type="password" class="form-control" id="inputUserPasswordNewConfirm">
+						</div>
+
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Guardar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalPermisosModulosAdminUser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Administrar permisos Cloud</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="accordion accordion-checkbox" id="accordionPermisosModulos">
+						<div class="accordion-item">
+							<div class="accordion-header" id="headingZero">
+								<div class="form-check">
+									<input class="form-check-input selectAllCheckboxesDashboard" type="checkbox" value="" id="selectAllModulosDashboard" checked>
+									<label class="form-check-label" for="selectAllModulosDashboard">
+										Dashboard
+									</label>
+								</div>
+								<button class="accordion-button accordion-button-not" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZeroPermisosModulos" aria-expanded="true" aria-controls="collapseZeroPermisosModulos"></button>
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<div class="accordion-header" id="headingOne">
+								<div class="form-check">
+									<input class="form-check-input selectAllCheckboxesAdministracion" type="checkbox" value="" id="selectAllModulosAdministracion" checked>
+									<label class="form-check-label" for="selectAllModulosAdministracion">
+										Administración
+									</label>
+								</div>
+								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnePermisosModulos" aria-expanded="true" aria-controls="collapseOnePermisosModulos"></button>
+							</div>
+							<div id="collapseOnePermisosModulos" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionPermisosModulos">
+								<div class="accordion-body">
+									<ul class="mb-0">
+										<div class="form-check">
+											<input class="form-check-input selectAllCheckboxesAdministracion" type="checkbox" value="" id="checkAdminModuleOption1" checked>
+											<label class="form-check-label" for="checkAdminModuleOption1">
+												Usuario
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input selectAllCheckboxesAdministracion" type="checkbox" value="" id="checkAdminModuleOption2" checked>
+											<label class="form-check-label" for="checkAdminModuleOption2">
+												Ejecutivo
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input selectAllCheckboxesAdministracion" type="checkbox" value="" id="checkAdminModuleOption3" checked>
+											<label class="form-check-label" for="checkAdminModuleOption3">
+												Empresa
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input selectAllCheckboxesAdministracion" type="checkbox" value="" id="checkAdminModuleOption4" checked>
+											<label class="form-check-label" for="checkAdminModuleOption4">
+												Sede
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input selectAllCheckboxesAdministracion" type="checkbox" value="" id="checkAdminModuleOption5" checked>
+											<label class="form-check-label" for="checkAdminModuleOption5">
+												Programaciones
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input selectAllCheckboxesAdministracion" type="checkbox" value="" id="checkAdminModuleOption6" checked>
+											<label class="form-check-label" for="checkAdminModuleOption6">
+												Producto
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input selectAllCheckboxesAdministracion" type="checkbox" value="" id="checkAdminModuleOption7" checked>
+											<label class="form-check-label" for="checkAdminModuleOption7">
+												Cliente
+											</label>
+										</div>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<div class="accordion-header" id="headingTwo">
+								<div class="form-check">
+									<input class="form-check-input selectAllCheckboxesOperaciones" type="checkbox" value="" id="selectAllModulosOperaciones" checked>
+									<label class="form-check-label" for="selectAllModulosOperaciones">
+										Operaciones
+									</label>
+								</div>
+								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoPermisosModulos" aria-expanded="true" aria-controls="collapseTwoPermisosModulos"></button>
+							</div>
+							<div id="collapseTwoPermisosModulos" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionPermisosModulos">
+								<div class="accordion-body">
+									<ul class="mb-0">
+										<div class="form-check">
+											<input class="form-check-input selectAllCheckboxesOperaciones" type="checkbox" value="" id="checkOperationModuleOption1" checked>
+											<label class="form-check-label" for="checkOperationModuleOption1">
+												Compra
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input selectAllCheckboxesOperaciones" type="checkbox" value="" id="checkOperationModuleOption2" checked>
+											<label class="form-check-label" for="checkOperationModuleOption2">
+												Venta virtual
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input selectAllCheckboxesOperaciones" type="checkbox" value="" id="checkOperationModuleOption3" checked>
+											<label class="form-check-label" for="checkOperationModuleOption3">
+												Control venta
+											</label>
+										</div>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<div class="accordion-header" id="headingThree">
+								<div class="form-check">
+									<input class="form-check-input selectAllCheckboxesReportes" type="checkbox" value="" id="selectAllModulosReportes" checked>
+									<label class="form-check-label" for="selectAllModulosReportes">
+										Reportes
+									</label>
+								</div>
+								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreePermisosModulos" aria-expanded="true" aria-controls="collapseThreePermisosModulos"></button>
+							</div>
+							<div id="collapseThreePermisosModulos" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionPermisosModulos">
+								<div class="accordion-body">
+									<ul class="mb-0">
+										<div class="form-check">
+											<input class="form-check-input selectAllCheckboxesReportes" type="checkbox" value="" id="checkReportModuleOption1" checked>
+											<label class="form-check-label" for="checkReportModuleOption1">
+												Stock Disponible
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input selectAllCheckboxesReportes" type="checkbox" value="" id="checkReportModuleOption2" checked>
+											<label class="form-check-label" for="checkReportModuleOption2">
+												Venta In House
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input selectAllCheckboxesReportes" type="checkbox" value="" id="checkReportModuleOption3" checked>
+											<label class="form-check-label" for="checkReportModuleOption3">
+												Cierre promotor
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input selectAllCheckboxesReportes" type="checkbox" value="" id="checkReportModuleOption4" checked>
+											<label class="form-check-label" for="checkReportModuleOption4">
+												Cierre promotor
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input selectAllCheckboxesReportes" type="checkbox" value="" id="checkReportModuleOption5" checked>
+											<label class="form-check-label" for="checkReportModuleOption5">
+												Activación promotor
+											</label>
+										</div>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-						<button type="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalSuccessReenvioCodigos">Confirmar</button>
-					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Guardar</button>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="modal fade" id="modalSuccessEnvioCodigos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Envío exitoso</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<p class="d-flex align-items-top">
-							<span class="material-icons success-color marginRight-1">
-								done
-							</span>
-							El envío de códigos al cliente se realizó de manera exitosa
-						</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-primary" data-bs-dismiss="modal">Aceptar</button>
-					</div>
+	<div class="modal fade" id="modalPermisosModulosInhouseUser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Administrar permisos In House</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="modalSuccessReenvioCodigos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Reenvío exitoso</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<p class="d-flex align-items-top">
-							<span class="material-icons success-color marginRight-1">
-								done
-							</span>
-							El reenvío de códigos al cliente se realizó de manera exitosa
-						</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-primary" data-bs-dismiss="modal">Aceptar</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="modalFiltrarEnvios" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-scrollable">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Filtrar</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<form>
-							<div class="form-group">
-								<label class="form-label">Canal</label>
-								<select class="form-select" id="selectCanalVentaModal">
-									<option value="todos">Todos</option>
-									<option value="plataforma">Plataforma</option>
-									<option value="inhouse">In House</option>
-								</select>
-							</div>
-
-							<div class="form-group buscarPromotor" id="buscarPromotorplataforma">
-								<label class="form-label">Promotor</label>
-								<select class="form-select select2modal" data-placeholder="Buscar">
-									<option></option>
-									<option>Promotor10</option>
-									<option>Promotor11</option>
-									<option>Promotor12</option>
-								</select>
-							</div>
-
-							<div class="row">
-								<div class="form-group col-md-6">
-									<label for="inputFilterEnviosPendientesInitDate" class="form-label">Fecha Inicio</label>
-									<input type="date" class="form-control" id="inputFilterEnviosPendientesInitDate" placeholder="Ingrese nombre">
+				<div class="modal-body">
+					<div class="accordion accordion-checkbox" id="accordionPermisosModulosInhouse">
+						<div class="accordion-item">
+							<div class="accordion-header" id="headingOne">
+								<div class="form-check">
+									<input class="form-check-input selectAllCheckboxesInhouse" type="checkbox" value="" id="selectAllModulosInhouse" checked>
+									<label class="form-check-label" for="selectAllModulosInhouse">
+										Reportes
+									</label>
 								</div>
-								<div class="form-group col-md-6">
-									<label for="inputFilterEnviosPendientesEndDate" class="form-label">Fecha Fin</label>
-									<input type="date" class="form-control" id="inputFilterEnviosPendientesEndDate" placeholder="Ingrese nombre">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnePermisosModulosInhouse" aria-expanded="true" aria-controls="collapseOnePermisosModulos"></button>
+							</div>
+							<div id="collapseOnePermisosModulosInhouse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionPermisosModulosInhouse">
+								<div class="accordion-body">
+									<ul class="mb-0">
+										<div class="form-check">
+											<input class="form-check-input selectAllCheckboxesInhouse" type="checkbox" value="" id="checkVentaModuleOption1" checked>
+											<label class="form-check-label" for="checkVentaModuleOption1">
+												Venta
+											</label>
+										</div>
+									</ul>
 								</div>
 							</div>
-						</form>
+						</div>
 					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-						<button type="button" class="btn button-primary">Filtrar</button>
-					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Guardar</button>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="modal fade" id="modalVentaInHouseStockInsuficiente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-xl">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Stock Insuficiente</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<table class="table table-hover">
-						  <thead>
-						    <tr>
-						      <th scope="col">#</th>
-						      <th scope="col">Código</th>
-						      <th scope="col">Producto</th>
-									<th scope="col">Stock activo</th>
-									<th scope="col">Stock reservado</th>
-									<th scope="col">Stock total</th>
-						      <th scope="col">Estado</th>
-						    </tr>
-						  </thead>
-						  <tbody>
-						    <tr>
-						      <th scope="row">1</th>
-						      <td>CCP01</td>
-						      <td>Combo Corporativo de Película</td>
-									<td>0</td>
-									<td>0</td>
-									<td>0</td>
-						      <td><span class="tag-status tag-danger">Agotado</span></td>
-						    </tr>
-								<tr>
-									<th scope="row">2</th>
-									<td>EPFO01</td>
-									<td>Entrada Prime Full Online Sin Restriccion</td>
-									<td>0</td>
-									<td>2</td>
-									<td>2</td>
-									<td><span class="tag-status tag-warning">Reponer</span></td>
-								</tr>
-						  </tbody>
-						</table>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-					</div>
+	<div class="modal fade" id="modalSuccess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Datos guardados</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="d-flex align-items-top">
+						<span class="material-icons success-color marginRight-1">
+							done
+						</span>
+						Los datos se guardaron de manera exitosa
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-primary showAdmninistracionUsuarios" data-bs-dismiss="modal">Aceptar</button>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="modal fade" id="modalBuscarCompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Buscar Compra</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	<div class="modal fade" id="modalVentaEnvioPendiente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div>
+						<h5 class="modal-title" id="exampleModalLabel">Detalle venta</h5>
 					</div>
-					<div class="modal-body">
-						<form>
-							<div class="form-group">
-								<label for="inputUser" class="form-label">Documento</label>
-								<select class="form-select select2modal" aria-label="Default select example">
-									<option selected>Buscar</option>
-									<option>BBB1-00004125</option>
-									<option>BBB2-00001234</option>
-								</select>
-							</div>
-
-							<div class="form-group">
-								<label for="inputUser" class="form-label">Usuario</label>
-								<input type="text" class="form-control" id="inputUser" placeholder="Ingrese nombre de usuario">
-							</div>
-
-							<div class="row">
-								<div class="form-group col-md-6">
-									<label for="inputFilterPedidosInitDate" class="form-label">Fecha Inicio</label>
-									<input type="date" class="form-control" id="inputSearchCompraInitDate" placeholder="Ingrese nombre">
-								</div>
-								<div class="form-group col-md-6">
-									<label for="inputFilterPedidosEndDate" class="form-label">Fecha Fin</label>
-									<input type="date" class="form-control" id="inputSearchCompraEndDate" placeholder="Ingrese nombre">
-								</div>
-							</div>
-
-						</form>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-						<button type="button" class="btn button-primary">Buscar</button>
-					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="modalDetalleVenta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-lg">
-				<div class="modal-content">
-					<div class="modal-header">
+				<div class="modal-body">
+					<div class="d-flex justify-content-between pb-2">
 						<div>
-							<h5 class="modal-title" id="exampleModalLabel">Detalle venta</h5>
+							Número de pedido: <span>000010</span>
 						</div>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div>
+							Correlativo: <span>BB12-00000161</span>
+						</div>
 					</div>
-					<div class="modal-body">
-						<table class="table table-hover marginBottom-1">
-							<thead>
-								<tr>
-									<th scope="col">#</th>
-									<th scope="col">Producto</th>
-									<th scope="col">Cantidad</th>
-									<th scope="col">P. Unitario</th>
-									<th scope="col">Subtotal</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th scope="row">1</th>
-									<td>EFO01 - Entrada Full Online</td>
-									<td>4</td>
-									<td>10.00</td>
-									<td>40.00</td>
-								</tr>
-							</tbody>
-							<tfoot>
-								<tr>
-									<th colspan="3"></th>
-									<th>Total</th>
-									<th>50.00</th>
-								</tr>
-							</tfoot>
-						</table>
+					<table class="table table-hover marginBottom-1">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Producto</th>
+								<th scope="col">Cantidad</th>
+								<th scope="col">P. Unitario</th>
+								<th scope="col">Total</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>EFO01 - Entrada Full Online</td>
+								<td>5</td>
+								<td>10.00</td>
+								<td>50.00</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th colspan="3"></th>
+								<th>Total</th>
+								<th>50.00</th>
+							</tr>
+						</tfoot>
+					</table>
+					<div class="row">
+						<div class="form-group col-8">
+							<label for="inputClientEmail" class="form-label">Correo del cliente</label>
+							<input type="email" class="form-control" id="inputClientEmail" value="mariagonzales@gmail.com" disabled>
+						</div>
+						<div class="form-group col-4">
+							<label for="inputClientPhone" class="form-label">Teléfono del cliente</label>
+							<input type="number" class="form-control" id="inputClientPhone" value="966554987" disabled>
+						</div>
 					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="modal fade" id="modalBuscarCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Buscar Cliente</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	<div class="modal fade" id="modalVentaEnvioPendiente2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Detalle venta</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="d-flex justify-content-between pb-2">
+						<div>
+							Número de pedido: 000010
+						</div>
+						<div>
+							Correlativo: BB12-00000161
+						</div>
 					</div>
-					<div class="modal-body">
-						<form>
-							<div class="form-group">
-								<label for="inputUser" class="form-label">DNI/CE o Nombre</label>
-								<select class="form-select select2modal" aria-label="Default select example">
-									<option selected>Buscar</option>
-									<option>71488965 - Alicia Cerna Pajuelo</option>
-									<option>43485648 - Alexander Albon</option>
-								</select>
+					<table class="table table-hover marginBottom-1">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Producto</th>
+								<th scope="col">Cantidad</th>
+								<th scope="col">P. Unitario</th>
+								<th scope="col">Total</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="tr-producto-agotado">
+								<th scope="row">1</th>
+								<td>CCP01 - Combo Corporativo de Película</td>
+								<td>1</td>
+								<td>40.00</td>
+								<td>40.00</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>EPFO01 - Entrada Prime Full Online Sin Restricción</td>
+								<td>3</td>
+								<td>20.00</td>
+								<td>60.00</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th colspan="3"></th>
+								<th>Total</th>
+								<th>100.00</th>
+							</tr>
+						</tfoot>
+					</table>
+					<div class="row">
+						<div class="form-group col-8">
+							<label for="inputClientEmail" class="form-label">Correo del cliente</label>
+							<input type="email" class="form-control" id="inputClientEmail" value="nlatifi@gmail.com" disabled>
+						</div>
+						<div class="form-group col-4">
+							<label for="inputClientPhone" class="form-label">Teléfono del cliente</label>
+							<input type="number" class="form-control" id="inputClientPhone" value="966554987" disabled>
+						</div>
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalEnviarCodigos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Enviar códigos</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>
+						¿Está seguro de enviar los códigos al cliente?
+					</p>
+					<ul>
+						<li>Combo</li>
+						<li>Entrada</li>
+						<li>Postre</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalSuccessEnvioCodigos">Confirmar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalReenviarCodigos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Reenviar códigos</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>
+						¿Está seguro de reenviar los códigos al cliente?
+					</p>
+					<div class="form-group">
+						<label for="inputClientEmail" class="form-label">Correo del cliente</label>
+						<input type="email" class="form-control" id="inputClientEmail" value="mariagonzales@gmail.com">
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalSuccessReenvioCodigos">Confirmar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalSuccessEnvioCodigos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Envío exitoso</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="d-flex align-items-top">
+						<span class="material-icons success-color marginRight-1">
+							done
+						</span>
+						El envío de códigos al cliente se realizó de manera exitosa
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-primary" data-bs-dismiss="modal">Aceptar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalSuccessReenvioCodigos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Reenvío exitoso</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="d-flex align-items-top">
+						<span class="material-icons success-color marginRight-1">
+							done
+						</span>
+						El reenvío de códigos al cliente se realizó de manera exitosa
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-primary" data-bs-dismiss="modal">Aceptar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalFiltrarEnvios" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Filtrar</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label class="form-label">Canal</label>
+							<select class="form-select" id="selectCanalVentaModal">
+								<option value="todos">Todos</option>
+								<option value="plataforma">Plataforma</option>
+								<option value="inhouse">In House</option>
+							</select>
+						</div>
+
+						<div class="form-group buscarPromotor" id="buscarPromotorplataforma">
+							<label class="form-label">Promotor</label>
+							<select class="form-select select2modal" data-placeholder="Buscar">
+								<option></option>
+								<option>Promotor10</option>
+								<option>Promotor11</option>
+								<option>Promotor12</option>
+							</select>
+						</div>
+
+						<div class="row">
+							<div class="form-group col-md-6">
+								<label for="inputFilterEnviosPendientesInitDate" class="form-label">Fecha Inicio</label>
+								<input type="date" class="form-control" id="inputFilterEnviosPendientesInitDate" placeholder="Ingrese nombre">
 							</div>
-						</form>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-						<button type="button" class="btn button-primary">Buscar</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="modalActivarPublicidadCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Activar Publicidad</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						El usuario recibirá publicidad vía email
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-						<button type="button" class="btn button-primary">Activar</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="modalDesactivarPublicidadCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Desactivar Publicidad</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						El usuario ya no recibirá publicidad vía email
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-						<button type="button" class="btn button-primary">Desactivar</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="modalActualizarCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Actualizar Datos Cliente</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<form>
-							<div class="form-group">
-								<label for="inputUserClient" class="form-label">Usuario</label>
-								<input type="text" class="form-control" id="inputUserClient" value="Alicia Cerna Pajuelo" disabled>
+							<div class="form-group col-md-6">
+								<label for="inputFilterEnviosPendientesEndDate" class="form-label">Fecha Fin</label>
+								<input type="date" class="form-control" id="inputFilterEnviosPendientesEndDate" placeholder="Ingrese nombre">
 							</div>
-							<div class="form-group">
-								<label for="inputEmailClient" class="form-label">Correo</label>
-								<input type="email" class="form-control" id="inputEmailClient" value="acerna@colmenateam.com.pe">
-							</div>
-							<div class="form-group">
-								<label for="inputbusinessClient" class="form-label">Empresa</label>
-								<select class="form-select select2modal" aria-label="Default select example" id="inputbusinessClient">
-									<option selected>20603588488 - COLMENA SOLUTIONS S.A.C.</option>
-									<option>54123658745 - LEALVA S.A.C.</option>
-									<option>65412568546 - PRIZE S.A.C.</option>
-								</select>
-							</div>
-							<div class="form-group">
-								<label for="inputCampusClient" class="form-label">Sede</label>
-								<select class="form-select select2modal" aria-label="Default select example" id="inputCampusClient">
-									<option selected>AV. JUAN ALIAGA 427 - MAGDALENA</option>
-									<option>AV. ARENALES 1912 - LINCE</option>
-								</select>
-							</div>
-
-						</form>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-						<button type="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalUpdateSuccess">Filtrar</button>
-					</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Filtrar</button>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="modal fade" id="modalUpdateSuccess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Actualización Exitosa</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-						<p class="d-flex align-items-top">
-							<span class="material-icons success-color marginRight-1">
-								done
-							</span>
-							Los datos del cliente se actualizaron
-						</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn button-primary" data-bs-dismiss="modal">Aceptar</button>
-					</div>
+	<div class="modal fade" id="modalVentaInHouseStockInsuficiente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Stock Insuficiente</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Código</th>
+								<th scope="col">Producto</th>
+								<th scope="col">Stock activo</th>
+								<th scope="col">Stock reservado</th>
+								<th scope="col">Stock total</th>
+								<th scope="col">Estado</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>CCP01</td>
+								<td>Combo Corporativo de Película</td>
+								<td>0</td>
+								<td>0</td>
+								<td>0</td>
+								<td><span class="tag-status tag-danger">Agotado</span></td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>EPFO01</td>
+								<td>Entrada Prime Full Online Sin Restriccion</td>
+								<td>0</td>
+								<td>2</td>
+								<td>2</td>
+								<td><span class="tag-status tag-warning">Reponer</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<div class="modal fade" id="modalBuscarCompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Buscar Compra</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="inputUser" class="form-label">Documento</label>
+							<select class="form-select select2modal" aria-label="Default select example">
+								<option selected>Buscar</option>
+								<option>BBB1-00004125</option>
+								<option>BBB2-00001234</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label for="inputUser" class="form-label">Usuario</label>
+							<input type="text" class="form-control" id="inputUser" placeholder="Ingrese nombre de usuario">
+						</div>
+
+						<div class="row">
+							<div class="form-group col-md-6">
+								<label for="inputFilterPedidosInitDate" class="form-label">Fecha Inicio</label>
+								<input type="date" class="form-control" id="inputSearchCompraInitDate" placeholder="Ingrese nombre">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="inputFilterPedidosEndDate" class="form-label">Fecha Fin</label>
+								<input type="date" class="form-control" id="inputSearchCompraEndDate" placeholder="Ingrese nombre">
+							</div>
+						</div>
+
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Buscar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalDetalleVenta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div>
+						<h5 class="modal-title" id="exampleModalLabel">Detalle venta</h5>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<table class="table table-hover marginBottom-1">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Producto</th>
+								<th scope="col">Cantidad</th>
+								<th scope="col">P. Unitario</th>
+								<th scope="col">Subtotal</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>EFO01 - Entrada Full Online</td>
+								<td>4</td>
+								<td>10.00</td>
+								<td>40.00</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th colspan="3"></th>
+								<th>Total</th>
+								<th>50.00</th>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalBuscarCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Buscar Cliente</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+
+						<div class="form-check marginBottom-1-5">
+							<input class="form-check-input" type="radio" name="flexRadioDefault" id="radiopOptionBuscarClienteDni">
+							<label class="form-check-label" for="radiopOptionBuscarClienteDni">
+								DNI/CE o Nombre
+							</label>
+							<select class="form-select select2modal" aria-label="Default select example">
+								<option selected>Buscar</option>
+								<option>71488965 - Alicia Cerna Pajuelo</option>
+								<option>43485648 - Alexander Albon</option>
+							</select>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="flexRadioDefault" id="radiopOptionBuscarClienteCorreo" checked>
+							<label class="form-check-label" for="radiopOptionBuscarClienteCorreo">
+								Correo
+							</label>
+							<input type="email" class="form-control" placeholder="Ingrese correo del cliente">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Buscar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalActivarPublicidadCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Activar Publicidad</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					El usuario recibirá publicidad vía email
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Activar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalDesactivarPublicidadCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Desactivar Publicidad</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					El usuario ya no recibirá publicidad vía email
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Desactivar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalActualizarCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Actualizar Datos Cliente</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="inputUserClient" class="form-label">Usuario</label>
+							<input type="text" class="form-control" id="inputUserClient" value="Alicia Cerna Pajuelo" disabled>
+						</div>
+						<div class="form-group">
+							<label for="inputEmailClient" class="form-label">Correo</label>
+							<input type="email" class="form-control" id="inputEmailClient" value="acerna@colmenateam.com.pe">
+						</div>
+						<div class="form-group">
+							<label for="inputbusinessClient" class="form-label">Empresa</label>
+							<select class="form-select select2modal" aria-label="Default select example" id="inputbusinessClient">
+								<option selected>20603588488 - COLMENA SOLUTIONS S.A.C.</option>
+								<option>54123658745 - LEALVA S.A.C.</option>
+								<option>65412568546 - PRIZE S.A.C.</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="inputCampusClient" class="form-label">Sede</label>
+							<select class="form-select select2modal" aria-label="Default select example" id="inputCampusClient">
+								<option selected>AV. JUAN ALIAGA 427 - MAGDALENA</option>
+								<option>AV. ARENALES 1912 - LINCE</option>
+							</select>
+						</div>
+
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalUpdateSuccess">Filtrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalUpdateSuccess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Actualización Exitosa</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="d-flex align-items-top">
+						<span class="material-icons success-color marginRight-1">
+							done
+						</span>
+						Los datos del cliente se actualizaron
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-primary" data-bs-dismiss="modal">Aceptar</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- Modal -->
 

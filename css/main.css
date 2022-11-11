@@ -586,7 +586,7 @@ video {
 }
 
 #sidebar-admin .item-sidebar .btn:hover  {
-  background-color: var(--gray-light);
+  background-color: var(--primary-light);
 }
 
 .sidebar-admin-list .btn:focus  {
