@@ -210,8 +210,16 @@ h3 {
   color: var(--danger);
 }
 
+.warning-color {
+  color: var(--warning);
+}
+
 .bg-color-danger {
   background-color: var(--danger-light);
+}
+
+.bg-color-warning {
+  background-color: var(--warning-light);
 }
 /* End Colors */
 
