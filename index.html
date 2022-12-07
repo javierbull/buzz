@@ -1049,7 +1049,7 @@
 										</div>
 									</div>
 
-									<div class="form-group" id="nuevaProgInghouseBuscarPromotor">
+									<div class="form-group" id="nuevaProgInhouseBuscarPromotor">
 										<label class="form-label">Promotor</label>
 										<select class="form-select select2" data-placeholder="Buscar">
 											<option></option>
@@ -2646,15 +2646,30 @@
 						</div>
 
 						<div class="row">
-							<div class="form-group col-md-4">
+							<div class="form-group col-md-6" id="progInhousePromotor">
+								<label class="form-label">Promotor</label>
+								<select class="form-select select2" data-placeholder="Buscar" disabled>
+									<option></option>
+									<option>Promotor 1</option>
+									<option selected>Promotor 2</option>
+									<option>Promotor 3</option>
+									<option>Promotor 4</option>
+									<option>Promotor 5</option>
+								</select>
+							</div>
+
+							<div class="form-group col-md-6">
 								<label for="progInhouseDate" class="form-label">Fecha</label>
 								<input type="date" class="form-control" id="progInhouseDate" value="2022-10-10" disabled>
 							</div>
-							<div class="form-group col-md-4">
+						</div>
+
+						<div class="row">
+							<div class="form-group col-md-6">
 								<label for="progInhouseInitTime" class="form-label">Hora Inicio</label>
 								<input type="time" class="form-control" id="progInhouseInitDate" value="13:00">
 							</div>
-							<div class="form-group col-md-4">
+							<div class="form-group col-md-6">
 								<label for="progInhouseEndTime" class="form-label">Hora Fin</label>
 								<input type="time" class="form-control" id="progInhouseEndDate" value="15:00">
 							</div>
