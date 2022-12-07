@@ -259,6 +259,23 @@ h3 {
   box-shadow: 0 0 0 0.25rem rgba(20, 20, 43, 0.25);
 }
 
+.button-danger {
+  background-color: var(--danger);
+  color: var(--white);
+}
+
+.button-danger:hover {
+  background-color: var(--danger-dark);
+  color: var(--white);
+}
+
+.button-danger:focus {
+  background-color: var(--danger);
+  color: var(--white);
+  border-color: 1px solid var(--danger-dark);
+  box-shadow: 0 0 0 0.25rem var(--danger-light);
+}
+
 .button-link {
   /* background-color: salmon; */
   color: var(--info);

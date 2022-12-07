@@ -2684,6 +2684,88 @@
 		</div>
 	</div>
 
+	<div class="modal fade" id="modalEliminarProgInhouse" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Eliminar Programación</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="d-flex align-items-top">
+						<span class="material-icons warning-color marginRight-1">
+							warning
+						</span>
+						¿Está seguro de eliminar la siguiente programación?
+					</p>
+
+					<form>
+
+						<div class="form-group" id="empresaSelProgInhouse">
+							<label class="form-label">Empresa</label>
+							<select class="form-select select2modal" data-placeholder="Buscar" disabled>
+								<option></option>
+								<option>Caja Huancayo</option>
+								<option>Interbank</option>
+								<option selected>Senati</option>
+								<option>Onpe</option>
+								<option>BCP</option>
+								<option>Induquímica</option>
+							</select>
+						</div>
+
+						<div class="form-group" id="sedeSelProgInhouse">
+							<label class="form-label">Sede</label>
+							<select class="form-select select2" data-placeholder="Buscar" disabled>
+								<option></option>
+								<option>Lince</option>
+								<option>Los Olivos</option>
+								<option selected>Magdalena</option>
+								<option>Miraflores</option>
+								<option>San Isidro</option>
+								<option>Surco</option>
+							</select>
+						</div>
+
+						<div class="row">
+							<div class="form-group col-md-6" id="progInhousePromotor">
+								<label class="form-label">Promotor</label>
+								<select class="form-select select2" data-placeholder="Buscar" disabled>
+									<option></option>
+									<option>Promotor 1</option>
+									<option selected>Promotor 2</option>
+									<option>Promotor 3</option>
+									<option>Promotor 4</option>
+									<option>Promotor 5</option>
+								</select>
+							</div>
+
+							<div class="form-group col-md-6">
+								<label for="progInhouseDate" class="form-label">Fecha</label>
+								<input type="date" class="form-control" id="progInhouseDate" value="2022-10-10" disabled>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="form-group col-md-6">
+								<label for="progInhouseInitTime" class="form-label">Hora Inicio</label>
+								<input type="time" class="form-control" id="progInhouseInitDate" value="13:00" disabled>
+							</div>
+							<div class="form-group col-md-6">
+								<label for="progInhouseEndTime" class="form-label">Hora Fin</label>
+								<input type="time" class="form-control" id="progInhouseEndDate" value="15:00" disabled>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-danger" data-bs-dismiss="modal">Eliminar Programación</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- Modal -->
 
 	<!-- Fin Modals -->
