@@ -209,6 +209,10 @@ h3 {
 .danger-color {
   color: var(--danger);
 }
+
+.bg-color-danger {
+  background-color: var(--danger-light);
+}
 /* End Colors */
 
 /* Buttons */

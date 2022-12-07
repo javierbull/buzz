@@ -994,7 +994,7 @@
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item showOperacionesProgInHouse"><a href="#" class="button-link">Usuarios</a></li>
-						<li class="breadcrumb-item active" aria-current="page">Nuevo Usuario</li>
+						<li class="breadcrumb-item active" aria-current="page">Nueva Programación In House</li>
 					</ol>
 				</nav>
 
@@ -1003,91 +1003,69 @@
 						<div class="card mx-auto">
 							<div class="card-header">
 								<h2>
-									Nuevo Programación In House
+									Nueva Programación In House
 								</h2>
 							</div>
 							<div class="card-body">
-								<form action="">
-									<fieldset class="fieldset-form">
-										<div class="form-check">
-											<input class="form-check-input" type="radio" name="radioTypeUser" id="radioTypeUserInhouse">
-											<label class="form-check-label" for="radioTypeUserInhouse">
-												Usuario In House
-											</label>
-										</div>
-										<div class="form-check">
-											<input class="form-check-input" type="radio" name="radioTypeUser" id="radioTypeUserAdmin">
-											<label class="form-check-label" for="radioTypeUserAdmin">
-												Usuario Administrador
-											</label>
-										</div>
-									</fieldset>
-									<fieldset class="fieldset-form fieldset-hide" id="fieldset-userInhouse">
-										<form>
-											<div class="form-group">
-												<label for="inputUserInhouseNew" class="form-label">Usuario</label>
-												<input type="text" class="form-control" id="inputUserInhouseNew" placeholder="Alias de usuario">
-											</div>
-											<div class="form-group">
-												<label for="inputNameUserInhouseNew" class="form-label">Nombre Usuario</label>
-												<input type="text" class="form-control" id="inputNameUserInhouseNew" placeholder="Nombre del usuario">
-											</div>
-											<div class="form-group">
-												<label for="inputSerieUserInhouseNew" class="form-label">Serie documento</label>
-												<input type="text" class="form-control" id="inputSerieUserInhouseNew" placeholder="Número de serie">
-											</div>
-											<button type="button" name="button" class="btn button-outline" data-bs-toggle="modal" data-bs-target="#modalPermisosModulosInhouseUser">Administrar permisos Inhouse</button>
-										</form>
-									</fieldset>
-									<fieldset class="fieldset-form fieldset-hide" id="fieldset-userAdmin">
-										<div class="wrap-options-userAdmin">
-											<div class="form-check">
-												<input class="form-check-input selectFalse" type="checkbox" value="" name="userAdminType" id="checkUserCloud">
-												<label class="form-check-label" for="checkUserCloud">
-													Usuario Cloud
-												</label>
-											</div>
-											<div class="form-check">
-												<input class="form-check-input selectFalse" type="checkbox" value="" name="userAdminType" id="checkUserValidador">
-												<label class="form-check-label" for="checkUserValidador">
-													Usuario Validador
-												</label>
-											</div>
-										</div>
+								<form>
+									<div class="form-group" id="nuevaProgInghouseBuscarEmpresa">
+										<label class="form-label">Empresa</label>
+										<select class="form-select select2" data-placeholder="Buscar">
+											<option></option>
+											<option>BCP</option>
+											<option>Caja Huancayo</option>
+											<option>Industrias del Envase</option>
+											<option>Interbank</option>
+											<option>Iron Mountain</option>
+											<option>Scotiabank</option>
+										</select>
+									</div>
 
-										<form>
-											<div class="form-group">
-												<label for="inputUserAdminNew" class="form-label">Usuario</label>
-												<input type="text" class="form-control" id="inputUserAdminNew" placeholder="Alias de usuario">
-											</div>
-											<div class="form-group">
-												<label for="inputNameUserAdminNew" class="form-label">Nombre</label>
-												<input type="text" class="form-control" id="inputNameUserAdminNew" placeholder="Ingrese nombre">
-											</div>
-											<div class="form-group">
-												<label for="inputNameUserAdminNew" class="form-label">Apellido Paterno</label>
-												<input type="text" class="form-control" id="inputNameUserAdminNew" placeholder="Ingrese apellido">
-											</div>
-										</form>
-									</fieldset>
-									<fieldset class="fieldset-form fieldset-hide" id="fieldset-formNewUserCloud">
-										<form>
-											<button type="button" name="button" class="btn button-outline" data-bs-toggle="modal" data-bs-target="#modalPermisosModulosAdminUser">
-												Administrar permisos Cloud
-											</button>
-										</form>
-									</fieldset>
-									<fieldset class="fieldset-form fieldset-hide" id="fieldset-formNewUserValidador">
-										<div class="form-check form-switch">
-											<input class="form-check-input" type="checkbox" role="switch" id="switchCheckUserValidadorMaestro">
-											<label class="form-check-label" for="switchCheckUserValidadorMaestro">Usuario Validador Maestro</label>
+									<div class="form-group" id="nuevaProgInghouseBuscarSede">
+										<label class="form-label">Sede</label>
+										<select class="form-select select2" data-placeholder="Buscar">
+											<option></option>
+											<option>Lince</option>
+											<option>Los Olivos</option>
+											<option>Magdalena</option>
+											<option>Miraflores</option>
+											<option>San Isidro</option>
+											<option>Surco</option>
+										</select>
+									</div>
+
+									<div class="row">
+										<div class="form-group col-md-4">
+											<label for="progInhouseDate" class="form-label">Fecha</label>
+											<input type="date" class="form-control" id="progInhouseDate" placeholder="Ingrese fecha">
 										</div>
-									</fieldset>
+										<div class="form-group col-md-4">
+											<label for="progInhouseIniTime" class="form-label">Hora Inicio</label>
+											<input type="time" class="form-control" id="progInhouseIniTime" placeholder="Ingrese horario">
+										</div>
+										<div class="form-group col-md-4">
+											<label for="progInhouseEndTime" class="form-label">Hora Fin</label>
+											<input type="time" class="form-control" id="progInhouseEndTime" placeholder="Ingrese horario">
+										</div>
+									</div>
+
+									<div class="form-group" id="nuevaProgInghouseBuscarPromotor">
+										<label class="form-label">Promotor</label>
+										<select class="form-select select2" data-placeholder="Buscar">
+											<option></option>
+											<option>Promotor 1</option>
+											<option>Promotor 2</option>
+											<option>Promotor 3</option>
+											<option>Promotor 4</option>
+											<option>Promotor 5</option>
+										</select>
+									</div>
 								</form>
 							</div>
 							<div class="card-footer">
 								<button type="button" name="button" class="btn button-ghost showOperacionesProgInHouse">Cerrar</button>
-								<button type="button" name="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalSuccess">Guardar</button>
+								<!-- <button type="button" name="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalSuccess">Guardar</button> -->
+								<button type="button" name="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalAlertProgInhouseCrucehorario">Guardar</button>
 							</div>
 						</div>
 					</div>
@@ -2587,6 +2565,45 @@
 				<div class="modal-footer">
 					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
 					<button type="button" class="btn button-primary">Filtrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalAlertProgInhouseCrucehorario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Datos guardados</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="d-flex align-items-top">
+						<span class="material-icons danger-color marginRight-1">
+							error
+						</span>
+						El promotor tiene un cruce de horario
+					</p>
+
+					<table class="table table-hover marginBottom-1">
+						<thead>
+							<tr>
+								<th scope="col">Fecha</th>
+								<th scope="col">Hora inicio</th>
+								<th scope="col">Hora fin</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="bg-color-danger">
+								<td>10/12/2022</td>
+								<td>13:00</td>
+								<td>15:00</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-primary" data-bs-dismiss="modal">Entendido</button>
 				</div>
 			</div>
 		</div>
