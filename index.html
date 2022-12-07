@@ -139,7 +139,7 @@
 					<div class="col-lg-12">
 						<h1>Pruebas</h1>
 						<div>
-							<div class="form-group buscarPromotor" id="buscarEmpresa">
+							<div class="form-group" id="buscarEmpresa">
 								<label class="form-label">Seleccione empresas</label>
 								<select class="form-select select2" data-placeholder="Buscar">
 									<option></option>
@@ -920,7 +920,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="action-btns">
-							<button type="button" name="button" class="btn button-outline button-icon-left" data-bs-toggle="modal" data-bs-target="#modalFiltrarEnvios">
+							<button type="button" name="button" class="btn button-outline button-icon-left" data-bs-toggle="modal" data-bs-target="#modalFiltrarProgInhouse">
 								<span class="material-icons-outlined">
 									filter_list
 								</span>
@@ -942,84 +942,47 @@
 								<div class="title-dtable">
 									Programación In House
 								</div>
-								<button type="button" name="button" class="btn button-outline button-icon-left">
-									<span class="material-icons-outlined">
-										file_download
-									</span>
-									Descargar Reporte
-								</button>
 							</div>
 							<table class="table dtable table-hover" id="tableEnviosPendientes">
 								<thead>
 									<tr>
-										<th scope="col">Canal</th>
+										<th scope="col">Empresa</th>
+										<th scope="col">Sede</th>
 										<th scope="col">Fecha</th>
+										<th scope="col">Horario</th>
 										<th scope="col">Promotor</th>
-										<th scope="col">RUC</th>
-										<th scope="col">Empresa - Sede</th>
-										<th scope="col">DNI / CE</th>
-										<th scope="col">Nombre</th>
-										<th scope="col">Estado Stock</th>
+										<th scope="col">Estado</th>
 										<th scope="col">Acciones</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td>In House</td>
-										<td>15/10/2022</td>
+										<td>Senati</td>
+										<td>Independencia</td>
+										<td>10/12/2022</td>
+										<td>10:00 - 13:00</td>
 										<td>Promotor 1</td>
-										<td>14523658954</td>
-										<td>Nestle - San Isidro</td>
-										<td>45629658</td>
-										<td>María Gonzales</td>
-										<td><span class="tag-status tag-success">Suficiente</span></td>
+										<td><span class="tag-status tag-active">Activo</span></td>
 										<td>
 											<div class="action-cell-btns">
-												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
-													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaEnvioPendiente">
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Editar programación">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalEditProgInhouse">
 														<span class="material-icons-outlined">
-															visibility
+															edit
 														</span>
 													</button>
 												</span>
-												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Enviar códigos">
-													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalEnviarCodigos">
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Eliminar Programación">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalEliminarProgInhouse">
 														<span class="material-icons-outlined">
-															send
+															delete
 														</span>
 													</button>
 												</span>
 											</div>
 										</td>
 									</tr>
-									<tr>
-										<td>Plataforma</td>
-										<td>15/10/2022</td>
-										<td></td>
-										<td>11554785698</td>
-										<td>Empresas de Contact Center - Miraflores</td>
-										<td>75429635</td>
-										<td>Nicolás Latifi</td>
-										<td><span class="tag-status tag-danger">Agotado</span></td>
-										<td>
-											<div class="action-cell-btns">
-												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle venta">
-													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaEnvioPendiente2">
-														<span class="material-icons-outlined">
-															visibility
-														</span>
-													</button>
-												</span>
-												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Enviar códigos">
-													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalVentaInHouseStockInsuficiente">
-														<span class="material-icons-outlined">
-															send
-														</span>
-													</button>
-												</span>
-											</div>
-										</td>
-									</tr>
+
 								</tbody>
 							</table>
 						</div>
@@ -2581,6 +2544,49 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn button-primary" data-bs-dismiss="modal">Aceptar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalFiltrarProgInhouse" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Filtrar</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+
+						<div class="form-group" id="buscarPromotorplataforma">
+							<label class="form-label">Empresa</label>
+							<select class="form-select select2modal" data-placeholder="Buscar">
+								<option></option>
+								<option>Caja Huancayo</option>
+								<option>Interbank</option>
+								<option>Senati</option>
+								<option>Onpe</option>
+								<option>BCP</option>
+								<option>Induquímica</option>
+							</select>
+						</div>
+
+						<div class="row">
+							<div class="form-group col-md-6">
+								<label for="progInhouseInitDate" class="form-label">Fecha Inicio</label>
+								<input type="date" class="form-control" id="progInhouseInitDate" placeholder="Ingrese nombre">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="progInhouseEndDate" class="form-label">Fecha Fin</label>
+								<input type="date" class="form-control" id="progInhouseEndDate" placeholder="Ingrese nombre">
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Filtrar</button>
 				</div>
 			</div>
 		</div>
