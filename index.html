@@ -946,9 +946,9 @@
 							<table class="table dtable table-hover">
 								<thead>
 									<tr>
-										<th scope="col">Empresa</th>
 										<th scope="col">Fecha Inicio</th>
 										<th scope="col">Fecha Fin</th>
+										<th scope="col">Empresa</th>
 										<th scope="col">Ejecutivo</th>
 										<th scope="col">Estado</th>
 										<th scope="col">Acciones</th>
@@ -956,22 +956,22 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Senati</td>
 										<td>10/12/2022</td>
 										<td>15/12/2022</td>
+										<td>Senati</td>
 										<td>Carlos Tamashiro</td>
-										<td><span class="tag-status tag-active">Activo</span></td>
+										<td><span class="tag-status tag-active">Activa</span></td>
 										<td>
 											<div class="action-cell-btns">
-												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Editar programación">
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
 													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalEditProgPlataforma">
 														<span class="material-icons-outlined">
 															edit
 														</span>
 													</button>
 												</span>
-												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Eliminar Programación">
-													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalEliminarProgPlataforma">
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cancelar">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalCancelarProgPlataforma">
 														<span class="material-icons-outlined">
 															delete
 														</span>
@@ -980,7 +980,31 @@
 											</div>
 										</td>
 									</tr>
-
+									<tr>
+										<td>10/12/2022</td>
+										<td>15/12/2022</td>
+										<td>Interbank</td>
+										<td>Natalie Bendezu</td>
+										<td><span class="tag-status tag-inactive">Inactiva</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalEditProgPlataforma">
+														<span class="material-icons-outlined">
+															edit
+														</span>
+													</button>
+												</span>
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cancelar">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalCancelarProgPlataforma">
+														<span class="material-icons-outlined">
+															delete
+														</span>
+													</button>
+												</span>
+											</div>
+										</td>
+									</tr>
 								</tbody>
 							</table>
 						</div>
@@ -3040,6 +3064,123 @@
 				<div class="modal-footer">
 					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
 					<button type="button" class="btn button-danger" data-bs-dismiss="modal">Cancelar Programación</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalEditProgPlataforma" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Editar programación</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+
+						<div class="form-group" id="empresaSelProgPlataforma">
+							<label class="form-label">Empresa</label>
+							<select class="form-select select2modal" data-placeholder="Buscar" disabled>
+								<option></option>
+								<option>BCP</option>
+								<option>Caja Huancayo</option>
+								<option>Induquímica</option>
+								<option>Interbank</option>
+								<option>Onpe</option>
+								<option selected>Senati</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label class="form-label">Ejecutivo</label>
+							<select class="form-select select2" data-placeholder="Buscar">
+								<option></option>
+								<option selected>Carlos Tamashiro</option>
+								<option>Mónica Bicerra</option>
+								<option>Natalie Bendezu</option>
+							</select>
+						</div>
+
+						<div class="row">
+							<div class="form-group col-md-6">
+								<label for="progInhouseDateInit" class="form-label">Fecha Inicio</label>
+								<input type="date" class="form-control" id="progInhouseDateInit" value="2022-10-10">
+							</div>
+
+							<div class="form-group col-md-6">
+								<label for="progInhouseDateEnd" class="form-label">Fecha Fin</label>
+								<input type="date" class="form-control" id="progInhouseDateEnd" value="2022-10-15">
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Guardar cambios</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalCancelarProgPlataforma" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Cancelar programación</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="alert alert-danger" role="alert">
+						¿Está seguro de cancelar la siguiente programación?
+					</div>
+
+					<form>
+
+						<div class="form-group" id="empresaSelProgPlataforma">
+							<label class="form-label">Empresa</label>
+							<select class="form-select select2modal" data-placeholder="Buscar" disabled>
+								<option></option>
+								<option>BCP</option>
+								<option>Caja Huancayo</option>
+								<option>Induquímica</option>
+								<option>Interbank</option>
+								<option>Onpe</option>
+								<option selected>Senati</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label class="form-label">Ejecutivo</label>
+							<select class="form-select select2" data-placeholder="Buscar" disabled>
+								<option></option>
+								<option selected>Carlos Tamashiro</option>
+								<option>Mónica Bicerra</option>
+								<option>Natalie Bendezu</option>
+							</select>
+						</div>
+
+						<div class="row">
+							<div class="form-group col-md-6">
+								<label for="progInhouseDateInit" class="form-label">Fecha Inicio</label>
+								<input type="date" class="form-control" id="progInhouseDateInit" value="2022-10-10" disabled>
+							</div>
+
+							<div class="form-group col-md-6">
+								<label for="progInhouseDateEnd" class="form-label">Fecha Fin</label>
+								<input type="date" class="form-control" id="progInhouseDateEnd" value="2022-10-15" disabled>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="motivoCancelacionPlataforma" class="form-label">Motivo de la cancelación</label>
+							<textarea class="form-control" id="motivoCancelacionPlataforma" rows="3"></textarea>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-danger">Cancelar Programación</button>
 				</div>
 			</div>
 		</div>
