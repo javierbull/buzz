@@ -18,8 +18,8 @@
   --info-dark: #041E49;
   --info-light: #C2E7FF;
   --warning: #FF9033;
-  --warning-dark: #840F01;
-  --warning-light: #FFCF92;
+  --warning-dark: #81124B;
+  --warning-light: #FFD89C;
   --success: #36AE7C;
   --success-dark: #094B28;
   --success-light: #C1F8CF;
@@ -222,6 +222,32 @@ h3 {
   background-color: var(--warning-light);
 }
 /* End Colors */
+
+/* Alerts */
+.alert {
+  border: none;
+}
+
+.alert-warning {
+  background-color: var(--warning-light);
+  color: var(--warning-dark);
+}
+
+.alert-success {
+  background-color: var(--success-light);
+  color: var(--success-dark);
+}
+
+.alert-info {
+  background-color: var(--info-light);
+  color: var(--info-dark);
+}
+
+.alert-danger {
+  background-color: var(--danger-light);
+  color: var(--danger-dark);
+}
+/* End Alerts */
 
 /* Buttons */
 .btn {
