@@ -1005,6 +1005,24 @@
 											</div>
 										</td>
 									</tr>
+									<tr>
+										<td>10/12/2022</td>
+										<td>15/12/2022</td>
+										<td>BCP</td>
+										<td>Mónica Bicerra</td>
+										<td><span class="tag-status tag-danger">Cancelada</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cancelar">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalProgPlataformaCancelada">
+														<span class="material-icons-outlined">
+															visibility
+														</span>
+													</button>
+												</span>
+											</div>
+										</td>
+									</tr>
 								</tbody>
 							</table>
 						</div>
@@ -1086,8 +1104,8 @@
 							</div>
 							<div class="card-footer">
 								<button type="button" name="button" class="btn button-ghost showOperacionesProgPlataforma">Cerrar</button>
-								<!-- <button type="button" name="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalSuccess">Guardar</button> -->
-								<button type="button" name="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalAlertProgInhouseCrucehorario">Guardar</button>
+								<button type="button" name="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalSuccessProgPlataforma">Guardar</button>
+								<!-- <button type="button" name="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalAlertProgInhouseCrucehorario">Guardar</button> -->
 							</div>
 						</div>
 					</div>
@@ -1286,8 +1304,8 @@
 							</div>
 							<div class="card-footer">
 								<button type="button" name="button" class="btn button-ghost showOperacionesProgInHouse">Cerrar</button>
-								<!-- <button type="button" name="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalSuccess">Guardar</button> -->
-								<button type="button" name="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalAlertProgInhouseCrucehorario">Guardar</button>
+								<button type="button" name="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalSuccessProgInhouse">Guardar</button>
+								<!-- <button type="button" name="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalAlertProgInhouseCrucehorario">Guardar</button> -->
 							</div>
 						</div>
 					</div>
@@ -2458,7 +2476,7 @@
 		<div class="modal-dialog modal-xl">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Stock Insuficiente</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Stock insuficiente</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
@@ -2507,7 +2525,7 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Buscar Compra</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Buscar compra</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
@@ -2596,7 +2614,7 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Buscar Cliente</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Buscar cliente</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
@@ -2634,7 +2652,7 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Activar Publicidad</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Activar publicidad</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
@@ -2652,7 +2670,7 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Desactivar Publicidad</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Desactivar publicidad</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
@@ -2670,7 +2688,7 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Actualizar Datos Cliente</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Actualizar datos del cliente</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
@@ -2731,7 +2749,7 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Actualización Exitosa</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Actualización exitosa</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
@@ -2908,7 +2926,7 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Cancelar Programación</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Cancelar programación</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
@@ -2992,7 +3010,7 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Programación Cancelada</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Programación cancelada</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
@@ -3063,7 +3081,6 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-					<button type="button" class="btn button-danger" data-bs-dismiss="modal">Cancelar Programación</button>
 				</div>
 			</div>
 		</div>
@@ -3181,6 +3198,109 @@
 				<div class="modal-footer">
 					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
 					<button type="button" class="btn button-danger">Cancelar Programación</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalProgPlataformaCancelada" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Programación cancelada</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+
+					<form>
+
+						<div class="form-group" id="empresaSelProgPlataforma">
+							<label class="form-label">Empresa</label>
+							<select class="form-select select2modal" data-placeholder="Buscar" disabled>
+								<option></option>
+								<option>BCP</option>
+								<option>Caja Huancayo</option>
+								<option>Induquímica</option>
+								<option>Interbank</option>
+								<option>Onpe</option>
+								<option selected>Senati</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label class="form-label">Ejecutivo</label>
+							<select class="form-select select2" data-placeholder="Buscar" disabled>
+								<option></option>
+								<option>Carlos Tamashiro</option>
+								<option selected>Mónica Bicerra</option>
+								<option>Natalie Bendezu</option>
+							</select>
+						</div>
+
+						<div class="row">
+							<div class="form-group col-md-6">
+								<label for="progInhouseDateInit" class="form-label">Fecha Inicio</label>
+								<input type="date" class="form-control" id="progInhouseDateInit" value="2022-10-10" disabled>
+							</div>
+
+							<div class="form-group col-md-6">
+								<label for="progInhouseDateEnd" class="form-label">Fecha Fin</label>
+								<input type="date" class="form-control" id="progInhouseDateEnd" value="2022-10-15" disabled>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="motivoCancelacionPlataforma" class="form-label">Motivo de la cancelación</label>
+							<textarea class="form-control" id="motivoCancelacionPlataforma" rows="3" disabled>El contacto canceló la activación</textarea>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalSuccessProgPlataforma" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Datos guardados</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="d-flex align-items-top">
+						<span class="material-icons success-color marginRight-1">
+							done
+						</span>
+						Los datos se guardaron de manera exitosa
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-primary showOperacionesProgPlataforma" data-bs-dismiss="modal">Aceptar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalSuccessProgInhouse" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Datos guardados</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="d-flex align-items-top">
+						<span class="material-icons success-color marginRight-1">
+							done
+						</span>
+						Los datos se guardaron de manera exitosa
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-primary showOperacionesProgInHouse" data-bs-dismiss="modal">Aceptar</button>
 				</div>
 			</div>
 		</div>
