@@ -725,6 +725,11 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.wrap-btns {
+  display: flex;
+  grid-gap: 1rem;
+}
+
 /* TABLES */
 .card-dtable {
   background-color: var(--white);
