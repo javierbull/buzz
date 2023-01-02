@@ -959,6 +959,7 @@
 										<th scope="col">Horario</th>
 										<th scope="col">Empresa</th>
 										<th scope="col">Sede</th>
+										<th scope="col">Ejecutivo</th>
 										<th scope="col">Promotor</th>
 										<th scope="col">Estado</th>
 										<th scope="col">Acciones</th>
@@ -966,28 +967,30 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>10/12/2022</td>
+										<td>2/12/2023</td>
 										<td>10:00 - 13:00</td>
-										<td>ONPE</td>
-										<td>Lince</td>
-										<td>Promotor 2</td>
-										<td><span class="tag-status tag-success">En Curso</span></td>
+										<td>BCP</td>
+										<td>San Isidro</td>
+										<td>Carlos Tamashiro</td>
+										<td>No asignado</td>
+										<td><span class="tag-status tag-warning">Pendiente</span></td>
 										<td>
 											<div class="action-cell-btns">
-												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalProgInhouseCancelada">
+														<span class="material-icons-outlined" data-bs-toggle="tooltip" data-bs-placement="left" title="Historial">
+															visibility
+														</span>
+													</button>
 													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalEditProgInhouse">
-														<span class="material-icons-outlined">
+														<span class="material-icons-outlined" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
 															edit
 														</span>
 													</button>
-												</span>
-												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cancelar">
 													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalCancelarProgInhouse">
-														<span class="material-icons-outlined">
+														<span class="material-icons-outlined" data-bs-toggle="tooltip" data-bs-placement="left" title="Cancelar">
 															delete
 														</span>
 													</button>
-												</span>
 											</div>
 										</td>
 									</tr>
@@ -996,6 +999,7 @@
 										<td>14:00 - 17:00</td>
 										<td>Senati</td>
 										<td>Independencia</td>
+										<td>Carlos Tamashiro</td>
 										<td>Promotor 1</td>
 										<td><span class="tag-status tag-active">No Iniciada</span></td>
 										<td>
@@ -1022,6 +1026,7 @@
 										<td>11:00 - 13:00</td>
 										<td>BCP</td>
 										<td>San Isidro</td>
+										<td>Carlos Tamashiro</td>
 										<td>Promotor 3</td>
 										<td><span class="tag-status tag-danger">Cancelada</span></td>
 										<td>
@@ -1041,6 +1046,7 @@
 										<td>09:00 - 11:00</td>
 										<td>Interbank</td>
 										<td>Miraflores</td>
+										<td>Carlos Tamashiro</td>
 										<td>Promotor 4</td>
 										<td><span class="tag-status tag-inactive">Terminada</span></td>
 										<td>
