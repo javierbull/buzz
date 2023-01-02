@@ -976,7 +976,7 @@
 										<td><span class="tag-status tag-warning">Pendiente</span></td>
 										<td>
 											<div class="action-cell-btns">
-													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalProgInhouseCancelada">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalProgInhouseHistorial">
 														<span class="material-icons-outlined" data-bs-toggle="tooltip" data-bs-placement="left" title="Historial">
 															visibility
 														</span>
@@ -3396,6 +3396,44 @@
 							<tr>
 								<td><span class="tag-status tag-danger">Anulado</span></td>
 								<td>El ejecutivo anula la programación</td>
+							</tr>
+						</tbody>
+					</table>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalProgInhouseHistorial" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Historial</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="table-responsive">
+						<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">Fecha y Hora</th>
+								<th scope="col">Modificado por</th>
+								<th scope="col">Acción</th>
+								<th scope="col">Motivo</th>
+								<th scope="col">Descripción</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>02/12/2022</td>
+								<td>Carlos Tamashiro</td>
+								<td>Crear</td>
+								<td></td>
+								<td><span class="tag-status tag-warning">Pendiente</span></td>
 							</tr>
 						</tbody>
 					</table>
