@@ -1063,6 +1063,34 @@
 											</div>
 										</td>
 									</tr>
+									<tr>
+										<td>2/12/2023</td>
+										<td>10:00 - 13:00</td>
+										<td>Caja Huancayo</td>
+										<td>Miraflores</td>
+										<td>Carlos Tamashiro</td>
+										<td>Promotor 5</td>
+										<td><span class="tag-status tag-active">No Iniciado</span></td>
+										<td>
+											<div class="action-cell-btns">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalProgInhouseHistorialNoIniciado">
+														<span class="material-icons-outlined" data-bs-toggle="tooltip" data-bs-placement="left" title="Historial">
+															visibility
+														</span>
+													</button>
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalEditProgInhousePendiente">
+														<span class="material-icons-outlined" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
+															edit
+														</span>
+													</button>
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalAnularProgInhouse">
+														<span class="material-icons-outlined" data-bs-toggle="tooltip" data-bs-placement="left" title="Cancelar">
+															delete
+														</span>
+													</button>
+											</div>
+										</td>
+									</tr>
 								</tbody>
 							</table>
 						</div>
@@ -3690,9 +3718,9 @@
 				<div class="modal-body">
 					<form>
 
-						<div class="form-group" id="empresaSelProgInhouse">
-							<label class="form-label">Empresa</label>
-							<select class="form-select select2modal" data-placeholder="Buscar" disabled>
+						<div class="form-group">
+							<label class="form-label" for="selectEmpresaProgInhouse">Empresa</label>
+							<select class="form-select select2modal" id="selectEmpresaProgInhouse" data-placeholder="Buscar" disabled>
 								<option></option>
 								<option>Caja Huancayo</option>
 								<option>Interbank</option>
@@ -3703,9 +3731,9 @@
 							</select>
 						</div>
 
-						<div class="form-group" id="sedeSelProgInhouse">
-							<label class="form-label">Sede</label>
-							<select class="form-select select2" data-placeholder="Buscar">
+						<div class="form-group">
+							<label class="form-label" for="selectSedeProgInhouse">Sede</label>
+							<select class="form-select select2" id="selectSedeProgInhouse" data-placeholder="Buscar">
 								<option></option>
 								<option>Lince</option>
 								<option>Los Olivos</option>
@@ -3740,16 +3768,16 @@
 
 						<div class="row">
 							<div class="form-group col-md-4">
-								<label for="progInhouseDate" class="form-label">Fecha</label>
-								<input type="date" class="form-control" id="progInhouseDate" value="2023-01-02">
+								<label for="progInhouseDateTerminado" class="form-label">Fecha</label>
+								<input type="date" class="form-control" id="progInhouseDateTerminado" value="2023-01-02">
 							</div>
 							<div class="form-group col-md-4">
-								<label for="progInhouseInitTime" class="form-label">Hora Inicio</label>
-								<input type="time" class="form-control" id="progInhouseInitDate" value="13:00">
+								<label for="progInhouseInitTimeTerminado" class="form-label">Hora Inicio</label>
+								<input type="time" class="form-control" id="progInhouseInitTimeTerminado" value="13:00">
 							</div>
 							<div class="form-group col-md-4">
-								<label for="progInhouseEndTime" class="form-label">Hora Fin</label>
-								<input type="time" class="form-control" id="progInhouseEndDate" value="15:00">
+								<label for="progInhouseEndTimeTerminado" class="form-label">Hora Fin</label>
+								<input type="time" class="form-control" id="progInhouseEndTimeTerminado" value="15:00">
 							</div>
 						</div>
 
