@@ -997,10 +997,10 @@
 									<tr>
 										<td>2/12/2023</td>
 										<td>10:00 - 13:00</td>
-										<td>BCP</td>
-										<td>San Isidro</td>
-										<td>Carlos Tamashiro</td>
-										<td>No asignado</td>
+										<td>ONPE</td>
+										<td>Lince</td>
+										<td>Mónica Bicerra</td>
+										<td>Promotor 1</td>
 										<td><span class="tag-status tag-danger">Anulada</span></td>
 										<td>
 											<div class="action-cell-btns">
@@ -1013,69 +1013,30 @@
 										</td>
 									</tr>
 									<tr>
-										<td>10/12/2022</td>
-										<td>14:00 - 17:00</td>
+										<td>2/12/2023</td>
+										<td>10:00 - 13:00</td>
 										<td>Senati</td>
-										<td>Independencia</td>
-										<td>Carlos Tamashiro</td>
-										<td>Promotor 1</td>
-										<td><span class="tag-status tag-active">No Iniciada</span></td>
+										<td>Breña</td>
+										<td>Nataly bendezú</td>
+										<td>Promotor 2</td>
+										<td><span class="tag-status tag-success">En Curso</span></td>
 										<td>
 											<div class="action-cell-btns">
-												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
-													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalEditProgInhouse">
-														<span class="material-icons-outlined">
-															edit
-														</span>
-													</button>
-												</span>
-												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Cancelar">
-													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalCancelarProgInhouse">
-														<span class="material-icons-outlined">
-															delete
-														</span>
-													</button>
-												</span>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>09/12/2022</td>
-										<td>11:00 - 13:00</td>
-										<td>BCP</td>
-										<td>San Isidro</td>
-										<td>Carlos Tamashiro</td>
-										<td>Promotor 3</td>
-										<td><span class="tag-status tag-danger">Cancelada</span></td>
-										<td>
-											<div class="action-cell-btns">
-												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle">
-													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalProgInhouseCancelada">
-														<span class="material-icons-outlined">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalProgInhouseHistorialEnCurso">
+														<span class="material-icons-outlined" data-bs-toggle="tooltip" data-bs-placement="left" title="Historial">
 															visibility
 														</span>
 													</button>
-												</span>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>10/12/2022</td>
-										<td>09:00 - 11:00</td>
-										<td>Interbank</td>
-										<td>Miraflores</td>
-										<td>Carlos Tamashiro</td>
-										<td>Promotor 4</td>
-										<td><span class="tag-status tag-inactive">Terminada</span></td>
-										<td>
-											<div class="action-cell-btns">
-												<span data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
-													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalEditProgInhouse">
-														<span class="material-icons-outlined">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalEditProgInhouseEnCurso">
+														<span class="material-icons-outlined" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
 															edit
 														</span>
 													</button>
-												</span>
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalAnularProgInhouse">
+														<span class="material-icons-outlined" data-bs-toggle="tooltip" data-bs-placement="left" title="Cancelar">
+															delete
+														</span>
+													</button>
 											</div>
 										</td>
 									</tr>
@@ -3371,6 +3332,76 @@
 									El contacto canceló la activación
 								</td>
 								<td><span class="tag-status tag-danger">Anulado</span></td>
+							</tr>
+						</tbody>
+					</table>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalProgInhouseHistorialEnCurso" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Historial</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="table-responsive">
+						<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">Fecha y Hora</th>
+								<th scope="col">Modificado por</th>
+								<th scope="col">Acción</th>
+								<th scope="col">Motivo</th>
+								<th scope="col">Descripción</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									02/12/2022 <br>
+									9:40
+								</td>
+								<td>
+									Carlos Tamashiro <br>
+									(Ejecutivo)
+								</td>
+								<td>Crear</td>
+								<td></td>
+								<td><span class="tag-status tag-warning">Pendiente</span></td>
+							</tr>
+							<tr>
+								<td>
+									02/12/2022 <br>
+									10:50
+								</td>
+								<td>
+									Pocho <br>
+									(Promotoría)
+								</td>
+								<td>Asignar promotor</td>
+								<td></td>
+								<td><span class="tag-status tag-active">No Iniciado</span></td>
+							</tr>
+							<tr>
+								<td>
+									02/12/2022 <br>
+									11:00
+								</td>
+								<td>
+									Sistema
+								</td>
+								<td>Iniciar activación</td>
+								<td>
+								</td>
+								<td><span class="tag-status tag-success">En Curso</span></td>
 							</tr>
 						</tbody>
 					</table>
