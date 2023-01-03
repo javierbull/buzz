@@ -1231,8 +1231,8 @@
 							</div>
 							<div class="card-footer">
 								<button type="button" name="button" class="btn button-ghost showOperacionesProgInHouse">Cerrar</button>
-								<button type="button" name="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalSuccessProgInhouse">Guardar</button>
-								<!-- <button type="button" name="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalAlertProgInhouseCrucehorario">Guardar</button> -->
+								<!-- <button type="button" name="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalSuccessProgInhouse">Guardar</button> -->
+								<button type="button" name="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalAlertProgInhouse">Guardar</button>
 							</div>
 						</div>
 					</div>
@@ -2945,38 +2945,28 @@
 		</div>
 	</div>
 
-	<div class="modal fade" id="modalAlertProgInhouseCrucehorario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="modalAlertProgInhouse" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Alerta</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Aviso</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
 
 					<div class="alert alert-warning" role="alert">
-						El promotor puede tener un cruce de horario
+						La programación no cumple con el el rango de 72 horas de anticipación <br>
+						<span class="body-semibold">Es necesario solicitar aprobación administrativa</span>
 					</div>
 
-					<table class="table table-hover marginBottom-1">
-						<thead>
-							<tr>
-								<th scope="col">Fecha</th>
-								<th scope="col">Hora inicio</th>
-								<th scope="col">Hora fin</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr class="bg-color-warning">
-								<td>10/12/2022</td>
-								<td>13:00</td>
-								<td>15:00</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="form-group">
+						<label for="motivoTextarea1" class="form-label">Motivo de la solicitud</label>
+						<textarea class="form-control" id="motivoTextarea1" rows="3"></textarea>
+					</div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn button-primary" data-bs-dismiss="modal">Entendido</button>
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary" data-bs-target="#modalConfirmacionSolicitudEnviada" data-bs-toggle="modal">Solicitar Aprobación</button>
 				</div>
 			</div>
 		</div>
@@ -4097,6 +4087,28 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn button-primary" data-bs-dismiss="modal">Aceptar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalConfirmacionSolicitudEnviada" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Solicitud Enviada</h5>
+					<!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+				</div>
+				<div class="modal-body">
+					<p class="d-flex align-items-top">
+						<span class="material-icons success-color marginRight-1">
+							done
+						</span>
+						La solicitud fue enviada a administración para su aprobación
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-primary showOperacionesProgInHouse" data-bs-dismiss="modal">Aceptar</button>
 				</div>
 			</div>
 		</div>
