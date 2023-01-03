@@ -1161,10 +1161,13 @@
 								</h2>
 							</div>
 							<div class="card-body">
+								<div class="alert alert-info" role="alert">
+									Recuerda que debes programar con un mínimo de 72 horas de anticipación
+								</div>
 								<form>
-									<div class="form-group" id="nuevaProgInghouseBuscarEmpresa">
-										<label class="form-label">Empresa</label>
-										<select class="form-select select2" data-placeholder="Buscar">
+									<div class="form-group">
+										<label class="form-label" for="nuevaProgInghouseBuscarEmpresa">Empresa</label>
+										<select class="form-select select2" id="nuevaProgInghouseBuscarEmpresa" data-placeholder="Buscar">
 											<option></option>
 											<option>BCP</option>
 											<option>Caja Huancayo</option>
@@ -1175,9 +1178,9 @@
 										</select>
 									</div>
 
-									<div class="form-group" id="nuevaProgInghouseBuscarSede">
-										<label class="form-label">Sede</label>
-										<select class="form-select select2" data-placeholder="Buscar">
+									<div class="form-group">
+										<label class="form-label" for="nuevaProgInghouseBuscarSede">Sede</label>
+										<select class="form-select select2" id="nuevaProgInghouseBuscarSede" data-placeholder="Buscar">
 											<option></option>
 											<option>Lince</option>
 											<option>Los Olivos</option>
@@ -1203,9 +1206,9 @@
 										</div>
 									</div>
 
-									<div class="form-group" id="nuevaProgInhouseBuscarPromotor">
-										<label class="form-label">Promotor</label>
-										<select class="form-select select2" data-placeholder="Buscar">
+									<div class="form-group">
+										<label class="form-label" for="nuevaProgInhouseBuscarPromotor">Promotor</label>
+										<select class="form-select select2" id="nuevaProgInhouseBuscarPromotor" data-placeholder="Buscar">
 											<option></option>
 											<option>Promotor 1</option>
 											<option>Promotor 2</option>
@@ -3247,12 +3250,12 @@
 		</div>
 	</div>
 
-	<div class="modal fade" id="modalSuccessProgInhouse" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="modalSuccessProgInhouse" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
 					<h5 class="modal-title" id="exampleModalLabel">Datos guardados</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
 				</div>
 				<div class="modal-body">
 					<p class="d-flex align-items-top">
