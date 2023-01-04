@@ -3962,8 +3962,8 @@
 					<form>
 
 						<div class="form-group">
-							<label class="form-label" for="selectEmpresaProgInhouse">Empresa</label>
-							<select class="form-select select2modal" id="selectEmpresaProgInhouse" data-placeholder="Buscar" disabled>
+							<label class="form-label" for="selectEmpresaProgInhousePendiente">Empresa</label>
+							<select class="form-select select2modal" id="selectEmpresaProgInhousePendiente" data-placeholder="Buscar" disabled>
 								<option></option>
 								<option>Caja Huancayo</option>
 								<option>Interbank</option>
@@ -3975,8 +3975,8 @@
 						</div>
 
 						<div class="form-group">
-							<label class="form-label" for="selectSedeProgInhouse">Sede</label>
-							<select class="form-select select2modal" id="selectSedeProgInhouse" data-placeholder="Buscar">
+							<label class="form-label" for="selectSedeProgInhousePendiente">Sede</label>
+							<select class="form-select select2modal" id="selectSedeProgInhousePendiente" data-placeholder="Buscar">
 								<option></option>
 								<option>Lince</option>
 								<option>Los Olivos</option>
@@ -4024,9 +4024,9 @@
 							</div>
 						</div>
 
-						<div class="form-group col-12" id="progInhousePromotor">
+						<div class="form-group col-12">
 							<label class="form-label">Promotor</label>
-							<select class="form-select select2" data-placeholder="Buscar" disabled>
+							<select class="form-select select2modal" data-placeholder="Buscar" disabled>
 								<option></option>
 								<option>Promotor 1</option>
 								<option selected>Promotor 2</option>
@@ -4046,7 +4046,7 @@
 	</div>
 
 	<div class="modal fade" id="modalEditProgInhousePendientePromotoria" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-scrollable">
+		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
 					<h5 class="modal-title" id="exampleModalLabel">Editar programación</h5>
@@ -4056,12 +4056,12 @@
 					<form>
 
 						<div class="form-group">
-							<label class="form-label" for="selectEmpresaProgInhouse">Empresa</label>
-							<select class="form-select select2modal" id="selectEmpresaProgInhouse" data-placeholder="Buscar" disabled>
+							<label class="form-label" for="buscarEmpresaInHousePromotoria">Empresa</label>
+							<select class="form-select select2modal" data-placeholder="Buscar" id="buscarEmpresaInHousePromotoria" disabled>
 								<option></option>
 								<option>Caja Huancayo</option>
 								<option>Interbank</option>
-								<option selected>Senati</option>
+								<option>Senati</option>
 								<option>Onpe</option>
 								<option>BCP</option>
 								<option>Induquímica</option>
@@ -4069,8 +4069,8 @@
 						</div>
 
 						<div class="form-group">
-							<label class="form-label" for="selectSedeProgInhouse">Sede</label>
-							<select class="form-select select2" id="selectSedeProgInhouse" data-placeholder="Buscar" disabled>
+							<label class="form-label" for="selectSedeProgInhousePromotoria">Sede</label>
+							<select class="form-select select2modal" id="selectSedeProgInhousePromotoria" data-placeholder="Buscar" disabled>
 								<option></option>
 								<option>Lince</option>
 								<option>Los Olivos</option>
@@ -4118,22 +4118,21 @@
 							</div>
 						</div>
 
-						<div class="form-group col-12">
-							<label class="form-label" for="progInhousePromotoriaSelectPromotor">Promotor</label>
-							<select class="form-select select2" id="progInhousePromotoriaSelectPromotor" data-placeholder="Buscar">
+						<div class="form-group">
+							<label class="form-label" for="buscarPromotorInHousePromotoria">Promotor</label>
+							<select class="form-select select2modal" data-placeholder="No asignado" id="buscarPromotorInHousePromotoria">
 								<option></option>
 								<option>Promotor 1</option>
-								<option selected>Promotor 2</option>
+								<option>Promotor 2</option>
 								<option>Promotor 3</option>
 								<option>Promotor 4</option>
-								<option>Promotor 5</option>
 							</select>
 						</div>
 					</form>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-					<button type="button" class="btn button-primary" data-bs-target="#modalDatosGuardados" data-bs-toggle="modal">Guardar</button>
+					<button type="button" class="btn button-primary">Guardar</button>
 				</div>
 			</div>
 		</div>
@@ -4164,7 +4163,7 @@
 
 						<div class="form-group">
 							<label class="form-label">Sede</label>
-							<select class="form-select select2" data-placeholder="Buscar" disabled>
+							<select class="form-select select2modal" data-placeholder="Buscar" disabled>
 								<option></option>
 								<option>Lince</option>
 								<option>Los Olivos</option>
@@ -4214,7 +4213,7 @@
 
 						<div class="form-group col-12">
 							<label class="form-label" for="promotorAsignadoEnCurso">Promotor</label>
-							<select class="form-select select2" id="promotorAsignadoEnCurso" data-placeholder="Buscar" disabled>
+							<select class="form-select select2modal" id="promotorAsignadoEnCurso" data-placeholder="Buscar" disabled>
 								<option></option>
 								<option>Promotor 1</option>
 								<option selected>Promotor 2</option>
@@ -4284,7 +4283,7 @@
 
 						<div class="form-group" id="sedeSelProgInhouse">
 							<label class="form-label">Sede</label>
-							<select class="form-select select2" data-placeholder="Buscar" disabled>
+							<select class="form-select select2modal" data-placeholder="Buscar" disabled>
 								<option></option>
 								<option>Lince</option>
 								<option>Los Olivos</option>
@@ -4319,7 +4318,7 @@
 
 						<div class="form-group col-12" id="progInhousePromotor">
 							<label class="form-label">Promotor</label>
-							<select class="form-select select2" data-placeholder="Buscar" disabled>
+							<select class="form-select select2modal" data-placeholder="Buscar" disabled>
 								<option></option>
 								<option>Promotor 1</option>
 								<option selected>Promotor 2</option>
