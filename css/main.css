@@ -1079,3 +1079,10 @@ div.dataTables_wrapper div.dataTables_info {
   background-color: var(--dark);
   color: var(--white);
 }
+
+/* PROGRAMACIÓN INHOUSE PROMOTORIA */
+
+#motivoCancelacionPromotoria {
+  display: none;
+}
+/* END PROGRAMACIÓN INHOUSE PROMOTORIA */

@@ -612,6 +612,17 @@ $(".checkAllDtable").on("click", function() {
  });
 // END TABLE SELECT CHECKBOX
 
+
+// SHOW MOTIVO RECHAZO PRMOTORIA
+$("#checkboxPromotoriaRechazarProg").click(function () {
+    if ($(this).is(":checked")) {
+        $("#motivoCancelacionPromotoria").show();
+    } else {
+        $("#motivoCancelacionPromotoria").hide();
+    }
+});
+// END SHOW MOTIVO RECHAZO PRMOTORIA
+
 // SHOW HIDE SELECT CANAL VENTA MODAL
 $('#selectCanalVentaModal').on('change', function(){
   var demovalue = $(this).val();
