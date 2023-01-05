@@ -4135,15 +4135,65 @@
 						</div>
 
 						<div class="form-group" id="motivoCancelacionPromotoria">
-							<label for="motivoCancelacionPlataforma" class="form-label">Motivo del rechazo</label>
-							<textarea class="form-control" id="motivoCancelacionPlataforma" rows="3"></textarea>
+							<label for="motivoCancelacionInHouse" class="form-label">Motivo del rechazo</label>
+							<textarea class="form-control" id="motivoCancelacionInHouse" rows="3"></textarea>
 						</div>
 
 					</form>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-					<button type="button" class="btn button-primary" data-bs-target="#modalConfirmacionProgRechazada" data-bs-toggle="modal">Guardar</button>
+					<!-- <button type="button" class="btn button-primary" data-bs-target="#modalConfirmacionProgRechazada" data-bs-toggle="modal">Guardar</button> -->
+					<button type="button" class="btn button-primary" data-bs-target="#modalSolicitudPromotoriaInHouse" data-bs-toggle="modal">Guardar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalSolicitudPromotoriaInHouse" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Aviso</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+
+					<div class="alert alert-warning" role="alert">
+						La programación no cumple con el el rango de 48 horas de anticipación <br>
+						<span class="body-semibold">Es necesario solicitar aprobación administrativa</span>
+					</div>
+
+					<div class="form-group">
+						<label for="motivoPromotoriaTextarea" class="form-label">Motivo de la solicitud</label>
+						<textarea class="form-control" id="motivoPromotoriaTextarea" rows="3"></textarea>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary" data-bs-target="#modalConfirmacionSolicitudEnviadaPromotoria" data-bs-toggle="modal">Solicitar Aprobación</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalConfirmacionSolicitudEnviadaPromotoria" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Solicitud Enviada</h5>
+					<!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+				</div>
+				<div class="modal-body">
+					<p class="d-flex align-items-top">
+						<span class="material-icons success-color marginRight-1">
+							done
+						</span>
+						La solicitud fue enviada a administración para su aprobación
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-primary" data-bs-dismiss="modal">Aceptar</button>
 				</div>
 			</div>
 		</div>
