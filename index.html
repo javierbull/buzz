@@ -108,6 +108,19 @@
 					</div>
 				</li>
 				<li class="item-sidebar">
+					<button class="btn btn-toggle collapsed btn-icon-sidebar" data-bs-toggle="collapse" data-bs-target="#operation-admin-collapse" aria-expanded="true">
+						Operaciones (Administración)
+						<span class="material-icons-outlined">
+							expand_more
+						</span>
+					</button>
+					<div class="collapse" id="operation-admin-collapse">
+						<ul class="btn-toggle-nav sidebar-list-collapse">
+							<li><a href="#" class="item-collapse rounded showOperacionesProgInHouseAdmin">Prog. In House</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="item-sidebar">
 					<button class="btn btn-toggle collapsed btn-icon-sidebar" data-bs-toggle="collapse" data-bs-target="#support-collapse" aria-expanded="true">
 						Atención al Cliente
 						<span class="material-icons-outlined">
@@ -1282,6 +1295,187 @@
 								</div>
 							</div>
 							<table class="table dtable table-hover" id="tableEnviosPendientes">
+								<thead>
+									<tr>
+										<th scope="col">Fecha</th>
+										<th scope="col">Horario</th>
+										<th scope="col">Empresa</th>
+										<th scope="col">Sede</th>
+										<th scope="col">Ejecutivo</th>
+										<th scope="col">Promotor</th>
+										<th scope="col">Estado</th>
+										<th scope="col">Acciones</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2/12/2023</td>
+										<td>10:00 - 13:00</td>
+										<td>BCP</td>
+										<td>San Isidro</td>
+										<td>Carlos Tamashiro</td>
+										<td>No asignado</td>
+										<td><span class="tag-status tag-warning">Pendiente</span></td>
+										<td>
+											<div class="action-cell-btns">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalProgInhouseHistorialPendiente">
+														<span class="material-icons-outlined" data-bs-toggle="tooltip" data-bs-placement="left" title="Historial">
+															visibility
+														</span>
+													</button>
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalEditProgInhousePendientePromotoria">
+														<span class="material-icons-outlined" data-bs-toggle="tooltip" data-bs-placement="left" title="Editar">
+															edit
+														</span>
+													</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>2/12/2023</td>
+										<td>10:00 - 13:00</td>
+										<td>ONPE</td>
+										<td>Lince</td>
+										<td>Mónica Bicerra</td>
+										<td>Promotor 1</td>
+										<td><span class="tag-status tag-danger">Anulado</span></td>
+										<td>
+											<div class="action-cell-btns">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalProgInhouseHistorialAnulado">
+														<span class="material-icons-outlined" data-bs-toggle="tooltip" data-bs-placement="left" title="Historial">
+															visibility
+														</span>
+													</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>2/12/2023</td>
+										<td>10:00 - 13:00</td>
+										<td>Senati</td>
+										<td>Breña</td>
+										<td>Nataly bendezú</td>
+										<td>Promotor 2</td>
+										<td><span class="tag-status tag-success">En Curso</span></td>
+										<td>
+											<div class="action-cell-btns">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalProgInhouseHistorialEnCurso">
+														<span class="material-icons-outlined" data-bs-toggle="tooltip" data-bs-placement="left" title="Historial">
+															visibility
+														</span>
+													</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>2/12/2023</td>
+										<td>10:00 - 13:00</td>
+										<td>Interbank</td>
+										<td>Miraflores</td>
+										<td>Nataly bendezú</td>
+										<td>Promotor 3</td>
+										<td><span class="tag-status tag-inactive">Terminado</span></td>
+										<td>
+											<div class="action-cell-btns">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalProgInhouseHistorialTerminado">
+														<span class="material-icons-outlined" data-bs-toggle="tooltip" data-bs-placement="left" title="Historial">
+															visibility
+														</span>
+													</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>2/12/2023</td>
+										<td>10:00 - 13:00</td>
+										<td>Caja Huancayo</td>
+										<td>Miraflores</td>
+										<td>Carlos Tamashiro</td>
+										<td>Promotor 5</td>
+										<td><span class="tag-status tag-active">No Iniciado</span></td>
+										<td>
+											<div class="action-cell-btns">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalProgInhouseHistorialNoIniciado">
+														<span class="material-icons-outlined" data-bs-toggle="tooltip" data-bs-placement="left" title="Historial">
+															visibility
+														</span>
+													</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>2/12/2023</td>
+										<td>10:00 - 13:00</td>
+										<td>ONPE</td>
+										<td>Lince</td>
+										<td>Mónica Bicerra</td>
+										<td>No asignado</td>
+										<td><span class="tag-status tag-danger">Rechazado</span></td>
+										<td>
+											<div class="action-cell-btns">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalProgInhouseHistorialRechazado">
+														<span class="material-icons-outlined" data-bs-toggle="tooltip" data-bs-placement="left" title="Historial">
+															visibility
+														</span>
+													</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>2/12/2023</td>
+										<td>10:00 - 13:00</td>
+										<td>BCP</td>
+										<td>San Isidro</td>
+										<td>Carlos Tamashiro</td>
+										<td>No asignado</td>
+										<td><span class="tag-status tag-warning">Por Aprobar</span></td>
+										<td>
+											<div class="action-cell-btns">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalProgInhouseHistorialPorAprobar">
+														<span class="material-icons-outlined" data-bs-toggle="tooltip" data-bs-placement="left" title="Historial">
+															visibility
+														</span>
+													</button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="panel" id="progInhouseAdmin-panel">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="action-btns">
+							<div class="wrap-btns">
+								<button type="button" name="button" class="btn button-outline button-icon-left" data-bs-toggle="modal" data-bs-target="#modalFiltrarProgInhouse">
+									<span class="material-icons-outlined">
+										filter_list
+									</span>
+									Filtrar
+								</button>
+
+								<button type="button" name="button" class="btn button-outline button-icon-left" data-bs-toggle="modal" data-bs-target="#modalLeyendaEstadosProgInhouse">
+									<span class="material-icons-outlined">
+										help_outline
+									</span>
+									Leyenda Estados
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-12">
+						<div class="card-dtable">
+							<div class="card-dtable-header">
+								<div class="title-dtable">
+									Programaciones In House
+								</div>
+							</div>
+							<table class="table dtable table-hover">
 								<thead>
 									<tr>
 										<th scope="col">Fecha</th>
