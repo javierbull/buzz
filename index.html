@@ -4506,8 +4506,8 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-					<!-- <button type="button" class="btn button-primary" data-bs-target="#modalConfirmacionProgRechazada" data-bs-toggle="modal">Guardar</button> -->
-					<button type="button" class="btn button-primary" data-bs-target="#modalSolicitudPromotoriaInHouse" data-bs-toggle="modal">Guardar</button>
+					<!-- <button type="button" class="btn button-primary" data-bs-target="#modalConfirmacionSolicitudRechazada" data-bs-toggle="modal">Guardar</button> -->
+					<button type="button" class="btn button-primary" data-bs-target="#modalConfirmacionSolicitudAprobada" data-bs-toggle="modal">Guardar</button>
 				</div>
 			</div>
 		</div>
@@ -4838,6 +4838,50 @@
 							done
 						</span>
 						La programación fue rechazada
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-primary" data-bs-dismiss="modal">Aceptar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalConfirmacionSolicitudRechazada" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Datos guardados</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="d-flex align-items-top">
+						<span class="material-icons success-color marginRight-1">
+							done
+						</span>
+						La solicitud fue rechazada
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-primary" data-bs-dismiss="modal">Aceptar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalConfirmacionSolicitudAprobada" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Datos guardados</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="d-flex align-items-top">
+						<span class="material-icons success-color marginRight-1">
+							done
+						</span>
+						La solicitud fue aprobada
 					</p>
 				</div>
 				<div class="modal-footer">
