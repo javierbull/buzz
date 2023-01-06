@@ -4397,6 +4397,16 @@
 								</div>
 
 								<div class="form-group">
+									<label class="form-label" for="selectEjecutivoAdmin">Ejecutivo</label>
+									<select class="form-select select2modal" id="selectEjecutivoAdmin" data-placeholder="Buscar" disabled>
+										<option></option>
+										<option selected>Carlos Tamashiro</option>
+										<option>Mónica Bicerra</option>
+										<option>Nataly Bendezú</option>
+									</select>
+								</div>
+
+								<div class="form-group">
 									<label class="form-label">Se solicita</label>
 									<div>
 										<div class="form-check form-check-inline">
@@ -4448,8 +4458,23 @@
 					</div>
 
 					<form>
+						<div class="marginBottom-1">
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="radioAdminDesicionSolicitud" id="radioAdminAprobar">
+								<label class="form-check-label" for="radioAdminAprobar">
+									Aprobar Solicitud
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="radioAdminDesicionSolicitud" id="radioAdminRechazar">
+								<label class="form-check-label" for="radioAdminRechazar">
+									Rechazar Solicitud
+								</label>
+							</div>
+						</div>
+
 						<div class="form-group">
-							<label for="motivoInHouseAdmin" class="form-label">Motivo del rechazo</label>
+							<label for="motivoInHouseAdmin" class="form-label">Motivo</label>
 							<textarea class="form-control" id="motivoInHouseAdmin" rows="3"></textarea>
 						</div>
 					</form>
