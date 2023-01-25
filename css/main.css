@@ -476,6 +476,22 @@ input[type=number] {
 }
 /* END SWITCH BTN */
 
+/* TABS */
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+  border-color: var(--gray-medium);
+  isolation: isolate;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: var(--dark);
+}
+.nav-link.disabled {
+  color: var(--gray);
+  pointer-events: none;
+  cursor: default;
+}
+/* END TABS */
+
 /* FIN ESTILOS GENERALES */
 
 

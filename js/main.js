@@ -94,6 +94,7 @@ $(".showDashboard").click(function() {
   $("#crearProgPlataforma-panel").hide();
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
+  $("#solicitudComprobante-panel").hide();
 });
 
 $(".showAdmninistracionUsuarios").click(function() {
@@ -116,6 +117,7 @@ $(".showAdmninistracionUsuarios").click(function() {
   $("#crearProgPlataforma-panel").hide();
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
+  $("#solicitudComprobante-panel").hide();
 });
 
 $(".showCrearUsuarios").click(function() {
@@ -138,6 +140,7 @@ $(".showCrearUsuarios").click(function() {
   $("#crearProgPlataforma-panel").hide();
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
+  $("#solicitudComprobante-panel").hide();
 });
 
 $(".showReporteStockDisponible").click(function() {
@@ -160,6 +163,7 @@ $(".showReporteStockDisponible").click(function() {
   $("#crearProgPlataforma-panel").hide();
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
+  $("#solicitudComprobante-panel").hide();
 });
 
 $("#showDetalleStock").click(function() {
@@ -182,6 +186,7 @@ $("#showDetalleStock").click(function() {
   $("#crearProgPlataforma-panel").hide();
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
+  $("#solicitudComprobante-panel").hide();
 });
 
 $(".showOperacionesPedidos").click(function() {
@@ -204,6 +209,7 @@ $(".showOperacionesPedidos").click(function() {
   $("#crearProgPlataforma-panel").hide();
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
+  $("#solicitudComprobante-panel").hide();
 });
 
 $("#showDetallePedido").click(function() {
@@ -226,6 +232,7 @@ $("#showDetallePedido").click(function() {
   $("#crearProgPlataforma-panel").hide();
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
+  $("#solicitudComprobante-panel").hide();
 });
 
 $(".showOperacionesEnviosPendientes").click(function() {
@@ -248,6 +255,7 @@ $(".showOperacionesEnviosPendientes").click(function() {
   $("#crearProgPlataforma-panel").hide();
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
+  $("#solicitudComprobante-panel").hide();
 });
 
 $(".showOperacionesEnviosRealizados").click(function() {
@@ -270,6 +278,7 @@ $(".showOperacionesEnviosRealizados").click(function() {
   $("#crearProgPlataforma-panel").hide();
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
+  $("#solicitudComprobante-panel").hide();
 });
 
 $(".showReportePc").click(function() {
@@ -292,6 +301,7 @@ $(".showReportePc").click(function() {
   $("#crearProgPlataforma-panel").hide();
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
+  $("#solicitudComprobante-panel").hide();
 });
 
 $(".showPruebas").click(function() {
@@ -314,6 +324,7 @@ $(".showPruebas").click(function() {
   $("#crearProgPlataforma-panel").hide();
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
+  $("#solicitudComprobante-panel").hide();
 });
 
 $(".showDetalleStock").click(function() {
@@ -336,6 +347,7 @@ $(".showDetalleStock").click(function() {
   $("#crearProgPlataforma-panel").hide();
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
+  $("#solicitudComprobante-panel").hide();
 });
 
 $(".showSupportReenvios").click(function() {
@@ -358,6 +370,7 @@ $(".showSupportReenvios").click(function() {
   $("#crearProgPlataforma-panel").hide();
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
+  $("#solicitudComprobante-panel").hide();
 });
 
 $(".showSupportClientes").click(function() {
@@ -380,6 +393,7 @@ $(".showSupportClientes").click(function() {
   $("#crearProgPlataforma-panel").hide();
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
+  $("#solicitudComprobante-panel").hide();
 });
 
 $(".showOperacionesProgInHouse").click(function() {
@@ -402,6 +416,7 @@ $(".showOperacionesProgInHouse").click(function() {
   $("#crearProgPlataforma-panel").hide();
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
+  $("#solicitudComprobante-panel").hide();
 });
 
 $(".showNuevaProgInhouse").click(function() {
@@ -424,6 +439,7 @@ $(".showNuevaProgInhouse").click(function() {
   $("#crearProgPlataforma-panel").hide();
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
+  $("#solicitudComprobante-panel").hide();
 });
 
 $(".showOperacionesProgPlataforma").click(function() {
@@ -446,6 +462,7 @@ $(".showOperacionesProgPlataforma").click(function() {
   $("#crearProgPlataforma-panel").hide();
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
+  $("#solicitudComprobante-panel").hide();
 });
 
 $(".showNuevaProgPlataforma").click(function() {
@@ -468,6 +485,7 @@ $(".showNuevaProgPlataforma").click(function() {
   $("#crearProgPlataforma-panel").show();
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
+  $("#solicitudComprobante-panel").hide();
 });
 
 $(".showOperacionesProgInHousePromotoria").click(function() {
@@ -490,6 +508,7 @@ $(".showOperacionesProgInHousePromotoria").click(function() {
   $("#crearProgPlataforma-panel").hide();
   $("#progInhousePromotoria-panel").show();
   $("#progInhouseAdmin-panel").hide();
+  $("#solicitudComprobante-panel").hide();
 });
 
 $(".showOperacionesProgInHouseAdmin").click(function() {
@@ -512,6 +531,30 @@ $(".showOperacionesProgInHouseAdmin").click(function() {
   $("#crearProgPlataforma-panel").hide();
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").show();
+  $("#solicitudComprobante-panel").hide();
+});
+
+$(".showOperacionesSolicitudComprobante").click(function() {
+  $("#dashboard-panel").hide();
+  $("#usuarios-panel").hide();
+  $("#crearUsuarios-panel").hide();
+  $("#reportesStock-panel").hide();
+  $("#detalleStock-panel").hide();
+  $("#pedidos-panel").hide();
+  $("#detallePedido-panel").hide();
+  $("#enviosPendientes-panel").hide();
+  $("#enviosRealizados-panel").hide();
+  $("#reportePc-panel").hide();
+  $("#pruebas-panel").hide();
+  $("#reenviosClientes-panel").hide();
+  $("#datosClientes-panel").hide();
+  $("#progInhouse-panel").hide();
+  $("#crearProgInhouse-panel").hide();
+  $("#progPlataforma-panel").hide();
+  $("#crearProgPlataforma-panel").hide();
+  $("#progInhousePromotoria-panel").hide();
+  $("#progInhouseAdmin-panel").hide();
+  $("#solicitudComprobante-panel").show();
 });
 // END SHOW HIDE PANELS
 
