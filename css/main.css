@@ -1115,45 +1115,55 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .wrap-img-preview {
-  /* background-color: lavender; */
+  background-color: lavender;
   display: flex;
   align-items: center;
-  margin-bottom: 1.5rem;
 }
 
 .imageWrapper {
   background-color: var(--white);
-  border: 1px solid var(--gray-medium);
-  width: 8rem;
-  height: 8rem;
-  border-radius: .6rem;
+  border: solid 1px var(--gray-medium);
+  border-radius: .5rem;
   overflow: hidden;
+  height: 8rem;
+  width: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .imageWrapper img {
-  width: 90%;
-}
-
-.content-info-upload-img {
- /* background-color: yellow; */
- margin-left: 1rem;
-}
-
-.label-upload-img {
-  font-size: 1rem;
-  margin-bottom: .5rem;
-  color: var(--dark-light);
+  width: 100%;
 }
 
 .file-upload {
   position: relative;
   overflow: hidden;
+  margin: 10px;
+}
+
+.file-upload {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
   width: 100%;
+  max-width: 150px;
   text-align: center;
-  border: 1px solid var(--dark);
+  color: #fff;
+  font-size: 1.2em;
+  background: transparent;
+  border: 2px solid #888;
+  padding: 0.85em 1em;
+  display: inline;
+  -ms-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.file-upload:hover {
+  background: #999;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
 }
 
 .file-upload input.file-input {
@@ -1167,11 +1177,5 @@ div.dataTables_wrapper div.dataTables_info {
   opacity: 0;
   filter: alpha(opacity=0);
   height: 100%;
-}
-
-.textHelp-fileInput {
-  font-size: .75rem;
-  padding-top: .5rem;
-  color: var(--dark-light);
 }
 /* END SOLICITUD COMPROBANTE VENTA */

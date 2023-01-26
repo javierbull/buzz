@@ -736,18 +736,18 @@ tinymce.init({
 
 // FILE UPLOAD IMG
 
-$('#imgFileLogoEmpresa').change(function(){
- var curElement = $('#imageLogoEmpresa');
- console.log(curElement);
- var reader = new FileReader();
+$('.file-input').change(function(){
+    var curElement = $('.image');
+    console.log(curElement);
+    var reader = new FileReader();
 
- reader.onload = function (e) {
-     // get loaded data and render thumbnail.
-     curElement.attr('src', e.target.result);
- };
+    reader.onload = function (e) {
+        // get loaded data and render thumbnail.
+        curElement.attr('src', e.target.result);
+    };
 
- // read the image file as a data URL.
- reader.readAsDataURL(this.files[0]);
+    // read the image file as a data URL.
+    reader.readAsDataURL(this.files[0]);
 });
 
 // END FILE UPLOAD IMG
