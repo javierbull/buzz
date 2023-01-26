@@ -5373,7 +5373,7 @@
 	</div>
 
 	<div class="modal fade" id="modalDescargarVales" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
+		<div class="modal-dialog modal-xl">
 			<div class="modal-content">
 				<div class="modal-header">
 					<h5 class="modal-title" id="exampleModalLabel">Descarga de vales</h5>
@@ -5381,7 +5381,6 @@
 				</div>
 				<div class="modal-body">
 					<form>
-
 						<div class="row">
 							<div class="form-group col-md-6">
 								<label for="descargarSolicitudComprobantecliente" class="form-label">Cliente</label>
@@ -5408,35 +5407,33 @@
 						</div>
 
 						<div class="row">
-							<div class="form-group col-md-6">
-								<label class="form-label" for="buscarDocSolicitudComprobante">Tipo de documento</label>
-								<select class="form-select" id="buscarDocSolicitudComprobante">
-									<option selected>DNI</option>
-									<option>CE</option>
-									<option>RUC</option>
+							<div class="form-group col-md-4">
+								<label class="form-label" for="SolicitudComprobanteProducto1">Producto</label>
+								<select class="form-select" id="SolicitudComprobanteProducto1" disabled>
+									<option selected>RK001-1  Combo familiar con ensalada y gaseosa 1.5L -Roky´s</option>
 								</select>
 							</div>
-							<div class="form-group col-md-6">
-								<label for="buscarClienteComprobanteSolicitud" class="form-label">Número o nombre</label>
-								<select class="form-select select2modal" data-placeholder="Buscar" id="buscarClienteComprobanteSolicitud">
-									<option></option>
-									<option>74158564</option>
-									<option>45874569</option>
-									<option>74589652</option>
-									<option>75864521</option>
-								</select>
+							<div class="form-group col-md-2">
+								<label for="descargaValesInitDate" class="form-label">Inicio vigencia</label>
+								<input type="date" class="form-control" id="descargaValesInitDate" placeholder="Ingrese nombre">
 							</div>
-						</div>
+							<div class="form-group col-md-2">
+								<label for="descargaValesEndDate" class="form-label">Fin vigencia</label>
+								<input type="date" class="form-control" id="descargaValesEndDate" placeholder="Ingrese nombre">
+							</div>
+							<div class="form-group col">
+								<label for="descargaValescantidad" class="form-label">Cantidad</label>
+								<input type="number" class="form-control" id="descargaValescantidad" value="12" disabled>
+							</div>
+							<div class="form-group col">
+								<label for="descargaValesPrecioUnitario" class="form-label">P. Unit.</label>
+								<input type="number" class="form-control" id="descargaValesPrecioUnitario" value="20.50" disabled>
+							</div>
+							<div class="form-group col">
+								<label for="descargaValesTotal" class="form-label">Total</label>
+								<input type="number" class="form-control" id="descargaValesTotal" value="246.00" disabled>
+							</div>
 
-						<div class="row">
-							<div class="form-group col-md-6">
-								<label for="searchSolicitudComprobanteInitDate" class="form-label">Fecha Inicio</label>
-								<input type="date" class="form-control" id="searchSolicitudComprobanteInitDate" placeholder="Ingrese nombre">
-							</div>
-							<div class="form-group col-md-6">
-								<label for="searchSolicitudComprobanteEndDate" class="form-label">Fecha Fin</label>
-								<input type="date" class="form-control" id="searchSolicitudComprobanteEndDate" placeholder="Ingrese nombre">
-							</div>
 						</div>
 					</form>
 				</div>
