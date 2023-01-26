@@ -1876,7 +1876,7 @@
 										<td><span class="tag-status tag-warning">Solicitado</span></td>
 										<td>
 											<div class="action-cell-btns">
-													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDetalleSolicitudComprobante">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDetalleSolicitudComprobante-solicitado">
 														<span class="material-icons-outlined" data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle Solicitud">
 															visibility
 														</span>
@@ -1899,7 +1899,7 @@
 										<td><span class="tag-status tag-active">Emitido</span></td>
 										<td>
 											<div class="action-cell-btns">
-													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDetalleSolicitudComprobante">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDetalleSolicitudComprobante-emitido">
 														<span class="material-icons-outlined" data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle Solicitud">
 															visibility
 														</span>
@@ -1927,7 +1927,7 @@
 										<td><span class="tag-status tag-success">Descargado</span></td>
 										<td>
 											<div class="action-cell-btns">
-													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDetalleSolicitudComprobante">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDetalleSolicitudComprobante-emitido">
 														<span class="material-icons-outlined" data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle Solicitud">
 															visibility
 														</span>
@@ -1950,7 +1950,7 @@
 										<td><span class="tag-status tag-danger">Anulado</span></td>
 										<td>
 											<div class="action-cell-btns">
-													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDetalleSolicitudComprobante">
+													<button type="button" name="button" class="btn button-icon button-icon-sm" data-bs-toggle="modal" data-bs-target="#modalDetalleSolicitudComprobante-solicitado">
 														<span class="material-icons-outlined" data-bs-toggle="tooltip" data-bs-placement="left" title="Detalle Solicitud">
 															visibility
 														</span>
@@ -5091,6 +5091,262 @@
 				<div class="modal-footer">
 					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
 					<button type="button" class="btn button-primary">Filtrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalDetalleSolicitudComprobante-solicitado" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Filtrar</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="fieldset-data-inline">
+						<div class="data-inline">
+							<div class="body-semibold">
+								Tipo de documento:
+							</div>
+							<div>
+								Boleta
+							</div>
+						</div>
+						<div class="data-inline">
+							<div class="body-semibold">
+								DNI:
+							</div>
+							<div>
+								74158564
+							</div>
+						</div>
+						<div class="data-inline">
+							<div class="body-semibold">
+								Cliente:
+							</div>
+							<div>
+								Alicia Cerna Pajuelo
+							</div>
+						</div>
+						<div class="data-inline">
+							<div class="body-semibold">
+								Dirección:
+							</div>
+							<div>
+								Av. Horacio Urtegas 123
+							</div>
+						</div>
+						<div class="data-inline">
+							<div class="body-semibold">
+								Empresa:
+							</div>
+							<div>
+								Colmena Solutions
+							</div>
+						</div>
+
+					</div>
+
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">Código</th>
+								<th scope="col">Cantidad</th>
+								<th scope="col">P. Unitario</th>
+								<th scope="col">Total</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>RK751500</td>
+								<td>12</td>
+								<td>20.50</td>
+								<td>246.00</td>
+							</tr>
+							<tr>
+								<td colspan="2"></td>
+								<td class="body-medium">Valor venta</td>
+								<td>208.47</td>
+							</tr>
+							<tr>
+								<td colspan="2"></td>
+								<td class="body-medium">IGV</td>
+								<td>37.53</td>
+							</tr>
+							<tr>
+								<td colspan="2"></td>
+								<td class="body-medium">Total</td>
+								<td>246.00</td>
+							</tr>
+							<tr>
+								<td class="body-bold">Contado</td>
+								<td colspan="3"></td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="table table-hover marginBottom-1">
+						<thead>
+							<tr>
+								<th scope="col">Código</th>
+								<th scope="col">Cantidad</th>
+								<th scope="col">Inicio</th>
+								<th scope="col">Fin</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>RK751500</td>
+								<td>12</td>
+								<td>04/01/2023</td>
+								<td>04/03/2023</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<form>
+						<div class="row">
+							<div class="form-group col-md-6">
+								<label for="solicitudVentaSerie" class="form-label">Serie</label>
+								<input type="text" class="form-control" id="solicitudVentaSerie"  disabled>
+							</div>
+							<div class="form-group col-md-6">
+								<label for="solicitudVentaNumero" class="form-label">Número</label>
+								<input type="number" class="form-control" id="solicitudVentaNumero"  disabled>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalDetalleSolicitudComprobante-emitido" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Filtrar</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="fieldset-data-inline">
+						<div class="data-inline">
+							<div class="body-semibold">
+								Tipo de documento:
+							</div>
+							<div>
+								Boleta
+							</div>
+						</div>
+						<div class="data-inline">
+							<div class="body-semibold">
+								DNI:
+							</div>
+							<div>
+								74158564
+							</div>
+						</div>
+						<div class="data-inline">
+							<div class="body-semibold">
+								Cliente:
+							</div>
+							<div>
+								Alicia Cerna Pajuelo
+							</div>
+						</div>
+						<div class="data-inline">
+							<div class="body-semibold">
+								Dirección:
+							</div>
+							<div>
+								Av. Horacio Urtegas 123
+							</div>
+						</div>
+						<div class="data-inline">
+							<div class="body-semibold">
+								Empresa:
+							</div>
+							<div>
+								Colmena Solutions
+							</div>
+						</div>
+
+					</div>
+
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col">Código</th>
+								<th scope="col">Cantidad</th>
+								<th scope="col">P. Unitario</th>
+								<th scope="col">Total</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>RK751500</td>
+								<td>12</td>
+								<td>20.50</td>
+								<td>246.00</td>
+							</tr>
+							<tr>
+								<td colspan="2"></td>
+								<td class="body-medium">Valor venta</td>
+								<td>208.47</td>
+							</tr>
+							<tr>
+								<td colspan="2"></td>
+								<td class="body-medium">IGV</td>
+								<td>37.53</td>
+							</tr>
+							<tr>
+								<td colspan="2"></td>
+								<td class="body-medium">Total</td>
+								<td>246.00</td>
+							</tr>
+							<tr>
+								<td class="body-bold">Contado</td>
+								<td colspan="3"></td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="table table-hover marginBottom-1">
+						<thead>
+							<tr>
+								<th scope="col">Código</th>
+								<th scope="col">Cantidad</th>
+								<th scope="col">Inicio</th>
+								<th scope="col">Fin</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>RK751500</td>
+								<td>12</td>
+								<td>04/01/2023</td>
+								<td>04/03/2023</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<form>
+						<div class="row">
+							<div class="form-group col-md-6">
+								<label for="solicitudVentaSerie" class="form-label">Serie</label>
+								<input type="text" class="form-control" id="solicitudVentaSerie" placeholder="BBB" value="BBB2" disabled>
+							</div>
+							<div class="form-group col-md-6">
+								<label for="solicitudVentaNumero" class="form-label">Número</label>
+								<input type="number" class="form-control" id="solicitudVentaNumero" placeholder="00000015" value="00000015" disabled>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
 				</div>
 			</div>
 		</div>

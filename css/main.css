@@ -1102,3 +1102,15 @@ div.dataTables_wrapper div.dataTables_info {
   display: none;
 }
 /* END PROGRAMACIÓN INHOUSE PROMOTORIA */
+
+/* SOLICITUD COMPROBANTE VENTA */
+.fieldset-data-inline {
+  /* background-color: pink; */
+  margin-bottom: 1rem;
+}
+
+.data-inline {
+  display: flex;
+  gap: 1rem;
+}
+/* END SOLICITUD COMPROBANTE VENTA */
