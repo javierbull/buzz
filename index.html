@@ -2088,7 +2088,7 @@
 											<label for="NuevaSolcitudComprobanteTotal" class="form-label">Total</label>
 											<input type="number" class="form-control" id="NuevaSolcitudComprobanteTotal" value="246.00" disabled>
 										</div>
-										<button type="button" name="button" class="btn button-icon-danger" data-bs-toggle="modal" data-bs-target="#modalDeleteProduct">
+										<button type="button" name="button" class="btn button-icon-danger">
 											<span class="material-icons">
 												delete
 											</span>
@@ -2161,8 +2161,7 @@
 							</div>
 							<div class="card-footer">
 								<button type="button" name="button" class="btn button-ghost showOperacionesSolicitudComprobante">Cerrar</button>
-								<button type="button" name="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalSuccessProgPlataforma">Guardar</button>
-								<!-- <button type="button" name="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalAlertProgInhouseCrucehorario">Guardar</button> -->
+								<button type="button" name="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalSuccessNuevaSolicitudComprobante">Guardar</button>
 							</div>
 						</div>
 					</div>
@@ -5669,6 +5668,28 @@
 				<div class="modal-footer">
 					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
 					<button type="button" class="btn button-primary" data-bs-dismiss="modal">Descargar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalSuccessNuevaSolicitudComprobante" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Datos guardados</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="d-flex align-items-top">
+						<span class="material-icons success-color marginRight-1">
+							done
+						</span>
+						Los datos se guardaron de manera exitosa
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-primary showOperacionesSolicitudComprobante" data-bs-dismiss="modal">Aceptar</button>
 				</div>
 			</div>
 		</div>
