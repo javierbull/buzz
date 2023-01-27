@@ -736,8 +736,25 @@ tinymce.init({
 
 // FILE UPLOAD IMG
 
-$('.file-input').change(function(){
-    var curElement = $('.image');
+// código de prueba
+
+$('#input-preview-img-prueba').change(function(){
+    var curElement = $('#preview-logo-empresa-prueba');
+    console.log(curElement);
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+        // get loaded data and render thumbnail.
+        curElement.attr('src', e.target.result);
+    };
+
+    // read the image file as a data URL.
+    reader.readAsDataURL(this.files[0]);
+});
+
+// image preview modal descarga de Vales
+$('#descarga-vales-input-preview-img').change(function(){
+    var curElement = $('#descarga-vales-preview-logo-empresa');
     console.log(curElement);
     var reader = new FileReader();
 

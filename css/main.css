@@ -1139,34 +1139,9 @@ div.dataTables_wrapper div.dataTables_info {
 .file-upload {
   position: relative;
   overflow: hidden;
-  margin: 10px;
 }
 
-.file-upload {
-  position: relative;
-  overflow: hidden;
-  margin: 10px;
-  width: 100%;
-  max-width: 150px;
-  text-align: center;
-  color: #fff;
-  font-size: 1.2em;
-  background: transparent;
-  border: 2px solid #888;
-  padding: 0.85em 1em;
-  display: inline;
-  -ms-transition: all 0.2s ease;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-.file-upload:hover {
-  background: #999;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
-  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
-}
-
-.file-upload input.file-input {
+.file-input-image {
   position: absolute;
   top: 0;
   right: 0;
@@ -1177,5 +1152,17 @@ div.dataTables_wrapper div.dataTables_info {
   opacity: 0;
   filter: alpha(opacity=0);
   height: 100%;
+}
+
+.wrap-label-file-upload {
+  /* background-color: pink; */
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap:.5rem;
+}
+
+.wrap-label-file-upload  p {
+  margin-bottom: 0;
 }
 /* END SOLICITUD COMPROBANTE VENTA */
