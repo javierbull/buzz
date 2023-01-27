@@ -1979,6 +1979,71 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="panel" id="nuevaSolicitudComprobante-panel">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item showOperacionesSolicitudComprobante"><a href="#" class="button-link">Solicitudes De Comprobantes</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Nueva Solicitud de Comprobante</li>
+					</ol>
+				</nav>
+
+				<div class="row">
+					<div class="col-xl-5 col-lg-6 mx-auto">
+						<div class="card mx-auto">
+							<div class="card-header">
+								<h2>
+									Nueva Solicitud de Comprobante
+								</h2>
+							</div>
+							<div class="card-body">
+								<form>
+									<div class="form-group" id="nuevaProgPlataformaBuscarEmpresa">
+										<label class="form-label">Empresa</label>
+										<select class="form-select select2" data-placeholder="Buscar">
+											<option></option>
+											<option>BCP</option>
+											<option>Caja Huancayo</option>
+											<option>Industrias del Envase</option>
+											<option>Interbank</option>
+											<option>Iron Mountain</option>
+											<option>Scotiabank</option>
+										</select>
+									</div>
+
+									<div class="row">
+										<div class="form-group col-md-6">
+											<label for="progplataformaDateInit" class="form-label">Fecha Inicio</label>
+											<input type="date" class="form-control" id="progplataformaDateInit" placeholder="Ingrese fecha">
+										</div>
+										<div class="form-group col-md-6">
+											<label for="progplataformaDateEnd" class="form-label">Fecha Fin</label>
+											<input type="date" class="form-control" id="progplataformaDateEnd" placeholder="Ingrese fecha">
+										</div>
+									</div>
+
+									<div class="form-group" id="nuevaProgPlataformaBuscarEjecutivo">
+										<label class="form-label">Ejecutivo</label>
+										<select class="form-select select2" data-placeholder="Buscar">
+											<option></option>
+											<option>Mónica Bicerra</option>
+											<option>Natalie Bendezu</option>
+											<option>Carlos Tamashiro</option>
+										</select>
+									</div>
+
+
+								</form>
+							</div>
+							<div class="card-footer">
+								<button type="button" name="button" class="btn button-ghost showOperacionesSolicitudComprobante">Cerrar</button>
+								<button type="button" name="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalSuccessProgPlataforma">Guardar</button>
+								<!-- <button type="button" name="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalAlertProgInhouseCrucehorario">Guardar</button> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<!-- END OPERACIONES -->
 
 			<!-- ATENCIÓN AL CLIENTE -->
