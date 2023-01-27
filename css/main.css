@@ -1115,9 +1115,11 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .wrap-img-preview {
-  background-color: lavender;
+  /* background-color: lavender; */
   display: flex;
   align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .imageWrapper {
@@ -1156,7 +1158,6 @@ div.dataTables_wrapper div.dataTables_info {
 
 .wrap-label-file-upload {
   /* background-color: pink; */
-  margin-left: 1rem;
   display: flex;
   flex-direction: column;
   gap:.5rem;
