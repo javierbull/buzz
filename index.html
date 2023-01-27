@@ -1989,7 +1989,7 @@
 				</nav>
 
 				<div class="row">
-					<div class="col-xl-5 col-lg-6 mx-auto">
+					<div class="col-xl-12 col-lg-12 mx-auto">
 						<div class="card mx-auto">
 							<div class="card-header">
 								<h2>
@@ -1998,38 +1998,138 @@
 							</div>
 							<div class="card-body">
 								<form>
-									<div class="form-group" id="nuevaProgPlataformaBuscarEmpresa">
-										<label class="form-label">Empresa</label>
-										<select class="form-select select2" data-placeholder="Buscar">
-											<option></option>
-											<option>BCP</option>
-											<option>Caja Huancayo</option>
-											<option>Industrias del Envase</option>
-											<option>Interbank</option>
-											<option>Iron Mountain</option>
-											<option>Scotiabank</option>
-										</select>
+									<div class="row">
+										<div class="form-group col-md-4" id="wrap-solCompTipoComprobante">
+											<label class="form-label" for="solCompTipoComprobante">Tipo de comprobante</label>
+											<select class="form-select" id="solCompTipoComprobante">
+												<option>Boleta</option>
+												<option>Factura</option>
+											</select>
+										</div>
+
+										<div class="form-group col-md-4">
+											<label class="form-label" for="solCompTipoDocumento">Tipo de documento</label>
+											<select class="form-select" id="solCompTipoDocumento">
+												<option>DNI</option>
+												<option>RUC</option>
+											</select>
+										</div>
+
+										<div class="form-group col-md-4">
+											<label for="solCompNumeroDocumento" class="form-label">Número de documento</label>
+											<input type="number" class="form-control" id="solCompNumeroDocumento">
+										</div>
 									</div>
 
 									<div class="row">
-										<div class="form-group col-md-6">
-											<label for="progplataformaDateInit" class="form-label">Fecha Inicio</label>
-											<input type="date" class="form-control" id="progplataformaDateInit" placeholder="Ingrese fecha">
+										<div class="form-group col-md-4">
+											<label for="solCompCliente" class="form-label">Cliente</label>
+											<input type="text" class="form-control" id="solCompCliente">
 										</div>
-										<div class="form-group col-md-6">
-											<label for="progplataformaDateEnd" class="form-label">Fecha Fin</label>
-											<input type="date" class="form-control" id="progplataformaDateEnd" placeholder="Ingrese fecha">
+
+										<div class="form-group col-md-4">
+											<label for="solCompDireccionCliente" class="form-label">Dirección</label>
+											<input type="text" class="form-control" id="solCompDireccionCliente">
+										</div>
+
+										<div class="form-group col-md-4">
+											<label class="form-label" for="solCompEmpresaCliente">Empresa</label>
+											<select class="form-select select2" id="solCompEmpresaCliente">
+												<option></option>
+												<option>BCP</option>
+												<option>Colmena Solutions</option>
+												<option>Intebank</option>
+											</select>
+										</div>
+
+									</div>
+
+									<div class="wrap-img-preview">
+										<div class="imageWrapper">
+											<img class="image-preview" id="descarga-vales-preview-logo-empresa" src="img/logos/panda-logo.jpg">
+										</div>
+
+										<div class="wrap-label-file-upload">
+											<p>Logo</p>
+											<button class="file-upload btn button-outline">
+												<input type="file" class="file-input-image" id="descarga-vales-input-preview-img">Agregar imágen
+											</button>
+											<p>JPG, PNG</p>
 										</div>
 									</div>
 
-									<div class="form-group" id="nuevaProgPlataformaBuscarEjecutivo">
-										<label class="form-label">Ejecutivo</label>
-										<select class="form-select select2" data-placeholder="Buscar">
-											<option></option>
-											<option>Mónica Bicerra</option>
-											<option>Natalie Bendezu</option>
-											<option>Carlos Tamashiro</option>
-										</select>
+									<h3>Agregar Productos</h3>
+									<div class="wrap-agregar-producto">
+										<div class="form-group col-md-4">
+											<label class="form-label" for="NuevaSolcitudComprobanteSlectproducto">Producto</label>
+											<select class="form-select select2" id="NuevaSolcitudComprobanteSlectproducto">
+												<option selected>RK001  Combo familiar con ensalada y gaseosa 1.5L -Roky´s</option>
+												<option>RK002  Combo personal con ensalada y gaseosa 250ml -Roky´s</option>
+												<option>RK003  Medio Pollo con ensalada y gaseosa 250ml -Roky´s</option>
+											</select>
+										</div>
+										<div class="form-group col-md-2">
+											<label for="NuevaSolcitudComprobanteInitDate" class="form-label">Inicio vigencia</label>
+											<input type="date" class="form-control" id="NuevaSolcitudComprobanteInitDate" value="2023-01-20">
+										</div>
+										<div class="form-group col-md-2">
+											<label for="NuevaSolcitudComprobanteEndDate" class="form-label">Fin vigencia</label>
+											<input type="date" class="form-control" id="NuevaSolcitudComprobanteEndDate" value="2023-04-20">
+										</div>
+										<div class="form-group col">
+											<label for="NuevaSolcitudComprobanteCantidad" class="form-label">Cantidad</label>
+											<input type="number" class="form-control" id="NuevaSolcitudComprobanteCantidad" value="12">
+										</div>
+										<div class="form-group col">
+											<label for="NuevaSolcitudComprobantePrecioUnitario" class="form-label">P. Unit.</label>
+											<input type="number" class="form-control" id="NuevaSolcitudComprobantePrecioUnitario" value="20.50">
+										</div>
+										<div class="form-group col">
+											<label for="NuevaSolcitudComprobanteTotal" class="form-label">Total</label>
+											<input type="number" class="form-control" id="NuevaSolcitudComprobanteTotal" value="246.00" disabled>
+										</div>
+										<button type="button" name="button" class="btn button-icon-danger" data-bs-toggle="modal" data-bs-target="#modalDeleteProduct">
+											<span class="material-icons">
+												delete
+											</span>
+										</button>
+									</div>
+
+									<div class="wrap-agregar-producto">
+										<div class="form-group col-md-4">
+											<label class="form-label" for="NuevaSolcitudComprobanteSlectproductoNuevo">Producto</label>
+											<select class="form-select select2" id="NuevaSolcitudComprobanteSlectproductoNuevo">
+												<option>Buscar</option>
+												<option>RK001  Combo familiar con ensalada y gaseosa 1.5L -Roky´s</option>
+												<option>RK002  Combo personal con ensalada y gaseosa 250ml -Roky´s</option>
+												<option>RK003  Medio Pollo con ensalada y gaseosa 250ml -Roky´s</option>
+											</select>
+										</div>
+										<div class="form-group col-md-2">
+											<label for="NuevaSolcitudComprobanteInitDateNuevo" class="form-label">Inicio vigencia</label>
+											<input type="date" class="form-control" id="NuevaSolcitudComprobanteInitDateNuevo">
+										</div>
+										<div class="form-group col-md-2">
+											<label for="NuevaSolcitudComprobanteEndDateNuevo" class="form-label">Fin vigencia</label>
+											<input type="date" class="form-control" id="NuevaSolcitudComprobanteEndDateNuevo">
+										</div>
+										<div class="form-group col">
+											<label for="NuevaSolcitudComprobanteCantidadNuevo" class="form-label">Cantidad</label>
+											<input type="number" class="form-control" id="NuevaSolcitudComprobanteCantidadNuevo" value="1">
+										</div>
+										<div class="form-group col">
+											<label for="NuevaSolcitudComprobantePrecioUnitarioNuevo" class="form-label">P. Unit.</label>
+											<input type="number" class="form-control" id="NuevaSolcitudComprobantePrecioUnitarioNuevo" value="0.00">
+										</div>
+										<div class="form-group col">
+											<label for="NuevaSolcitudComprobanteTotalNuevo" class="form-label">Total</label>
+											<input type="number" class="form-control" id="NuevaSolcitudComprobanteTotalNuevo" value="0.00" disabled>
+										</div>
+										<button type="button" name="button" class="btn button-icon-action" data-bs-toggle="modal" data-bs-target="#modalDeleteProduct">
+											<span class="material-icons">
+												add
+											</span>
+										</button>
 									</div>
 
 
@@ -5474,13 +5574,13 @@
 
 						<div class="wrap-img-preview">
 							<div class="imageWrapper">
-								<img class="image-preview" id="descarga-vales-preview-logo-empresa" src="img/logos/panda-logo.jpg">
+								<img class="image-preview" id="descarga-vales-preview-logo-empresa-modal" src="img/logos/panda-logo.jpg">
 							</div>
 
 							<div class="wrap-label-file-upload">
 								<p>Logo</p>
 								<button class="file-upload btn button-outline">
-									<input type="file" class="file-input-image" id="descarga-vales-input-preview-img">Agregar imágen
+									<input type="file" class="file-input-image" id="descarga-vales-input-preview-img-modal">Agregar imágen
 								</button>
 								<p>JPG, PNG</p>
 							</div>

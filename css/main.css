@@ -408,6 +408,44 @@ h3 {
   box-shadow: 0 0 0 0.25rem rgba(20, 20, 43, 0.25);
 }
 
+.button-icon-danger {
+  color: var(--white);
+  background-color: var(--danger);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-icon-danger:hover {
+  color: var(--white);
+  background-color: var(--danger-dark);
+}
+
+.button-icon-danger:focus {
+  color: var(--white);
+  background-color: var(--danger);
+  box-shadow: 0 0 0 0.25rem var(--danger-light);
+}
+
+.button-icon-action {
+  color: var(--white);
+  background-color: var(--info);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-icon-action:hover {
+  color: var(--white);
+  background-color: var(--info-dark);
+}
+
+.button-icon-action:focus {
+  color: var(--white);
+  background-color: var(--info);
+  box-shadow: 0 0 0 0.25rem var(--info-light);
+}
+
 .button-icon-sm {
   /* background-color: salmon; */
   padding: .25rem;;
@@ -606,7 +644,7 @@ video {
   margin-bottom: .25rem;
 }
 
-.form-control:focus {
+.form-control:focus, .form-select:focus {
   color: var(--dark);
   background-color: var(--white);
   outline: 0;
@@ -1165,5 +1203,17 @@ div.dataTables_wrapper div.dataTables_info {
 
 .wrap-label-file-upload  p {
   margin-bottom: 0;
+  color: var(--dark-light);
+}
+
+.wrap-agregar-producto {
+  /* background-color: lavender; */
+  display: flex;
+  align-items: flex-end;
+  gap: 1.5rem;
+}
+
+.wrap-agregar-producto button {
+  margin-bottom: 1rem;
 }
 /* END SOLICITUD COMPROBANTE VENTA */
