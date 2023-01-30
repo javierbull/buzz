@@ -709,6 +709,7 @@ video {
 
 .active-item-collapse {
   background-color: var(--gray-light);
+  font-weight: 500;
 }
 
 .sidebar-admin-list {
