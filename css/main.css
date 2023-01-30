@@ -1206,11 +1206,11 @@ div.dataTables_wrapper div.dataTables_info {
   color: var(--dark-light);
 }
 
-.wrap-agregar-producto {
+.wrap-agregar-producto, .wrap-solicitar-comprobante-datos-cliente {
   /* background-color: lavender; */
   display: flex;
   align-items: flex-end;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .wrap-agregar-producto button {
