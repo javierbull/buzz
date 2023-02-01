@@ -96,6 +96,7 @@ $(".showDashboard").click(function() {
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
   $("#nuevaSolicitudComprobante-panel").hide();
+  $("#empresas-panel").hide();
 });
 
 $(".showAdmninistracionUsuarios").click(function() {
@@ -120,6 +121,7 @@ $(".showAdmninistracionUsuarios").click(function() {
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
   $("#nuevaSolicitudComprobante-panel").hide();
+  $("#empresas-panel").hide();
 });
 
 $(".showCrearUsuarios").click(function() {
@@ -144,6 +146,7 @@ $(".showCrearUsuarios").click(function() {
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
   $("#nuevaSolicitudComprobante-panel").hide();
+  $("#empresas-panel").hide();
 });
 
 $(".showReporteStockDisponible").click(function() {
@@ -168,6 +171,7 @@ $(".showReporteStockDisponible").click(function() {
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
   $("#nuevaSolicitudComprobante-panel").hide();
+  $("#empresas-panel").hide();
 });
 
 $("#showDetalleStock").click(function() {
@@ -192,6 +196,7 @@ $("#showDetalleStock").click(function() {
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
   $("#nuevaSolicitudComprobante-panel").hide();
+  $("#empresas-panel").hide();
 });
 
 $(".showOperacionesPedidos").click(function() {
@@ -216,6 +221,7 @@ $(".showOperacionesPedidos").click(function() {
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
   $("#nuevaSolicitudComprobante-panel").hide();
+  $("#empresas-panel").hide();
 });
 
 $("#showDetallePedido").click(function() {
@@ -240,6 +246,7 @@ $("#showDetallePedido").click(function() {
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
   $("#nuevaSolicitudComprobante-panel").hide();
+  $("#empresas-panel").hide();
 });
 
 $(".showOperacionesEnviosPendientes").click(function() {
@@ -264,6 +271,7 @@ $(".showOperacionesEnviosPendientes").click(function() {
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
   $("#nuevaSolicitudComprobante-panel").hide();
+  $("#empresas-panel").hide();
 });
 
 $(".showOperacionesEnviosRealizados").click(function() {
@@ -288,6 +296,7 @@ $(".showOperacionesEnviosRealizados").click(function() {
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
   $("#nuevaSolicitudComprobante-panel").hide();
+  $("#empresas-panel").hide();
 });
 
 $(".showReportePc").click(function() {
@@ -312,6 +321,7 @@ $(".showReportePc").click(function() {
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
   $("#nuevaSolicitudComprobante-panel").hide();
+  $("#empresas-panel").hide();
 });
 
 $(".showPruebas").click(function() {
@@ -336,6 +346,7 @@ $(".showPruebas").click(function() {
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
   $("#nuevaSolicitudComprobante-panel").hide();
+  $("#empresas-panel").hide();
 });
 
 $(".showDetalleStock").click(function() {
@@ -360,6 +371,7 @@ $(".showDetalleStock").click(function() {
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
   $("#nuevaSolicitudComprobante-panel").hide();
+  $("#empresas-panel").hide();
 });
 
 $(".showSupportReenvios").click(function() {
@@ -384,6 +396,7 @@ $(".showSupportReenvios").click(function() {
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
   $("#nuevaSolicitudComprobante-panel").hide();
+  $("#empresas-panel").hide();
 });
 
 $(".showSupportClientes").click(function() {
@@ -408,6 +421,7 @@ $(".showSupportClientes").click(function() {
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
   $("#nuevaSolicitudComprobante-panel").hide();
+  $("#empresas-panel").hide();
 });
 
 $(".showOperacionesProgInHouse").click(function() {
@@ -432,6 +446,7 @@ $(".showOperacionesProgInHouse").click(function() {
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
   $("#nuevaSolicitudComprobante-panel").hide();
+  $("#empresas-panel").hide();
 });
 
 $(".showNuevaProgInhouse").click(function() {
@@ -456,6 +471,7 @@ $(".showNuevaProgInhouse").click(function() {
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
   $("#nuevaSolicitudComprobante-panel").hide();
+  $("#empresas-panel").hide();
 });
 
 $(".showOperacionesProgPlataforma").click(function() {
@@ -480,6 +496,7 @@ $(".showOperacionesProgPlataforma").click(function() {
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
   $("#nuevaSolicitudComprobante-panel").hide();
+  $("#empresas-panel").hide();
 });
 
 $(".showNuevaProgPlataforma").click(function() {
@@ -504,6 +521,7 @@ $(".showNuevaProgPlataforma").click(function() {
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
   $("#nuevaSolicitudComprobante-panel").hide();
+  $("#empresas-panel").hide();
 });
 
 $(".showOperacionesProgInHousePromotoria").click(function() {
@@ -528,6 +546,7 @@ $(".showOperacionesProgInHousePromotoria").click(function() {
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
   $("#nuevaSolicitudComprobante-panel").hide();
+  $("#empresas-panel").hide();
 });
 
 $(".showOperacionesProgInHouseAdmin").click(function() {
@@ -552,6 +571,7 @@ $(".showOperacionesProgInHouseAdmin").click(function() {
   $("#progInhouseAdmin-panel").show();
   $("#solicitudComprobante-panel").hide();
   $("#nuevaSolicitudComprobante-panel").hide();
+  $("#empresas-panel").hide();
 });
 
 $(".showOperacionesSolicitudComprobante").click(function() {
@@ -576,6 +596,7 @@ $(".showOperacionesSolicitudComprobante").click(function() {
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").show();
   $("#nuevaSolicitudComprobante-panel").hide();
+  $("#empresas-panel").hide();
 });
 
 $(".showNuevaSolicitudComprobante").click(function() {
@@ -600,6 +621,31 @@ $(".showNuevaSolicitudComprobante").click(function() {
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
   $("#nuevaSolicitudComprobante-panel").show();
+  $("#empresas-panel").hide();
+});
+
+$(".showAdmninistracionEmpresas").click(function() {
+  $("#dashboard-panel").hide();
+  $("#usuarios-panel").hide();
+  $("#crearUsuarios-panel").hide();
+  $("#reportesStock-panel").hide();
+  $("#detalleStock-panel").hide();
+  $("#pedidos-panel").hide();
+  $("#detallePedido-panel").hide();
+  $("#enviosPendientes-panel").hide();
+  $("#enviosRealizados-panel").hide();
+  $("#reportePc-panel").hide();
+  $("#pruebas-panel").hide();
+  $("#reenviosClientes-panel").hide();
+  $("#datosClientes-panel").hide();
+  $("#progInhouse-panel").hide();
+  $("#crearProgInhouse-panel").hide();
+  $("#progPlataforma-panel").hide();
+  $("#crearProgPlataforma-panel").hide();
+  $("#progInhousePromotoria-panel").hide();
+  $("#progInhouseAdmin-panel").hide();
+  $("#solicitudComprobante-panel").hide();
+  $("#empresas-panel").show();
 });
 // END SHOW HIDE PANELS
 
