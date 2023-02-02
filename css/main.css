@@ -515,7 +515,10 @@ input[type=number] {
 /* END SWITCH BTN */
 
 /* TABS */
-
+.tab-content {
+  /* background-color: pink; */
+  padding-top: 1rem;
+}
 /* END TABS */
 
 /* FIN ESTILOS GENERALES */
