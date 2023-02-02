@@ -519,6 +519,21 @@ input[type=number] {
   /* background-color: pink; */
   padding-top: 1rem;
 }
+
+.nav-tabs-items-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.nav-tabs-items-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.nav-tabs-items-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 /* END TABS */
 
 /* FIN ESTILOS GENERALES */
