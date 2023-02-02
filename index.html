@@ -5813,6 +5813,41 @@
 		</div>
 	</div>
 
+	<div class="modal fade" id="modalFiltrarEmpresas" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Filtrar</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="filtrarEmpresaNombre" class="form-label">Empresa</label>
+							<select class="form-select select2modal" aria-label="Default select example" id="filtrarEmpresaNombre">
+								<option selected>Todas las empresas</option>
+								<option>BCP</option>
+								<option>Colmena Solutions</option>
+								<option>Interbank</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="filtrarEmpresaEstado" class="form-label">Estado</label>
+							<select class="form-select" aria-label="Default select example" id="filtrarEmpresaEstado">
+								<option selected>Todos</option>
+								<option>Activo</option>
+								<option>Inactivo</option>
+							</select>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Filtrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- Modal -->
 
 	<!-- Fin Modals -->
