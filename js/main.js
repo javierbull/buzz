@@ -697,6 +697,7 @@ $(".showCrearEmpresa").click(function() {
 });
 // END SHOW HIDE PANELS
 
+
 // SHOW FORMS CREAR Usuario
 $('#radioTypeUserInhouse').click(function(){
   $("#fieldset-userInhouse").show();
