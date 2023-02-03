@@ -804,6 +804,7 @@
 											</div>
 								  	</form>
 								  </div>
+
 								  <div class="tab-pane fade" id="nav-crearSede" role="tabpanel" aria-labelledby="nav-crearSede-tab">
 										<div class="accordion" id="accordionNuevaSede">
 										  <div class="accordion-item">
@@ -814,7 +815,43 @@
 										    </h2>
 										    <div id="collapseOneNuevaSede" class="accordion-collapse collapse show" aria-labelledby="headingOneNuevaSede" data-bs-parent="#accordionNuevaSede">
 										      <div class="accordion-body">
-										        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+										        <form>
+															<div class="row">
+																<div class="form-group col-md-4">
+																	<label class="form-label" for="nuevaSedeInputDepartamento">Departamento</label>
+																	<select class="form-select select2" id="nuevaSedeInputDepartamento">
+																		<option>Seleccione</option>
+																		<option>Arequipa</option>
+																		<option>Lima</option>
+																		<option>Tacna</option>
+																	</select>
+																</div>
+																<div class="form-group col-md-4">
+																	<label class="form-label" for="nuevaSedeInputProvincia">Provincia</label>
+																	<select class="form-select select2" id="nuevaSedeInputProvincia">
+																		<option>Seleccione</option>
+																		<option>Arequipa</option>
+																		<option>Lima</option>
+																		<option>Tacna</option>
+																	</select>
+																</div>
+																<div class="form-group col-md-4">
+																	<label class="form-label" for="nuevaSedeInputDistrito">Distrito</label>
+																	<select class="form-select select2" id="nuevaSedeInputDistrito">
+																		<option>Seleccione</option>
+																		<option>Breña</option>
+																		<option>Lince</option>
+																		<option>Magdalena</option>
+																		<option>Miraflores</option>
+																	</select>
+																</div>
+															</div>
+
+															<div class="form-group">
+																<label for="nuevaSedeInputDireccion" class="form-label">Dirección</label>
+																<input type="text" class="form-control" id="nuevaSedeInputDireccion">
+															</div>
+										        </form>
 										      </div>
 										    </div>
 										  </div>
