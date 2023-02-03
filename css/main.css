@@ -302,6 +302,23 @@ h3 {
   box-shadow: 0 0 0 0.25rem var(--danger-light);
 }
 
+.button-action {
+  background-color: var(--info);
+  color: var(--white);
+}
+
+.button-action:hover {
+  background-color: var(--info-dark);
+  color: var(--white);
+}
+
+.button-action:focus {
+  background-color: var(--info);
+  color: var(--white);
+  border-color: 1px solid var(--info-dark);
+  box-shadow: 0 0 0 0.25rem var(--info-light);
+}
+
 .button-link {
   /* background-color: salmon; */
   color: var(--info);
