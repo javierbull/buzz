@@ -181,6 +181,14 @@ h3 {
   margin-right: 1rem !important;
 }
 
+.marginLeft-0-5 {
+  margin-left: .5rem !important;
+}
+
+.marginLeft-1 {
+  margin-left: 1rem !important;
+}
+
 /* End Margins */
 
 /* Paddings */
