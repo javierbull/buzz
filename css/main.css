@@ -1097,7 +1097,7 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .accordion-body {
-  background-color: var(--gray-light);
+  background-color: var(--white);
 }
 
 .accordion-checkbox .accordion-header .form-check {
