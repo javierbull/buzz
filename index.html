@@ -1198,7 +1198,7 @@
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item showAdmninistracionEmpresasAdmin"><a href="#" class="button-link">Empresas</a></li>
-						<li class="breadcrumb-item active" aria-current="page">Nueva Empresa</li>
+						<li class="breadcrumb-item active" aria-current="page">Detalle Empresa</li>
 					</ol>
 				</nav>
 
@@ -1207,34 +1207,34 @@
 						<div class="card mx-auto">
 							<div class="card-header">
 								<h2>
-									Nueva Empresa
+									Detalle Empresa
 								</h2>
 							</div>
 							<div class="card-body">
 								<nav>
 									<div class="nav nav-tabs nav-tabs-items-3" id="nav-tab" role="tablist">
-										<button class="nav-link active" id="nav-crearEmpresa-tab" data-bs-toggle="tab" data-bs-target="#nav-crearEmpresa" type="button" role="tab" aria-controls="nav-crearEmpresa" aria-selected="true">
+										<button class="nav-link active" id="nav-detalleEmpresa-tab" data-bs-toggle="tab" data-bs-target="#nav-detalleEmpresa" type="button" role="tab" aria-controls="nav-detalleEmpresa" aria-selected="true">
 											Empresas
 										</button>
-										<button class="nav-link" id="nav-crearSede-tab" data-bs-toggle="tab" data-bs-target="#nav-crearSede" type="button" role="tab" aria-controls="nav-crearSede" aria-selected="false">
+										<button class="nav-link" id="nav-detalleSede-tab" data-bs-toggle="tab" data-bs-target="#nav-detalleSede" type="button" role="tab" aria-controls="nav-detalleSede" aria-selected="false">
 											Sedes
 										</button>
-										<button class="nav-link" id="nav-crearContacto-tab" data-bs-toggle="tab" data-bs-target="#nav-crearContacto" type="button" role="tab" aria-controls="nav-crearContacto" aria-selected="false">
+										<button class="nav-link" id="nav-detalleContacto-tab" data-bs-toggle="tab" data-bs-target="#nav-detalleContacto" type="button" role="tab" aria-controls="nav-detalleContacto" aria-selected="false">
 											Contactos
 										</button>
 									</div>
 								</nav>
 								<div class="tab-content" id="nav-tabContent">
-									<div class="tab-pane fade show active" id="nav-crearEmpresa" role="tabpanel" aria-labelledby="nav-crearEmpresa-tab">
+									<div class="tab-pane fade show active" id="nav-detalleEmpresa" role="tabpanel" aria-labelledby="nav-detalleEmpresa-tab">
 										<form>
 											<div class="wrap-img-preview">
 												<div class="imageWrapper">
-													<img class="image-preview" id="nueva-empresa-preview-logo-empresa" src="img/logos/default-img.jpg">
+													<img class="image-preview" id="nueva-empresa-preview-logo-empresa" src="img/logos/colmena.png">
 												</div>
 
 												<div class="wrap-label-file-upload">
 													<p>Logo</p>
-													<button class="file-upload btn button-outline">
+													<button class="file-upload btn button-outline" disabled>
 														<input type="file" class="file-input-image" id="nueva-empresa-input-preview-img">Agregar imágen
 													</button>
 													<p>JPG, PNG</p>
@@ -1243,51 +1243,51 @@
 
 											<div class="row">
 												<div class="form-group col-md-6">
-													<label for="nuevaEmpresaInputRuc" class="form-label">RUC</label>
-													<input type="number" class="form-control" id="nuevaEmpresaInputRuc">
+													<label for="detalleEmpresaInputRuc" class="form-label">RUC</label>
+													<input type="number" class="form-control" id="detalleEmpresaInputRuc" value="1452658745" disabled>
 												</div>
 												<div class="form-group col-md-6">
-													<label for="nuevaEmpresaInputRazonSocial" class="form-label">Razón Social</label>
-													<input type="text" class="form-control" id="nuevaEmpresaInputRazonSocial">
+													<label for="detalleEmpresaInputRazonSocial" class="form-label">Razón Social</label>
+													<input type="text" class="form-control" id="detalleEmpresaInputRazonSocial" value="Colmena Solutions" disabled>
 												</div>
 											</div>
 
 											<div class="row">
 												<div class="form-group col-md-6">
-													<label for="nuevaEmpresaInputNombreComercial" class="form-label">Nombre Comercial</label>
-													<input type="number" class="form-control" id="nuevaEmpresaInputNombreComercial">
+													<label for="detalleEmpresaInputNombreComercial" class="form-label">Nombre Comercial</label>
+													<input type="text" class="form-control" id="detalleEmpresaInputNombreComercial" value="Colmena Solutions" disabled>
 												</div>
 												<div class="form-group col-md-6">
-													<label for="nuevaEmpresaInputNombreWeb" class="form-label">Nombre Web</label>
-													<input type="number" class="form-control" id="nuevaEmpresaInputNombreWeb">
+													<label for="detalleEmpresaInputNombreWeb" class="form-label">Nombre Web</label>
+													<input type="text" class="form-control" id="detalleEmpresaInputNombreWeb" value="Colmena Solutions" disabled>
 												</div>
 											</div>
 
 											<div class="row">
 												<div class="form-group col-md-4">
-													<label class="form-label" for="nuevaEmpresainputDepartamento">Departamento</label>
-													<select class="form-select select2" id="nuevaEmpresainputDepartamento">
+													<label class="form-label" for="detalleEmpresainputDepartamento">Departamento</label>
+													<select class="form-select select2" id="detalleEmpresainputDepartamento" disabled>
 														<option>Seleccione</option>
 														<option>Arequipa</option>
-														<option>Lima</option>
+														<option selected>Lima</option>
 														<option>Tacna</option>
 													</select>
 												</div>
 												<div class="form-group col-md-4">
-													<label class="form-label" for="nuevaEmpresainputProvincia">Provincia</label>
-													<select class="form-select select2" id="nuevaEmpresainputProvincia">
+													<label class="form-label" for="detalleEmpresainputProvincia">Provincia</label>
+													<select class="form-select select2" id="detalleEmpresainputProvincia" disabled>
 														<option>Seleccione</option>
 														<option>Arequipa</option>
-														<option>Lima</option>
+														<option selected>Lima</option>
 														<option>Tacna</option>
 													</select>
 												</div>
 												<div class="form-group col-md-4">
-													<label class="form-label" for="nuevaEmpresainputDistrito">Distrito</label>
-													<select class="form-select select2" id="nuevaEmpresainputDistrito">
+													<label class="form-label" for="detalleEmpresainputDistrito">Distrito</label>
+													<select class="form-select select2" id="detalleEmpresainputDistrito" disabled>
 														<option>Seleccione</option>
 														<option>Breña</option>
-														<option>Lince</option>
+														<option selected>Lince</option>
 														<option>Magdalena</option>
 														<option>Miraflores</option>
 													</select>
@@ -1295,21 +1295,21 @@
 											</div>
 
 											<div class="form-group">
-												<label for="nuevaEmpresaInputDireccion" class="form-label">Dirección</label>
-												<input type="text" class="form-control" id="nuevaEmpresaInputDireccion">
+												<label for="detalleEmpresaInputDireccion" class="form-label">Dirección</label>
+												<input type="text" class="form-control" id="detalleEmpresaInputDireccion" value="Av. Arenales 1912" disabled>
 											</div>
 
 											<div class="row">
 												<div class="form-group col-md-6">
 													<label for="nuevaEmpresaInputCodigo" class="form-label">Código de Empresa</label>
-													<input type="text" class="form-control" id="nuevaEmpresaInputCodigo">
+													<input type="text" class="form-control" id="nuevaEmpresaInputCodigo" value="col23" disabled>
 												</div>
 
 												<div class="form-group col-md-6">
 													<label class="form-label" for="nuevaEmpresainputDistrito">Tipo</label>
-													<select class="form-select" id="nuevaEmpresainputDistrito">
+													<select class="form-select" id="nuevaEmpresainputDistrito" disabled>
 														<option>Seleccione</option>
-														<option>Clentes bajos</option>
+														<option selected>Clentes bajos</option>
 														<option>Clientes medios</option>
 														<option>Clientes top</option>
 													</select>
@@ -1320,15 +1320,15 @@
 												<label class="form-label">Tipo de pago</label>
 												<div>
 													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="nuevaEmpresaRadioOptionTipoPago" id="radioOptionTipoPagoPasarela" value="Pasarela" checked>
+														<input class="form-check-input" type="radio" name="nuevaEmpresaRadioOptionTipoPago" id="radioOptionTipoPagoPasarela" value="Pasarela" checked disabled>
 														<label class="form-check-label" for="radioOptionTipoPagoPasarela">Pasarela</label>
 													</div>
 													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="nuevaEmpresaRadioOptionTipoPago" id="radioOptionTipoPagoPlanilla" value="planilla">
+														<input class="form-check-input" type="radio" name="nuevaEmpresaRadioOptionTipoPago" id="radioOptionTipoPagoPlanilla" value="planilla" disabled>
 														<label class="form-check-label" for="radioOptionTipoPagoPlanilla">Planilla</label>
 													</div>
 													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="nuevaEmpresaRadioOptionTipoPago" id="radioOptionTipoPagoMixto" value="planilla">
+														<input class="form-check-input" type="radio" name="nuevaEmpresaRadioOptionTipoPago" id="radioOptionTipoPagoMixto" value="planilla" disabled>
 														<label class="form-check-label" for="radioOptionTipoPagoMixto">Mixto</label>
 													</div>
 												</div>
@@ -1338,11 +1338,11 @@
 												<label class="form-label">Afilicación de colaboradores</label>
 												<div>
 													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="nuevaEmpresaRadioOptionTipoAfiliacion" id="radioOptionAfiliacionAbierto" value="Abierto" checked>
+														<input class="form-check-input" type="radio" name="nuevaEmpresaRadioOptionTipoAfiliacion" id="radioOptionAfiliacionAbierto" value="Abierto" checked disabled>
 														<label class="form-check-label" for="radioOptionAfiliacionAbierto">Abierto</label>
 													</div>
 													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="nuevaEmpresaRadioOptionTipoAfiliacion" id="radioOptionAfiliacionMasivo" value="Masivo">
+														<input class="form-check-input" type="radio" name="nuevaEmpresaRadioOptionTipoAfiliacion" id="radioOptionAfiliacionMasivo" value="Masivo" disabled>
 														<label class="form-check-label" for="radioOptionAfiliacionMasivo">Masivo</label>
 													</div>
 												</div>
@@ -1354,7 +1354,7 @@
 										</div>
 									</div>
 
-									<div class="tab-pane fade" id="nav-crearSede" role="tabpanel" aria-labelledby="nav-crearSede-tab">
+									<div class="tab-pane fade" id="nav-detalleSede" role="tabpanel" aria-labelledby="nav-detalleSede-tab">
 										<div class="accordion marginBottom-1" id="accordionNuevaSede">
 											<div class="accordion-item">
 												<h2 class="accordion-header" id="headingOneNuevaSede">
@@ -1487,7 +1487,7 @@
 										</div>
 									</div>
 
-									<div class="tab-pane fade" id="nav-crearContacto" role="tabpanel" aria-labelledby="nav-crearContacto-tab">
+									<div class="tab-pane fade" id="nav-detalleContacto" role="tabpanel" aria-labelledby="nav-detalleContacto-tab">
 										<div class="accordion marginBottom-1" id="accordionNuevoContacto">
 											<div class="accordion-item">
 												<h2 class="accordion-header" id="headingOneNuevoContacto">
