@@ -585,7 +585,7 @@
 										<td>40</td>
 										<td>
 											<div>
-											  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." checked disabled>
+											  <input class="form-check-input" type="checkbox" value="" aria-label="..." checked disabled>
 											</div>
 										</td>
 										<td><span class="tag-status tag-active">Activo</span></td>
@@ -617,7 +617,7 @@
 										<td>400</td>
 										<td>
 											<div>
-											  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." checked disabled>
+											  <input class="form-check-input" type="checkbox" value="" aria-label="..." checked disabled>
 											</div>
 										</td>
 										<td><span class="tag-status tag-active">Activo</span></td>
@@ -649,7 +649,7 @@
 										<td>100</td>
 										<td>
 											<div>
-											  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." disabled>
+											  <input class="form-check-input" type="checkbox" value="" aria-label="..." disabled>
 											</div>
 										</td>
 										<td><span class="tag-status tag-inactive">Inactivo</span></td>
@@ -700,7 +700,7 @@
 								<nav>
 									<div class="nav nav-tabs nav-tabs-items-3" id="nav-tab" role="tablist">
 										<button class="nav-link active" id="nav-crearEmpresa-tab" data-bs-toggle="tab" data-bs-target="#nav-crearEmpresa" type="button" role="tab" aria-controls="nav-crearEmpresa" aria-selected="true">
-											Empresas
+											Empresa
 										</button>
 										<button class="nav-link" id="nav-crearSede-tab" data-bs-toggle="tab" data-bs-target="#nav-crearSede" type="button" role="tab" aria-controls="nav-crearSede" aria-selected="false">
 											Sedes
@@ -1212,291 +1212,6 @@
 									</tr>
 								</tbody>
 							</table>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="panel" id="detalleEmpresa-panel-admin">
-				<nav aria-label="breadcrumb">
-					<ol class="breadcrumb">
-						<li class="breadcrumb-item showAdmninistracionEmpresasAdmin"><a href="#" class="button-link">Empresas</a></li>
-						<li class="breadcrumb-item active" aria-current="page">Detalle Empresa</li>
-					</ol>
-				</nav>
-
-				<div class="row">
-					<div class="col-xl-5 col-lg-6 mx-auto">
-						<div class="card mx-auto">
-							<div class="card-header">
-								<h2>
-									Detalle Empresa
-								</h2>
-							</div>
-							<div class="card-body">
-								<nav>
-									<div class="nav nav-tabs nav-tabs-items-3" id="nav-tab" role="tablist">
-										<button class="nav-link active" id="nav-detalleEmpresa-tab" data-bs-toggle="tab" data-bs-target="#nav-detalleEmpresa" type="button" role="tab" aria-controls="nav-detalleEmpresa" aria-selected="true">
-											Empresas
-										</button>
-										<button class="nav-link" id="nav-detalleSede-tab" data-bs-toggle="tab" data-bs-target="#nav-detalleSede" type="button" role="tab" aria-controls="nav-detalleSede" aria-selected="false">
-											Sedes
-										</button>
-										<button class="nav-link" id="nav-detalleContacto-tab" data-bs-toggle="tab" data-bs-target="#nav-detalleContacto" type="button" role="tab" aria-controls="nav-detalleContacto" aria-selected="false">
-											Contactos
-										</button>
-									</div>
-								</nav>
-								<div class="tab-content" id="nav-tabContent">
-									<div class="tab-pane fade show active" id="nav-detalleEmpresa" role="tabpanel" aria-labelledby="nav-detalleEmpresa-tab">
-										<form>
-											<div class="wrap-img-preview">
-												<div class="imageWrapper">
-													<img class="image-preview" id="nueva-empresa-preview-logo-empresa" src="img/logos/colmena.png">
-												</div>
-
-												<div class="wrap-label-file-upload">
-													<p>Logo</p>
-													<button class="file-upload btn button-outline" disabled>
-														<input type="file" class="file-input-image" id="nueva-empresa-input-preview-img">Agregar imágen
-													</button>
-													<p>JPG, PNG</p>
-												</div>
-											</div>
-
-											<div class="row">
-												<div class="form-group col-md-6">
-													<label for="detalleEmpresaInputRuc" class="form-label">RUC</label>
-													<input type="number" class="form-control" id="detalleEmpresaInputRuc" value="1452658745" disabled>
-												</div>
-												<div class="form-group col-md-6">
-													<label for="detalleEmpresaInputRazonSocial" class="form-label">Razón Social</label>
-													<input type="text" class="form-control" id="detalleEmpresaInputRazonSocial" value="Colmena Solutions" disabled>
-												</div>
-											</div>
-
-											<div class="row">
-												<div class="form-group col-md-6">
-													<label for="detalleEmpresaInputNombreComercial" class="form-label">Nombre Comercial</label>
-													<input type="text" class="form-control" id="detalleEmpresaInputNombreComercial" value="Colmena Solutions" disabled>
-												</div>
-												<div class="form-group col-md-6">
-													<label for="detalleEmpresaInputNombreWeb" class="form-label">Nombre Web</label>
-													<input type="text" class="form-control" id="detalleEmpresaInputNombreWeb" value="Colmena Solutions" disabled>
-												</div>
-											</div>
-
-											<div class="row">
-												<div class="form-group col-md-4">
-													<label class="form-label" for="detalleEmpresainputDepartamento">Departamento</label>
-													<select class="form-select select2" id="detalleEmpresainputDepartamento" disabled>
-														<option>Seleccione</option>
-														<option>Arequipa</option>
-														<option selected>Lima</option>
-														<option>Tacna</option>
-													</select>
-												</div>
-												<div class="form-group col-md-4">
-													<label class="form-label" for="detalleEmpresainputProvincia">Provincia</label>
-													<select class="form-select select2" id="detalleEmpresainputProvincia" disabled>
-														<option>Seleccione</option>
-														<option>Arequipa</option>
-														<option selected>Lima</option>
-														<option>Tacna</option>
-													</select>
-												</div>
-												<div class="form-group col-md-4">
-													<label class="form-label" for="detalleEmpresainputDistrito">Distrito</label>
-													<select class="form-select select2" id="detalleEmpresainputDistrito" disabled>
-														<option>Seleccione</option>
-														<option>Breña</option>
-														<option selected>Lince</option>
-														<option>Magdalena</option>
-														<option>Miraflores</option>
-													</select>
-												</div>
-											</div>
-
-											<div class="form-group">
-												<label for="detalleEmpresaInputDireccion" class="form-label">Dirección</label>
-												<input type="text" class="form-control" id="detalleEmpresaInputDireccion" value="Av. Arenales 1912" disabled>
-											</div>
-
-											<div class="row">
-												<div class="form-group col-md-6">
-													<label for="nuevaEmpresaInputCodigo" class="form-label">Código de Empresa</label>
-													<input type="text" class="form-control" id="nuevaEmpresaInputCodigo" value="col23" disabled>
-												</div>
-
-												<div class="form-group col-md-6">
-													<label class="form-label" for="nuevaEmpresainputDistrito">Tipo</label>
-													<select class="form-select" id="nuevaEmpresainputDistrito" disabled>
-														<option>Seleccione</option>
-														<option selected>Clentes bajos</option>
-														<option>Clientes medios</option>
-														<option>Clientes top</option>
-													</select>
-												</div>
-											</div>
-
-											<div class="form-group">
-												<label class="form-label">Tipo de pago</label>
-												<div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="nuevaEmpresaRadioOptionTipoPago" id="radioOptionTipoPagoPasarela" value="Pasarela" checked disabled>
-														<label class="form-check-label" for="radioOptionTipoPagoPasarela">Pasarela</label>
-													</div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="nuevaEmpresaRadioOptionTipoPago" id="radioOptionTipoPagoPlanilla" value="planilla" disabled>
-														<label class="form-check-label" for="radioOptionTipoPagoPlanilla">Planilla</label>
-													</div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="nuevaEmpresaRadioOptionTipoPago" id="radioOptionTipoPagoMixto" value="planilla" disabled>
-														<label class="form-check-label" for="radioOptionTipoPagoMixto">Mixto</label>
-													</div>
-												</div>
-											</div>
-
-											<div class="form-group">
-												<label class="form-label">Afilicación de colaboradores</label>
-												<div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="nuevaEmpresaRadioOptionTipoAfiliacion" id="radioOptionAfiliacionAbierto" value="Abierto" checked disabled>
-														<label class="form-check-label" for="radioOptionAfiliacionAbierto">Abierto</label>
-													</div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio" name="nuevaEmpresaRadioOptionTipoAfiliacion" id="radioOptionAfiliacionMasivo" value="Masivo" disabled>
-														<label class="form-check-label" for="radioOptionAfiliacionMasivo">Masivo</label>
-													</div>
-												</div>
-											</div>
-										</form>
-									</div>
-
-									<div class="tab-pane fade" id="nav-detalleSede" role="tabpanel" aria-labelledby="nav-detalleSede-tab">
-										<div class="accordion marginBottom-1" id="accordionNuevaSede">
-											<div class="accordion-item">
-												<h2 class="accordion-header" id="headingOneDetalleSede">
-													<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneDetalleSede" aria-expanded="true" aria-controls="collapseOneDetalleSede">
-														Sede Lince <span class="tag-status tag-active marginLeft-1">Principal</span>
-													</button>
-												</h2>
-												<div id="collapseOneDetalleSede" class="accordion-collapse collapse show" aria-labelledby="headingOneNuevaSede" data-bs-parent="#accordionDetalleSede">
-													<div class="accordion-body">
-														<form>
-															<div class="form-group">
-																<label for="detalleSedeInputNombre1" class="form-label">Nombre Sede</label>
-																<input type="text" class="form-control" id="detalleSedeInputNombre1" value="Sede lince" disabled>
-															</div>
-
-															<div class="row">
-																<div class="form-group col-md-4">
-																	<label class="form-label" for="detalleSedeInputDepartamento1">Departamento</label>
-																	<select class="form-select select2" id="detalleSedeInputDepartamento1" disabled>
-																		<option>Seleccione</option>
-																		<option>Arequipa</option>
-																		<option selected>Lima</option>
-																		<option>Tacna</option>
-																	</select>
-																</div>
-																<div class="form-group col-md-4">
-																	<label class="form-label" for="detalleSedeInputProvincia1">Provincia</label>
-																	<select class="form-select select2" id="detalleSedeInputProvincia1" disabled>
-																		<option>Seleccione</option>
-																		<option>Arequipa</option>
-																		<option selected>Lima</option>
-																		<option>Tacna</option>
-																	</select>
-																</div>
-																<div class="form-group col-md-4">
-																	<label class="form-label" for="detalleSedeInputDistrito1">Distrito</label>
-																	<select class="form-select select2" id="detalleSedeInputDistrito1" disabled>
-																		<option>Seleccione</option>
-																		<option>Breña</option>
-																		<option>Lince</option>
-																		<option selected>Magdalena</option>
-																		<option>Miraflores</option>
-																	</select>
-																</div>
-															</div>
-
-															<div class="form-group">
-																<label for="detalleSedeInputDireccion1" class="form-label">Dirección</label>
-																<input type="text" class="form-control" id="detalleSedeInputDireccion1" value="Av, Arenales 1912" disabled>
-															</div>
-
-															<div class="form-check form-switch">
-																<input class="form-check-input" type="checkbox" role="switch" id="switchCheckSedePrincipalAdmin" checked disabled>
-																<label class="form-check-label" for="switchCheckSedePrincipalAdmin">Sede Principal</label>
-															</div>
-														</form>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="tab-pane fade" id="nav-detalleContacto" role="tabpanel" aria-labelledby="nav-detalleContacto-tab">
-										<div class="accordion marginBottom-1" id="accordionDetalleContacto">
-											<div class="accordion-item">
-												<h2 class="accordion-header" id="headingOneDetalleContacto">
-													<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneDetalleContacto" aria-expanded="true" aria-controls="collapseOneDetalleContacto">
-														Contacto Sede Principal
-													</button>
-												</h2>
-												<div id="collapseOneDetalleContacto" class="accordion-collapse collapse show" aria-labelledby="headingOneDetalleContacto" data-bs-parent="#accordionDetalleContacto">
-													<div class="accordion-body">
-														<form>
-															<div class="row">
-																<div class="form-group col-md-6">
-																	<label for="detalleContactoNombre1" class="form-label">Nombre</label>
-																	<input type="text" class="form-control" id="detalleContactoNombre1" value="Sergio Perez" disabled>
-																</div>
-																<div class="form-group col-md-6">
-																	<label class="form-label" for="detalleContactoSede1">Sede</label>
-																	<select class="form-select select2" id="detalleContactoSede1" disabled>
-																		<option>Seleccione</option>
-																		<option selected>Sede Lince</option>
-																		<option>Sede Larco</option>
-																		<option>Sede Miraflores</option>
-																	</select>
-																</div>
-															</div>
-
-															<div class="row">
-																<div class="form-group col-md-6">
-																	<label for="detalleContactoCargo1" class="form-label">Cargo</label>
-																	<input type="text" class="form-control" id="detalleContactoCargo1"  value="RRHH" disabled>
-																</div>
-																<div class="form-group col-md-6">
-																	<label for="detalleContactoCorreo1" class="form-label">Correo</label>
-																	<input type="email" class="form-control" id="detalleContactoCorreo1" value="jperez@colmenateam.com.pe" disabled>
-																</div>
-															</div>
-
-															<div class="row">
-																<div class="form-group col-md-6">
-																	<label for="detalleContactoCelular1" class="form-label">Celular</label>
-																	<input type="number" class="form-control" id="detalleContactoCelular1" value="963545698" disabled>
-																</div>
-																<div class="form-group col-md-6">
-																	<label for="detalleContactoFijo1" class="form-label">Teléfono Empresa</label>
-																	<input type="number" class="form-control" id="detalleContactoFijo1" value="963545698" disabled>
-																</div>
-															</div>
-
-														</form>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="card-footer">
-									<button type="button" name="button" class="btn button-ghost showAdmninistracionEmpresasAdmin">Cerrar</button>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -6992,6 +6707,234 @@
 				<div class="modal-footer">
 					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
 					<button type="button" class="btn button-primary">Transferir</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalDetalleEmpresaSede" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Detalle Empresa</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<nav>
+						<div class="nav nav-tabs nav-tabs-items-2" id="nav-tab" role="tablist">
+							<button class="nav-link active" id="nav-detalleEmpresa-tab" data-bs-toggle="tab" data-bs-target="#nav-detalleEmpresa" type="button" role="tab" aria-controls="nav-detalleEmpresa" aria-selected="true">
+								Empresa
+							</button>
+							<button class="nav-link" id="nav-detalleSede-tab" data-bs-toggle="tab" data-bs-target="#nav-detalleSede" type="button" role="tab" aria-controls="nav-detalleSede" aria-selected="false">
+								Sedes
+							</button>
+						</div>
+					</nav>
+					<div class="tab-content" id="nav-tabContent">
+						<div class="tab-pane fade show active" id="nav-detalleEmpresa" role="tabpanel" aria-labelledby="nav-detalleEmpresa-tab">
+							<form>
+								<div class="wrap-img-preview">
+									<div class="imageWrapper">
+										<img class="image-preview" src="img/logos/colmena.png">
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="form-group col-md-6">
+										<label for="detalleEmpresaInputRuc" class="form-label">RUC</label>
+										<input type="number" class="form-control" id="detalleEmpresaInputRuc" value="1452658745" disabled>
+									</div>
+									<div class="form-group col-md-6">
+										<label for="detalleEmpresaInputRazonSocial" class="form-label">Razón Social</label>
+										<input type="text" class="form-control" id="detalleEmpresaInputRazonSocial" value="Colmena Solutions" disabled>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="form-group col-md-6">
+										<label for="detalleEmpresaInputNombreComercial" class="form-label">Nombre Comercial</label>
+										<input type="text" class="form-control" id="detalleEmpresaInputNombreComercial" value="Colmena Solutions" disabled>
+									</div>
+									<div class="form-group col-md-6">
+										<label for="detalleEmpresaInputNombreWeb" class="form-label">Nombre Web</label>
+										<input type="text" class="form-control" id="detalleEmpresaInputNombreWeb" value="Colmena Solutions" disabled>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="form-group col-md-4">
+										<label class="form-label" for="detalleEmpresainputDepartamento">Departamento</label>
+										<select class="form-select select2" id="detalleEmpresainputDepartamento" disabled>
+											<option>Seleccione</option>
+											<option>Arequipa</option>
+											<option selected>Lima</option>
+											<option>Tacna</option>
+										</select>
+									</div>
+									<div class="form-group col-md-4">
+										<label class="form-label" for="detalleEmpresainputProvincia">Provincia</label>
+										<select class="form-select select2" id="detalleEmpresainputProvincia" disabled>
+											<option>Seleccione</option>
+											<option>Arequipa</option>
+											<option selected>Lima</option>
+											<option>Tacna</option>
+										</select>
+									</div>
+									<div class="form-group col-md-4">
+										<label class="form-label" for="detalleEmpresainputDistrito">Distrito</label>
+										<select class="form-select select2" id="detalleEmpresainputDistrito" disabled>
+											<option>Seleccione</option>
+											<option>Breña</option>
+											<option selected>Lince</option>
+											<option>Magdalena</option>
+											<option>Miraflores</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="detalleEmpresaInputDireccion" class="form-label">Dirección</label>
+									<input type="text" class="form-control" id="detalleEmpresaInputDireccion" value="Av. Arenales 1912" disabled>
+								</div>
+
+								<div class="row">
+									<div class="form-group col-md-6">
+										<label for="nuevaEmpresaInputCodigo" class="form-label">Código de Empresa</label>
+										<input type="text" class="form-control" id="nuevaEmpresaInputCodigo" value="col23" disabled>
+									</div>
+
+									<div class="form-group col-md-6">
+										<label class="form-label" for="nuevaEmpresainputDistrito">Tipo</label>
+										<select class="form-select" id="nuevaEmpresainputDistrito" disabled>
+											<option>Seleccione</option>
+											<option selected>Clentes bajos</option>
+											<option>Clientes medios</option>
+											<option>Clientes top</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="form-label">Tipo de pago</label>
+									<div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="nuevaEmpresaRadioOptionTipoPago" id="radioOptionTipoPagoPasarela" value="Pasarela" checked disabled>
+											<label class="form-check-label" for="radioOptionTipoPagoPasarela">Pasarela</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="nuevaEmpresaRadioOptionTipoPago" id="radioOptionTipoPagoPlanilla" value="planilla" disabled>
+											<label class="form-check-label" for="radioOptionTipoPagoPlanilla">Planilla</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="nuevaEmpresaRadioOptionTipoPago" id="radioOptionTipoPagoMixto" value="planilla" disabled>
+											<label class="form-check-label" for="radioOptionTipoPagoMixto">Mixto</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="form-label">Afilicación de colaboradores</label>
+									<div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="nuevaEmpresaRadioOptionTipoAfiliacion" id="radioOptionAfiliacionAbierto" value="Abierto" checked disabled>
+											<label class="form-check-label" for="radioOptionAfiliacionAbierto">Abierto</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="nuevaEmpresaRadioOptionTipoAfiliacion" id="radioOptionAfiliacionMasivo" value="Masivo" disabled>
+											<label class="form-check-label" for="radioOptionAfiliacionMasivo">Masivo</label>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+
+						<div class="tab-pane fade" id="nav-detalleSede" role="tabpanel" aria-labelledby="nav-detalleSede-tab">
+							<div class="accordion marginBottom-1" id="accordionNuevaSede">
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingOneDetalleSede">
+										<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneDetalleSede" aria-expanded="true" aria-controls="collapseOneDetalleSede">
+											Sede Lince <span class="tag-status tag-active marginLeft-1">Principal</span>
+										</button>
+									</h2>
+									<div id="collapseOneDetalleSede" class="accordion-collapse collapse show" aria-labelledby="headingOneNuevaSede" data-bs-parent="#accordionDetalleSede">
+										<div class="accordion-body">
+											<form>
+												<div class="row">
+													<div class="form-group col-md-4">
+														<label class="form-label" for="detalleSedeInputDepartamento1">Departamento</label>
+														<select class="form-select select2" id="detalleSedeInputDepartamento1" disabled>
+															<option>Seleccione</option>
+															<option>Arequipa</option>
+															<option selected>Lima</option>
+															<option>Tacna</option>
+														</select>
+													</div>
+													<div class="form-group col-md-4">
+														<label class="form-label" for="detalleSedeInputProvincia1">Provincia</label>
+														<select class="form-select select2" id="detalleSedeInputProvincia1" disabled>
+															<option>Seleccione</option>
+															<option>Arequipa</option>
+															<option selected>Lima</option>
+															<option>Tacna</option>
+														</select>
+													</div>
+													<div class="form-group col-md-4">
+														<label class="form-label" for="detalleSedeInputDistrito1">Distrito</label>
+														<select class="form-select select2" id="detalleSedeInputDistrito1" disabled>
+															<option>Seleccione</option>
+															<option>Breña</option>
+															<option>Lince</option>
+															<option selected>Magdalena</option>
+															<option>Miraflores</option>
+														</select>
+													</div>
+												</div>
+
+												<div class="form-group">
+													<label for="detalleSedeInputDireccion1" class="form-label">Dirección</label>
+													<input type="text" class="form-control" id="detalleSedeInputDireccion1" value="Av, Arenales 1912" disabled>
+												</div>
+
+												<h3>
+													Contacto
+												</h3>
+
+												<div class="row">
+													<div class="form-group col-md-6">
+														<label for="detalleContactoNombre1" class="form-label">Nombre</label>
+														<input type="text" class="form-control" id="detalleContactoNombre1" value="Sergio Perez" disabled>
+													</div>
+													<div class="form-group col-md-6">
+														<label for="detalleContactoCargo1" class="form-label">Cargo</label>
+														<input type="text" class="form-control" id="detalleContactoCargo1"  value="RRHH" disabled>
+													</div>
+												</div>
+
+												<div class="form-group">
+													<label for="detalleContactoCorreo1" class="form-label">Correo</label>
+													<input type="email" class="form-control" id="detalleContactoCorreo1" value="jperez@colmenateam.com.pe" disabled>
+												</div>
+
+												<div class="row">
+													<div class="form-group col-md-6">
+														<label for="detalleContactoCelular1" class="form-label">Celular</label>
+														<input type="number" class="form-control" id="detalleContactoCelular1" value="963545698" disabled>
+													</div>
+													<div class="form-group col-md-6">
+														<label for="detalleContactoFijo1" class="form-label">Teléfono Empresa</label>
+														<input type="number" class="form-control" id="detalleContactoFijo1" value="963545698" disabled>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
 				</div>
 			</div>
 		</div>
