@@ -908,6 +908,11 @@ table.dataTable.table-hover > tbody > tr.selected:hover > * {
   justify-content: center;
 }
 
+/* div.dataTables_wrapper {
+  width: 1200px;
+  margin: 0 auto;
+} */
+
 /* Pagination color */
 .page-item.active .page-link {
   z-index: 3;
