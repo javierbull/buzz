@@ -1208,11 +1208,21 @@ div.dataTables_wrapper div.dataTables_info {
   display: none;
 }
 
-.form-progInhouse-sede {
-  padding-top: 1.5rem;
+.form-progInhouse-sede, .form-prog-plataforma {
+  padding-bottom: 1.5rem;
 }
 
+.form-header-title-btn {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .5rem;
+}
 
+.form-header-title-btn h3 {
+  margin-bottom: 0;
+}
 /* END PROGRAMACIÓN INHOUSE PROMOTORIA */
 
 /* SOLICITUD COMPROBANTE VENTA */

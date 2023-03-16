@@ -2459,7 +2459,9 @@
 											<div class="accordion-body">
 
 												<form class="form-progInhouse-sede">
-													<h4>Programación 1</h4>
+													<div class="form-header-title-btn">
+														<h3>Programación 1</h3>
+													</div>
 													<div class="form-group">
 														<label class="form-label">Se solicita</label>
 														<div>
@@ -2499,7 +2501,14 @@
 												</form>
 
 												<form class="form-progInhouse-sede">
-													<h4>Programación 2</h4>
+													<div class="form-header-title-btn">
+														<h3>Programación 2</h3>
+														<button class="btn button-icon-danger"> 
+															<span class="material-icons">
+																delete
+															</span>
+														</button>
+													</div>
 													<div class="form-group">
 														<label class="form-label">Se solicita</label>
 														<div>
@@ -3123,43 +3132,61 @@
 								</h2>
 							</div>
 							<div class="card-body">
-								<form>
-									<div class="form-group" id="nuevaProgPlataformaBuscarEmpresa">
-										<label class="form-label">Empresa</label>
-										<select class="form-select select2" data-placeholder="Buscar">
-											<option></option>
-											<option>BCP</option>
-											<option>Caja Huancayo</option>
-											<option>Industrias del Envase</option>
-											<option>Interbank</option>
-											<option>Iron Mountain</option>
-											<option>Scotiabank</option>
-										</select>
+								<div class="form-group" id="nuevaProgPlataformaBuscarEmpresa">
+									<label class="form-label">Empresa</label>
+									<select class="form-select select2" data-placeholder="Buscar">
+										<option></option>
+										<option>BCP</option>
+										<option>Caja Huancayo</option>
+										<option>Industrias del Envase</option>
+										<option>Interbank</option>
+										<option>Iron Mountain</option>
+										<option>Scotiabank</option>
+									</select>
+								</div>
+
+								<form class="form-prog-plataforma">
+									<div class="form-header-title-btn">
+										<h3>Programación 1</h3>
 									</div>
 
 									<div class="row">
 										<div class="form-group col-md-6">
-											<label for="progplataformaDateInit" class="form-label">Fecha Inicio</label>
-											<input type="date" class="form-control" id="progplataformaDateInit" placeholder="Ingrese fecha">
+											<label for="progplataformaDateInit-prog1" class="form-label">Fecha Inicio</label>
+											<input type="date" class="form-control" id="progplataformaDateInit-prog1" value="2023-04-01">
 										</div>
 										<div class="form-group col-md-6">
-											<label for="progplataformaDateEnd" class="form-label">Fecha Fin</label>
-											<input type="date" class="form-control" id="progplataformaDateEnd" placeholder="Ingrese fecha">
+											<label for="progplataformaDateEnd-prog1" class="form-label">Fecha Fin</label>
+											<input type="date" class="form-control" id="progplataformaDateEnd-prog1" value="2023-04-08">
 										</div>
 									</div>
+								</form>
 
-									<div class="form-group" id="nuevaProgPlataformaBuscarEjecutivo">
-										<label class="form-label">Ejecutivo</label>
-										<select class="form-select select2" data-placeholder="Buscar">
-											<option></option>
-											<option>Mónica Bicerra</option>
-											<option>Natalie Bendezu</option>
-											<option>Carlos Tamashiro</option>
-										</select>
+								<form class="form-prog-plataforma">
+									<div class="form-header-title-btn">
+										<h3>Programación 2</h3>
+										<button class="btn button-icon-danger"> 
+											<span class="material-icons">
+												delete
+											</span>
+										</button>
 									</div>
 
-
+									<div class="row">
+										<div class="form-group col-md-6">
+											<label for="progplataformaDateInit-prog2" class="form-label">Fecha Inicio</label>
+											<input type="date" class="form-control" id="progplataformaDateInit-prog2" placeholder="Ingrese fecha">
+										</div>
+										<div class="form-group col-md-6">
+											<label for="progplataformaDateEnd-prog2" class="form-label">Fecha Fin</label>
+											<input type="date" class="form-control" id="progplataformaDateEnd-prog2" placeholder="Ingrese fecha">
+										</div>
+									</div>
 								</form>
+
+								<button class="btn button-action">
+									Agregar programación
+								</button>
 							</div>
 							<div class="card-footer">
 								<button type="button" name="button" class="btn button-ghost showOperacionesProgPlataforma">Cerrar</button>
