@@ -1202,6 +1202,12 @@ div.dataTables_wrapper div.dataTables_info {
 #motivoCancelacionPromotoria {
   display: none;
 }
+
+.form-progInhouse-sede {
+  padding-top: 1.5rem;
+}
+
+
 /* END PROGRAMACIÓN INHOUSE PROMOTORIA */
 
 /* SOLICITUD COMPROBANTE VENTA */
