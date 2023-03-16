@@ -2459,12 +2459,12 @@
 											<div class="accordion-body">
 
 												<form class="form-progInhouse-sede">
-													<h3>Programación 1</h3>
+													<h4>Programación 1</h4>
 													<div class="form-group">
 														<label class="form-label">Se solicita</label>
 														<div>
 															<div class="form-check form-check-inline">
-																<input class="form-check-input" type="checkbox" id="requerimiento1-sede1-prog1" value="option1">
+																<input class="form-check-input" type="checkbox" id="requerimiento1-sede1-prog1" value="option1" checked>
 																<label class="form-check-label" for="requerimiento1-sede1-prog1">Banner</label>
 															</div>
 															<div class="form-check form-check-inline">
@@ -2476,7 +2476,7 @@
 																<label class="form-check-label" for="requerimiento3-sede1-prog1">SCTR</label>
 															</div>
 															<div class="form-check form-check-inline">
-																<input class="form-check-input" type="checkbox" id="requerimiento4-sede1-prog1" value="option4">
+																<input class="form-check-input" type="checkbox" id="requerimiento4-sede1-prog1" value="option4" checked>
 																<label class="form-check-label" for="requerimiento4-sede1-prog1">Vacuna Covid</label>
 															</div>
 														</div>
@@ -2485,21 +2485,21 @@
 													<div class="row">
 														<div class="form-group col-md-4">
 															<label for="date-sede1-prog1" class="form-label">Fecha</label>
-															<input type="date" class="form-control" id="date-sede1-prog1" placeholder="Ingrese fecha">
+															<input type="date" class="form-control" id="date-sede1-prog1" value="2023-03-20">
 														</div>
 														<div class="form-group col-md-4">
 															<label for="iniTime-sede1-prog1" class="form-label">Hora Inicio</label>
-															<input type="time" class="form-control" id="iniTime-sede1-prog1" placeholder="Ingrese horario">
+															<input type="time" class="form-control" id="iniTime-sede1-prog1" value="10:00">
 														</div>
 														<div class="form-group col-md-4">
 															<label for="endTime-sede1-prog1" class="form-label">Hora Fin</label>
-															<input type="time" class="form-control" id="endTime-sede1-prog1" placeholder="Ingrese horario">
+															<input type="time" class="form-control" id="endTime-sede1-prog1" value="13:00">
 														</div>
 													</div>
 												</form>
 
 												<form class="form-progInhouse-sede">
-													<h3>Programación 2</h3>
+													<h4>Programación 2</h4>
 													<div class="form-group">
 														<label class="form-label">Se solicita</label>
 														<div>
@@ -2512,11 +2512,11 @@
 																<label class="form-check-label" for="requerimiento2-sede1-prog2">Forro</label>
 															</div>
 															<div class="form-check form-check-inline">
-																<input class="form-check-input" type="checkbox" id="requerimiento3-sede1-prog2" value="option3">
+																<input class="form-check-input" type="checkbox" id="requerimiento3-sede1-prog2" value="option3" checked>
 																<label class="form-check-label" for="requerimiento3-sede1-prog2">SCTR</label>
 															</div>
 															<div class="form-check form-check-inline">
-																<input class="form-check-input" type="checkbox" id="requerimiento4-sede1-prog2" value="option4">
+																<input class="form-check-input" type="checkbox" id="requerimiento4-sede1-prog2" value="option4" checked>
 																<label class="form-check-label" for="requerimiento4-sede1-prog2">Vacuna Covid</label>
 															</div>
 														</div>
@@ -2525,20 +2525,18 @@
 													<div class="row">
 														<div class="form-group col-md-4">
 															<label for="date-sede1-prog2" class="form-label">Fecha</label>
-															<input type="date" class="form-control" id="date-sede1-prog2" placeholder="Ingrese fecha">
+															<input type="date" class="form-control" id="date-sede1-prog2" placeholder="Ingrese fecha" value="2023-04-15">
 														</div>
 														<div class="form-group col-md-4">
 															<label for="iniTime-sede1-prog2" class="form-label">Hora Inicio</label>
-															<input type="time" class="form-control" id="iniTime-sede1-prog2" placeholder="Ingrese horario">
+															<input type="time" class="form-control" id="iniTime-sede1-prog2" placeholder="Ingrese horario" value="10:00">
 														</div>
 														<div class="form-group col-md-4">
 															<label for="endTime-sede1-prog2" class="form-label">Hora Fin</label>
-															<input type="time" class="form-control" id="endTime-sede1-prog2" placeholder="Ingrese horario">
+															<input type="time" class="form-control" id="endTime-sede1-prog2" placeholder="Ingrese horario" value="14:00">
 														</div>
 													</div>
 												</form>
-
-												
 
 												<button class="btn button-action">
 													Agregar Programación
@@ -2547,26 +2545,57 @@
 										  </div>
 										</div>
 										<div class="accordion-item">
-										  <h2 class="accordion-header" id="headingTwo">
-											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-											  Accordion Item #2
+										  <h2 class="accordion-header" id="headingTwoProgSede">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoProgSede" aria-expanded="false" aria-controls="collapseTwoProgSede">
+											  Sede Magdalena
 											</button>
 										  </h2>
-										  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionProgSedes">
+										  <div id="collapseTwoProgSede" class="accordion-collapse collapse" aria-labelledby="headingTwoProgSede" data-bs-parent="#accordionProgSedes">
 											<div class="accordion-body">
-											  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-											</div>
-										  </div>
-										</div>
-										<div class="accordion-item">
-										  <h2 class="accordion-header" id="headingThree">
-											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-											  Accordion Item #3
-											</button>
-										  </h2>
-										  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionProgSedes">
-											<div class="accordion-body">
-											  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+												<form class="form-progInhouse-sede">
+													<h4>Programación 1</h4>
+													<div class="form-group">
+														<label class="form-label">Se solicita</label>
+														<div>
+															<div class="form-check form-check-inline">
+																<input class="form-check-input" type="checkbox" id="requerimiento1-sede2-prog1" value="option1">
+																<label class="form-check-label" for="requerimiento1-sede2-prog1">Banner</label>
+															</div>
+															<div class="form-check form-check-inline">
+																<input class="form-check-input" type="checkbox" id="requerimiento2-sede2-prog1" value="option2">
+																<label class="form-check-label" for="requerimiento2-sede2-prog1">Forro</label>
+															</div>
+															<div class="form-check form-check-inline">
+																<input class="form-check-input" type="checkbox" id="requerimiento3-sede2-prog1" value="option3">
+																<label class="form-check-label" for="requerimiento3-sede2-prog1">SCTR</label>
+															</div>
+															<div class="form-check form-check-inline">
+																<input class="form-check-input" type="checkbox" id="requerimiento4-sede2-prog1" value="option4">
+																<label class="form-check-label" for="requerimiento4-sede2-prog1">Vacuna Covid</label>
+															</div>
+														</div>
+													</div>
+													
+													<div class="row">
+														<div class="form-group col-md-4">
+															<label for="date-sede2-prog1" class="form-label">Fecha</label>
+															<input type="date" class="form-control" id="date-sede2-prog1" placeholder="Ingrese fecha">
+														</div>
+														<div class="form-group col-md-4">
+															<label for="iniTime-sede2-prog1" class="form-label">Hora Inicio</label>
+															<input type="time" class="form-control" id="iniTime-sede2-prog1" placeholder="Ingrese horario">
+														</div>
+														<div class="form-group col-md-4">
+															<label for="endTime-sede2-prog1" class="form-label">Hora Fin</label>
+															<input type="time" class="form-control" id="endTime-sede2-prog1" placeholder="Ingrese horario">
+														</div>
+													</div>
+												</form>
+												
+												<button class="btn button-action">
+													Agregar Programación
+												</button>
+											  
 											</div>
 										  </div>
 										</div>
