@@ -247,6 +247,7 @@
 									Descargar Reporte
 								</button>
 							</div>
+
 							<table class="table dtable-scroll-x table-hover" id="tableExample1">
 								<thead>
 									<tr>
@@ -355,8 +356,6 @@
 							</table>
 						</div>
 					</div>
-
-
 				</div>
 
 				
@@ -2449,55 +2448,87 @@
 										</select>
 									</div>
 
-									<div class="form-group">
-										<label class="form-label" for="nuevaProgInghouseBuscarSede">Sede</label>
-										<select class="form-select select2" id="nuevaProgInghouseBuscarSede" data-placeholder="Buscar">
-											<option></option>
-											<option>Lince</option>
-											<option>Los Olivos</option>
-											<option>Magdalena</option>
-											<option>Miraflores</option>
-											<option>San Isidro</option>
-											<option>Surco</option>
-										</select>
-									</div>
+									<div class="accordion" id="accordionProgSedes">
+										<div class="accordion-item">
+										  <h2 class="accordion-header" id="headingOneProgSede">
+											<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneProgSede" aria-expanded="true" aria-controls="collapseOneProgSede">
+											  Sede Ate
+											</button>
+										  </h2>
+										  <div id="collapseOneProgSede" class="accordion-collapse collapse show" aria-labelledby="headingOneProgSede" data-bs-parent="#accordionProgSedes">
+											<div class="accordion-body">
 
-									<div class="form-group">
-										<label class="form-label">Se solicita</label>
-										<div>
-											<div class="form-check form-check-inline">
-												<input class="form-check-input" type="checkbox" id="checkboxRequerimientosProgInHouseNuevo1" value="option1">
-												<label class="form-check-label" for="checkboxRequerimientosProgInHouseNuevo1">Banner</label>
-											</div>
-											<div class="form-check form-check-inline">
-												<input class="form-check-input" type="checkbox" id="checkboxRequerimientosProgInHouseNuevo2" value="option2">
-												<label class="form-check-label" for="checkboxRequerimientosProgInHouseNuevo2">Forro</label>
-											</div>
-											<div class="form-check form-check-inline">
-												<input class="form-check-input" type="checkbox" id="checkboxRequerimientosProgInHouseNuevo3" value="option3">
-												<label class="form-check-label" for="checkboxRequerimientosProgInHouseNuevo3">SCTR</label>
-											</div>
-											<div class="form-check form-check-inline">
-												<input class="form-check-input" type="checkbox" id="checkboxRequerimientosProgInHouseNuevo4" value="option4">
-												<label class="form-check-label" for="checkboxRequerimientosProgInHouseNuevo4">Vacuna Covid</label>
-											</div>
-										</div>
-									</div>
+												<form class="form-progInhouse-sede">
+													<h3>Programación 1</h3>
+													<div class="form-group">
+														<label class="form-label">Se solicita</label>
+														<div>
+															<div class="form-check form-check-inline">
+																<input class="form-check-input" type="checkbox" id="requerimiento1-progSede1" value="option1">
+																<label class="form-check-label" for="requerimiento1-progSede1">Banner</label>
+															</div>
+															<div class="form-check form-check-inline">
+																<input class="form-check-input" type="checkbox" id="requerimiento2-progSede1" value="option2">
+																<label class="form-check-label" for="requerimiento2-progSede1">Forro</label>
+															</div>
+															<div class="form-check form-check-inline">
+																<input class="form-check-input" type="checkbox" id="requerimiento3-progSede1" value="option3">
+																<label class="form-check-label" for="requerimiento3-progSede1">SCTR</label>
+															</div>
+															<div class="form-check form-check-inline">
+																<input class="form-check-input" type="checkbox" id="requerimiento4-progSede1" value="option4">
+																<label class="form-check-label" for="requerimiento4-progSede1">Vacuna Covid</label>
+															</div>
+														</div>
+													</div>
+													
+													<div class="row">
+														<div class="form-group col-md-4">
+															<label for="progInhouseDate1-progSede1" class="form-label">Fecha</label>
+															<input type="date" class="form-control" id="progInhouseDate1-progSede1" placeholder="Ingrese fecha">
+														</div>
+														<div class="form-group col-md-4">
+															<label for="progInhouseIniTime1-progSede1" class="form-label">Hora Inicio</label>
+															<input type="time" class="form-control" id="progInhouseIniTime1-progSede1" placeholder="Ingrese horario">
+														</div>
+														<div class="form-group col-md-4">
+															<label for="progInhouseEndTime1-progSede1" class="form-label">Hora Fin</label>
+															<input type="time" class="form-control" id="progInhouseEndTime1-progSede1" placeholder="Ingrese horario">
+														</div>
+													</div>
+												</form>
 
-									<div class="row">
-										<div class="form-group col-md-4">
-											<label for="progInhouseDate" class="form-label">Fecha</label>
-											<input type="date" class="form-control" id="progInhouseDate" placeholder="Ingrese fecha">
+												<button class="btn button-action">
+													Agregar Programación
+												</button>
+											</div>
+										  </div>
 										</div>
-										<div class="form-group col-md-4">
-											<label for="progInhouseIniTime" class="form-label">Hora Inicio</label>
-											<input type="time" class="form-control" id="progInhouseIniTime" placeholder="Ingrese horario">
+										<div class="accordion-item">
+										  <h2 class="accordion-header" id="headingTwo">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+											  Accordion Item #2
+											</button>
+										  </h2>
+										  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionProgSedes">
+											<div class="accordion-body">
+											  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+											</div>
+										  </div>
 										</div>
-										<div class="form-group col-md-4">
-											<label for="progInhouseEndTime" class="form-label">Hora Fin</label>
-											<input type="time" class="form-control" id="progInhouseEndTime" placeholder="Ingrese horario">
+										<div class="accordion-item">
+										  <h2 class="accordion-header" id="headingThree">
+											<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+											  Accordion Item #3
+											</button>
+										  </h2>
+										  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionProgSedes">
+											<div class="accordion-body">
+											  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+											</div>
+										  </div>
 										</div>
-									</div>
+									  </div>
 								</form>
 							</div>
 							<div class="card-footer">
