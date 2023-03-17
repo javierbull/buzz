@@ -997,6 +997,7 @@ div.dataTables_wrapper div.dataTables_info {
   font-weight: 500;
   padding: .25rem;
   border-radius: .25rem;
+  font-size: .875rem;
 }
 
 .tag-active {
