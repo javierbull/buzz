@@ -928,6 +928,15 @@ $(".showAsignarVales").click(function() {
 });
 // END SHOW HIDE PANELS
 
+// SHOW HIDE FECHA VALES
+  $("input[name='modaltipoAsignacionRadioOption']").click(function () {
+    if ($("#modalAsignacionParcial").is(":checked")) {
+      $("#contentAsignacionParcialVales").show();
+    } else {
+      $("#contentAsignacionParcialVales").hide();
+    }
+  });
+
 
 // SHOW FORMS CREAR Usuario
 $('#radioTypeUserInhouse').click(function(){

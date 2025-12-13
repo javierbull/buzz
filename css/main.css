@@ -1321,8 +1321,6 @@ div.dataTables_wrapper div.dataTables_info {
   /* background-color: pink; */
   display: block;
 }
-
-
 /* END SOLICITUD COMPROBANTE VENTA */
 
 /* EMPRESAS */
@@ -1330,3 +1328,9 @@ div.dataTables_wrapper div.dataTables_info {
   font-size: 1rem;
 }
 /* END EMPRESAS */
+
+/* ASIGNACION DE VALES */
+#contentAsignacionParcialVales {
+  display: none;
+}
+/* END ASIGNACION DE VALES */
