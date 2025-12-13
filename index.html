@@ -3943,7 +3943,7 @@
 													</span>
 												</button>
 												<button type="button" name="button"
-													class="btn button-icon button-icon-sm">
+													class="btn button-icon button-icon-sm showAsignarVales">
 													<span class="material-icons-outlined" data-bs-toggle="tooltip"
 														data-bs-placement="left" title="Asignar Vales">
 														add
@@ -4031,6 +4031,232 @@
 						<li class="breadcrumb-item showOperacionesSolicitudComprobante"><a href="#"
 								class="button-link">Solicitudes De Comprobantes</a></li>
 						<li class="breadcrumb-item active" aria-current="page">Nueva Solicitud de Comprobante</li>
+					</ol>
+				</nav>
+
+				<div class="row">
+					<div class="col-xl-12 col-lg-12 mx-auto">
+						<div class="card mx-auto">
+							<div class="card-header">
+								<h2>
+									Nueva Solicitud de Comprobante
+								</h2>
+							</div>
+							<div class="card-body">
+								<form>
+									<div class="wrap-solicitar-comprobante-datos-cliente">
+										<div class="form-group col" id="wrap-solCompTipoComprobante">
+											<label class="form-label" for="solCompTipoComprobante">Tipo de
+												comprobante</label>
+											<select class="form-select" id="solCompTipoComprobante">
+												<option>Boleta</option>
+												<option>Factura</option>
+											</select>
+										</div>
+
+										<div class="form-group col">
+											<label class="form-label" for="solCompTipoDocumento">Tipo de
+												documento</label>
+											<select class="form-select" id="solCompTipoDocumento">
+												<option>DNI</option>
+												<option>RUC</option>
+											</select>
+										</div>
+
+										<div class="form-group col">
+											<label class="form-label" for="solCompCliente">Cliente</label>
+											<select class="form-select select2" id="solCompCliente">
+												<option>Buscar</option>
+												<option>74158564 - Alicia Cerna Pajuelo</option>
+												<option>74125685 - Ricardo Yaya</option>
+												<option>75648566 - Andrea Torres</option>
+												<option>74156985 - Manuel Gutierres</option>
+											</select>
+										</div>
+
+										<div class="form-group col">
+											<label class="form-label" for="solCompEmpresaCliente">Empresa</label>
+											<select class="form-select select2" id="solCompEmpresaCliente">
+												<option>Buscar</option>
+												<option>BCP</option>
+												<option>Colmena Solutions</option>
+												<option>Intebank</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="wrap-img-preview">
+										<div class="imageWrapper">
+											<img class="image-preview" id="descarga-vales-preview-logo-empresa"
+												src="img/logos/panda-logo.jpg">
+										</div>
+
+										<div class="wrap-label-file-upload">
+											<p>Logo</p>
+											<button class="file-upload btn button-outline">
+												<input type="file" class="file-input-image"
+													id="descarga-vales-input-preview-img">Agregar imágen
+											</button>
+											<p>JPG, PNG</p>
+										</div>
+									</div>
+
+									<h3>Agregar Productos</h3>
+									<div class="wrap-agregar-producto">
+										<div class="form-group col-md-3">
+											<label class="form-label"
+												for="NuevaSolcitudComprobanteSlectproducto">Producto</label>
+											<select class="form-select select2"
+												id="NuevaSolcitudComprobanteSlectproducto">
+												<option selected>RK001 Combo familiar con ensalada y gaseosa 1.5L
+													-Roky´s</option>
+												<option>RK002 Combo personal con ensalada y gaseosa 250ml -Roky´s
+												</option>
+												<option>RK003 Medio Pollo con ensalada y gaseosa 250ml -Roky´s</option>
+											</select>
+										</div>
+										<div class="form-group col-md-2">
+											<label for="NuevaSolcitudComprobanteInitDate" class="form-label">Inicio
+												vigencia</label>
+											<input type="date" class="form-control"
+												id="NuevaSolcitudComprobanteInitDate" value="2023-01-20">
+										</div>
+										<div class="form-group col-md-2">
+											<label for="NuevaSolcitudComprobanteEndDate" class="form-label">Fin
+												vigencia</label>
+											<input type="date" class="form-control" id="NuevaSolcitudComprobanteEndDate"
+												value="2023-04-20">
+										</div>
+										<div class="form-group col">
+											<label for="NuevaSolcitudComprobanteCantidad"
+												class="form-label">Cantidad</label>
+											<input type="number" class="form-control"
+												id="NuevaSolcitudComprobanteCantidad" value="12">
+										</div>
+										<div class="form-group col">
+											<label for="NuevaSolcitudComprobantePrecioUnitario" class="form-label">P.
+												Unit.</label>
+											<input type="number" class="form-control"
+												id="NuevaSolcitudComprobantePrecioUnitario" value="20.50">
+										</div>
+										<div class="form-group col">
+											<label for="NuevaSolcitudComprobanteTotal" class="form-label">Total</label>
+											<input type="number" class="form-control" id="NuevaSolcitudComprobanteTotal"
+												value="246.00" disabled>
+										</div>
+										<button type="button" name="button" class="btn button-icon-danger">
+											<span class="material-icons">
+												delete
+											</span>
+										</button>
+									</div>
+
+									<div class="wrap-agregar-producto">
+										<div class="form-group col-md-3">
+											<label class="form-label"
+												for="NuevaSolcitudComprobanteSlectproductoNuevo">Producto</label>
+											<select class="form-select select2"
+												id="NuevaSolcitudComprobanteSlectproductoNuevo">
+												<option>Buscar</option>
+												<option>RK001 Combo familiar con ensalada y gaseosa 1.5L -Roky´s
+												</option>
+												<option>RK002 Combo personal con ensalada y gaseosa 250ml -Roky´s
+												</option>
+												<option>RK003 Medio Pollo con ensalada y gaseosa 250ml -Roky´s</option>
+											</select>
+										</div>
+										<div class="form-group col-md-2">
+											<label for="NuevaSolcitudComprobanteInitDateNuevo" class="form-label">Inicio
+												vigencia</label>
+											<input type="date" class="form-control"
+												id="NuevaSolcitudComprobanteInitDateNuevo">
+										</div>
+										<div class="form-group col-md-2">
+											<label for="NuevaSolcitudComprobanteEndDateNuevo" class="form-label">Fin
+												vigencia</label>
+											<input type="date" class="form-control"
+												id="NuevaSolcitudComprobanteEndDateNuevo">
+										</div>
+										<div class="form-group col">
+											<label for="NuevaSolcitudComprobanteCantidadNuevo"
+												class="form-label">Cantidad</label>
+											<input type="number" class="form-control"
+												id="NuevaSolcitudComprobanteCantidadNuevo" value="1">
+										</div>
+										<div class="form-group col">
+											<label for="NuevaSolcitudComprobantePrecioUnitarioNuevo"
+												class="form-label">P. Unit.</label>
+											<input type="number" class="form-control"
+												id="NuevaSolcitudComprobantePrecioUnitarioNuevo" value="0.00">
+										</div>
+										<div class="form-group col">
+											<label for="NuevaSolcitudComprobanteTotalNuevo"
+												class="form-label">Total</label>
+											<input type="number" class="form-control"
+												id="NuevaSolcitudComprobanteTotalNuevo" value="0.00" disabled>
+										</div>
+										<button type="button" name="button" class="btn button-icon-action"
+											data-bs-toggle="modal" data-bs-target="#modalDeleteProduct">
+											<span class="material-icons">
+												add
+											</span>
+										</button>
+									</div>
+
+									<div class="form-group">
+										<label class="form-label">Tipo de agrupación</label>
+										<div>
+											<div class="form-check form-check-inline">
+												<input class="form-check-input" type="radio"
+													name="agrupacionNuevaSolicitudComprobanteRadioOption"
+													id="agrupacionNuevaSolicitudComprobanteIndividual"
+													value="Individual" checked>
+												<label class="form-check-label"
+													for="agrupacionNuevaSolicitudComprobanteIndividual">Individual</label>
+											</div>
+											<div class="form-check form-check-inline">
+												<input class="form-check-input" type="radio"
+													name="agrupacionNuevaSolicitudComprobanteRadioOption"
+													id="agrupacionNuevaSolicitudComprobanteMixto" value="Mixto">
+												<label class="form-check-label"
+													for="agrupacionNuevaSolicitudComprobanteMixto">Mixto</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="row ">
+										<div class="form-group col">
+											<label for="nuevaSolicitudComprobanteMensajePDF" class="form-label">Mensaje
+												del PDF (Máximo 100 caracteres)</label>
+											<textarea class="form-control" id="nuevaSolicitudComprobanteMensajePDF"
+												rows="3"></textarea>
+										</div>
+										<div class="form-group col-md-2 mt-auto">
+											<label for="nuevaSolicitudComprobanteTotal" class="form-label">Total</label>
+											<input type="number" class="form-control"
+												id="nuevaSolicitudComprobanteTotal" value="246.00" disabled>
+										</div>
+									</div>
+
+								</form>
+							</div>
+							<div class="card-footer">
+								<button type="button" name="button"
+									class="btn button-ghost showOperacionesSolicitudComprobante">Cerrar</button>
+								<button type="button" name="button" class="btn button-primary" data-bs-toggle="modal"
+									data-bs-target="#modalSuccessNuevaSolicitudComprobante">Guardar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="panel" id="asignarVales-panel">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item showOperacionesSolicitudComprobante"><a href="#"
+								class="button-link">Solicitudes De Comprobantes</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Asignar Vales</li>
 					</ol>
 				</nav>
 
