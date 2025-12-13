@@ -1301,6 +1301,28 @@ div.dataTables_wrapper div.dataTables_info {
 .wrap-agregar-producto button {
   margin-bottom: 1rem;
 }
+
+.valesDescargaProducto {
+  /* background-color: pink; */
+  display: flex;
+  align-items: flex-end;
+  gap: 1.5rem;
+}
+
+.valesDescargaProducto .btn {
+  margin-bottom: 1rem;
+}
+
+.valesDescargaProducto label {
+  display: none;
+}
+
+.valesDescargaProducto:first-child label {
+  /* background-color: pink; */
+  display: block;
+}
+
+
 /* END SOLICITUD COMPROBANTE VENTA */
 
 /* EMPRESAS */
