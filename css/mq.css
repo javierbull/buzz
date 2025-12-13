@@ -1,0 +1,46 @@
+/* Laptop */
+@media (max-width: 1366px) {}
+
+/* Fin laptop */
+/* Tablet landscape */
+@media (max-width: 1024px) {
+
+}
+
+/* Fin tablet landscape */
+/* Big cell landscape */
+@media (max-width: 916px) {
+
+}
+
+/* Fin Big cell landscape */
+/* Tablet portrait */
+@media (max-width: 768px) {
+  
+}
+
+/* fin tablet portrait */
+/* Cell landscape */
+@media (max-width: 736px) {
+
+}
+
+/* Fin cell landscape */
+/* Small cell landscape */
+@media (max-width: 568px) {
+
+}
+
+/* Fin small cell landscape */
+/* Cell portrait */
+@media (max-width: 480px) {
+
+}
+
+/* Fin cell portrait */
+/* Small cell portrait */
+@media (max-width: 360px) {
+
+}
+
+/* Fin small cell portrait */
