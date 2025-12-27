@@ -1378,4 +1378,8 @@ div.dataTables_wrapper div.dataTables_info {
 .dropdown-toggle::after {
   display: none;
 }
+
+.progress-buzz {
+  height: 1.5rem;
+}
 /* END COMUNICADOS */
