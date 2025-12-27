@@ -1342,6 +1342,11 @@ div.dataTables_wrapper div.dataTables_info {
   -moz-border-radius: .5rem;
   -ms-border-radius: .5rem;
   -o-border-radius: .5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cardEmailMasivo:last-child {
+  margin-bottom: 0;
 }
 
 .cardEmailMasivo__header {
@@ -1373,6 +1378,9 @@ div.dataTables_wrapper div.dataTables_info {
 
 .cardEmailMasivo__body {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .dropdown-toggle::after {
@@ -1380,6 +1388,30 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .progress-buzz {
-  height: 1.5rem;
+  height: 2rem;
+}
+
+.progress-buzz-label {
+  font-size: .875rem;
+  margin-bottom: .5rem;
+}
+
+.wrap-progress-buzz-action {
+  display: flex;
+  justify-content: center;
+}
+
+.cardEmailMasivo__body-title span {
+  font-weight: 500;
+}
+
+.cardEmailMasivo--sending .cardEmailMasivo__datatimelastsend,
+.cardEmailMasivo--sending .wrap-progress-buzz-action {
+  display: none;
+}
+
+.cardEmailMasivo--default .cardEmailMasivo__subject,
+.cardEmailMasivo--default .wrap-progressBuzz {
+  display: none;
 }
 /* END COMUNICADOS */
