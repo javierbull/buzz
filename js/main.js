@@ -121,6 +121,7 @@ $(".showDashboard").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showAdmninistracionUsuarios").click(function() {
@@ -151,6 +152,7 @@ $(".showAdmninistracionUsuarios").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showCrearUsuarios").click(function() {
@@ -181,6 +183,7 @@ $(".showCrearUsuarios").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showReporteStockDisponible").click(function() {
@@ -211,6 +214,7 @@ $(".showReporteStockDisponible").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $("#showDetalleStock").click(function() {
@@ -241,6 +245,7 @@ $("#showDetalleStock").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showOperacionesPedidos").click(function() {
@@ -271,6 +276,7 @@ $(".showOperacionesPedidos").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $("#showDetallePedido").click(function() {
@@ -301,6 +307,7 @@ $("#showDetallePedido").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showOperacionesEnviosPendientes").click(function() {
@@ -331,6 +338,7 @@ $(".showOperacionesEnviosPendientes").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showOperacionesEnviosRealizados").click(function() {
@@ -361,6 +369,7 @@ $(".showOperacionesEnviosRealizados").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showReportePc").click(function() {
@@ -391,6 +400,7 @@ $(".showReportePc").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showPruebas").click(function() {
@@ -421,6 +431,7 @@ $(".showPruebas").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showDetalleStock").click(function() {
@@ -451,6 +462,7 @@ $(".showDetalleStock").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showSupportReenvios").click(function() {
@@ -481,6 +493,7 @@ $(".showSupportReenvios").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showSupportClientes").click(function() {
@@ -511,6 +524,7 @@ $(".showSupportClientes").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showOperacionesProgInHouse").click(function() {
@@ -541,6 +555,7 @@ $(".showOperacionesProgInHouse").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showNuevaProgInhouse").click(function() {
@@ -571,6 +586,7 @@ $(".showNuevaProgInhouse").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showOperacionesProgPlataforma").click(function() {
@@ -601,6 +617,7 @@ $(".showOperacionesProgPlataforma").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showNuevaProgPlataforma").click(function() {
@@ -631,6 +648,7 @@ $(".showNuevaProgPlataforma").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showOperacionesProgInHousePromotoria").click(function() {
@@ -661,6 +679,7 @@ $(".showOperacionesProgInHousePromotoria").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showOperacionesProgInHouseAdmin").click(function() {
@@ -691,6 +710,7 @@ $(".showOperacionesProgInHouseAdmin").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showOperacionesSolicitudComprobante").click(function() {
@@ -721,6 +741,7 @@ $(".showOperacionesSolicitudComprobante").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showNuevaSolicitudComprobante").click(function() {
@@ -751,6 +772,7 @@ $(".showNuevaSolicitudComprobante").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showAdmninistracionEmpresas").click(function() {
@@ -780,6 +802,7 @@ $(".showAdmninistracionEmpresas").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showCrearEmpresa").click(function() {
@@ -809,6 +832,7 @@ $(".showCrearEmpresa").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showAdmninistracionEmpresasAdmin").click(function() {
@@ -838,6 +862,7 @@ $(".showAdmninistracionEmpresasAdmin").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showEmpresaAdmin").click(function() {
@@ -867,6 +892,7 @@ $(".showEmpresaAdmin").click(function() {
   $("#detalleEmpresa-panel-admin").show();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showEditarEmpresa").click(function() {
@@ -896,6 +922,7 @@ $(".showEditarEmpresa").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").show();
   $("#asignarVales-panel").hide();
+  $("#comunicados-panel").hide();
 });
 
 $(".showAsignarVales").click(function() {
@@ -925,6 +952,37 @@ $(".showAsignarVales").click(function() {
   $("#detalleEmpresa-panel-admin").hide();
   $("#editarEmpresa-panel").hide();
   $("#asignarVales-panel").show();
+  $("#comunicados-panel").hide();
+});
+
+$(".showComunicados").click(function() {
+  $("#dashboard-panel").hide();
+  $("#usuarios-panel").hide();
+  $("#crearUsuarios-panel").hide();
+  $("#reportesStock-panel").hide();
+  $("#detalleStock-panel").hide();
+  $("#pedidos-panel").hide();
+  $("#detallePedido-panel").hide();
+  $("#enviosPendientes-panel").hide();
+  $("#enviosRealizados-panel").hide();
+  $("#reportePc-panel").hide();
+  $("#pruebas-panel").hide();
+  $("#reenviosClientes-panel").hide();
+  $("#datosClientes-panel").hide();
+  $("#progInhouse-panel").hide();
+  $("#crearProgInhouse-panel").hide();
+  $("#progPlataforma-panel").hide();
+  $("#crearProgPlataforma-panel").hide();
+  $("#progInhousePromotoria-panel").hide();
+  $("#progInhouseAdmin-panel").hide();
+  $("#solicitudComprobante-panel").hide();
+  $("#empresas-panel").hide();
+  $("#crearEmpresa-panel").hide();
+  $("#empresas-panel-admin").hide();
+  $("#detalleEmpresa-panel-admin").hide();
+  $("#editarEmpresa-panel").hide();
+  $("#asignarVales-panel").hide();
+  $("#comunicados-panel").show();
 });
 // END SHOW HIDE PANELS
 

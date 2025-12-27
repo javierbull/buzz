@@ -3,7 +3,6 @@
 
   --dark: #14142B;
   --dark-light: #4E4B66;
-
   --gray: #6E7191;
   --gray-medium: #A0A3BD;
   --gray-light: #EFF0F6;
@@ -1334,3 +1333,23 @@ div.dataTables_wrapper div.dataTables_info {
   display: none;
 }
 /* END ASIGNACION DE VALES */
+
+/* COMUNICADOS */
+.cardEmailMasivo {
+  border: solid 1px var(--gray-medium);
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+
+.cardEmailMasivo__header {
+  padding: 1rem;
+  border-bottom: solid 1px var(--gray-medium);
+}
+
+.cardEmailMasivo__body {
+  padding: 1rem;
+}
+/* END COMUNICADOS */
