@@ -370,7 +370,7 @@ h4 {
   box-shadow: 0 0 0 0.25rem rgba(20, 20, 43, 0.25);
 }
 
-.button-icon-left, .button-icon-right {
+.button-icon-left, .button-icon-right, .button-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1345,11 +1345,37 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .cardEmailMasivo__header {
+  /* background-color: pink; */
   padding: 1rem;
   border-bottom: solid 1px var(--gray-medium);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.cardEmailMasivo__header .left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cardEmailMasivo__header h3 {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.cardEmailMasivo__header .left span {
+  font-size: 2rem;
+}
+
 
 .cardEmailMasivo__body {
   padding: 1rem;
+}
+
+.dropdown-toggle::after {
+  display: none;
 }
 /* END COMUNICADOS */
