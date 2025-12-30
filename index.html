@@ -4909,7 +4909,7 @@
 										</button>
 										<ul class="dropdown-menu dropdown-menu-end"
 											aria-labelledby="dropdownMenuButton1">
-											<li><a class="dropdown-item" href="#">Detener</a></li>
+											<li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalDetenerComunicados">Detener</a></li>
 										</ul>
 									</div>
 								</div>
@@ -4966,7 +4966,8 @@
 										</button>
 										<ul class="dropdown-menu dropdown-menu-end"
 											aria-labelledby="dropdownMenuButton1">
-											<li><a class="dropdown-item" href="#">Detener</a></li>
+											<li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+													data-bs-target="#modalDetenerComunicados">Detener</a></li>
 										</ul>
 									</div>
 								</div>
@@ -4993,7 +4994,7 @@
 
 									<div class="wrap-progress-buzz-action">
 										<button type="button" name="button"
-											class="btn button-primary showCrearUsuarios button-icon-right">
+											class="btn button-primary showCrearComunicado button-icon-right">
 											Enviar nuevo comunicado
 											<span class="material-icons-outlined">
 												send
@@ -9029,6 +9030,24 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalDetenerComunicados" aria-labelledby="modalDetenerComunicados" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalDetenerComunicados">Detener envío</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					¿Está seguro que desea detener el envío de comunicados?
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Detener envío</button>
 				</div>
 			</div>
 		</div>
