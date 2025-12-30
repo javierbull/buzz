@@ -4909,7 +4909,8 @@
 										</button>
 										<ul class="dropdown-menu dropdown-menu-end"
 											aria-labelledby="dropdownMenuButton1">
-											<li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalDetenerComunicados">Detener</a></li>
+											<li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+													data-bs-target="#modalDetenerComunicados">Detener</a></li>
 										</ul>
 									</div>
 								</div>
@@ -4994,13 +4995,76 @@
 
 									<div class="wrap-progress-buzz-action">
 										<button type="button" name="button"
-											class="btn button-primary showCrearComunicado button-icon-right">
+											class="btn button-primary showComunicadoNuevo button-icon-right">
 											Enviar nuevo comunicado
 											<span class="material-icons-outlined">
 												send
 											</span>
 										</button>
 									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="panel" id="comunicadoNuevo-panel">
+
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item showComunicados"><a href="#" class="button-link">Comunicados</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Nuevo Comunicado</li>
+					</ol>
+				</nav>
+
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="card-dtable">
+							<div class="comunicadoNuevo">
+								<div class="comunicadoNuevo__item">
+									<h2>
+										Nuevo comunicado
+									</h2>
+
+									<form class="formComunicadoNuevo">
+										<div class="form-group">
+											<label for="inputComunicadoNuevoAsunto" class="form-label">Asunto</label>
+											<input type="text" class="form-control" id="inputComunicadoNuevoAsunto"
+												placeholder="Ingrese el asunto del comunicado">
+										</div>
+
+										<div class="mb-3">
+											<label for="formFileImagenComunicado" class="form-label">Imagen del
+												comunicado</label>
+											<input class="form-control" type="file" id="formFileImagenComunicado">
+										</div>
+
+										<div class="wrap-agregar-producto">
+											<div class="form-group col">
+												<label for="comunicadoNuevoEmpresasExcluidas"
+													class="form-label">Empresas excluidas del comunicado</label>
+												<input type="text" class="form-control"
+													id="comunicadoNuevoEmpresasExcluidas" placeholder="Ingrese nombre de empresa">
+											</div>
+											
+											
+											<button type="button" name="button" class="btn button-icon-action">
+												<span class="material-icons">
+													add
+												</span>
+											</button>
+
+											<button type="button" name="button" class="btn button-icon-outline">
+												<img src="img/icons/microsoft-excel.svg" alt="">
+											</button>
+										</div>
+									</form>
+								</div>
+								<div class="comunicadoNuevo__item">
+									<h2>
+										Vista previa
+									</h2>
 								</div>
 							</div>
 						</div>
