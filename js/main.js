@@ -818,6 +818,7 @@ $(".showAdmninistracionEmpresas").click(function() {
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
+  $("#nuevaSolicitudComprobante-panel").hide();
   $("#empresas-panel").show();
   $("#crearEmpresa-panel").hide();
   $("#empresas-panel-admin").hide();
@@ -849,6 +850,7 @@ $(".showCrearEmpresa").click(function() {
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
+  $("#nuevaSolicitudComprobante-panel").hide();
   $("#empresas-panel").hide();
   $("#crearEmpresa-panel").show();
   $("#empresas-panel-admin").hide();
@@ -880,6 +882,7 @@ $(".showAdmninistracionEmpresasAdmin").click(function() {
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
+  $("#nuevaSolicitudComprobante-panel").hide();
   $("#empresas-panel").hide();
   $("#crearEmpresa-panel").hide();
   $("#empresas-panel-admin").show();
@@ -911,6 +914,7 @@ $(".showEmpresaAdmin").click(function() {
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
+  $("#nuevaSolicitudComprobante-panel").hide();
   $("#empresas-panel").hide();
   $("#crearEmpresa-panel").hide();
   $("#empresas-panel-admin").hide();
@@ -942,6 +946,7 @@ $(".showEditarEmpresa").click(function() {
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
+  $("#nuevaSolicitudComprobante-panel").hide();
   $("#empresas-panel").hide();
   $("#crearEmpresa-panel").hide();
   $("#empresas-panel-admin").hide();
@@ -973,6 +978,7 @@ $(".showAsignarVales").click(function() {
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
+  $("#nuevaSolicitudComprobante-panel").hide();
   $("#empresas-panel").hide();
   $("#crearEmpresa-panel").hide();
   $("#empresas-panel-admin").hide();
@@ -1004,6 +1010,7 @@ $(".showComunicados").click(function() {
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
+  $("#nuevaSolicitudComprobante-panel").hide();
   $("#empresas-panel").hide();
   $("#crearEmpresa-panel").hide();
   $("#empresas-panel-admin").hide();
@@ -1035,6 +1042,7 @@ $(".showComunicadoNuevo").click(function() {
   $("#progInhousePromotoria-panel").hide();
   $("#progInhouseAdmin-panel").hide();
   $("#solicitudComprobante-panel").hide();
+  $("#nuevaSolicitudComprobante-panel").hide();
   $("#empresas-panel").hide();
   $("#crearEmpresa-panel").hide();
   $("#empresas-panel-admin").hide();
