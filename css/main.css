@@ -1442,7 +1442,7 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .comunicadoNuevo__item {
-  padding: 1rem;
+  padding: 1.5rem 2rem;
   flex: 1;
   border: solid 1px var(--gray-medium);
   border-radius: .5rem;
@@ -1457,5 +1457,54 @@ div.dataTables_wrapper div.dataTables_info {
   font-weight: 600;
   text-align: center;
   margin-bottom: 2rem;
+}
+
+.contentCorreo {
+  text-align: center;
+}
+
+.linkEmail {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.emailTitle {
+  margin-bottom: 1.5rem;
+}
+
+.emailImg {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.emailContact {
+  /* background-color: lavender; */
+  padding: 1.5rem 0 .25rem 0;
+  border-top: solid 1px var(--gray-medium);
+  border-bottom: solid 1px var(--gray-medium);
+}
+
+.emailTable {
+  /* background-color: pink; */
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.emailTable tr td {
+  text-align: left;
+  padding: .5rem;
+}
+
+.emailTable tr td:first-child {
+  text-align: right;
+}
+
+.emailCondiciones {
+  padding: 1.5rem 0;
+  text-align: left;
+  list-style: none;
+}
+.emailCondiciones li:first-child {
+  font-weight: 600;
 }
 /* END COMUNICADOS */
