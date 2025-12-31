@@ -5042,13 +5042,14 @@
 
 										<div class="wrap-agregar-producto">
 											<div class="form-group col">
-												<label for="comunicadoNuevoEmpresasExcluidas"
-													class="form-label">Empresas excluidas del comunicado</label>
+												<label for="comunicadoNuevoEmpresasExcluidas" class="form-label">Empresa
+													excluida</label>
 												<input type="text" class="form-control"
-													id="comunicadoNuevoEmpresasExcluidas" placeholder="Ingrese nombre de empresa">
+													id="comunicadoNuevoEmpresasExcluidas"
+													placeholder="Ingrese nombre de empresa">
 											</div>
-											
-											
+
+
 											<button type="button" name="button" class="btn button-icon-action">
 												<span class="material-icons">
 													add
@@ -5060,7 +5061,86 @@
 											</button>
 										</div>
 									</form>
+
+									<h4>
+										*Estas son las empresas a las que no le llegarán el comunicado
+									</h4>
+									<table class="table table-hover" id="tableEmpresasExcluidasComunicados">
+										<thead>
+											<tr>
+												<th scope="col">#</th>
+												<th scope="col">RUC</th>
+												<th scope="col">Nombre</th>
+												<th scope="col">Acciones</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row">1</th>
+												<td>20215632569</td>
+												<td>Sea Food S.A.C.</td>
+												<td>
+													<div class="action-cell-btns">
+														<button type="button" name="button"
+															class="btn button-icon button-icon-sm"
+															data-bs-toggle="tooltip" data-bs-placement="left"
+															title="Eliminar">
+															<span class="material-icons-outlined">
+																delete
+															</span>
+														</button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">2</th>
+												<td>2036563656985</td>
+												<td>Credicorp</td>
+												<td>
+													<div class="action-cell-btns">
+														<button type="button" name="button"
+															class="btn button-icon button-icon-sm"
+															data-bs-toggle="tooltip" data-bs-placement="left"
+															title="Eliminar">
+															<span class="material-icons-outlined">
+																delete
+															</span>
+														</button>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">1</th>
+												<td>2014585698547</td>
+												<td>Pepito S.A.C.</td>
+												<td>
+													<div class="action-cell-btns">
+														<button type="button" name="button"
+															class="btn button-icon button-icon-sm"
+															data-bs-toggle="tooltip" data-bs-placement="left"
+															title="Eliminar">
+															<span class="material-icons-outlined">
+																delete
+															</span>
+														</button>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div class="action-btns mb-0 mt-5">
+										<button type="button" name="button" class="btn button-outline showComunicados">
+											Anterior
+										</button>
+
+										<button type="button" name="button"
+											class="btn button-primary showComunicadoPrueba">
+											Siguiente
+										</button>
+									</div>
 								</div>
+
 								<div class="comunicadoNuevo__item">
 									<h2>
 										Vista previa
