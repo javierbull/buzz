@@ -535,7 +535,9 @@ h4 {
 }
 
 .text-help {
+  position: absolute;
   color: var(--danger);
+  font-size: .75rem;
   display: none;
 }
 
