@@ -5157,7 +5157,7 @@
 											</div>
 
 											<button type="button" name="button"
-												class="btn button-outline button-icon-left">
+												class="btn button-outline button-icon-left" data-bs-toggle="modal" data-bs-target="#modalSuccessCorreoPrueba">
 												<span class="material-icons-outlined">
 													mail
 												</span>
@@ -9319,6 +9319,29 @@
 				<div class="modal-footer">
 					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
 					<button type="button" class="btn button-primary">Detener envío</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalSuccessCorreoPrueba" tabindex="-1" aria-labelledby="modalCorreoPrueba" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalCorreoPrueba">Correo de prueba enviado</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="d-flex align-items-top">
+						<span class="material-icons success-color marginRight-1">
+							done
+						</span>
+						Se envío un correo de prueba de manera exitosa. <br>Revise su bandeja de entrada.
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-primary"
+						data-bs-dismiss="modal">Entendido</button>
 				</div>
 			</div>
 		</div>
