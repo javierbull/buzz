@@ -1054,6 +1054,18 @@ $(".showComunicadoNuevo").click(function() {
 });
 // END SHOW HIDE PANELS
 
+// COMUNICADOS
+$(".showComunicadoPrueba").click(function() {
+  $("#comunicadoNuevo-crear").hide();
+  $("#comunicadoNuevo-PruebaEnvio").show();
+});
+
+$(".showComunicadoCrear").click(function() {
+  $("#comunicadoNuevo-crear").show();
+  $("#comunicadoNuevo-PruebaEnvio").hide();
+});
+// END COMUNICADOS
+
 // SHOW HIDE FECHA VALES
   $("input[name='modaltipoAsignacionRadioOption']").click(function () {
     if ($("#modalAsignacionParcial").is(":checked")) {

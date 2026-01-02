@@ -5141,7 +5141,7 @@
 									</div>
 								</div>
 
-								<div class="comunicadoNuevo__item" id="comunicadoNuevo-enviar">
+								<div class="comunicadoNuevo__item" id="comunicadoNuevo-PruebaEnvio">
 									<h2>
 										Probar y Enviar comunicado
 									</h2>
@@ -5154,10 +5154,14 @@
 												</label>
 												<input type="email" class="form-control"
 													id="comunicadoNuevoEmpresasExcluidas">
+												<span class="text-help">
+													El campo debe tener un valor
+												</span>
 											</div>
 
 											<button type="button" name="button"
-												class="btn button-outline button-icon-left" data-bs-toggle="modal" data-bs-target="#modalSuccessCorreoPrueba">
+												class="btn button-outline button-icon-left" data-bs-toggle="modal"
+												data-bs-target="#modalSuccessCorreoPrueba">
 												<span class="material-icons-outlined">
 													mail
 												</span>
@@ -5180,7 +5184,7 @@
 									</form>
 
 									<div class="action-btns mb-0 mt-5">
-										<button type="button" name="button" class="btn button-outline showComunicados">
+										<button type="button" name="button" class="btn button-outline showComunicadoCrear">
 											Anterior
 										</button>
 
@@ -9324,7 +9328,8 @@
 		</div>
 	</div>
 
-	<div class="modal fade" id="modalSuccessCorreoPrueba" tabindex="-1" aria-labelledby="modalCorreoPrueba" aria-hidden="true">
+	<div class="modal fade" id="modalSuccessCorreoPrueba" tabindex="-1" aria-labelledby="modalCorreoPrueba"
+		aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -9340,8 +9345,7 @@
 					</p>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn button-primary"
-						data-bs-dismiss="modal">Entendido</button>
+					<button type="button" class="btn button-primary" data-bs-dismiss="modal">Entendido</button>
 				</div>
 			</div>
 		</div>
