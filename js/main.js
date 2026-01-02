@@ -1051,6 +1051,8 @@ $(".showComunicadoNuevo").click(function() {
   $("#asignarVales-panel").hide();
   $("#comunicados-panel").hide();
   $("#comunicadoNuevo-panel").show();
+  $("#comunicadoNuevo-crear").show();
+  $("#comunicadoNuevo-PruebaEnvio").hide();
 });
 // END SHOW HIDE PANELS
 
