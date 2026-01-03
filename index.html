@@ -5176,7 +5176,7 @@
 										</button>
 
 										<button type="button" name="button"
-											class="btn button-primary button-icon-right">
+											class="btn button-primary button-icon-right" data-bs-toggle="modal" data-bs-target="#modalConfirmarEnvioComunicado">
 											Enviar comunicados
 											<span class="material-icons-outlined">
 												send
@@ -9320,6 +9320,32 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn button-primary" data-bs-dismiss="modal">Entendido</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalConfirmarEnvioComunicado" aria-labelledby="modalConfirmarEnvioComunicado" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalConfirmarEnvioComunicado">Confirmar envío</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					¿El envío de la prueba se realizó correctamente?
+					<ul>
+						<li>
+							Si el envío de prueba se realizó correctamente dar click en "Enviar"
+						</li>
+						<li>
+							De lo contrario dar click en "Volver a editar correo"
+						</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost showComunicadoCrear" data-bs-dismiss="modal">Volver a editar correo</button>
+					<button type="button" class="btn button-primary">Enviar comunicado</button>
 				</div>
 			</div>
 		</div>
