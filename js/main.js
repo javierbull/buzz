@@ -1068,6 +1068,9 @@ $(".showComunicadoPrueba").click(function() {
 $(".showComunicadoCrear").click(function() {
   $("#comunicadoNuevo-crear").show();
   $("#comunicadoNuevo-PruebaEnvio").hide();
+  $('html, body').animate({
+                    scrollTop: 0
+                }, 100);
 });
 // END COMUNICADOS
 
