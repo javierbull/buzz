@@ -1466,12 +1466,20 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .linkEmail {
+  color: var(--info);
   font-weight: 600;
   text-decoration: underline;
 }
 
 .emailTitle {
+  text-align: left;
   margin-bottom: 1.5rem;
+  border-bottom: solid 1px var(--gray-medium);
+  padding-bottom: .5rem;
+}
+
+.emailTitle span {
+  font-weight: 400;
 }
 
 .emailImg {
@@ -1490,6 +1498,7 @@ div.dataTables_wrapper div.dataTables_info {
   /* background-color: pink; */
   width: 100%;
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .emailTable tr td {
@@ -1506,11 +1515,16 @@ div.dataTables_wrapper div.dataTables_info {
   text-align: left;
   list-style: none;
 }
-.emailCondiciones li:first-child {
-  font-weight: 600;
+
+.emailCondiciones li {
+  margin-bottom: .5rem;
 }
 
 #comunicadoNuevo-PruebaEnvio {
   display: none;
+}
+
+.logoEmail {
+  height: 2.5rem;
 }
 /* END COMUNICADOS */
