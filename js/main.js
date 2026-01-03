@@ -1060,6 +1060,9 @@ $(".showComunicadoNuevo").click(function() {
 $(".showComunicadoPrueba").click(function() {
   $("#comunicadoNuevo-crear").hide();
   $("#comunicadoNuevo-PruebaEnvio").show();
+  $('html, body').animate({
+                    scrollTop: 0
+                }, 100);
 });
 
 $(".showComunicadoCrear").click(function() {
@@ -1067,6 +1070,23 @@ $(".showComunicadoCrear").click(function() {
   $("#comunicadoNuevo-PruebaEnvio").hide();
 });
 // END COMUNICADOS
+
+$(document).ready(function() {
+            
+            $("#btn-accion").click(function() {
+                // 1. Ocultar el primer div (puedes usar .hide() o .fadeOut())
+                $("#div1").hide();
+
+                // 2. Mostrar el segundo div (puedes usar .show() o .fadeIn())
+                $("#div2").show();
+
+                // 3. Animar el scroll hacia arriba (Top: 0)
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 800); // 800 es la velocidad en milisegundos
+            });
+
+        });
 
 // SHOW HIDE FECHA VALES
   $("input[name='modaltipoAsignacionRadioOption']").click(function () {
