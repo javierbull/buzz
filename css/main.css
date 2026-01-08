@@ -1330,6 +1330,11 @@ div.dataTables_wrapper div.dataTables_info {
   gap: 1.5rem;
 }
 
+.valesDescargaProducto .row {
+  /* background-color: #C1F8CF; */
+  width: 100%;
+}
+
 .valesDescargaProducto .btn {
   margin-bottom: 1rem;
 }
