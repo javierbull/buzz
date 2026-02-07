@@ -6,7 +6,6 @@
   --gray: #6E7191;
   --gray-medium: #A0A3BD;
   --gray-light: #F7F7FC;
-  --border: #D9DBE9;
   --smoke: #E2E2E2;
   --smoke-light: #EFEFEF;
   --white: #FCFCFC;
@@ -298,6 +297,23 @@ h4 {
   color: var(--dark);
   border-color: 1px solid var(--dark);
   box-shadow: 0 0 0 0.25rem rgba(20, 20, 43, 0.25);
+}
+
+.button-accent {
+  background-color: var(--info);
+  color: var(--white);
+}
+
+.button-accent:hover {
+  background-color: var(--info-dark);
+  color: var(--white);
+}
+
+.button-accent:focus {
+  background-color: var(--info);
+  color: var(--white);
+  border-color: 1px solid var(--info-dark);
+  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
 }
 
 .button-danger {
@@ -1374,13 +1390,14 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .card-ficha-empresa {
-  border: solid 1px var(--border);
+  border: solid 1px var(--gray-medium);
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
   overflow: hidden;
+  margin-bottom: 1rem;
 }
 
 .card-ficha-empresa__header {
@@ -1410,8 +1427,13 @@ div.dataTables_wrapper div.dataTables_info {
 
 .card-ficha-empresa__body {
   background-color: var(--white);
-  border-top: solid 1px var(--border);
+  border-top: solid 1px var(--gray-medium);
   padding: 1rem;
+}
+
+.title-section {
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 /* END EMPRESAS */
 
