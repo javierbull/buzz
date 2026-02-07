@@ -526,6 +526,24 @@ h4 {
 
 /* End Buttons */
 
+/* Badge */
+.badge-plan-vigente {
+  color: var(--success);
+}
+
+.badge-plan-adminFree {
+  color: var(--primary);
+}
+
+.badge-plan-noVigente {
+  color: var(--danger);
+}
+
+.badge-sinPlan {
+  color: var(--gray);
+}
+/* End Badge */
+
 .show {
   display: block;
 }
