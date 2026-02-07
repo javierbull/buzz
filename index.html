@@ -2778,7 +2778,8 @@
 													</span>
 												</button>
 												<div class="btn-group">
-													<button type="button" class="btn btn-icon button-icon-sm dropdown-toggle"
+													<button type="button"
+														class="btn btn-icon button-icon-sm dropdown-toggle"
 														data-bs-toggle="dropdown" aria-expanded="false">
 														<span class="material-icons-outlined">
 															upload
@@ -2786,10 +2787,12 @@
 													</button>
 													<ul class="dropdown-menu dropdown-menu-end">
 														<li>
-															<button class="dropdown-item" type="button">CARGAR / ACTUALIZAR</button>
+															<button class="dropdown-item" type="button">CARGAR /
+																ACTUALIZAR</button>
 														</li>
 														<li>
-															<button class="dropdown-item" type="button">ELIMINAR</button>
+															<button class="dropdown-item"
+																type="button">ELIMINAR</button>
 														</li>
 													</ul>
 												</div>
@@ -2858,6 +2861,86 @@
 								<div class="tab-content" id="nav-tabContent">
 									<div class="tab-pane fade show active" id="nav-crearFicha" role="tabpanel"
 										aria-labelledby="nav-crearFicha-tab">
+
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" value=""
+												id="flexCheckDefault">
+											<label class="form-check-label" for="flexCheckDefault">
+												Es un grupo empresarial
+											</label>
+										</div>
+
+										<div class="container-fichaGrupoEmpresarial">
+											<h6>Empresa principal del grupo económico</h6>
+
+											<div class="card-ficha-empresa">
+												<div class="card-ficha-empresa__header">
+													<div class="card-ficha-empresa__logo">
+														<img src="#" alt="Intercorp">
+													</div>
+													<div class="card-ficha-empresa__content">
+														<div class="card-ficha-empresa__content--top">
+															<div class="row">
+																<div class="form-group col-md-4">
+																	<label for="nuevaFichaNombreComercial1"
+																		class="form-label">
+																		Nombre comercial
+																	</label>
+																	<input type="text" class="form-control"
+																		id="nuevaFichaNombreComercial1">
+																</div>
+																<div class="form-group col-md-4">
+																	<label for="nuevaFichaRazonSocial1"
+																		class="form-label">
+																		Razón Social
+																	</label>
+																	<input type="text" class="form-control"
+																		id="nuevaFichaRazonSocial1">
+																</div>
+																<div class="form-group col-md-2">
+																	<label for="nuevaFichaRuc1" class="form-label">
+																		RUC
+																	</label>
+																	<input type="number" class="form-control"
+																		id="nuevaFichaRuc1">
+																</div>
+																<div class="form-group col-md-2">
+																	<label for="nuevaFichaColaboradores1"
+																		class="form-label">
+																		# Colaboradores
+																	</label>
+																	<input type="text" class="form-control"
+																		id="nuevaFichaColaboradores1">
+																</div>
+															</div>
+														</div>
+														<div class="card-ficha-empresa__content--bottom">
+															<div class="card-ficha-empresa__content--canales">
+
+															</div>
+															<div class="card-ficha-empresa__content--action">
+																<button class="btn btn-primary" type="button"
+																	data-bs-toggle="collapse"
+																	data-bs-target="#collapseFicha1"
+																	aria-expanded="false"
+																	aria-controls="collapseFicha1">
+																	Ver sedes
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="card-ficha-empresa__body collapse" id="collapseFicha1">
+													<p>
+														Some placeholder content for the collapse component. This
+														panel is hidden by default but revealed when the user
+														activates the relevant trigger.
+													</p>
+												</div>
+											</div>
+
+											<h6>Empresas</h6>
+										</div>
 										<form>
 											<div class="wrap-img-preview">
 												<div class="imageWrapper">
