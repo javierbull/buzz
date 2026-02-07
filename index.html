@@ -77,7 +77,6 @@
 					<div class="collapse" id="admin-collapse">
 						<ul class="btn-toggle-nav sidebar-list-collapse">
 							<li><a href="#" class="item-collapse rounded showAdmninistracionUsuarios">Usuarios</a></li>
-							<li><a href="#" class="item-collapse rounded showAdmninistracionEmpresas">Empresas</a></li>
 						</ul>
 					</div>
 				</li>
@@ -175,8 +174,11 @@
 					</button>
 					<div class="collapse" id="comercial-collapse">
 						<ul class="btn-toggle-nav sidebar-list-collapse">
-							<li><a href="#" class="item-collapse rounded showOperacionesSolicitudComprobante">Registro
-									Venta</a></li>
+							<li>
+								<a href="#" class="item-collapse rounded showAdmninistracionEmpresas">Empresas</a></li>
+							<li>
+								<a href="#" class="item-collapse rounded showOperacionesSolicitudComprobante">Registro Venta</a>
+							</li>
 						</ul>
 					</div>
 				</li>
@@ -741,1398 +743,6 @@
 								<button type="button" name="button" class="btn button-primary" data-bs-toggle="modal"
 									data-bs-target="#modalSuccess">Guardar</button>
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="panel" id="empresas-panel">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="action-btns">
-							<button type="button" name="button" class="btn button-outline button-icon-left"
-								data-bs-toggle="modal" data-bs-target="#modalFiltrarEmpresas">
-								<span class="material-icons-outlined">
-									filter_list
-								</span>
-								Filtrar
-							</button>
-
-							<button type="button" name="button"
-								class="btn button-primary showCrearEmpresa button-icon-left">
-								<span class="material-icons-outlined">
-									add
-								</span>
-								Nuevo
-							</button>
-						</div>
-					</div>
-
-					<div class="col-lg-12">
-						<div class="card-dtable">
-							<div class="card-dtable-header">
-								<div class="title-dtable">
-									Empresas
-								</div>
-								<button type="button" name="button" class="btn button-outline button-icon-left d-none">
-									<span class="material-icons-outlined">
-										download
-									</span>
-									Generar reporte
-								</button>
-							</div>
-							<table class="table dtable table-hover">
-								<thead>
-									<tr>
-										<th scope="col">RUC</th>
-										<th scope="col">Nombre Web</th>
-										<th scope="col">Código</th>
-										<th scope="col">Colaboradores</th>
-										<th scope="col">Registrados</th>
-										<th scope="col">Logo</th>
-										<th scope="col">Estado</th>
-										<th scope="col">Acciones</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>12548569854</td>
-										<td>Colmena Solutions</td>
-										<td>col23</td>
-										<td>50</td>
-										<td>40</td>
-										<td>
-											<div>
-												<input class="form-check-input" type="checkbox" value=""
-													aria-label="..." checked disabled>
-											</div>
-										</td>
-										<td><span class="tag-status tag-active">Activo</span></td>
-										<td>
-											<div class="action-cell-btns">
-												<button type="button" name="button"
-													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
-													data-bs-target="#modalDetalleEmpresaSede">
-													<span class="material-icons-outlined" data-bs-toggle="tooltip"
-														data-bs-placement="left" title="Detalle">
-														visibility
-													</span>
-												</button>
-												<button type="button" name="button"
-													class="btn button-icon button-icon-sm showEditarEmpresa">
-													<span class="material-icons-outlined" data-bs-toggle="tooltip"
-														data-bs-placement="left" title="Editar">
-														edit
-													</span>
-												</button>
-												<button type="button" name="button"
-													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
-													data-bs-target="#modalDesactivarEmpresa">
-													<span class="material-icons-outlined" data-bs-toggle="tooltip"
-														data-bs-placement="left" title="Cambiar Estado">
-														loop
-													</span>
-												</button>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>42568547856</td>
-										<td>Interbank</td>
-										<td>int23</td>
-										<td>2000</td>
-										<td>400</td>
-										<td>
-											<div>
-												<input class="form-check-input" type="checkbox" value=""
-													aria-label="..." checked disabled>
-											</div>
-										</td>
-										<td><span class="tag-status tag-active">Activo</span></td>
-										<td>
-											<div class="action-cell-btns">
-												<button type="button" name="button"
-													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
-													data-bs-target="#modalDetalleEmpresaSede">
-													<span class="material-icons-outlined" data-bs-toggle="tooltip"
-														data-bs-placement="left" title="Detalle">
-														visibility
-													</span>
-												</button>
-												<button type="button" name="button"
-													class="btn button-icon button-icon-sm showEditarEmpresa">
-													<span class="material-icons-outlined" data-bs-toggle="tooltip"
-														data-bs-placement="left" title="Editar">
-														edit
-													</span>
-												</button>
-												<button type="button" name="button"
-													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
-													data-bs-target="#modalDesactivarEmpresa">
-													<span class="material-icons-outlined" data-bs-toggle="tooltip"
-														data-bs-placement="left" title="Cambiar Estado">
-														loop
-													</span>
-												</button>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>15426589654</td>
-										<td>BCP</td>
-										<td>bcp23</td>
-										<td>200</td>
-										<td>100</td>
-										<td>
-											<div>
-												<input class="form-check-input" type="checkbox" value=""
-													aria-label="..." disabled>
-											</div>
-										</td>
-										<td><span class="tag-status tag-inactive">Inactivo</span></td>
-										<td>
-											<div class="action-cell-btns">
-												<button type="button" name="button"
-													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
-													data-bs-target="#modalDetalleEmpresaSede">
-													<span class="material-icons-outlined" data-bs-toggle="tooltip"
-														data-bs-placement="left" title="Detalle">
-														visibility
-													</span>
-												</button>
-												<button type="button" name="button"
-													class="btn button-icon button-icon-sm showEditarEmpresa">
-													<span class="material-icons-outlined" data-bs-toggle="tooltip"
-														data-bs-placement="left" title="Editar">
-														edit
-													</span>
-												</button>
-												<button type="button" name="button"
-													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
-													data-bs-target="#modalActivarEmpresa">
-													<span class="material-icons-outlined" data-bs-toggle="tooltip"
-														data-bs-placement="left" title="Cambiar Estado">
-														loop
-													</span>
-												</button>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="panel" id="crearEmpresa-panel">
-				<nav aria-label="breadcrumb">
-					<ol class="breadcrumb">
-						<li class="breadcrumb-item showAdmninistracionEmpresas"><a href="#"
-								class="button-link">Empresas</a></li>
-						<li class="breadcrumb-item active" aria-current="page">Nueva Empresa</li>
-					</ol>
-				</nav>
-
-				<div class="row">
-					<div class="col-xl-5 col-lg-6 mx-auto">
-						<div class="card mx-auto">
-							<div class="card-header">
-								<h2>
-									Nueva Empresa
-								</h2>
-							</div>
-							<div class="card-body">
-								<nav>
-									<div class="nav nav-tabs nav-tabs-items-3" id="nav-tab" role="tablist">
-										<button class="nav-link active" id="nav-crearEmpresa-tab" data-bs-toggle="tab"
-											data-bs-target="#nav-crearEmpresa" type="button" role="tab"
-											aria-controls="nav-crearEmpresa" aria-selected="true">
-											Empresa
-										</button>
-										<button class="nav-link" id="nav-crearSede-tab" data-bs-toggle="tab"
-											data-bs-target="#nav-crearSede" type="button" role="tab"
-											aria-controls="nav-crearSede" aria-selected="false">
-											Sedes
-										</button>
-										<button class="nav-link" id="nav-crearContacto-tab" data-bs-toggle="tab"
-											data-bs-target="#nav-crearContacto" type="button" role="tab"
-											aria-controls="nav-crearContacto" aria-selected="false">
-											Contactos
-										</button>
-									</div>
-								</nav>
-								<div class="tab-content" id="nav-tabContent">
-									<div class="tab-pane fade show active" id="nav-crearEmpresa" role="tabpanel"
-										aria-labelledby="nav-crearEmpresa-tab">
-										<form>
-											<div class="wrap-img-preview">
-												<div class="imageWrapper">
-													<img class="image-preview" id="nueva-empresa-preview-logo-empresa"
-														src="img/logos/default-img.jpg">
-												</div>
-
-												<div class="wrap-label-file-upload">
-													<p>Logo</p>
-													<button class="file-upload btn button-outline">
-														<input type="file" class="file-input-image"
-															id="nueva-empresa-input-preview-img">Agregar imágen
-													</button>
-													<p>JPG, PNG</p>
-												</div>
-											</div>
-
-											<div class="row">
-												<div class="form-group col-md-6">
-													<label for="nuevaEmpresaInputRuc" class="form-label">RUC</label>
-													<input type="number" class="form-control" id="nuevaEmpresaInputRuc">
-												</div>
-												<div class="form-group col-md-6">
-													<label for="nuevaEmpresaInputRazonSocial" class="form-label">Razón
-														Social</label>
-													<input type="text" class="form-control"
-														id="nuevaEmpresaInputRazonSocial">
-												</div>
-											</div>
-
-											<div class="row">
-												<div class="form-group col-md-6">
-													<label for="nuevaEmpresaInputNombreComercial"
-														class="form-label">Nombre Comercial</label>
-													<input type="number" class="form-control"
-														id="nuevaEmpresaInputNombreComercial">
-												</div>
-												<div class="form-group col-md-6">
-													<label for="nuevaEmpresaInputNombreWeb" class="form-label">Nombre
-														Web</label>
-													<input type="number" class="form-control"
-														id="nuevaEmpresaInputNombreWeb">
-												</div>
-											</div>
-
-											<div class="row">
-												<div class="form-group col-md-4">
-													<label class="form-label"
-														for="nuevaEmpresainputDepartamento">Departamento</label>
-													<select class="form-select select2"
-														id="nuevaEmpresainputDepartamento">
-														<option>Seleccione</option>
-														<option>Arequipa</option>
-														<option>Lima</option>
-														<option>Tacna</option>
-													</select>
-												</div>
-												<div class="form-group col-md-4">
-													<label class="form-label"
-														for="nuevaEmpresainputProvincia">Provincia</label>
-													<select class="form-select select2" id="nuevaEmpresainputProvincia">
-														<option>Seleccione</option>
-														<option>Arequipa</option>
-														<option>Lima</option>
-														<option>Tacna</option>
-													</select>
-												</div>
-												<div class="form-group col-md-4">
-													<label class="form-label"
-														for="nuevaEmpresainputDistrito">Distrito</label>
-													<select class="form-select select2" id="nuevaEmpresainputDistrito">
-														<option>Seleccione</option>
-														<option>Breña</option>
-														<option>Lince</option>
-														<option>Magdalena</option>
-														<option>Miraflores</option>
-													</select>
-												</div>
-											</div>
-
-											<div class="form-group">
-												<label for="nuevaEmpresaInputDireccion"
-													class="form-label">Dirección</label>
-												<input type="text" class="form-control" id="nuevaEmpresaInputDireccion">
-											</div>
-
-											<div class="row">
-												<div class="form-group col-md-6">
-													<label for="nuevaEmpresaInputCodigo" class="form-label">Código de
-														Empresa</label>
-													<input type="text" class="form-control"
-														id="nuevaEmpresaInputCodigo">
-												</div>
-
-												<div class="form-group col-md-6">
-													<label class="form-label"
-														for="nuevaEmpresainputDistrito">Tipo</label>
-													<select class="form-select" id="nuevaEmpresainputDistrito">
-														<option>Seleccione</option>
-														<option>Clentes bajos</option>
-														<option>Clientes medios</option>
-														<option>Clientes top</option>
-													</select>
-												</div>
-											</div>
-
-											<div class="form-group">
-												<label class="form-label">Tipo de pago</label>
-												<div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio"
-															name="nuevaEmpresaRadioOptionTipoPago"
-															id="radioOptionTipoPagoPasarela" value="Pasarela" checked>
-														<label class="form-check-label"
-															for="radioOptionTipoPagoPasarela">Pasarela</label>
-													</div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio"
-															name="nuevaEmpresaRadioOptionTipoPago"
-															id="radioOptionTipoPagoPlanilla" value="planilla">
-														<label class="form-check-label"
-															for="radioOptionTipoPagoPlanilla">Planilla</label>
-													</div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio"
-															name="nuevaEmpresaRadioOptionTipoPago"
-															id="radioOptionTipoPagoMixto" value="planilla">
-														<label class="form-check-label"
-															for="radioOptionTipoPagoMixto">Mixto</label>
-													</div>
-												</div>
-											</div>
-
-											<div class="form-group">
-												<label class="form-label">Afilicación de colaboradores</label>
-												<div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio"
-															name="nuevaEmpresaRadioOptionTipoAfiliacion"
-															id="radioOptionAfiliacionAbierto" value="Abierto" checked>
-														<label class="form-check-label"
-															for="radioOptionAfiliacionAbierto">Abierto</label>
-													</div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio"
-															name="nuevaEmpresaRadioOptionTipoAfiliacion"
-															id="radioOptionAfiliacionMasivo" value="Masivo">
-														<label class="form-check-label"
-															for="radioOptionAfiliacionMasivo">Masivo</label>
-													</div>
-												</div>
-											</div>
-										</form>
-										<div class="card-footer">
-											<button type="button" name="button"
-												class="btn button-ghost showAdmninistracionEmpresas">Cerrar</button>
-											<button type="button" name="button"
-												class="btn button-primary">Siguiente</button>
-										</div>
-									</div>
-
-									<div class="tab-pane fade" id="nav-crearSede" role="tabpanel"
-										aria-labelledby="nav-crearSede-tab">
-										<div class="accordion marginBottom-1" id="accordionNuevaSede">
-											<div class="accordion-item">
-												<h2 class="accordion-header" id="headingOneNuevaSede">
-													<button class="accordion-button" type="button"
-														data-bs-toggle="collapse" data-bs-target="#collapseOneNuevaSede"
-														aria-expanded="true" aria-controls="collapseOneNuevaSede">
-														Sede <span
-															class="tag-status tag-active marginLeft-1">Principal</span>
-													</button>
-												</h2>
-												<div id="collapseOneNuevaSede" class="accordion-collapse collapse show"
-													aria-labelledby="headingOneNuevaSede"
-													data-bs-parent="#accordionNuevaSede">
-													<div class="accordion-body">
-														<form>
-															<div class="form-group">
-																<label for="nuevaSedeInputNombre1"
-																	class="form-label">Nombre Sede</label>
-																<input type="text" class="form-control"
-																	id="nuevaSedeInputNombre1">
-															</div>
-
-															<div class="row">
-																<div class="form-group col-md-4">
-																	<label class="form-label"
-																		for="nuevaSedeInputDepartamento1">Departamento</label>
-																	<select class="form-select select2"
-																		id="nuevaSedeInputDepartamento1">
-																		<option>Seleccione</option>
-																		<option>Arequipa</option>
-																		<option selected>Lima</option>
-																		<option>Tacna</option>
-																	</select>
-																</div>
-																<div class="form-group col-md-4">
-																	<label class="form-label"
-																		for="nuevaSedeInputProvincia1">Provincia</label>
-																	<select class="form-select select2"
-																		id="nuevaSedeInputProvincia1">
-																		<option>Seleccione</option>
-																		<option>Arequipa</option>
-																		<option selected>Lima</option>
-																		<option>Tacna</option>
-																	</select>
-																</div>
-																<div class="form-group col-md-4">
-																	<label class="form-label"
-																		for="nuevaSedeInputDistrito1">Distrito</label>
-																	<select class="form-select select2"
-																		id="nuevaSedeInputDistrito1">
-																		<option>Seleccione</option>
-																		<option>Breña</option>
-																		<option>Lince</option>
-																		<option selected>Magdalena</option>
-																		<option>Miraflores</option>
-																	</select>
-																</div>
-															</div>
-
-															<div class="form-group">
-																<label for="nuevaSedeInputDireccion1"
-																	class="form-label">Dirección</label>
-																<input type="text" class="form-control"
-																	id="nuevaSedeInputDireccion1"
-																	value="Av, Arenales 1912">
-															</div>
-
-															<div class="form-check form-switch">
-																<input class="form-check-input" type="checkbox"
-																	role="switch" id="switchCheckSedePrincipal1"
-																	checked>
-																<label class="form-check-label"
-																	for="switchCheckSedePrincipal1">Sede
-																	Principal</label>
-															</div>
-														</form>
-													</div>
-												</div>
-											</div>
-											<div class="accordion-item">
-												<h2 class="accordion-header" id="headingTwoNuevaSede">
-													<button class="accordion-button collapsed" type="button"
-														data-bs-toggle="collapse" data-bs-target="#collapseTwoNuevaSede"
-														aria-expanded="false" aria-controls="collapseTwoNuevaSede">
-														Sede Larco
-													</button>
-												</h2>
-												<div id="collapseTwoNuevaSede" class="accordion-collapse collapse"
-													aria-labelledby="headingTwoNuevaSede"
-													data-bs-parent="#accordionNuevaSede">
-													<div class="accordion-body">
-														<form>
-															<div class="form-group">
-																<label for="nuevaSedeInputNombre2"
-																	class="form-label">Nombre Sede</label>
-																<input type="text" class="form-control"
-																	id="nuevaSedeInputNombre2">
-															</div>
-
-															<div class="row">
-																<div class="form-group col-md-4">
-																	<label class="form-label"
-																		for="nuevaSedeInputDepartamento2">Departamento</label>
-																	<select class="form-select select2"
-																		id="nuevaSedeInputDepartamento2">
-																		<option>Seleccione</option>
-																		<option>Arequipa</option>
-																		<option>Lima</option>
-																		<option>Tacna</option>
-																	</select>
-																</div>
-																<div class="form-group col-md-4">
-																	<label class="form-label"
-																		for="nuevaSedeInputProvincia2">Provincia</label>
-																	<select class="form-select select2"
-																		id="nuevaSedeInputProvincia2">
-																		<option>Seleccione</option>
-																		<option>Arequipa</option>
-																		<option>Lima</option>
-																		<option>Tacna</option>
-																	</select>
-																</div>
-																<div class="form-group col-md-4">
-																	<label class="form-label"
-																		for="nuevaSedeInputDistrito2">Distrito</label>
-																	<select class="form-select select2"
-																		id="nuevaSedeInputDistrito2">
-																		<option>Seleccione</option>
-																		<option>Breña</option>
-																		<option>Lince</option>
-																		<option>Magdalena</option>
-																		<option>Miraflores</option>
-																	</select>
-																</div>
-															</div>
-
-															<div class="form-group">
-																<label for="nuevaSedeInputDireccion2"
-																	class="form-label">Dirección</label>
-																<input type="text" class="form-control"
-																	id="nuevaSedeInputDireccion2">
-															</div>
-
-															<div class="form-check form-switch marginBottom-1">
-																<input class="form-check-input" type="checkbox"
-																	role="switch" id="switchCheckSedePrincipal2">
-																<label class="form-check-label"
-																	for="switchCheckSedePrincipal2">Sede
-																	Principal</label>
-															</div>
-
-															<button type="button" name="button"
-																class="btn button-danger" data-bs-toggle="modal"
-																data-bs-target="#modalEliminarSede">
-																Eliminar Sede
-															</button>
-														</form>
-													</div>
-												</div>
-											</div>
-										</div>
-										<button type="button" name="button" class="btn button-action">
-											Agregar Sede
-										</button>
-
-										<div class="card-footer">
-											<button type="button" name="button"
-												class="btn button-ghost">Anterior</button>
-											<button type="button" name="button"
-												class="btn button-primary">Siguiente</button>
-										</div>
-									</div>
-
-									<div class="tab-pane fade" id="nav-crearContacto" role="tabpanel"
-										aria-labelledby="nav-crearContacto-tab">
-										<div class="accordion marginBottom-1" id="accordionNuevoContacto">
-											<div class="accordion-item">
-												<h2 class="accordion-header" id="headingOneNuevoContacto">
-													<button class="accordion-button" type="button"
-														data-bs-toggle="collapse"
-														data-bs-target="#collapseOneNuevoContacto" aria-expanded="true"
-														aria-controls="collapseOneNuevoContacto">
-														Contacto Sede Principal
-													</button>
-												</h2>
-												<div id="collapseOneNuevoContacto"
-													class="accordion-collapse collapse show"
-													aria-labelledby="headingOneNuevoContacto"
-													data-bs-parent="#accordionNuevoContacto">
-													<div class="accordion-body">
-														<form>
-															<div class="row">
-																<div class="form-group col-md-6">
-																	<label for="nuevoContactoNombre1"
-																		class="form-label">Nombre</label>
-																	<input type="text" class="form-control"
-																		id="nuevoContactoNombre1">
-																</div>
-																<div class="form-group col-md-6">
-																	<label class="form-label"
-																		for="nuevocontactoSede1">Sede</label>
-																	<select class="form-select select2"
-																		id="nuevocontactoSede1">
-																		<option>Seleccione</option>
-																		<option>Sede Principal</option>
-																		<option>Sede Larco</option>
-																		<option>Sede Miraflores</option>
-																	</select>
-																</div>
-															</div>
-
-															<div class="row">
-																<div class="form-group col-md-6">
-																	<label for="nuevoContactoCargo1"
-																		class="form-label">Cargo</label>
-																	<input type="text" class="form-control"
-																		id="nuevoContactoCargo1">
-																</div>
-																<div class="form-group col-md-6">
-																	<label for="nuevoContactoCorreo1"
-																		class="form-label">Correo</label>
-																	<input type="email" class="form-control"
-																		id="nuevoContactoCorreo1">
-																</div>
-															</div>
-
-															<div class="row">
-																<div class="form-group col-md-6">
-																	<label for="nuevoContactoCelular1"
-																		class="form-label">Celular</label>
-																	<input type="number" class="form-control"
-																		id="nuevoContactoCelular1">
-																</div>
-																<div class="form-group col-md-6">
-																	<label for="nuevoContactoFijo1"
-																		class="form-label">Teléfono Empresa</label>
-																	<input type="number" class="form-control"
-																		id="nuevoContactoFijo1">
-																</div>
-															</div>
-
-														</form>
-													</div>
-												</div>
-											</div>
-											<div class="accordion-item">
-												<h2 class="accordion-header" id="headingTwoNuevoContacto">
-													<button class="accordion-button collapsed" type="button"
-														data-bs-toggle="collapse"
-														data-bs-target="#collapseTwoNuevoContacto" aria-expanded="false"
-														aria-controls="collapseTwoNuevoContacto">
-														Contacto Sede Larco
-													</button>
-												</h2>
-												<div id="collapseTwoNuevoContacto" class="accordion-collapse collapse"
-													aria-labelledby="headingTwoNuevoContacto"
-													data-bs-parent="#accordionNuevoContacto">
-													<div class="accordion-body">
-														<form>
-															<div class="row">
-																<div class="form-group col-md-6">
-																	<label for="nuevoContactoNombre2"
-																		class="form-label">Nombre</label>
-																	<input type="text" class="form-control"
-																		id="nuevoContactoNombre2">
-																</div>
-																<div class="form-group col-md-6">
-																	<label class="form-label"
-																		for="nuevocontactoSede2">Sede</label>
-																	<select class="form-select select2"
-																		id="nuevocontactoSede2">
-																		<option>Seleccione</option>
-																		<option>Sede Principal</option>
-																		<option>Sede Larco</option>
-																		<option>Sede Miraflores</option>
-																	</select>
-																</div>
-															</div>
-
-															<div class="row">
-																<div class="form-group col-md-6">
-																	<label for="nuevoContactoCargo2"
-																		class="form-label">Cargo</label>
-																	<input type="text" class="form-control"
-																		id="nuevoContactoCargo2">
-																</div>
-																<div class="form-group col-md-6">
-																	<label for="nuevoContactoCorreo2"
-																		class="form-label">Correo</label>
-																	<input type="email" class="form-control"
-																		id="nuevoContactoCorreo2">
-																</div>
-															</div>
-
-															<div class="row">
-																<div class="form-group col-md-6">
-																	<label for="nuevoContactoCelular2"
-																		class="form-label">Celular</label>
-																	<input type="number" class="form-control"
-																		id="nuevoContactoCelular2">
-																</div>
-																<div class="form-group col-md-6">
-																	<label for="nuevoContactoFijo2"
-																		class="form-label">Teléfono Empresa</label>
-																	<input type="number" class="form-control"
-																		id="nuevoContactoFijo2">
-																</div>
-															</div>
-
-															<button type="button" name="button"
-																class="btn button-danger" data-bs-toggle="modal"
-																data-bs-target="#modalEliminarContacto">
-																Eliminar Contacto
-															</button>
-														</form>
-													</div>
-												</div>
-											</div>
-										</div>
-										<button type="button" name="button" class="btn button-action">
-											Agregar Contacto
-										</button>
-
-										<div class="card-footer">
-											<button type="button" name="button"
-												class="btn button-ghost">Anterior</button>
-											<button type="button" name="button" class="btn button-primary"
-												data-bs-toggle="modal"
-												data-bs-target="#modalSuccessNuevaEmpresa">Guardar</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="panel" id="editarEmpresa-panel">
-				<nav aria-label="breadcrumb">
-					<ol class="breadcrumb">
-						<li class="breadcrumb-item showAdmninistracionEmpresas"><a href="#"
-								class="button-link">Empresas</a></li>
-						<li class="breadcrumb-item active" aria-current="page">Editar Empresa</li>
-					</ol>
-				</nav>
-
-				<div class="row">
-					<div class="col-xl-5 col-lg-6 mx-auto">
-						<div class="card mx-auto">
-							<div class="card-header">
-								<h2>
-									Editar Empresa
-								</h2>
-							</div>
-							<div class="card-body">
-								<nav>
-									<div class="nav nav-tabs nav-tabs-items-3" id="nav-tab" role="tablist">
-										<button class="nav-link active" id="nav-editarEmpresa-tab" data-bs-toggle="tab"
-											data-bs-target="#nav-editarEmpresa" type="button" role="tab"
-											aria-controls="nav-editarEmpresa" aria-selected="true">
-											Empresa
-										</button>
-										<button class="nav-link" id="nav-editarSede-tab" data-bs-toggle="tab"
-											data-bs-target="#nav-editarSede" type="button" role="tab"
-											aria-controls="nav-editarSede" aria-selected="false">
-											Sedes
-										</button>
-										<button class="nav-link" id="nav-editarContacto-tab" data-bs-toggle="tab"
-											data-bs-target="#nav-editarContacto" type="button" role="tab"
-											aria-controls="nav-editarContacto" aria-selected="false">
-											Contactos
-										</button>
-									</div>
-								</nav>
-								<div class="tab-content" id="nav-tabContent">
-									<div class="tab-pane fade show active" id="nav-editarEmpresa" role="tabpanel"
-										aria-labelledby="nav-editarEmpresa-tab">
-										<form>
-											<div class="wrap-img-preview">
-												<div class="imageWrapper">
-													<img class="image-preview" id="editar-empresa-preview-logo-empresa"
-														src="img/logos/colmena.png">
-												</div>
-
-												<div class="wrap-label-file-upload">
-													<p>Logo</p>
-													<button class="file-upload btn button-outline">
-														<input type="file" class="file-input-image"
-															id="editar-empresa-input-preview-img">Agregar imágen
-													</button>
-													<p>JPG, PNG</p>
-												</div>
-											</div>
-
-											<div class="row">
-												<div class="form-group col-md-6">
-													<label for="nuevaEmpresaInputRuc" class="form-label">RUC</label>
-													<input type="number" class="form-control" id="nuevaEmpresaInputRuc"
-														value="12365452545">
-												</div>
-												<div class="form-group col-md-6">
-													<label for="nuevaEmpresaInputRazonSocial" class="form-label">Razón
-														Social</label>
-													<input type="text" class="form-control"
-														id="nuevaEmpresaInputRazonSocial" value="Colmena Solutions">
-												</div>
-											</div>
-
-											<div class="row">
-												<div class="form-group col-md-6">
-													<label for="nuevaEmpresaInputNombreComercial"
-														class="form-label">Nombre Comercial</label>
-													<input type="number" class="form-control"
-														id="nuevaEmpresaInputNombreComercial" value="Colmena Solutions">
-												</div>
-												<div class="form-group col-md-6">
-													<label for="nuevaEmpresaInputNombreWeb" class="form-label">Nombre
-														Web</label>
-													<input type="number" class="form-control"
-														id="nuevaEmpresaInputNombreWeb" value="Colmena Solutions">
-												</div>
-											</div>
-
-											<div class="row">
-												<div class="form-group col-md-4">
-													<label class="form-label"
-														for="nuevaEmpresainputDepartamento">Departamento</label>
-													<select class="form-select select2"
-														id="nuevaEmpresainputDepartamento">
-														<option>Seleccione</option>
-														<option>Arequipa</option>
-														<option selected>Lima</option>
-														<option>Tacna</option>
-													</select>
-												</div>
-												<div class="form-group col-md-4">
-													<label class="form-label"
-														for="nuevaEmpresainputProvincia">Provincia</label>
-													<select class="form-select select2" id="nuevaEmpresainputProvincia">
-														<option>Seleccione</option>
-														<option>Arequipa</option>
-														<option selected>Lima</option>
-														<option>Tacna</option>
-													</select>
-												</div>
-												<div class="form-group col-md-4">
-													<label class="form-label"
-														for="nuevaEmpresainputDistrito">Distrito</label>
-													<select class="form-select select2" id="nuevaEmpresainputDistrito">
-														<option>Seleccione</option>
-														<option>Breña</option>
-														<option selected>Lince</option>
-														<option>Magdalena</option>
-														<option>Miraflores</option>
-													</select>
-												</div>
-											</div>
-
-											<div class="form-group">
-												<label for="nuevaEmpresaInputDireccion"
-													class="form-label">Dirección</label>
-												<input type="text" class="form-control" id="nuevaEmpresaInputDireccion"
-													value="Av. Arequipa 1860">
-											</div>
-
-											<div class="row">
-												<div class="form-group col-md-6">
-													<label for="nuevaEmpresaInputCodigo" class="form-label">Código de
-														Empresa</label>
-													<input type="text" class="form-control" id="nuevaEmpresaInputCodigo"
-														value="col23">
-												</div>
-
-												<div class="form-group col-md-6">
-													<label class="form-label"
-														for="nuevaEmpresainputDistrito">Tipo</label>
-													<select class="form-select" id="nuevaEmpresainputDistrito">
-														<option>Seleccione</option>
-														<option selected>Clentes bajos</option>
-														<option>Clientes medios</option>
-														<option>Clientes top</option>
-													</select>
-												</div>
-											</div>
-
-											<div class="form-group">
-												<label class="form-label">Tipo de pago</label>
-												<div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio"
-															name="nuevaEmpresaRadioOptionTipoPago"
-															id="radioOptionTipoPagoPasarela" value="Pasarela" checked>
-														<label class="form-check-label"
-															for="radioOptionTipoPagoPasarela">Pasarela</label>
-													</div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio"
-															name="nuevaEmpresaRadioOptionTipoPago"
-															id="radioOptionTipoPagoPlanilla" value="planilla">
-														<label class="form-check-label"
-															for="radioOptionTipoPagoPlanilla">Planilla</label>
-													</div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio"
-															name="nuevaEmpresaRadioOptionTipoPago"
-															id="radioOptionTipoPagoMixto" value="planilla">
-														<label class="form-check-label"
-															for="radioOptionTipoPagoMixto">Mixto</label>
-													</div>
-												</div>
-											</div>
-
-											<div class="form-group">
-												<label class="form-label">Afilicación de colaboradores</label>
-												<div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio"
-															name="nuevaEmpresaRadioOptionTipoAfiliacion"
-															id="radioOptionAfiliacionAbierto" value="Abierto" checked>
-														<label class="form-check-label"
-															for="radioOptionAfiliacionAbierto">Abierto</label>
-													</div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio"
-															name="nuevaEmpresaRadioOptionTipoAfiliacion"
-															id="radioOptionAfiliacionMasivo" value="Masivo">
-														<label class="form-check-label"
-															for="radioOptionAfiliacionMasivo">Masivo</label>
-													</div>
-												</div>
-											</div>
-										</form>
-									</div>
-
-									<div class="tab-pane fade" id="nav-editarSede" role="tabpanel"
-										aria-labelledby="nav-editarSede-tab">
-										<div class="accordion marginBottom-1" id="accordionEditarSede">
-											<div class="accordion-item">
-												<h2 class="accordion-header" id="headingOneNuevaSede">
-													<button class="accordion-button" type="button"
-														data-bs-toggle="collapse" data-bs-target="#collapseOneNuevaSede"
-														aria-expanded="true" aria-controls="collapseOneNuevaSede">
-														Sede Lince <span
-															class="tag-status tag-active marginLeft-1">Principal</span>
-													</button>
-												</h2>
-												<div id="collapseOneNuevaSede" class="accordion-collapse collapse show"
-													aria-labelledby="headingOneNuevaSede"
-													data-bs-parent="#accordionEditarSede">
-													<div class="accordion-body">
-														<form>
-															<div class="form-group">
-																<label for="nuevaSedeInputNombre1"
-																	class="form-label">Nombre Sede</label>
-																<input type="text" class="form-control"
-																	id="nuevaSedeInputNombre1" value="Sede Lince">
-															</div>
-
-															<div class="row">
-																<div class="form-group col-md-4">
-																	<label class="form-label"
-																		for="nuevaSedeInputDepartamento1">Departamento</label>
-																	<select class="form-select select2"
-																		id="nuevaSedeInputDepartamento1">
-																		<option>Seleccione</option>
-																		<option>Arequipa</option>
-																		<option selected>Lima</option>
-																		<option>Tacna</option>
-																	</select>
-																</div>
-																<div class="form-group col-md-4">
-																	<label class="form-label"
-																		for="nuevaSedeInputProvincia1">Provincia</label>
-																	<select class="form-select select2"
-																		id="nuevaSedeInputProvincia1">
-																		<option>Seleccione</option>
-																		<option>Arequipa</option>
-																		<option selected>Lima</option>
-																		<option>Tacna</option>
-																	</select>
-																</div>
-																<div class="form-group col-md-4">
-																	<label class="form-label"
-																		for="nuevaSedeInputDistrito1">Distrito</label>
-																	<select class="form-select select2"
-																		id="nuevaSedeInputDistrito1">
-																		<option>Seleccione</option>
-																		<option>Breña</option>
-																		<option>Lince</option>
-																		<option selected>Magdalena</option>
-																		<option>Miraflores</option>
-																	</select>
-																</div>
-															</div>
-
-															<div class="form-group">
-																<label for="nuevaSedeInputDireccion1"
-																	class="form-label">Dirección</label>
-																<input type="text" class="form-control"
-																	id="nuevaSedeInputDireccion1"
-																	value="Av, Arenales 1912">
-															</div>
-
-															<div class="form-check form-switch">
-																<input class="form-check-input" type="checkbox"
-																	role="switch" id="switchCheckEditSedePrincipal1"
-																	checked>
-																<label class="form-check-label"
-																	for="switchCheckEditSedePrincipal1">Sede
-																	Principal</label>
-															</div>
-														</form>
-													</div>
-												</div>
-											</div>
-											<div class="accordion-item">
-												<h2 class="accordion-header" id="headingTwoNuevaSede">
-													<button class="accordion-button collapsed" type="button"
-														data-bs-toggle="collapse" data-bs-target="#collapseTwoNuevaSede"
-														aria-expanded="false" aria-controls="collapseTwoNuevaSede">
-														Sede Magdalena
-													</button>
-												</h2>
-												<div id="collapseTwoNuevaSede" class="accordion-collapse collapse"
-													aria-labelledby="headingTwoNuevaSede"
-													data-bs-parent="#accordionEditarSede">
-													<div class="accordion-body">
-														<form>
-															<div class="form-group">
-																<label for="editarSedeInputNombre2"
-																	class="form-label">Nombre Sede</label>
-																<input type="text" class="form-control"
-																	id="editarSedeInputNombre2" value="Sede Magdalena">
-															</div>
-
-															<div class="row">
-																<div class="form-group col-md-4">
-																	<label class="form-label"
-																		for="editarSedeInputDepartamento2">Departamento</label>
-																	<select class="form-select select2"
-																		id="editarSedeInputDepartamento2">
-																		<option>Seleccione</option>
-																		<option>Arequipa</option>
-																		<option selected>Lima</option>
-																		<option>Tacna</option>
-																	</select>
-																</div>
-																<div class="form-group col-md-4">
-																	<label class="form-label"
-																		for="editarSedeInputProvincia2">Provincia</label>
-																	<select class="form-select select2"
-																		id="editarSedeInputProvincia2">
-																		<option>Seleccione</option>
-																		<option>Arequipa</option>
-																		<option selected>Lima</option>
-																		<option>Tacna</option>
-																	</select>
-																</div>
-																<div class="form-group col-md-4">
-																	<label class="form-label"
-																		for="editarSedeInputDistrito2">Distrito</label>
-																	<select class="form-select select2"
-																		id="editarSedeInputDistrito2">
-																		<option>Seleccione</option>
-																		<option>Breña</option>
-																		<option>Lince</option>
-																		<option selected>Magdalena</option>
-																		<option>Miraflores</option>
-																	</select>
-																</div>
-															</div>
-
-															<div class="form-group">
-																<label for="editarSedeInputDireccion2"
-																	class="form-label">Dirección</label>
-																<input type="text" class="form-control"
-																	id="editarSedeInputDireccion2"
-																	value="Av. Javier Prado 1860">
-															</div>
-
-															<div class="form-check form-switch marginBottom-1">
-																<input class="form-check-input" type="checkbox"
-																	role="switch" id="switchCheckEditSedePrincipal2">
-																<label class="form-check-label"
-																	for="switchCheckEditSedePrincipal2">Sede
-																	Principal</label>
-															</div>
-
-															<button type="button" name="button"
-																class="btn button-danger" data-bs-toggle="modal"
-																data-bs-target="#modalEliminarSede">
-																Eliminar Sede
-															</button>
-														</form>
-													</div>
-												</div>
-											</div>
-										</div>
-										<button type="button" name="button" class="btn button-action">
-											Agregar Sede
-										</button>
-									</div>
-
-									<div class="tab-pane fade" id="nav-editarContacto" role="tabpanel"
-										aria-labelledby="nav-editarContacto-tab">
-										<div class="accordion marginBottom-1" id="accordionEditarContacto">
-											<div class="accordion-item">
-												<h2 class="accordion-header" id="headingOneEditarContacto">
-													<button class="accordion-button" type="button"
-														data-bs-toggle="collapse"
-														data-bs-target="#collapseOneEditarContacto" aria-expanded="true"
-														aria-controls="collapseEditarNuevoContacto">
-														Contacto Sede Principal
-													</button>
-												</h2>
-												<div id="collapseOneEditarContacto"
-													class="accordion-collapse collapse show"
-													aria-labelledby="headingOneEditarContacto"
-													data-bs-parent="#accordionEditarContacto">
-													<div class="accordion-body">
-														<form>
-															<div class="row">
-																<div class="form-group col-md-6">
-																	<label for="editarContactoNombre1"
-																		class="form-label">Nombre</label>
-																	<input type="text" class="form-control"
-																		id="editarContactoNombre1" value="Sergio Perez">
-																</div>
-																<div class="form-group col-md-6">
-																	<label class="form-label"
-																		for="editarContactoSede1">Sede</label>
-																	<select class="form-select select2"
-																		id="editarcontactoSede1">
-																		<option>Seleccione</option>
-																		<option selected>Sede Lince</option>
-																		<option>Sede Larco</option>
-																		<option>Sede Miraflores</option>
-																	</select>
-																</div>
-															</div>
-
-															<div class="row">
-																<div class="form-group col-md-6">
-																	<label for="editarContactoCargo1"
-																		class="form-label">Cargo</label>
-																	<input type="text" class="form-control"
-																		id="editarContactoCargo1" value="RRHH">
-																</div>
-																<div class="form-group col-md-6">
-																	<label for="nuevoContactoCorreo1"
-																		class="form-label">Correo</label>
-																	<input type="email" class="form-control"
-																		id="nuevoContactoCorreo1"
-																		value="sperez@colmena.com.pe">
-																</div>
-															</div>
-
-															<div class="row">
-																<div class="form-group col-md-6">
-																	<label for="editarContactoCelular1"
-																		class="form-label">Celular</label>
-																	<input type="number" class="form-control"
-																		id="editarContactoCelular1" value="965125445">
-																</div>
-																<div class="form-group col-md-6">
-																	<label for="editarContactoFijo1"
-																		class="form-label">Teléfono Empresa</label>
-																	<input type="number" class="form-control"
-																		id="editarContactoFijo1" value="965125445">
-																</div>
-															</div>
-
-														</form>
-													</div>
-												</div>
-											</div>
-											<div class="accordion-item">
-												<h2 class="accordion-header" id="headingTwoEditarContacto">
-													<button class="accordion-button collapsed" type="button"
-														data-bs-toggle="collapse"
-														data-bs-target="#collapseTwoEditarContacto"
-														aria-expanded="false" aria-controls="collapseTwoEditarContacto">
-														Contacto Sede Larco
-													</button>
-												</h2>
-												<div id="collapseTwoEditarContacto" class="accordion-collapse collapse"
-													aria-labelledby="headingTwoEditarContacto"
-													data-bs-parent="#accordionEditarContacto">
-													<div class="accordion-body">
-														<form>
-															<div class="row">
-																<div class="form-group col-md-6">
-																	<label for="editarContactoNombre2"
-																		class="form-label">Nombre</label>
-																	<input type="text" class="form-control"
-																		id="editarContactoNombre2" value="Alex Albon">
-																</div>
-																<div class="form-group col-md-6">
-																	<label class="form-label"
-																		for="editarContactoSede2">Sede</label>
-																	<select class="form-select select2"
-																		id="editarContactoSede2">
-																		<option>Seleccione</option>
-																		<option>Sede Principal</option>
-																		<option>Sede Larco</option>
-																		<option selected>Sede Magdalena</option>
-																		<option>Sede Miraflores</option>
-																	</select>
-																</div>
-															</div>
-
-															<div class="row">
-																<div class="form-group col-md-6">
-																	<label for="editarContactoCargo2"
-																		class="form-label">Cargo</label>
-																	<input type="text" class="form-control"
-																		id="editarContactoCargo2" value="RRHH">
-																</div>
-																<div class="form-group col-md-6">
-																	<label for="editarContactoCorreo2"
-																		class="form-label">Correo</label>
-																	<input type="email" class="form-control"
-																		id="editarContactoCorreo2"
-																		value="alexalbon@colmena.com.pe">
-																</div>
-															</div>
-
-															<div class="row">
-																<div class="form-group col-md-6">
-																	<label for="editarContactoCelular2"
-																		class="form-label">Celular</label>
-																	<input type="number" class="form-control"
-																		id="editarContactoCelular2" value="965236541">
-																</div>
-																<div class="form-group col-md-6">
-																	<label for="editarContactoFijo2"
-																		class="form-label">Teléfono Empresa</label>
-																	<input type="number" class="form-control"
-																		id="editarContactoFijo2" value="6542569">
-																</div>
-															</div>
-
-															<button type="button" name="button"
-																class="btn button-danger" data-bs-toggle="modal"
-																data-bs-target="#modalEliminarContacto">
-																Eliminar Contacto
-															</button>
-														</form>
-													</div>
-												</div>
-											</div>
-										</div>
-										<button type="button" name="button" class="btn button-action">
-											Agregar Contacto
-										</button>
-									</div>
-								</div>
-								<div class="card-footer">
-									<button type="button" name="button"
-										class="btn button-ghost showAdmninistracionEmpresas">Cerrar</button>
-									<button type="button" name="button" class="btn button-primary"
-										data-bs-toggle="modal"
-										data-bs-target="#modalSuccessNuevaEmpresa">Guardar</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="panel" id="empresas-panel-admin">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="action-btns">
-							<button type="button" name="button" class="btn button-outline button-icon-left"
-								data-bs-toggle="modal" data-bs-target="#modalFiltrarEmpresasAdmin">
-								<span class="material-icons-outlined">
-									filter_list
-								</span>
-								Filtrar
-							</button>
-						</div>
-					</div>
-
-					<div class="col-lg-12">
-						<div class="card-dtable">
-							<div class="card-dtable-header">
-								<div class="title-dtable">
-									Empresas
-								</div>
-								<button type="button" name="button" class="btn button-outline button-icon-left d-none">
-									<span class="material-icons-outlined">
-										download
-									</span>
-									Generar reporte
-								</button>
-							</div>
-							<table class="table dtable table-hover">
-								<thead>
-									<tr>
-										<th scope="col">RUC</th>
-										<th scope="col">Nombre Web</th>
-										<th scope="col">Código</th>
-										<th scope="col">Colaboradores</th>
-										<th scope="col">Registrados</th>
-										<th scope="col">Ejecutivo</th>
-										<th scope="col">Logo</th>
-										<th scope="col">Estado</th>
-										<th scope="col">Acciones</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>12548569854</td>
-										<td>Colmena Solutions</td>
-										<td>col23</td>
-										<td>Clientes bajos</td>
-										<td>Planilla</td>
-										<td>Abierto</td>
-										<td>Laura Salinas</td>
-										<td><span class="tag-status tag-active">Activo</span></td>
-										<td>
-											<div class="action-cell-btns">
-												<button type="button" name="button"
-													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
-													data-bs-target="#modalDetalleEmpresaSede">
-													<span class="material-icons-outlined" data-bs-toggle="tooltip"
-														data-bs-placement="left" title="Detalle">
-														visibility
-													</span>
-												</button>
-												<button type="button" name="button"
-													class="btn button-icon button-icon-sm showEditarEmpresaAdmin">
-													<span class="material-icons-outlined" data-bs-toggle="tooltip"
-														data-bs-placement="left" title="Editar">
-														edit
-													</span>
-												</button>
-												<button type="button" name="button"
-													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
-													data-bs-target="#modalDesactivarEmpresa">
-													<span class="material-icons-outlined" data-bs-toggle="tooltip"
-														data-bs-placement="left" title="Cambiar Estado">
-														loop
-													</span>
-												</button>
-												<button type="button" name="button"
-													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
-													data-bs-target="#modalTransferirEmpresa">
-													<span class="material-icons-outlined" data-bs-toggle="tooltip"
-														data-bs-placement="left" title="Transferir Empresa">
-														swap_horiz
-													</span>
-												</button>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>12548569854</td>
-										<td>Colmena Solutions</td>
-										<td>col23</td>
-										<td>Clientes bajos</td>
-										<td>Planilla</td>
-										<td>Abierto</td>
-										<td>Carlos Tamashiro</td>
-										<td><span class="tag-status tag-inactive">Inactivo</span></td>
-										<td>
-											<div class="action-cell-btns">
-												<button type="button" name="button"
-													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
-													data-bs-target="#modalDetalleEmpresaSede">
-													<span class="material-icons-outlined" data-bs-toggle="tooltip"
-														data-bs-placement="left" title="Detalle">
-														visibility
-													</span>
-												</button>
-												<button type="button" name="button"
-													class="btn button-icon button-icon-sm showEditarEmpresaAdmin">
-													<span class="material-icons-outlined" data-bs-toggle="tooltip"
-														data-bs-placement="left" title="Editar">
-														edit
-													</span>
-												</button>
-												<button type="button" name="button"
-													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
-													data-bs-target="#modalActivarEmpresa">
-													<span class="material-icons-outlined" data-bs-toggle="tooltip"
-														data-bs-placement="left" title="Cambiar Estado">
-														loop
-													</span>
-												</button>
-												<button type="button" name="button"
-													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
-													data-bs-target="#modalTransferirEmpresa">
-													<span class="material-icons-outlined" data-bs-toggle="tooltip"
-														data-bs-placement="left" title="Transferir Empresa">
-														swap_horiz
-													</span>
-												</button>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
 						</div>
 					</div>
 				</div>
@@ -3843,6 +2453,1613 @@
 				</div>
 			</div>
 
+			
+			<!-- END OPERACIONES -->
+
+			<!-- ATENCIÓN AL CLIENTE -->
+			<div class="panel" id="reenviosClientes-panel">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="action-btns">
+							<button type="button" name="button" class="btn button-outline button-icon-left"
+								data-bs-toggle="modal" data-bs-target="#modalBuscarCompra">
+								<span class="material-icons-outlined">
+									search
+								</span>
+								Buscar Compra
+							</button>
+						</div>
+					</div>
+
+					<div class="col-lg-12">
+						<div class="card-dtable">
+							<div class="card-dtable-header">
+								<div class="title-dtable">
+									Reenvíos
+								</div>
+								<button type="button" name="button" class="btn button-outline button-icon-left d-none">
+									<span class="material-icons-outlined">
+										download
+									</span>
+									Generar reporte
+								</button>
+							</div>
+							<table class="table dtable table-hover" id="tablePedidos">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">Fecha</th>
+										<th scope="col">Documento</th>
+										<th scope="col">Cliente</th>
+										<th scope="col">Correo</th>
+										<th scope="col">Total</th>
+										<th scope="col">Acciones</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>24/10/2022</td>
+										<td>BBB1-00004125</td>
+										<td>Alicia Cerna Pajuelo</td>
+										<td>acerna@colmenateam.com.pe</td>
+										<td>40.00</td>
+										<td>
+											<div class="action-cell-btns">
+												<span data-bs-toggle="tooltip" data-bs-placement="left"
+													title="Detalle venta">
+													<button type="button" name="button"
+														class="btn button-icon button-icon-sm" data-bs-toggle="modal"
+														data-bs-target="#modalDetalleVenta">
+														<span class="material-icons-outlined">
+															visibility
+														</span>
+													</button>
+												</span>
+												<span data-bs-toggle="tooltip" data-bs-placement="left"
+													title="Detalle venta">
+													<button type="button" name="button"
+														class="btn button-icon button-icon-sm" data-bs-toggle="modal"
+														data-bs-target="#modalReenviarCodigos">
+														<span class="material-icons-outlined">
+															send
+														</span>
+													</button>
+												</span>
+												<span data-bs-toggle="tooltip" data-bs-placement="left"
+													title="Detalle venta">
+													<button type="button" name="button"
+														class="btn button-icon button-icon-sm" data-bs-toggle="modal"
+														data-bs-target="#modalVentaEnvioPendiente">
+														<span class="material-icons-outlined">
+															file_download
+														</span>
+													</button>
+												</span>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="panel" id="datosClientes-panel">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="action-btns">
+							<button type="button" name="button" class="btn button-outline button-icon-left"
+								data-bs-toggle="modal" data-bs-target="#modalBuscarCliente">
+								<span class="material-icons-outlined">
+									search
+								</span>
+								Buscar Cliente
+							</button>
+						</div>
+					</div>
+
+					<div class="col-lg-12">
+						<div class="card-dtable">
+							<div class="card-dtable-header">
+								<div class="title-dtable">
+									Clientes
+								</div>
+								<button type="button" name="button" class="btn button-outline button-icon-left d-none">
+									<span class="material-icons-outlined">
+										download
+									</span>
+									Generar reporte
+								</button>
+							</div>
+							<table class="table dtable table-hover" id="tablePedidos">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">DNI / CE</th>
+										<th scope="col">Nombre</th>
+										<th scope="col">Correo</th>
+										<th scope="col">Celular</th>
+										<th scope="col">RUC</th>
+										<th scope="col">Razón Social</th>
+										<th scope="col">Sede</th>
+										<th scope="col">Publicidad Mailing</th>
+										<th scope="col">Acciones</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>71549856</td>
+										<td>Alicia Cerna Pajuelo</td>
+										<td>acerna@colmenateam.com.pe</td>
+										<td>985365254</td>
+										<td>20603588488</td>
+										<td>COLMENA SOLUTIONS S.A.C.</td>
+										<td>AV. JUAN ALIAGA 427 MAGDALENA</td>
+										<td><span class="tag-status tag-active">Activa</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<span data-bs-toggle="tooltip" data-bs-placement="left"
+													title="Estado Publicidad">
+													<button type="button" name="button"
+														class="btn button-icon button-icon-sm" data-bs-toggle="modal"
+														data-bs-target="#modalDesactivarPublicidadCliente">
+														<span class="material-icons-outlined">
+															loop
+														</span>
+													</button>
+												</span>
+												<span data-bs-toggle="tooltip" data-bs-placement="left"
+													title="Datos Cliente">
+													<button type="button" name="button"
+														class="btn button-icon button-icon-sm" data-bs-toggle="modal"
+														data-bs-target="#modalActualizarCliente">
+														<span class="material-icons-outlined">
+															person
+														</span>
+													</button>
+												</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">1</th>
+										<td>71549856</td>
+										<td>Alicia Cerna Pajuelo</td>
+										<td>acerna@colmenateam.com.pe</td>
+										<td>985365254</td>
+										<td>20603588488</td>
+										<td>COLMENA SOLUTIONS S.A.C.</td>
+										<td>AV. JUAN ALIAGA 427 MAGDALENA</td>
+										<td><span class="tag-status tag-inactive">Desactivada</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<span data-bs-toggle="tooltip" data-bs-placement="left"
+													title="Estado Publicidad">
+													<button type="button" name="button"
+														class="btn button-icon button-icon-sm" data-bs-toggle="modal"
+														data-bs-target="#modalActivarPublicidadCliente">
+														<span class="material-icons-outlined">
+															loop
+														</span>
+													</button>
+												</span>
+												<span data-bs-toggle="tooltip" data-bs-placement="left"
+													title="Datos Cliente">
+													<button type="button" name="button"
+														class="btn button-icon button-icon-sm" data-bs-toggle="modal"
+														data-bs-target="#modalActualizarCliente">
+														<span class="material-icons-outlined">
+															person
+														</span>
+													</button>
+												</span>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END ATENCIÓN AL CLIENTE -->
+
+			<!-- COMERCIAL -->
+			<div class="panel" id="empresas-panel">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="action-btns">
+							<button type="button" name="button" class="btn button-outline button-icon-left"
+								data-bs-toggle="modal" data-bs-target="#modalFiltrarEmpresas">
+								<span class="material-icons-outlined">
+									filter_list
+								</span>
+								Filtrar
+							</button>
+
+							<button type="button" name="button"
+								class="btn button-primary showCrearEmpresa button-icon-left">
+								<span class="material-icons-outlined">
+									add
+								</span>
+								Nuevo
+							</button>
+						</div>
+					</div>
+
+					<div class="col-lg-12">
+						<div class="card-dtable">
+							<div class="card-dtable-header">
+								<div class="title-dtable">
+									Empresas
+								</div>
+								<button type="button" name="button" class="btn button-outline button-icon-left d-none">
+									<span class="material-icons-outlined">
+										download
+									</span>
+									Generar reporte
+								</button>
+							</div>
+							<table class="table dtable table-hover">
+								<thead>
+									<tr>
+										<th scope="col">RUC</th>
+										<th scope="col">Nombre Web</th>
+										<th scope="col">Código</th>
+										<th scope="col">Colaboradores</th>
+										<th scope="col">Registrados</th>
+										<th scope="col">Logo</th>
+										<th scope="col">Estado</th>
+										<th scope="col">Acciones</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>12548569854</td>
+										<td>Colmena Solutions</td>
+										<td>col23</td>
+										<td>50</td>
+										<td>40</td>
+										<td>
+											<div>
+												<input class="form-check-input" type="checkbox" value=""
+													aria-label="..." checked disabled>
+											</div>
+										</td>
+										<td><span class="tag-status tag-active">Activo</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button"
+													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
+													data-bs-target="#modalDetalleEmpresaSede">
+													<span class="material-icons-outlined" data-bs-toggle="tooltip"
+														data-bs-placement="left" title="Detalle">
+														visibility
+													</span>
+												</button>
+												<button type="button" name="button"
+													class="btn button-icon button-icon-sm showEditarEmpresa">
+													<span class="material-icons-outlined" data-bs-toggle="tooltip"
+														data-bs-placement="left" title="Editar">
+														edit
+													</span>
+												</button>
+												<button type="button" name="button"
+													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
+													data-bs-target="#modalDesactivarEmpresa">
+													<span class="material-icons-outlined" data-bs-toggle="tooltip"
+														data-bs-placement="left" title="Cambiar Estado">
+														loop
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>42568547856</td>
+										<td>Interbank</td>
+										<td>int23</td>
+										<td>2000</td>
+										<td>400</td>
+										<td>
+											<div>
+												<input class="form-check-input" type="checkbox" value=""
+													aria-label="..." checked disabled>
+											</div>
+										</td>
+										<td><span class="tag-status tag-active">Activo</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button"
+													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
+													data-bs-target="#modalDetalleEmpresaSede">
+													<span class="material-icons-outlined" data-bs-toggle="tooltip"
+														data-bs-placement="left" title="Detalle">
+														visibility
+													</span>
+												</button>
+												<button type="button" name="button"
+													class="btn button-icon button-icon-sm showEditarEmpresa">
+													<span class="material-icons-outlined" data-bs-toggle="tooltip"
+														data-bs-placement="left" title="Editar">
+														edit
+													</span>
+												</button>
+												<button type="button" name="button"
+													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
+													data-bs-target="#modalDesactivarEmpresa">
+													<span class="material-icons-outlined" data-bs-toggle="tooltip"
+														data-bs-placement="left" title="Cambiar Estado">
+														loop
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>15426589654</td>
+										<td>BCP</td>
+										<td>bcp23</td>
+										<td>200</td>
+										<td>100</td>
+										<td>
+											<div>
+												<input class="form-check-input" type="checkbox" value=""
+													aria-label="..." disabled>
+											</div>
+										</td>
+										<td><span class="tag-status tag-inactive">Inactivo</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button"
+													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
+													data-bs-target="#modalDetalleEmpresaSede">
+													<span class="material-icons-outlined" data-bs-toggle="tooltip"
+														data-bs-placement="left" title="Detalle">
+														visibility
+													</span>
+												</button>
+												<button type="button" name="button"
+													class="btn button-icon button-icon-sm showEditarEmpresa">
+													<span class="material-icons-outlined" data-bs-toggle="tooltip"
+														data-bs-placement="left" title="Editar">
+														edit
+													</span>
+												</button>
+												<button type="button" name="button"
+													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
+													data-bs-target="#modalActivarEmpresa">
+													<span class="material-icons-outlined" data-bs-toggle="tooltip"
+														data-bs-placement="left" title="Cambiar Estado">
+														loop
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="panel" id="crearEmpresa-panel">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item showAdmninistracionEmpresas"><a href="#"
+								class="button-link">Empresas</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Nueva Empresa</li>
+					</ol>
+				</nav>
+
+				<div class="row">
+					<div class="col-xl-5 col-lg-6 mx-auto">
+						<div class="card mx-auto">
+							<div class="card-header">
+								<h2>
+									Nueva Empresa
+								</h2>
+							</div>
+							<div class="card-body">
+								<nav>
+									<div class="nav nav-tabs nav-tabs-items-3" id="nav-tab" role="tablist">
+										<button class="nav-link active" id="nav-crearEmpresa-tab" data-bs-toggle="tab"
+											data-bs-target="#nav-crearEmpresa" type="button" role="tab"
+											aria-controls="nav-crearEmpresa" aria-selected="true">
+											Empresa
+										</button>
+										<button class="nav-link" id="nav-crearSede-tab" data-bs-toggle="tab"
+											data-bs-target="#nav-crearSede" type="button" role="tab"
+											aria-controls="nav-crearSede" aria-selected="false">
+											Sedes
+										</button>
+										<button class="nav-link" id="nav-crearContacto-tab" data-bs-toggle="tab"
+											data-bs-target="#nav-crearContacto" type="button" role="tab"
+											aria-controls="nav-crearContacto" aria-selected="false">
+											Contactos
+										</button>
+									</div>
+								</nav>
+								<div class="tab-content" id="nav-tabContent">
+									<div class="tab-pane fade show active" id="nav-crearEmpresa" role="tabpanel"
+										aria-labelledby="nav-crearEmpresa-tab">
+										<form>
+											<div class="wrap-img-preview">
+												<div class="imageWrapper">
+													<img class="image-preview" id="nueva-empresa-preview-logo-empresa"
+														src="img/logos/default-img.jpg">
+												</div>
+
+												<div class="wrap-label-file-upload">
+													<p>Logo</p>
+													<button class="file-upload btn button-outline">
+														<input type="file" class="file-input-image"
+															id="nueva-empresa-input-preview-img">Agregar imágen
+													</button>
+													<p>JPG, PNG</p>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="form-group col-md-6">
+													<label for="nuevaEmpresaInputRuc" class="form-label">RUC</label>
+													<input type="number" class="form-control" id="nuevaEmpresaInputRuc">
+												</div>
+												<div class="form-group col-md-6">
+													<label for="nuevaEmpresaInputRazonSocial" class="form-label">Razón
+														Social</label>
+													<input type="text" class="form-control"
+														id="nuevaEmpresaInputRazonSocial">
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="form-group col-md-6">
+													<label for="nuevaEmpresaInputNombreComercial"
+														class="form-label">Nombre Comercial</label>
+													<input type="number" class="form-control"
+														id="nuevaEmpresaInputNombreComercial">
+												</div>
+												<div class="form-group col-md-6">
+													<label for="nuevaEmpresaInputNombreWeb" class="form-label">Nombre
+														Web</label>
+													<input type="number" class="form-control"
+														id="nuevaEmpresaInputNombreWeb">
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="form-group col-md-4">
+													<label class="form-label"
+														for="nuevaEmpresainputDepartamento">Departamento</label>
+													<select class="form-select select2"
+														id="nuevaEmpresainputDepartamento">
+														<option>Seleccione</option>
+														<option>Arequipa</option>
+														<option>Lima</option>
+														<option>Tacna</option>
+													</select>
+												</div>
+												<div class="form-group col-md-4">
+													<label class="form-label"
+														for="nuevaEmpresainputProvincia">Provincia</label>
+													<select class="form-select select2" id="nuevaEmpresainputProvincia">
+														<option>Seleccione</option>
+														<option>Arequipa</option>
+														<option>Lima</option>
+														<option>Tacna</option>
+													</select>
+												</div>
+												<div class="form-group col-md-4">
+													<label class="form-label"
+														for="nuevaEmpresainputDistrito">Distrito</label>
+													<select class="form-select select2" id="nuevaEmpresainputDistrito">
+														<option>Seleccione</option>
+														<option>Breña</option>
+														<option>Lince</option>
+														<option>Magdalena</option>
+														<option>Miraflores</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label for="nuevaEmpresaInputDireccion"
+													class="form-label">Dirección</label>
+												<input type="text" class="form-control" id="nuevaEmpresaInputDireccion">
+											</div>
+
+											<div class="row">
+												<div class="form-group col-md-6">
+													<label for="nuevaEmpresaInputCodigo" class="form-label">Código de
+														Empresa</label>
+													<input type="text" class="form-control"
+														id="nuevaEmpresaInputCodigo">
+												</div>
+
+												<div class="form-group col-md-6">
+													<label class="form-label"
+														for="nuevaEmpresainputDistrito">Tipo</label>
+													<select class="form-select" id="nuevaEmpresainputDistrito">
+														<option>Seleccione</option>
+														<option>Clentes bajos</option>
+														<option>Clientes medios</option>
+														<option>Clientes top</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label class="form-label">Tipo de pago</label>
+												<div>
+													<div class="form-check form-check-inline">
+														<input class="form-check-input" type="radio"
+															name="nuevaEmpresaRadioOptionTipoPago"
+															id="radioOptionTipoPagoPasarela" value="Pasarela" checked>
+														<label class="form-check-label"
+															for="radioOptionTipoPagoPasarela">Pasarela</label>
+													</div>
+													<div class="form-check form-check-inline">
+														<input class="form-check-input" type="radio"
+															name="nuevaEmpresaRadioOptionTipoPago"
+															id="radioOptionTipoPagoPlanilla" value="planilla">
+														<label class="form-check-label"
+															for="radioOptionTipoPagoPlanilla">Planilla</label>
+													</div>
+													<div class="form-check form-check-inline">
+														<input class="form-check-input" type="radio"
+															name="nuevaEmpresaRadioOptionTipoPago"
+															id="radioOptionTipoPagoMixto" value="planilla">
+														<label class="form-check-label"
+															for="radioOptionTipoPagoMixto">Mixto</label>
+													</div>
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label class="form-label">Afilicación de colaboradores</label>
+												<div>
+													<div class="form-check form-check-inline">
+														<input class="form-check-input" type="radio"
+															name="nuevaEmpresaRadioOptionTipoAfiliacion"
+															id="radioOptionAfiliacionAbierto" value="Abierto" checked>
+														<label class="form-check-label"
+															for="radioOptionAfiliacionAbierto">Abierto</label>
+													</div>
+													<div class="form-check form-check-inline">
+														<input class="form-check-input" type="radio"
+															name="nuevaEmpresaRadioOptionTipoAfiliacion"
+															id="radioOptionAfiliacionMasivo" value="Masivo">
+														<label class="form-check-label"
+															for="radioOptionAfiliacionMasivo">Masivo</label>
+													</div>
+												</div>
+											</div>
+										</form>
+										<div class="card-footer">
+											<button type="button" name="button"
+												class="btn button-ghost showAdmninistracionEmpresas">Cerrar</button>
+											<button type="button" name="button"
+												class="btn button-primary">Siguiente</button>
+										</div>
+									</div>
+
+									<div class="tab-pane fade" id="nav-crearSede" role="tabpanel"
+										aria-labelledby="nav-crearSede-tab">
+										<div class="accordion marginBottom-1" id="accordionNuevaSede">
+											<div class="accordion-item">
+												<h2 class="accordion-header" id="headingOneNuevaSede">
+													<button class="accordion-button" type="button"
+														data-bs-toggle="collapse" data-bs-target="#collapseOneNuevaSede"
+														aria-expanded="true" aria-controls="collapseOneNuevaSede">
+														Sede <span
+															class="tag-status tag-active marginLeft-1">Principal</span>
+													</button>
+												</h2>
+												<div id="collapseOneNuevaSede" class="accordion-collapse collapse show"
+													aria-labelledby="headingOneNuevaSede"
+													data-bs-parent="#accordionNuevaSede">
+													<div class="accordion-body">
+														<form>
+															<div class="form-group">
+																<label for="nuevaSedeInputNombre1"
+																	class="form-label">Nombre Sede</label>
+																<input type="text" class="form-control"
+																	id="nuevaSedeInputNombre1">
+															</div>
+
+															<div class="row">
+																<div class="form-group col-md-4">
+																	<label class="form-label"
+																		for="nuevaSedeInputDepartamento1">Departamento</label>
+																	<select class="form-select select2"
+																		id="nuevaSedeInputDepartamento1">
+																		<option>Seleccione</option>
+																		<option>Arequipa</option>
+																		<option selected>Lima</option>
+																		<option>Tacna</option>
+																	</select>
+																</div>
+																<div class="form-group col-md-4">
+																	<label class="form-label"
+																		for="nuevaSedeInputProvincia1">Provincia</label>
+																	<select class="form-select select2"
+																		id="nuevaSedeInputProvincia1">
+																		<option>Seleccione</option>
+																		<option>Arequipa</option>
+																		<option selected>Lima</option>
+																		<option>Tacna</option>
+																	</select>
+																</div>
+																<div class="form-group col-md-4">
+																	<label class="form-label"
+																		for="nuevaSedeInputDistrito1">Distrito</label>
+																	<select class="form-select select2"
+																		id="nuevaSedeInputDistrito1">
+																		<option>Seleccione</option>
+																		<option>Breña</option>
+																		<option>Lince</option>
+																		<option selected>Magdalena</option>
+																		<option>Miraflores</option>
+																	</select>
+																</div>
+															</div>
+
+															<div class="form-group">
+																<label for="nuevaSedeInputDireccion1"
+																	class="form-label">Dirección</label>
+																<input type="text" class="form-control"
+																	id="nuevaSedeInputDireccion1"
+																	value="Av, Arenales 1912">
+															</div>
+
+															<div class="form-check form-switch">
+																<input class="form-check-input" type="checkbox"
+																	role="switch" id="switchCheckSedePrincipal1"
+																	checked>
+																<label class="form-check-label"
+																	for="switchCheckSedePrincipal1">Sede
+																	Principal</label>
+															</div>
+														</form>
+													</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2 class="accordion-header" id="headingTwoNuevaSede">
+													<button class="accordion-button collapsed" type="button"
+														data-bs-toggle="collapse" data-bs-target="#collapseTwoNuevaSede"
+														aria-expanded="false" aria-controls="collapseTwoNuevaSede">
+														Sede Larco
+													</button>
+												</h2>
+												<div id="collapseTwoNuevaSede" class="accordion-collapse collapse"
+													aria-labelledby="headingTwoNuevaSede"
+													data-bs-parent="#accordionNuevaSede">
+													<div class="accordion-body">
+														<form>
+															<div class="form-group">
+																<label for="nuevaSedeInputNombre2"
+																	class="form-label">Nombre Sede</label>
+																<input type="text" class="form-control"
+																	id="nuevaSedeInputNombre2">
+															</div>
+
+															<div class="row">
+																<div class="form-group col-md-4">
+																	<label class="form-label"
+																		for="nuevaSedeInputDepartamento2">Departamento</label>
+																	<select class="form-select select2"
+																		id="nuevaSedeInputDepartamento2">
+																		<option>Seleccione</option>
+																		<option>Arequipa</option>
+																		<option>Lima</option>
+																		<option>Tacna</option>
+																	</select>
+																</div>
+																<div class="form-group col-md-4">
+																	<label class="form-label"
+																		for="nuevaSedeInputProvincia2">Provincia</label>
+																	<select class="form-select select2"
+																		id="nuevaSedeInputProvincia2">
+																		<option>Seleccione</option>
+																		<option>Arequipa</option>
+																		<option>Lima</option>
+																		<option>Tacna</option>
+																	</select>
+																</div>
+																<div class="form-group col-md-4">
+																	<label class="form-label"
+																		for="nuevaSedeInputDistrito2">Distrito</label>
+																	<select class="form-select select2"
+																		id="nuevaSedeInputDistrito2">
+																		<option>Seleccione</option>
+																		<option>Breña</option>
+																		<option>Lince</option>
+																		<option>Magdalena</option>
+																		<option>Miraflores</option>
+																	</select>
+																</div>
+															</div>
+
+															<div class="form-group">
+																<label for="nuevaSedeInputDireccion2"
+																	class="form-label">Dirección</label>
+																<input type="text" class="form-control"
+																	id="nuevaSedeInputDireccion2">
+															</div>
+
+															<div class="form-check form-switch marginBottom-1">
+																<input class="form-check-input" type="checkbox"
+																	role="switch" id="switchCheckSedePrincipal2">
+																<label class="form-check-label"
+																	for="switchCheckSedePrincipal2">Sede
+																	Principal</label>
+															</div>
+
+															<button type="button" name="button"
+																class="btn button-danger" data-bs-toggle="modal"
+																data-bs-target="#modalEliminarSede">
+																Eliminar Sede
+															</button>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+										<button type="button" name="button" class="btn button-action">
+											Agregar Sede
+										</button>
+
+										<div class="card-footer">
+											<button type="button" name="button"
+												class="btn button-ghost">Anterior</button>
+											<button type="button" name="button"
+												class="btn button-primary">Siguiente</button>
+										</div>
+									</div>
+
+									<div class="tab-pane fade" id="nav-crearContacto" role="tabpanel"
+										aria-labelledby="nav-crearContacto-tab">
+										<div class="accordion marginBottom-1" id="accordionNuevoContacto">
+											<div class="accordion-item">
+												<h2 class="accordion-header" id="headingOneNuevoContacto">
+													<button class="accordion-button" type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#collapseOneNuevoContacto" aria-expanded="true"
+														aria-controls="collapseOneNuevoContacto">
+														Contacto Sede Principal
+													</button>
+												</h2>
+												<div id="collapseOneNuevoContacto"
+													class="accordion-collapse collapse show"
+													aria-labelledby="headingOneNuevoContacto"
+													data-bs-parent="#accordionNuevoContacto">
+													<div class="accordion-body">
+														<form>
+															<div class="row">
+																<div class="form-group col-md-6">
+																	<label for="nuevoContactoNombre1"
+																		class="form-label">Nombre</label>
+																	<input type="text" class="form-control"
+																		id="nuevoContactoNombre1">
+																</div>
+																<div class="form-group col-md-6">
+																	<label class="form-label"
+																		for="nuevocontactoSede1">Sede</label>
+																	<select class="form-select select2"
+																		id="nuevocontactoSede1">
+																		<option>Seleccione</option>
+																		<option>Sede Principal</option>
+																		<option>Sede Larco</option>
+																		<option>Sede Miraflores</option>
+																	</select>
+																</div>
+															</div>
+
+															<div class="row">
+																<div class="form-group col-md-6">
+																	<label for="nuevoContactoCargo1"
+																		class="form-label">Cargo</label>
+																	<input type="text" class="form-control"
+																		id="nuevoContactoCargo1">
+																</div>
+																<div class="form-group col-md-6">
+																	<label for="nuevoContactoCorreo1"
+																		class="form-label">Correo</label>
+																	<input type="email" class="form-control"
+																		id="nuevoContactoCorreo1">
+																</div>
+															</div>
+
+															<div class="row">
+																<div class="form-group col-md-6">
+																	<label for="nuevoContactoCelular1"
+																		class="form-label">Celular</label>
+																	<input type="number" class="form-control"
+																		id="nuevoContactoCelular1">
+																</div>
+																<div class="form-group col-md-6">
+																	<label for="nuevoContactoFijo1"
+																		class="form-label">Teléfono Empresa</label>
+																	<input type="number" class="form-control"
+																		id="nuevoContactoFijo1">
+																</div>
+															</div>
+
+														</form>
+													</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2 class="accordion-header" id="headingTwoNuevoContacto">
+													<button class="accordion-button collapsed" type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#collapseTwoNuevoContacto" aria-expanded="false"
+														aria-controls="collapseTwoNuevoContacto">
+														Contacto Sede Larco
+													</button>
+												</h2>
+												<div id="collapseTwoNuevoContacto" class="accordion-collapse collapse"
+													aria-labelledby="headingTwoNuevoContacto"
+													data-bs-parent="#accordionNuevoContacto">
+													<div class="accordion-body">
+														<form>
+															<div class="row">
+																<div class="form-group col-md-6">
+																	<label for="nuevoContactoNombre2"
+																		class="form-label">Nombre</label>
+																	<input type="text" class="form-control"
+																		id="nuevoContactoNombre2">
+																</div>
+																<div class="form-group col-md-6">
+																	<label class="form-label"
+																		for="nuevocontactoSede2">Sede</label>
+																	<select class="form-select select2"
+																		id="nuevocontactoSede2">
+																		<option>Seleccione</option>
+																		<option>Sede Principal</option>
+																		<option>Sede Larco</option>
+																		<option>Sede Miraflores</option>
+																	</select>
+																</div>
+															</div>
+
+															<div class="row">
+																<div class="form-group col-md-6">
+																	<label for="nuevoContactoCargo2"
+																		class="form-label">Cargo</label>
+																	<input type="text" class="form-control"
+																		id="nuevoContactoCargo2">
+																</div>
+																<div class="form-group col-md-6">
+																	<label for="nuevoContactoCorreo2"
+																		class="form-label">Correo</label>
+																	<input type="email" class="form-control"
+																		id="nuevoContactoCorreo2">
+																</div>
+															</div>
+
+															<div class="row">
+																<div class="form-group col-md-6">
+																	<label for="nuevoContactoCelular2"
+																		class="form-label">Celular</label>
+																	<input type="number" class="form-control"
+																		id="nuevoContactoCelular2">
+																</div>
+																<div class="form-group col-md-6">
+																	<label for="nuevoContactoFijo2"
+																		class="form-label">Teléfono Empresa</label>
+																	<input type="number" class="form-control"
+																		id="nuevoContactoFijo2">
+																</div>
+															</div>
+
+															<button type="button" name="button"
+																class="btn button-danger" data-bs-toggle="modal"
+																data-bs-target="#modalEliminarContacto">
+																Eliminar Contacto
+															</button>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+										<button type="button" name="button" class="btn button-action">
+											Agregar Contacto
+										</button>
+
+										<div class="card-footer">
+											<button type="button" name="button"
+												class="btn button-ghost">Anterior</button>
+											<button type="button" name="button" class="btn button-primary"
+												data-bs-toggle="modal"
+												data-bs-target="#modalSuccessNuevaEmpresa">Guardar</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="panel" id="editarEmpresa-panel">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item showAdmninistracionEmpresas"><a href="#"
+								class="button-link">Empresas</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Editar Empresa</li>
+					</ol>
+				</nav>
+
+				<div class="row">
+					<div class="col-xl-5 col-lg-6 mx-auto">
+						<div class="card mx-auto">
+							<div class="card-header">
+								<h2>
+									Editar Empresa
+								</h2>
+							</div>
+							<div class="card-body">
+								<nav>
+									<div class="nav nav-tabs nav-tabs-items-3" id="nav-tab" role="tablist">
+										<button class="nav-link active" id="nav-editarEmpresa-tab" data-bs-toggle="tab"
+											data-bs-target="#nav-editarEmpresa" type="button" role="tab"
+											aria-controls="nav-editarEmpresa" aria-selected="true">
+											Empresa
+										</button>
+										<button class="nav-link" id="nav-editarSede-tab" data-bs-toggle="tab"
+											data-bs-target="#nav-editarSede" type="button" role="tab"
+											aria-controls="nav-editarSede" aria-selected="false">
+											Sedes
+										</button>
+										<button class="nav-link" id="nav-editarContacto-tab" data-bs-toggle="tab"
+											data-bs-target="#nav-editarContacto" type="button" role="tab"
+											aria-controls="nav-editarContacto" aria-selected="false">
+											Contactos
+										</button>
+									</div>
+								</nav>
+								<div class="tab-content" id="nav-tabContent">
+									<div class="tab-pane fade show active" id="nav-editarEmpresa" role="tabpanel"
+										aria-labelledby="nav-editarEmpresa-tab">
+										<form>
+											<div class="wrap-img-preview">
+												<div class="imageWrapper">
+													<img class="image-preview" id="editar-empresa-preview-logo-empresa"
+														src="img/logos/colmena.png">
+												</div>
+
+												<div class="wrap-label-file-upload">
+													<p>Logo</p>
+													<button class="file-upload btn button-outline">
+														<input type="file" class="file-input-image"
+															id="editar-empresa-input-preview-img">Agregar imágen
+													</button>
+													<p>JPG, PNG</p>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="form-group col-md-6">
+													<label for="nuevaEmpresaInputRuc" class="form-label">RUC</label>
+													<input type="number" class="form-control" id="nuevaEmpresaInputRuc"
+														value="12365452545">
+												</div>
+												<div class="form-group col-md-6">
+													<label for="nuevaEmpresaInputRazonSocial" class="form-label">Razón
+														Social</label>
+													<input type="text" class="form-control"
+														id="nuevaEmpresaInputRazonSocial" value="Colmena Solutions">
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="form-group col-md-6">
+													<label for="nuevaEmpresaInputNombreComercial"
+														class="form-label">Nombre Comercial</label>
+													<input type="number" class="form-control"
+														id="nuevaEmpresaInputNombreComercial" value="Colmena Solutions">
+												</div>
+												<div class="form-group col-md-6">
+													<label for="nuevaEmpresaInputNombreWeb" class="form-label">Nombre
+														Web</label>
+													<input type="number" class="form-control"
+														id="nuevaEmpresaInputNombreWeb" value="Colmena Solutions">
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="form-group col-md-4">
+													<label class="form-label"
+														for="nuevaEmpresainputDepartamento">Departamento</label>
+													<select class="form-select select2"
+														id="nuevaEmpresainputDepartamento">
+														<option>Seleccione</option>
+														<option>Arequipa</option>
+														<option selected>Lima</option>
+														<option>Tacna</option>
+													</select>
+												</div>
+												<div class="form-group col-md-4">
+													<label class="form-label"
+														for="nuevaEmpresainputProvincia">Provincia</label>
+													<select class="form-select select2" id="nuevaEmpresainputProvincia">
+														<option>Seleccione</option>
+														<option>Arequipa</option>
+														<option selected>Lima</option>
+														<option>Tacna</option>
+													</select>
+												</div>
+												<div class="form-group col-md-4">
+													<label class="form-label"
+														for="nuevaEmpresainputDistrito">Distrito</label>
+													<select class="form-select select2" id="nuevaEmpresainputDistrito">
+														<option>Seleccione</option>
+														<option>Breña</option>
+														<option selected>Lince</option>
+														<option>Magdalena</option>
+														<option>Miraflores</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label for="nuevaEmpresaInputDireccion"
+													class="form-label">Dirección</label>
+												<input type="text" class="form-control" id="nuevaEmpresaInputDireccion"
+													value="Av. Arequipa 1860">
+											</div>
+
+											<div class="row">
+												<div class="form-group col-md-6">
+													<label for="nuevaEmpresaInputCodigo" class="form-label">Código de
+														Empresa</label>
+													<input type="text" class="form-control" id="nuevaEmpresaInputCodigo"
+														value="col23">
+												</div>
+
+												<div class="form-group col-md-6">
+													<label class="form-label"
+														for="nuevaEmpresainputDistrito">Tipo</label>
+													<select class="form-select" id="nuevaEmpresainputDistrito">
+														<option>Seleccione</option>
+														<option selected>Clentes bajos</option>
+														<option>Clientes medios</option>
+														<option>Clientes top</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label class="form-label">Tipo de pago</label>
+												<div>
+													<div class="form-check form-check-inline">
+														<input class="form-check-input" type="radio"
+															name="nuevaEmpresaRadioOptionTipoPago"
+															id="radioOptionTipoPagoPasarela" value="Pasarela" checked>
+														<label class="form-check-label"
+															for="radioOptionTipoPagoPasarela">Pasarela</label>
+													</div>
+													<div class="form-check form-check-inline">
+														<input class="form-check-input" type="radio"
+															name="nuevaEmpresaRadioOptionTipoPago"
+															id="radioOptionTipoPagoPlanilla" value="planilla">
+														<label class="form-check-label"
+															for="radioOptionTipoPagoPlanilla">Planilla</label>
+													</div>
+													<div class="form-check form-check-inline">
+														<input class="form-check-input" type="radio"
+															name="nuevaEmpresaRadioOptionTipoPago"
+															id="radioOptionTipoPagoMixto" value="planilla">
+														<label class="form-check-label"
+															for="radioOptionTipoPagoMixto">Mixto</label>
+													</div>
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label class="form-label">Afilicación de colaboradores</label>
+												<div>
+													<div class="form-check form-check-inline">
+														<input class="form-check-input" type="radio"
+															name="nuevaEmpresaRadioOptionTipoAfiliacion"
+															id="radioOptionAfiliacionAbierto" value="Abierto" checked>
+														<label class="form-check-label"
+															for="radioOptionAfiliacionAbierto">Abierto</label>
+													</div>
+													<div class="form-check form-check-inline">
+														<input class="form-check-input" type="radio"
+															name="nuevaEmpresaRadioOptionTipoAfiliacion"
+															id="radioOptionAfiliacionMasivo" value="Masivo">
+														<label class="form-check-label"
+															for="radioOptionAfiliacionMasivo">Masivo</label>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+
+									<div class="tab-pane fade" id="nav-editarSede" role="tabpanel"
+										aria-labelledby="nav-editarSede-tab">
+										<div class="accordion marginBottom-1" id="accordionEditarSede">
+											<div class="accordion-item">
+												<h2 class="accordion-header" id="headingOneNuevaSede">
+													<button class="accordion-button" type="button"
+														data-bs-toggle="collapse" data-bs-target="#collapseOneNuevaSede"
+														aria-expanded="true" aria-controls="collapseOneNuevaSede">
+														Sede Lince <span
+															class="tag-status tag-active marginLeft-1">Principal</span>
+													</button>
+												</h2>
+												<div id="collapseOneNuevaSede" class="accordion-collapse collapse show"
+													aria-labelledby="headingOneNuevaSede"
+													data-bs-parent="#accordionEditarSede">
+													<div class="accordion-body">
+														<form>
+															<div class="form-group">
+																<label for="nuevaSedeInputNombre1"
+																	class="form-label">Nombre Sede</label>
+																<input type="text" class="form-control"
+																	id="nuevaSedeInputNombre1" value="Sede Lince">
+															</div>
+
+															<div class="row">
+																<div class="form-group col-md-4">
+																	<label class="form-label"
+																		for="nuevaSedeInputDepartamento1">Departamento</label>
+																	<select class="form-select select2"
+																		id="nuevaSedeInputDepartamento1">
+																		<option>Seleccione</option>
+																		<option>Arequipa</option>
+																		<option selected>Lima</option>
+																		<option>Tacna</option>
+																	</select>
+																</div>
+																<div class="form-group col-md-4">
+																	<label class="form-label"
+																		for="nuevaSedeInputProvincia1">Provincia</label>
+																	<select class="form-select select2"
+																		id="nuevaSedeInputProvincia1">
+																		<option>Seleccione</option>
+																		<option>Arequipa</option>
+																		<option selected>Lima</option>
+																		<option>Tacna</option>
+																	</select>
+																</div>
+																<div class="form-group col-md-4">
+																	<label class="form-label"
+																		for="nuevaSedeInputDistrito1">Distrito</label>
+																	<select class="form-select select2"
+																		id="nuevaSedeInputDistrito1">
+																		<option>Seleccione</option>
+																		<option>Breña</option>
+																		<option>Lince</option>
+																		<option selected>Magdalena</option>
+																		<option>Miraflores</option>
+																	</select>
+																</div>
+															</div>
+
+															<div class="form-group">
+																<label for="nuevaSedeInputDireccion1"
+																	class="form-label">Dirección</label>
+																<input type="text" class="form-control"
+																	id="nuevaSedeInputDireccion1"
+																	value="Av, Arenales 1912">
+															</div>
+
+															<div class="form-check form-switch">
+																<input class="form-check-input" type="checkbox"
+																	role="switch" id="switchCheckEditSedePrincipal1"
+																	checked>
+																<label class="form-check-label"
+																	for="switchCheckEditSedePrincipal1">Sede
+																	Principal</label>
+															</div>
+														</form>
+													</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2 class="accordion-header" id="headingTwoNuevaSede">
+													<button class="accordion-button collapsed" type="button"
+														data-bs-toggle="collapse" data-bs-target="#collapseTwoNuevaSede"
+														aria-expanded="false" aria-controls="collapseTwoNuevaSede">
+														Sede Magdalena
+													</button>
+												</h2>
+												<div id="collapseTwoNuevaSede" class="accordion-collapse collapse"
+													aria-labelledby="headingTwoNuevaSede"
+													data-bs-parent="#accordionEditarSede">
+													<div class="accordion-body">
+														<form>
+															<div class="form-group">
+																<label for="editarSedeInputNombre2"
+																	class="form-label">Nombre Sede</label>
+																<input type="text" class="form-control"
+																	id="editarSedeInputNombre2" value="Sede Magdalena">
+															</div>
+
+															<div class="row">
+																<div class="form-group col-md-4">
+																	<label class="form-label"
+																		for="editarSedeInputDepartamento2">Departamento</label>
+																	<select class="form-select select2"
+																		id="editarSedeInputDepartamento2">
+																		<option>Seleccione</option>
+																		<option>Arequipa</option>
+																		<option selected>Lima</option>
+																		<option>Tacna</option>
+																	</select>
+																</div>
+																<div class="form-group col-md-4">
+																	<label class="form-label"
+																		for="editarSedeInputProvincia2">Provincia</label>
+																	<select class="form-select select2"
+																		id="editarSedeInputProvincia2">
+																		<option>Seleccione</option>
+																		<option>Arequipa</option>
+																		<option selected>Lima</option>
+																		<option>Tacna</option>
+																	</select>
+																</div>
+																<div class="form-group col-md-4">
+																	<label class="form-label"
+																		for="editarSedeInputDistrito2">Distrito</label>
+																	<select class="form-select select2"
+																		id="editarSedeInputDistrito2">
+																		<option>Seleccione</option>
+																		<option>Breña</option>
+																		<option>Lince</option>
+																		<option selected>Magdalena</option>
+																		<option>Miraflores</option>
+																	</select>
+																</div>
+															</div>
+
+															<div class="form-group">
+																<label for="editarSedeInputDireccion2"
+																	class="form-label">Dirección</label>
+																<input type="text" class="form-control"
+																	id="editarSedeInputDireccion2"
+																	value="Av. Javier Prado 1860">
+															</div>
+
+															<div class="form-check form-switch marginBottom-1">
+																<input class="form-check-input" type="checkbox"
+																	role="switch" id="switchCheckEditSedePrincipal2">
+																<label class="form-check-label"
+																	for="switchCheckEditSedePrincipal2">Sede
+																	Principal</label>
+															</div>
+
+															<button type="button" name="button"
+																class="btn button-danger" data-bs-toggle="modal"
+																data-bs-target="#modalEliminarSede">
+																Eliminar Sede
+															</button>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+										<button type="button" name="button" class="btn button-action">
+											Agregar Sede
+										</button>
+									</div>
+
+									<div class="tab-pane fade" id="nav-editarContacto" role="tabpanel"
+										aria-labelledby="nav-editarContacto-tab">
+										<div class="accordion marginBottom-1" id="accordionEditarContacto">
+											<div class="accordion-item">
+												<h2 class="accordion-header" id="headingOneEditarContacto">
+													<button class="accordion-button" type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#collapseOneEditarContacto" aria-expanded="true"
+														aria-controls="collapseEditarNuevoContacto">
+														Contacto Sede Principal
+													</button>
+												</h2>
+												<div id="collapseOneEditarContacto"
+													class="accordion-collapse collapse show"
+													aria-labelledby="headingOneEditarContacto"
+													data-bs-parent="#accordionEditarContacto">
+													<div class="accordion-body">
+														<form>
+															<div class="row">
+																<div class="form-group col-md-6">
+																	<label for="editarContactoNombre1"
+																		class="form-label">Nombre</label>
+																	<input type="text" class="form-control"
+																		id="editarContactoNombre1" value="Sergio Perez">
+																</div>
+																<div class="form-group col-md-6">
+																	<label class="form-label"
+																		for="editarContactoSede1">Sede</label>
+																	<select class="form-select select2"
+																		id="editarcontactoSede1">
+																		<option>Seleccione</option>
+																		<option selected>Sede Lince</option>
+																		<option>Sede Larco</option>
+																		<option>Sede Miraflores</option>
+																	</select>
+																</div>
+															</div>
+
+															<div class="row">
+																<div class="form-group col-md-6">
+																	<label for="editarContactoCargo1"
+																		class="form-label">Cargo</label>
+																	<input type="text" class="form-control"
+																		id="editarContactoCargo1" value="RRHH">
+																</div>
+																<div class="form-group col-md-6">
+																	<label for="nuevoContactoCorreo1"
+																		class="form-label">Correo</label>
+																	<input type="email" class="form-control"
+																		id="nuevoContactoCorreo1"
+																		value="sperez@colmena.com.pe">
+																</div>
+															</div>
+
+															<div class="row">
+																<div class="form-group col-md-6">
+																	<label for="editarContactoCelular1"
+																		class="form-label">Celular</label>
+																	<input type="number" class="form-control"
+																		id="editarContactoCelular1" value="965125445">
+																</div>
+																<div class="form-group col-md-6">
+																	<label for="editarContactoFijo1"
+																		class="form-label">Teléfono Empresa</label>
+																	<input type="number" class="form-control"
+																		id="editarContactoFijo1" value="965125445">
+																</div>
+															</div>
+
+														</form>
+													</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2 class="accordion-header" id="headingTwoEditarContacto">
+													<button class="accordion-button collapsed" type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#collapseTwoEditarContacto"
+														aria-expanded="false" aria-controls="collapseTwoEditarContacto">
+														Contacto Sede Larco
+													</button>
+												</h2>
+												<div id="collapseTwoEditarContacto" class="accordion-collapse collapse"
+													aria-labelledby="headingTwoEditarContacto"
+													data-bs-parent="#accordionEditarContacto">
+													<div class="accordion-body">
+														<form>
+															<div class="row">
+																<div class="form-group col-md-6">
+																	<label for="editarContactoNombre2"
+																		class="form-label">Nombre</label>
+																	<input type="text" class="form-control"
+																		id="editarContactoNombre2" value="Alex Albon">
+																</div>
+																<div class="form-group col-md-6">
+																	<label class="form-label"
+																		for="editarContactoSede2">Sede</label>
+																	<select class="form-select select2"
+																		id="editarContactoSede2">
+																		<option>Seleccione</option>
+																		<option>Sede Principal</option>
+																		<option>Sede Larco</option>
+																		<option selected>Sede Magdalena</option>
+																		<option>Sede Miraflores</option>
+																	</select>
+																</div>
+															</div>
+
+															<div class="row">
+																<div class="form-group col-md-6">
+																	<label for="editarContactoCargo2"
+																		class="form-label">Cargo</label>
+																	<input type="text" class="form-control"
+																		id="editarContactoCargo2" value="RRHH">
+																</div>
+																<div class="form-group col-md-6">
+																	<label for="editarContactoCorreo2"
+																		class="form-label">Correo</label>
+																	<input type="email" class="form-control"
+																		id="editarContactoCorreo2"
+																		value="alexalbon@colmena.com.pe">
+																</div>
+															</div>
+
+															<div class="row">
+																<div class="form-group col-md-6">
+																	<label for="editarContactoCelular2"
+																		class="form-label">Celular</label>
+																	<input type="number" class="form-control"
+																		id="editarContactoCelular2" value="965236541">
+																</div>
+																<div class="form-group col-md-6">
+																	<label for="editarContactoFijo2"
+																		class="form-label">Teléfono Empresa</label>
+																	<input type="number" class="form-control"
+																		id="editarContactoFijo2" value="6542569">
+																</div>
+															</div>
+
+															<button type="button" name="button"
+																class="btn button-danger" data-bs-toggle="modal"
+																data-bs-target="#modalEliminarContacto">
+																Eliminar Contacto
+															</button>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+										<button type="button" name="button" class="btn button-action">
+											Agregar Contacto
+										</button>
+									</div>
+								</div>
+								<div class="card-footer">
+									<button type="button" name="button"
+										class="btn button-ghost showAdmninistracionEmpresas">Cerrar</button>
+									<button type="button" name="button" class="btn button-primary"
+										data-bs-toggle="modal"
+										data-bs-target="#modalSuccessNuevaEmpresa">Guardar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="panel" id="empresas-panel-admin">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="action-btns">
+							<button type="button" name="button" class="btn button-outline button-icon-left"
+								data-bs-toggle="modal" data-bs-target="#modalFiltrarEmpresasAdmin">
+								<span class="material-icons-outlined">
+									filter_list
+								</span>
+								Filtrar
+							</button>
+						</div>
+					</div>
+
+					<div class="col-lg-12">
+						<div class="card-dtable">
+							<div class="card-dtable-header">
+								<div class="title-dtable">
+									Empresas
+								</div>
+								<button type="button" name="button" class="btn button-outline button-icon-left d-none">
+									<span class="material-icons-outlined">
+										download
+									</span>
+									Generar reporte
+								</button>
+							</div>
+							<table class="table dtable table-hover">
+								<thead>
+									<tr>
+										<th scope="col">RUC</th>
+										<th scope="col">Nombre Web</th>
+										<th scope="col">Código</th>
+										<th scope="col">Colaboradores</th>
+										<th scope="col">Registrados</th>
+										<th scope="col">Ejecutivo</th>
+										<th scope="col">Logo</th>
+										<th scope="col">Estado</th>
+										<th scope="col">Acciones</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>12548569854</td>
+										<td>Colmena Solutions</td>
+										<td>col23</td>
+										<td>Clientes bajos</td>
+										<td>Planilla</td>
+										<td>Abierto</td>
+										<td>Laura Salinas</td>
+										<td><span class="tag-status tag-active">Activo</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button"
+													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
+													data-bs-target="#modalDetalleEmpresaSede">
+													<span class="material-icons-outlined" data-bs-toggle="tooltip"
+														data-bs-placement="left" title="Detalle">
+														visibility
+													</span>
+												</button>
+												<button type="button" name="button"
+													class="btn button-icon button-icon-sm showEditarEmpresaAdmin">
+													<span class="material-icons-outlined" data-bs-toggle="tooltip"
+														data-bs-placement="left" title="Editar">
+														edit
+													</span>
+												</button>
+												<button type="button" name="button"
+													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
+													data-bs-target="#modalDesactivarEmpresa">
+													<span class="material-icons-outlined" data-bs-toggle="tooltip"
+														data-bs-placement="left" title="Cambiar Estado">
+														loop
+													</span>
+												</button>
+												<button type="button" name="button"
+													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
+													data-bs-target="#modalTransferirEmpresa">
+													<span class="material-icons-outlined" data-bs-toggle="tooltip"
+														data-bs-placement="left" title="Transferir Empresa">
+														swap_horiz
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>12548569854</td>
+										<td>Colmena Solutions</td>
+										<td>col23</td>
+										<td>Clientes bajos</td>
+										<td>Planilla</td>
+										<td>Abierto</td>
+										<td>Carlos Tamashiro</td>
+										<td><span class="tag-status tag-inactive">Inactivo</span></td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button"
+													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
+													data-bs-target="#modalDetalleEmpresaSede">
+													<span class="material-icons-outlined" data-bs-toggle="tooltip"
+														data-bs-placement="left" title="Detalle">
+														visibility
+													</span>
+												</button>
+												<button type="button" name="button"
+													class="btn button-icon button-icon-sm showEditarEmpresaAdmin">
+													<span class="material-icons-outlined" data-bs-toggle="tooltip"
+														data-bs-placement="left" title="Editar">
+														edit
+													</span>
+												</button>
+												<button type="button" name="button"
+													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
+													data-bs-target="#modalActivarEmpresa">
+													<span class="material-icons-outlined" data-bs-toggle="tooltip"
+														data-bs-placement="left" title="Cambiar Estado">
+														loop
+													</span>
+												</button>
+												<button type="button" name="button"
+													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
+													data-bs-target="#modalTransferirEmpresa">
+													<span class="material-icons-outlined" data-bs-toggle="tooltip"
+														data-bs-placement="left" title="Transferir Empresa">
+														swap_horiz
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div class="panel" id="solicitudComprobante-panel">
 				<div class="row">
 					<div class="col-lg-12">
@@ -4357,218 +4574,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- END OPERACIONES -->
-
-			<!-- ATENCIÓN AL CLIENTE -->
-			<div class="panel" id="reenviosClientes-panel">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="action-btns">
-							<button type="button" name="button" class="btn button-outline button-icon-left"
-								data-bs-toggle="modal" data-bs-target="#modalBuscarCompra">
-								<span class="material-icons-outlined">
-									search
-								</span>
-								Buscar Compra
-							</button>
-						</div>
-					</div>
-
-					<div class="col-lg-12">
-						<div class="card-dtable">
-							<div class="card-dtable-header">
-								<div class="title-dtable">
-									Reenvíos
-								</div>
-								<button type="button" name="button" class="btn button-outline button-icon-left d-none">
-									<span class="material-icons-outlined">
-										download
-									</span>
-									Generar reporte
-								</button>
-							</div>
-							<table class="table dtable table-hover" id="tablePedidos">
-								<thead>
-									<tr>
-										<th scope="col">#</th>
-										<th scope="col">Fecha</th>
-										<th scope="col">Documento</th>
-										<th scope="col">Cliente</th>
-										<th scope="col">Correo</th>
-										<th scope="col">Total</th>
-										<th scope="col">Acciones</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<th scope="row">1</th>
-										<td>24/10/2022</td>
-										<td>BBB1-00004125</td>
-										<td>Alicia Cerna Pajuelo</td>
-										<td>acerna@colmenateam.com.pe</td>
-										<td>40.00</td>
-										<td>
-											<div class="action-cell-btns">
-												<span data-bs-toggle="tooltip" data-bs-placement="left"
-													title="Detalle venta">
-													<button type="button" name="button"
-														class="btn button-icon button-icon-sm" data-bs-toggle="modal"
-														data-bs-target="#modalDetalleVenta">
-														<span class="material-icons-outlined">
-															visibility
-														</span>
-													</button>
-												</span>
-												<span data-bs-toggle="tooltip" data-bs-placement="left"
-													title="Detalle venta">
-													<button type="button" name="button"
-														class="btn button-icon button-icon-sm" data-bs-toggle="modal"
-														data-bs-target="#modalReenviarCodigos">
-														<span class="material-icons-outlined">
-															send
-														</span>
-													</button>
-												</span>
-												<span data-bs-toggle="tooltip" data-bs-placement="left"
-													title="Detalle venta">
-													<button type="button" name="button"
-														class="btn button-icon button-icon-sm" data-bs-toggle="modal"
-														data-bs-target="#modalVentaEnvioPendiente">
-														<span class="material-icons-outlined">
-															file_download
-														</span>
-													</button>
-												</span>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="panel" id="datosClientes-panel">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="action-btns">
-							<button type="button" name="button" class="btn button-outline button-icon-left"
-								data-bs-toggle="modal" data-bs-target="#modalBuscarCliente">
-								<span class="material-icons-outlined">
-									search
-								</span>
-								Buscar Cliente
-							</button>
-						</div>
-					</div>
-
-					<div class="col-lg-12">
-						<div class="card-dtable">
-							<div class="card-dtable-header">
-								<div class="title-dtable">
-									Clientes
-								</div>
-								<button type="button" name="button" class="btn button-outline button-icon-left d-none">
-									<span class="material-icons-outlined">
-										download
-									</span>
-									Generar reporte
-								</button>
-							</div>
-							<table class="table dtable table-hover" id="tablePedidos">
-								<thead>
-									<tr>
-										<th scope="col">#</th>
-										<th scope="col">DNI / CE</th>
-										<th scope="col">Nombre</th>
-										<th scope="col">Correo</th>
-										<th scope="col">Celular</th>
-										<th scope="col">RUC</th>
-										<th scope="col">Razón Social</th>
-										<th scope="col">Sede</th>
-										<th scope="col">Publicidad Mailing</th>
-										<th scope="col">Acciones</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<th scope="row">1</th>
-										<td>71549856</td>
-										<td>Alicia Cerna Pajuelo</td>
-										<td>acerna@colmenateam.com.pe</td>
-										<td>985365254</td>
-										<td>20603588488</td>
-										<td>COLMENA SOLUTIONS S.A.C.</td>
-										<td>AV. JUAN ALIAGA 427 MAGDALENA</td>
-										<td><span class="tag-status tag-active">Activa</span></td>
-										<td>
-											<div class="action-cell-btns">
-												<span data-bs-toggle="tooltip" data-bs-placement="left"
-													title="Estado Publicidad">
-													<button type="button" name="button"
-														class="btn button-icon button-icon-sm" data-bs-toggle="modal"
-														data-bs-target="#modalDesactivarPublicidadCliente">
-														<span class="material-icons-outlined">
-															loop
-														</span>
-													</button>
-												</span>
-												<span data-bs-toggle="tooltip" data-bs-placement="left"
-													title="Datos Cliente">
-													<button type="button" name="button"
-														class="btn button-icon button-icon-sm" data-bs-toggle="modal"
-														data-bs-target="#modalActualizarCliente">
-														<span class="material-icons-outlined">
-															person
-														</span>
-													</button>
-												</span>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<th scope="row">1</th>
-										<td>71549856</td>
-										<td>Alicia Cerna Pajuelo</td>
-										<td>acerna@colmenateam.com.pe</td>
-										<td>985365254</td>
-										<td>20603588488</td>
-										<td>COLMENA SOLUTIONS S.A.C.</td>
-										<td>AV. JUAN ALIAGA 427 MAGDALENA</td>
-										<td><span class="tag-status tag-inactive">Desactivada</span></td>
-										<td>
-											<div class="action-cell-btns">
-												<span data-bs-toggle="tooltip" data-bs-placement="left"
-													title="Estado Publicidad">
-													<button type="button" name="button"
-														class="btn button-icon button-icon-sm" data-bs-toggle="modal"
-														data-bs-target="#modalActivarPublicidadCliente">
-														<span class="material-icons-outlined">
-															loop
-														</span>
-													</button>
-												</span>
-												<span data-bs-toggle="tooltip" data-bs-placement="left"
-													title="Datos Cliente">
-													<button type="button" name="button"
-														class="btn button-icon button-icon-sm" data-bs-toggle="modal"
-														data-bs-target="#modalActualizarCliente">
-														<span class="material-icons-outlined">
-															person
-														</span>
-													</button>
-												</span>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- END ATENCIÓN AL CLIENTE -->
+			<!-- END COMERCIAL -->
 
 			<!-- REPORTES -->
 			<div class="panel" id="reportesStock-panel">
@@ -5171,12 +5177,13 @@
 									</form>
 
 									<div class="action-btns mb-0 mt-5">
-										<button type="button" name="button" class="btn button-outline showComunicadoCrear">
+										<button type="button" name="button"
+											class="btn button-outline showComunicadoCrear">
 											Anterior
 										</button>
 
-										<button type="button" name="button"
-											class="btn button-primary button-icon-right" data-bs-toggle="modal" data-bs-target="#modalConfirmarEnvioComunicado">
+										<button type="button" name="button" class="btn button-primary button-icon-right"
+											data-bs-toggle="modal" data-bs-target="#modalConfirmarEnvioComunicado">
 											Enviar comunicados
 											<span class="material-icons-outlined">
 												send
@@ -5196,7 +5203,8 @@
 										</h3>
 
 										<p>
-											Para asegurarte de recibir nuestros correos en tu bandeja principal, agréganos a tus contactos utilizando la dirección de correo 
+											Para asegurarte de recibir nuestros correos en tu bandeja principal,
+											agréganos a tus contactos utilizando la dirección de correo
 											<span class="linkEmail">comunicaciones@beebeneficios.com.pe</span>
 										</p>
 
@@ -5211,7 +5219,8 @@
 												¿Necesitas ayuda?
 											</h4>
 											<p>
-												Comunícate con nosotros en nuestro horario de atención de lunes a viernes de 09:00 am a 6:00 pm.
+												Comunícate con nosotros en nuestro horario de atención de lunes a
+												viernes de 09:00 am a 6:00 pm.
 											</p>
 											<table class="emailTable">
 												<tr>
@@ -5235,13 +5244,17 @@
 
 										<ul class="emailCondiciones">
 											<li>
-												En Bee, valoramos tu privacidad. Te contactamos porque te registraste para recibir actualizaciones, ofertas especiales y otra información de BeeBeneficios y sus empresas asociadas.
+												En Bee, valoramos tu privacidad. Te contactamos porque te registraste
+												para recibir actualizaciones, ofertas especiales y otra información de
+												BeeBeneficios y sus empresas asociadas.
 											</li>
 											<li>
-												Si deseas dejar de recibir estas comunicaciones, puedes <b>cancelar tu suscripción.</b>
+												Si deseas dejar de recibir estas comunicaciones, puedes <b>cancelar tu
+													suscripción.</b>
 											</li>
 											<li>
-												Enviado por PRIZE PROMOTION S.A.C. Av. Arequipa 1860, oficina 710, Lince, Lima - Perú.
+												Enviado por PRIZE PROMOTION S.A.C. Av. Arequipa 1860, oficina 710,
+												Lince, Lima - Perú.
 											</li>
 											<li>
 												© 2026 beeBeneficios. Todos los derechos reservados.
@@ -9325,7 +9338,8 @@
 		</div>
 	</div>
 
-	<div class="modal fade" id="modalConfirmarEnvioComunicado" aria-labelledby="modalConfirmarEnvioComunicado" aria-hidden="true">
+	<div class="modal fade" id="modalConfirmarEnvioComunicado" aria-labelledby="modalConfirmarEnvioComunicado"
+		aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -9344,8 +9358,10 @@
 					</ul>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn button-ghost showComunicadoCrear" data-bs-dismiss="modal">Volver a editar correo</button>
-					<button type="button" class="btn button-primary showComunicados" data-bs-dismiss="modal">Enviar comunicado</button>
+					<button type="button" class="btn button-ghost showComunicadoCrear" data-bs-dismiss="modal">Volver a
+						editar correo</button>
+					<button type="button" class="btn button-primary showComunicados" data-bs-dismiss="modal">Enviar
+						comunicado</button>
 				</div>
 			</div>
 		</div>
