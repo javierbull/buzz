@@ -175,9 +175,11 @@
 					<div class="collapse" id="comercial-collapse">
 						<ul class="btn-toggle-nav sidebar-list-collapse">
 							<li>
-								<a href="#" class="item-collapse rounded showAdmninistracionEmpresas">Empresas</a></li>
+								<a href="#" class="item-collapse rounded showAdmninistracionEmpresas">Empresas</a>
+							</li>
 							<li>
-								<a href="#" class="item-collapse rounded showOperacionesSolicitudComprobante">Registro Venta</a>
+								<a href="#" class="item-collapse rounded showOperacionesSolicitudComprobante">Registro
+									Venta</a>
 							</li>
 						</ul>
 					</div>
@@ -2453,7 +2455,7 @@
 				</div>
 			</div>
 
-			
+
 			<!-- END OPERACIONES -->
 
 			<!-- ATENCIÓN AL CLIENTE -->
@@ -2707,7 +2709,7 @@
 								<thead>
 									<tr>
 										<th scope="col">RUC</th>
-										<th scope="col">Nombre Web</th>
+										<th scope="col">Nombre</th>
 										<th scope="col">Código</th>
 										<th scope="col">Tipo</th>
 										<th scope="col">Colaboradores</th>
@@ -2767,6 +2769,45 @@
 														loop
 													</span>
 												</button>
+												<button type="button" name="button"
+													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
+													data-bs-target="#modalDesactivarEmpresa">
+													<span class="material-icons-outlined" data-bs-toggle="tooltip"
+														data-bs-placement="left" title="Cambiar Estado">
+														swap_horiz
+													</span>
+												</button>
+												<div class="btn-group">
+													<button type="button" class="btn btn-icon button-icon-sm dropdown-toggle"
+														data-bs-toggle="dropdown" aria-expanded="false">
+														<span class="material-icons-outlined">
+															upload
+														</span>
+													</button>
+													<ul class="dropdown-menu dropdown-menu-end">
+														<li>
+															<button class="dropdown-item" type="button">CARGAR / ACTUALIZAR</button>
+														</li>
+														<li>
+															<button class="dropdown-item" type="button">ELIMINAR</button>
+														</li>
+													</ul>
+												</div>
+												<button type="button" name="button"
+													class="btn button-icon button-icon-sm showEditarEmpresa">
+													<span class="material-icons-outlined" data-bs-toggle="tooltip"
+														data-bs-placement="left" title="Editar">
+														person
+													</span>
+												</button>
+												<button type="button" name="button"
+													class="btn button-icon button-icon-sm" data-bs-toggle="modal"
+													data-bs-target="#modalDesactivarEmpresa">
+													<span class="material-icons-outlined" data-bs-toggle="tooltip"
+														data-bs-placement="left" title="Cambiar Estado">
+														block
+													</span>
+												</button>
 											</div>
 										</td>
 									</tr>
@@ -2787,7 +2828,7 @@
 				</nav>
 
 				<div class="row">
-					<div class="col-xl-5 col-lg-6 mx-auto">
+					<div class="col-12">
 						<div class="card mx-auto">
 							<div class="card-header">
 								<h2>
@@ -2797,15 +2838,15 @@
 							<div class="card-body">
 								<nav>
 									<div class="nav nav-tabs nav-tabs-items-3" id="nav-tab" role="tablist">
-										<button class="nav-link active" id="nav-crearEmpresa-tab" data-bs-toggle="tab"
-											data-bs-target="#nav-crearEmpresa" type="button" role="tab"
-											aria-controls="nav-crearEmpresa" aria-selected="true">
-											Empresa
+										<button class="nav-link active" id="nav-crearFicha-tab" data-bs-toggle="tab"
+											data-bs-target="#nav-crearFicha" type="button" role="tab"
+											aria-controls="nav-crearFicha" aria-selected="true">
+											Ficha
 										</button>
-										<button class="nav-link" id="nav-crearSede-tab" data-bs-toggle="tab"
-											data-bs-target="#nav-crearSede" type="button" role="tab"
-											aria-controls="nav-crearSede" aria-selected="false">
-											Sedes
+										<button class="nav-link" id="nav-crearEmpresas-tab" data-bs-toggle="tab"
+											data-bs-target="#nav-crearEmpresas" type="button" role="tab"
+											aria-controls="nav-crearEmpresas" aria-selected="false">
+											Empresas
 										</button>
 										<button class="nav-link" id="nav-crearContacto-tab" data-bs-toggle="tab"
 											data-bs-target="#nav-crearContacto" type="button" role="tab"
@@ -2815,8 +2856,8 @@
 									</div>
 								</nav>
 								<div class="tab-content" id="nav-tabContent">
-									<div class="tab-pane fade show active" id="nav-crearEmpresa" role="tabpanel"
-										aria-labelledby="nav-crearEmpresa-tab">
+									<div class="tab-pane fade show active" id="nav-crearFicha" role="tabpanel"
+										aria-labelledby="nav-crearFicha-tab">
 										<form>
 											<div class="wrap-img-preview">
 												<div class="imageWrapper">
@@ -2978,7 +3019,7 @@
 										</div>
 									</div>
 
-									<div class="tab-pane fade" id="nav-crearSede" role="tabpanel"
+									<div class="tab-pane fade" id="nav-crearEmpresas" role="tabpanel"
 										aria-labelledby="nav-crearSede-tab">
 										<div class="accordion marginBottom-1" id="accordionNuevaSede">
 											<div class="accordion-item">
