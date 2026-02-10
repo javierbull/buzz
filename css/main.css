@@ -24,6 +24,7 @@
   --success: #36AE7C;
   --success-dark: #094B28;
   --success-light: #C1F8CF;
+  --card-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* ESTILOS GENERALES */
@@ -1409,10 +1410,60 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .card-ficha-empresa__logo {
-  background-color: blue;
+  /* background-color: blue; */
   width: 7.5rem;
   height: 7.5rem;
 }
+
+/* Cargar logo ficha empresa */
+#picture__input {
+  display: none;
+}
+
+.picture {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray);
+  border: 1px solid currentcolor;
+  cursor: pointer;
+  transition: color 300ms ease-in-out, background 300ms ease-in-out;
+  outline: none;
+  overflow: hidden;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.picture:hover {
+  color: var(--dark);
+  background: var(--info-light);
+  border: 1px solid var(--info);
+}
+
+.picture:active {
+  border-color: var(--gray-medium);
+  color: var(--info);
+  background: var(--white);
+}
+
+.picture:focus {
+  color: var(--info);
+  background: var(--white);
+  border-color: var(--info);
+}
+
+.picture__img {
+  max-width: 100%;
+}
+
+/* End cargar logo ficha empresa */
 
 .card-ficha-empresa__content {
   /* background-color: pink; */
@@ -1432,8 +1483,26 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .title-section {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 600;
+}
+
+.card-sede {
+  background-color: var(--white);
+  padding: 1rem;
+  border: solid 1px var(--gray-medium);
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 1rem;
+}
+
+.container-actions-sede {
+  display: flex;
+  justify-content: flex-end;
 }
 /* END EMPRESAS */
 

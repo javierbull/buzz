@@ -2876,11 +2876,15 @@
 											<div class="card-ficha-empresa">
 												<div class="card-ficha-empresa__header">
 													<div class="card-ficha-empresa__logo">
-														<img src="#" alt="Intercorp">
+														<label class="picture" for="picture__input" tabIndex="0">
+															<span class="picture__image"></span>
+														</label>
+
+														<input type="file" name="picture__input" id="picture__input">
 													</div>
 													<div class="card-ficha-empresa__content">
 														<div class="card-ficha-empresa__content--top">
-															<div class="row">
+															<div class="row g-3">
 																<div class="form-group col-md-4">
 																	<label for="nuevaFichaNombreComercial1"
 																		class="form-label">
@@ -2951,8 +2955,8 @@
 																</div>
 															</div>
 															<div class="card-ficha-empresa__content--action">
-																<button class="btn button-accent button-icon-left" type="button"
-																	data-bs-toggle="collapse"
+																<button class="btn button-accent button-icon-left"
+																	type="button" data-bs-toggle="collapse"
 																	data-bs-target="#collapseFicha1"
 																	aria-expanded="false"
 																	aria-controls="collapseFicha1">
@@ -2965,13 +2969,143 @@
 														</div>
 													</div>
 												</div>
-												<div class="card-ficha-empresa__body" >
+												<div class="card-ficha-empresa__body">
 													<div class="collapse" id="collapseFicha1">
-														<p>
-															Some placeholder content for the collapse component. This
-															panel is hidden by default but revealed when the user
-															activates the relevant trigger.
-														</p>
+														<h5 class="title-section">Sede principal</h5>
+														<div class="card-sede">
+															<div class="row g-3">
+																<div class="form-group col-md-6">
+																	<label for="nuevaSedeFichaNombre"
+																		class="form-label">Nombre sede</label>
+																	<input type="number" class="form-control"
+																		id="nuevaSedeFichaNombre">
+																</div>
+																<div class="form-group col-md-6">
+																	<label for="nuevaSedeFichaDireccion"
+																		class="form-label">Dirección</label>
+																	<input type="text" class="form-control"
+																		id="nuevaSedeFichaDireccion">
+																</div>
+															</div>
+															<div class="row g-3">
+																<div class="form-group col-md-3">
+																	<label class="form-label"
+																		for="nuevaSedeFichaDepartamento">Departamento</label>
+																	<select class="form-select select2"
+																		id="nuevaSedeFichaDepartamento">
+																		<option>Seleccione</option>
+																		<option>Arequipa</option>
+																		<option>Lima</option>
+																		<option>Tacna</option>
+																	</select>
+																</div>
+																<div class="form-group col-md-3">
+																	<label class="form-label"
+																		for="nuevaSedeFichaProvincia">Provincia</label>
+																	<select class="form-select select2"
+																		id="nuevaSedeFichaProvincia">
+																		<option>Seleccione</option>
+																		<option>Arequipa</option>
+																		<option>Lima</option>
+																		<option>Tacna</option>
+																	</select>
+																</div>
+																<div class="form-group col-md-3">
+																	<label class="form-label"
+																		for="nuevaSedeFichaDistrito">Distrito</label>
+																	<select class="form-select select2"
+																		id="nuevaSedeFichaDistrito">
+																		<option>Seleccione</option>
+																		<option>Breña</option>
+																		<option>Lince</option>
+																		<option>Magdalena</option>
+																		<option>Miraflores</option>
+																	</select>
+																</div>
+																<div class="form-group col-md-3">
+																	<label for="nuevaSedeFichaColaboradores"
+																		class="form-label"># Colaboradores</label>
+																	<input type="text" class="form-control"
+																		id="nuevaSedeFichaColaboradores">
+																</div>
+															</div>
+														</div>
+
+														<div class="card-sede">
+															<div class="row g-3">
+																<div class="form-group col-md-6">
+																	<label for="nuevaSedeFichaNombre"
+																		class="form-label">Nombre sede</label>
+																	<input type="number" class="form-control"
+																		id="nuevaSedeFichaNombre">
+																</div>
+																<div class="form-group col-md-6">
+																	<label for="nuevaSedeFichaDireccion"
+																		class="form-label">Dirección</label>
+																	<input type="text" class="form-control"
+																		id="nuevaSedeFichaDireccion">
+																</div>
+															</div>
+															<div class="row g-3">
+																<div class="form-group col-md-3">
+																	<label class="form-label"
+																		for="nuevaSedeFichaDepartamento">Departamento</label>
+																	<select class="form-select select2"
+																		id="nuevaSedeFichaDepartamento">
+																		<option>Seleccione</option>
+																		<option>Arequipa</option>
+																		<option>Lima</option>
+																		<option>Tacna</option>
+																	</select>
+																</div>
+																<div class="form-group col-md-3">
+																	<label class="form-label"
+																		for="nuevaSedeFichaProvincia">Provincia</label>
+																	<select class="form-select select2"
+																		id="nuevaSedeFichaProvincia">
+																		<option>Seleccione</option>
+																		<option>Arequipa</option>
+																		<option>Lima</option>
+																		<option>Tacna</option>
+																	</select>
+																</div>
+																<div class="form-group col-md-3">
+																	<label class="form-label"
+																		for="nuevaSedeFichaDistrito">Distrito</label>
+																	<select class="form-select select2"
+																		id="nuevaSedeFichaDistrito">
+																		<option>Seleccione</option>
+																		<option>Breña</option>
+																		<option>Lince</option>
+																		<option>Magdalena</option>
+																		<option>Miraflores</option>
+																	</select>
+																</div>
+																<div class="form-group col-md-3">
+																	<label for="nuevaSedeFichaColaboradores"
+																		class="form-label"># Colaboradores</label>
+																	<input type="text" class="form-control"
+																		id="nuevaSedeFichaColaboradores">
+																</div>
+															</div>
+															<div class="container-actions-sede">
+																<button class="btn button-danger button-icon-left"
+																	type="button">
+																	<span class="material-icons-outlined">
+																		delete
+																	</span>
+																	Eliminar sede
+																</button>
+															</div>
+														</div>
+
+														<button class="btn button-accent button-icon-left"
+															type="button">
+															<span class="material-icons-outlined">
+																add
+															</span>
+															Agregar sede
+														</button>
 													</div>
 												</div>
 											</div>

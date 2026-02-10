@@ -43,12 +43,46 @@ btnToggle.addEventListener('click', function () {
 
 // End admin btn sidebar togle menu
 
+// Cargar logo ficha empresa
+const $inputFile = $("#picture__input");
+  const $pictureImage = $(".picture__image");
+  const pictureImageTxt = "Cargar logo";
+
+  // Inicializar el texto
+  $pictureImage.html(pictureImageTxt);
+
+  $inputFile.on("change", function() {
+    // En jQuery, para acceder a la propiedad 'files', accedemos al elemento nativo con 'this'
+    const file = this.files[0];
+
+    if (file) {
+      const reader = new FileReader();
+
+      reader.onload = function(e) {
+        // Crear la imagen con jQuery, asignar src y clase en una cadena
+        const $img = $("<img>")
+          .attr("src", e.target.result)
+          .addClass("picture__img");
+
+        // Limpiar el contenedor y agregar la nueva imagen
+        $pictureImage.empty().append($img);
+      };
+
+      reader.readAsDataURL(file);
+    } else {
+      // Si no hay archivo, restaurar el texto
+      $pictureImage.html(pictureImageTxt);
+    }
+  });
+// End cargar logo ficha empresa
+
 
 // Datatables
 // $(document).ready(function () {
 //   $('#tableEjemplo').DataTable();
 //   $('#tableUsuarios').DataTable();
 // });
+
 
 $('.dtable').DataTable({
   // "scrollX": true,
