@@ -44,7 +44,7 @@ btnToggle.addEventListener('click', function () {
 // End admin btn sidebar togle menu
 
 // Cargar logo ficha empresa
-const $inputFile = $("#picture__input");
+const $inputFile = $("#picture__input1");
   const $pictureImage = $(".picture__image");
   const pictureImageTxt = "Cargar logo";
 
