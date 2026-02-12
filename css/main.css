@@ -17,7 +17,7 @@
   --danger-light: #F8D7DA;
   --info: #0d6efd;
   --info-dark: #041E49;
-  --info-light: #C2E7FF;
+  --info-light: #D8EEFF;
   --warning: #FF9033;
   --warning-dark: #81124B;
   --warning-light: #FFD89C;
@@ -1508,6 +1508,18 @@ div.dataTables_wrapper div.dataTables_info {
   justify-content: flex-end;
 }
 /* END EMPRESAS */
+
+/* DICHA CANALES DE ATENCIÓN */
+.nav-pills .nav-link {
+  background: var(--info-light);
+  border: 0;
+  border-radius: 2.5rem;
+  -webkit-border-radius: 2.5rem;
+  -moz-border-radius: 2.5rem;
+  -ms-border-radius: 2.5rem;
+  -o-border-radius: 2.5rem;
+}
+/* END FICHA CANALES DE ATENCIÓN */
 
 /* ASIGNACION DE VALES */
 #contentAsignacionParcialVales {

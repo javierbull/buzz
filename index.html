@@ -3526,7 +3526,51 @@
 									</div>
 
 									<div class="tab-pane fade" id="nav-crearEmpresas" role="tabpanel"
-										aria-labelledby="nav-crearSede-tab">
+										aria-labelledby="nav-crearEmpresas-tab">
+
+										<ul class="nav nav-pills mb-3 gap-2" id="pills-tab" role="tablist">
+											<li class="nav-item" role="presentation">
+												<button class="nav-link active" id="pills-plataforma-tab"
+													data-bs-toggle="pill" data-bs-target="#pills-plataforma" type="button"
+													role="tab" aria-controls="pills-plataforma"
+													aria-selected="true">Plataforma</button>
+											</li>
+											<li class="nav-item" role="presentation">
+												<button class="nav-link" id="pills-inHouse-tab" data-bs-toggle="pill"
+													data-bs-target="#pills-inHouse" type="button" role="tab"
+													aria-controls="pills-inHouse" aria-selected="false">In House</button>
+											</li>
+											<li class="nav-item" role="presentation">
+												<button class="nav-link" id="pills-b2b-tab" data-bs-toggle="pill"
+													data-bs-target="#pills-b2b" type="button" role="tab"
+													aria-controls="pills-b2b" aria-selected="false">B2B</button>
+											</li>
+											<li class="nav-item" role="presentation">
+												<button class="nav-link" id="pills-alternativos-tab" data-bs-toggle="pill"
+													data-bs-target="#pills-alternativos" type="button" role="tab"
+													aria-controls="pills-alternativos" aria-selected="false">Alternativos</button>
+											</li>
+										</ul>
+										<div class="tab-content" id="pills-tabContent">
+											<div class="tab-pane fade show active" id="pills-plataforma" role="tabpanel"
+												aria-labelledby="pills-plataforma-tab">
+												Plataforma
+											</div>
+											<div class="tab-pane fade" id="pills-inHouse" role="tabpanel"
+												aria-labelledby="pills-inHouse-tab">
+												In House
+											</div>
+											<div class="tab-pane fade" id="pills-b2b" role="tabpanel"
+												aria-labelledby="pills-b2b-tab">
+												B2B
+											</div>
+											<div class="tab-pane fade" id="pills-alternativos" role="tabpanel"
+												aria-labelledby="pills-alternativos-tab">
+												Alternativos
+											</div>
+										</div>
+
+										<!-- accordion sedes -->
 										<div class="accordion marginBottom-1" id="accordionNuevaSede">
 											<div class="accordion-item">
 												<h2 class="accordion-header" id="headingOneNuevaSede">
@@ -3688,9 +3732,7 @@
 												</div>
 											</div>
 										</div>
-										<button type="button" name="button" class="btn button-action">
-											Agregar Sede
-										</button>
+										<!-- end accordion sedes -->
 
 										<div class="card-footer">
 											<button type="button" name="button"
