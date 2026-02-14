@@ -1520,6 +1520,10 @@ div.dataTables_wrapper div.dataTables_info {
   margin-bottom: 1rem;
 }
 
+#containerConvenioPlataforma1, #containerConvenioInhouse1 {
+  display: none;
+}
+
 /* END EMPRESAS */
 
 /* DICHA CANALES DE ATENCIÓN */
@@ -1704,7 +1708,7 @@ div.dataTables_wrapper div.dataTables_info {
   margin-bottom: .5rem;
 }
 
-#comunicadoNuevo-PruebaEnvio, #containerConvenioPlataforma1 {
+#comunicadoNuevo-PruebaEnvio {
   display: none;
 }
 

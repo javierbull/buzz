@@ -131,6 +131,16 @@ $(document).ready(function () {
     }
 
   });
+
+  $('#checkInhouseConvenio1').on('change', function () {
+
+    if ($(this).is(':checked')) {
+      $('#containerConvenioInhouse1').slideDown(); // Muestra suavemente
+    } else {
+      $('#containerConvenioInhouse1').slideUp();   // Oculta suavemente
+    }
+
+  });
   // END MOSTRAR CONVENIOS
 
   // Datatables
