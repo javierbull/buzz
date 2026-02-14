@@ -1517,6 +1517,7 @@ div.dataTables_wrapper div.dataTables_info {
   display: flex;
   align-items: flex-end;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* END EMPRESAS */
