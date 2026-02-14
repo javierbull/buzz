@@ -2826,7 +2826,7 @@
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item showAdmninistracionEmpresas"><a href="#"
 								class="button-link">Empresas</a></li>
-						<li class="breadcrumb-item active" aria-current="page">Nueva Empresa</li>
+						<li class="breadcrumb-item active" aria-current="page">Nueva Ficha</li>
 					</ol>
 				</nav>
 
@@ -2835,7 +2835,7 @@
 						<div class="card mx-auto">
 							<div class="card-header">
 								<h2>
-									Nueva Empresa
+									Nueva Ficha
 								</h2>
 							</div>
 							<div class="card-body">
@@ -3350,7 +3350,7 @@
 																</span>
 																Agregar sede
 															</button>
-	
+
 															<button class="btn button-danger button-icon-left"
 																type="button">
 																<span class="material-icons-outlined">
@@ -3363,7 +3363,8 @@
 												</div>
 											</div>
 
-											<button class="btn button-accent button-icon-left" type="button">
+											<button class="btn button-accent button-icon-left" type="button"
+												id="btn-add-company">
 												<span class="material-icons-outlined">
 													add
 												</span>
@@ -3371,162 +3372,6 @@
 											</button>
 										</div>
 
-										<!-- Eliminar form -->
-										<!-- <form>
-											<div class="wrap-img-preview">
-												<div class="imageWrapper">
-													<img class="image-preview" id="nueva-empresa-preview-logo-empresa"
-														src="img/logos/default-img.jpg">
-												</div>
-
-												<div class="wrap-label-file-upload">
-													<p>Logo</p>
-													<button class="file-upload btn button-outline">
-														<input type="file" class="file-input-image"
-															id="nueva-empresa-input-preview-img">Agregar imágen
-													</button>
-													<p>JPG, PNG</p>
-												</div>
-											</div>
-
-											<div class="row">
-												<div class="form-group col-md-6">
-													<label for="nuevaEmpresaInputRuc" class="form-label">RUC</label>
-													<input type="number" class="form-control" id="nuevaEmpresaInputRuc">
-												</div>
-												<div class="form-group col-md-6">
-													<label for="nuevaEmpresaInputRazonSocial" class="form-label">Razón
-														Social</label>
-													<input type="text" class="form-control"
-														id="nuevaEmpresaInputRazonSocial">
-												</div>
-											</div>
-
-											<div class="row">
-												<div class="form-group col-md-6">
-													<label for="nuevaEmpresaInputNombreComercial"
-														class="form-label">Nombre Comercial</label>
-													<input type="number" class="form-control"
-														id="nuevaEmpresaInputNombreComercial">
-												</div>
-												<div class="form-group col-md-6">
-													<label for="nuevaEmpresaInputNombreWeb" class="form-label">Nombre
-														Web</label>
-													<input type="number" class="form-control"
-														id="nuevaEmpresaInputNombreWeb">
-												</div>
-											</div>
-
-											<div class="row">
-												<div class="form-group col-md-4">
-													<label class="form-label"
-														for="nuevaEmpresainputDepartamento">Departamento</label>
-													<select class="form-select select2"
-														id="nuevaEmpresainputDepartamento">
-														<option>Seleccione</option>
-														<option>Arequipa</option>
-														<option>Lima</option>
-														<option>Tacna</option>
-													</select>
-												</div>
-												<div class="form-group col-md-4">
-													<label class="form-label"
-														for="nuevaEmpresainputProvincia">Provincia</label>
-													<select class="form-select select2" id="nuevaEmpresainputProvincia">
-														<option>Seleccione</option>
-														<option>Arequipa</option>
-														<option>Lima</option>
-														<option>Tacna</option>
-													</select>
-												</div>
-												<div class="form-group col-md-4">
-													<label class="form-label"
-														for="nuevaEmpresainputDistrito">Distrito</label>
-													<select class="form-select select2" id="nuevaEmpresainputDistrito">
-														<option>Seleccione</option>
-														<option>Breña</option>
-														<option>Lince</option>
-														<option>Magdalena</option>
-														<option>Miraflores</option>
-													</select>
-												</div>
-											</div>
-
-											<div class="form-group">
-												<label for="nuevaEmpresaInputDireccion"
-													class="form-label">Dirección</label>
-												<input type="text" class="form-control" id="nuevaEmpresaInputDireccion">
-											</div>
-
-											<div class="row">
-												<div class="form-group col-md-6">
-													<label for="nuevaEmpresaInputCodigo" class="form-label">Código de
-														Empresa</label>
-													<input type="text" class="form-control"
-														id="nuevaEmpresaInputCodigo">
-												</div>
-
-												<div class="form-group col-md-6">
-													<label class="form-label"
-														for="nuevaEmpresainputDistrito">Tipo</label>
-													<select class="form-select" id="nuevaEmpresainputDistrito">
-														<option>Seleccione</option>
-														<option>Clentes bajos</option>
-														<option>Clientes medios</option>
-														<option>Clientes top</option>
-													</select>
-												</div>
-											</div>
-
-											<div class="form-group">
-												<label class="form-label">Tipo de pago</label>
-												<div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio"
-															name="nuevaEmpresaRadioOptionTipoPago"
-															id="radioOptionTipoPagoPasarela" value="Pasarela" checked>
-														<label class="form-check-label"
-															for="radioOptionTipoPagoPasarela">Pasarela</label>
-													</div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio"
-															name="nuevaEmpresaRadioOptionTipoPago"
-															id="radioOptionTipoPagoPlanilla" value="planilla">
-														<label class="form-check-label"
-															for="radioOptionTipoPagoPlanilla">Planilla</label>
-													</div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio"
-															name="nuevaEmpresaRadioOptionTipoPago"
-															id="radioOptionTipoPagoMixto" value="planilla">
-														<label class="form-check-label"
-															for="radioOptionTipoPagoMixto">Mixto</label>
-													</div>
-												</div>
-											</div>
-
-											<div class="form-group">
-												<label class="form-label">Afilicación de colaboradores</label>
-												<div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio"
-															name="nuevaEmpresaRadioOptionTipoAfiliacion"
-															id="radioOptionAfiliacionAbierto" value="Abierto" checked>
-														<label class="form-check-label"
-															for="radioOptionAfiliacionAbierto">Abierto</label>
-													</div>
-													<div class="form-check form-check-inline">
-														<input class="form-check-input" type="radio"
-															name="nuevaEmpresaRadioOptionTipoAfiliacion"
-															id="radioOptionAfiliacionMasivo" value="Masivo">
-														<label class="form-check-label"
-															for="radioOptionAfiliacionMasivo">Masivo</label>
-													</div>
-												</div>
-											</div>
-										</form> -->
-
-										<!-- Eliminar form -->
 										<div class="card-footer">
 											<button type="button" name="button"
 												class="btn button-ghost showAdmninistracionEmpresas">Cerrar</button>
@@ -3566,7 +3411,204 @@
 										<div class="tab-content" id="pills-tabContent">
 											<div class="tab-pane fade show active" id="pills-plataforma" role="tabpanel"
 												aria-labelledby="pills-plataforma-tab">
-												Plataforma
+
+												<div class="container-optionsSuiteType mb-3">
+													<div class="form-check form-check-inline">
+														<input class="form-check-input" type="radio"
+															name="optionsSuiteType" id="inlineRadioSuiteType1"
+															value="option1">
+														<label class="form-check-label"
+															for="inlineRadioSuiteType1">Suite
+															Corporativo</label>
+													</div>
+													<div class="form-check form-check-inline">
+														<input class="form-check-input" type="radio"
+															name="optionsSuiteType" id="inlineRadioSuiteType2"
+															value="option2">
+														<label class="form-check-label"
+															for="inlineRadioSuiteType2">Suite por
+															Empresa</label>
+													</div>
+												</div>
+
+
+												<div class="accordion" id="accordionEmpresasPlataforma1">
+													<div class="accordion-item">
+														<h2 class="accordion-header" id="headingPlataforma1">
+															<button class="accordion-button" type="button"
+																data-bs-toggle="collapse"
+																data-bs-target="#collapseCompany1" aria-expanded="true"
+																aria-controls="collapseCompany1">
+																Intercorp
+															</button>
+														</h2>
+														<div id="collapseCompany1"
+															class="accordion-collapse collapse show"
+															aria-labelledby="headingPlataforma1"
+															data-bs-parent="#accordionEmpresasPlataforma1">
+															<div class="accordion-body">
+																<form>
+																	<div class="wrap-img-preview">
+																		<div class="imageWrapper">
+																			<img class="image-preview"
+																				id="nueva-empresa-preview-logo-empresa"
+																				src="img/logos/default-img.jpg">
+																		</div>
+
+																		<div class="wrap-label-file-upload">
+																			<p>Logo</p>
+																			<button
+																				class="file-upload btn button-outline">
+																				<input type="file"
+																					class="file-input-image"
+																					id="nueva-empresa-input-preview-img">Agregar
+																				imágen
+																			</button>
+																			<p>JPG, PNG</p>
+																		</div>
+																	</div>
+
+																	<div class="row g-3">
+																		<div class="form-group col-md-4">
+																			<label
+																				for="nuevaEmpresaPlataformaNombreWeb1"
+																				class="form-label">Nombre web</label>
+																			<input type="text" class="form-control"
+																				id="nuevaEmpresaPlataformaNombreWeb1">
+																		</div>
+																		<div class="form-group col-md-4">
+																			<label class="form-label"
+																				for="nuevaEmpresaPlataformaEstado1">Estado</label>
+																			<select class="form-select"
+																				id="nuevaEmpresaPlataformaEstado1">
+																				<option>Seleccione</option>
+																				<option>Bee Nuevo</option>
+																				<option>Lima</option>
+																				<option>Tacna</option>
+																			</select>
+																		</div>
+																		<div class="form-group col-md-2">
+																			<label for="nuevaEmpresaPlataformaCodigo1"
+																				class="form-label">Código
+																				empresa</label>
+																			<input type="text" class="form-control"
+																				id="nuevaEmpresaPlataformaCodigo1">
+																		</div>
+																		<div class="form-group col-md-2">
+																			<label
+																				for="nuevaEmpresaPlataformaColaboradores1"
+																				class="form-label">#
+																				Colaboradores</label>
+																			<input type="number" class="form-control"
+																				id="nuevaEmpresaPlataformaColaboradores1">
+																		</div>
+																	</div>
+
+																	<div class="row g-3">
+																		<div class="form-group col-md-4">
+																			<label class="form-label"
+																				for="nuevaEmpresaPlataformaPlanes1">Planes</label>
+																			<select class="form-select"
+																				id="nuevaEmpresaPlataformaPlanes1">
+																				<option>Seleccione</option>
+																				<option>Admin Soft</option>
+																			</select>
+																		</div>
+
+																		<div class="form-group col-md-4">
+																			<label
+																				for="nuevaEmpresaPlataformaInicioPlan1"
+																				class="form-label">Inicio plan</label>
+																			<input type="date" class="form-control"
+																				id="nuevaEmpresaPlataformaInicioPlan1">
+																		</div>
+
+																		<div class="form-group col-md-4">
+																			<label for="nuevaEmpresaPlataformaFinPlan1"
+																				class="form-label">Fin plan</label>
+																			<input type="date" class="form-control"
+																				id="nuevaEmpresaPlataformaFinPlan1">
+																		</div>
+																	</div>
+
+																	<div class="container-optionsSuiteType mb-3">
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input" type="radio"
+																				name="optionsSuiteTypeCompany1"
+																				id="inlineRadioCompanyPublic1"
+																				value="option1">
+																			<label class="form-check-label"
+																				for="inlineRadioCompanyPublic1">
+																				Empresa pública
+																			</label>
+																		</div>
+																		<div class="form-check form-check-inline">
+																			<input class="form-check-input" type="radio"
+																				name="optionsSuiteTypeCompany1"
+																				id="inlineRadioCompanyPrivate1"
+																				value="option2" checked>
+																			<label class="form-check-label"
+																				for="inlineRadioCompanyPrivate1">
+																				Empresa privada
+																			</label>
+																		</div>
+																	</div>
+
+																	<div class="form-check mb-2">
+																		<input class="form-check-input" type="checkbox"
+																			value="" id="checkPlataformaConvenio1">
+																		<label class="form-check-label"
+																			for="checkPlataformaConvenio1">
+																			¿Cuenta con convenio?
+																		</label>
+																	</div>
+
+																	<div id="containerConvenioPlataforma1">
+																		<div class="row g-3">
+																			<div class="form-group col-md-4">
+																				<label
+																					for="nuevaEmpresaPlataformaInicioConvenio1"
+																					class="form-label">Inicio
+																					convenio</label>
+																				<input type="date" class="form-control"
+																					id="nuevaEmpresaPlataformaInicioConvenio1">
+																			</div>
+
+																			<div class="form-group col-md-4">
+																				<label
+																					for="nuevaEmpresaPlataformaFinConvenio1"
+																					class="form-label">Fin
+																					convenio</label>
+																				<input type="date" class="form-control"
+																					id="nuevaEmpresaPlataformaFinConvenio1">
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="form-group-dominio">
+																		<div class="col">
+																			<label
+																				for="nuevaEmpresaPlataformaAddDominio1"
+																				class="form-label">Dominio</label>
+																			<input type="text" class="form-control"
+																				id="nuevaEmpresaPlataformaAddDominio1">
+																		</div>
+
+																		<button
+																			class="btn button-accent button-icon-left"
+																			type="button">
+																			<span class="material-icons-outlined">
+																				add
+																			</span>
+																			Agregar
+																		</button>
+																	</div>
+																</form>
+															</div>
+														</div>
+													</div>
+												</div>
+
 											</div>
 											<div class="tab-pane fade" id="pills-inHouse" role="tabpanel"
 												aria-labelledby="pills-inHouse-tab">
@@ -3582,169 +3624,7 @@
 											</div>
 										</div>
 
-										<!-- accordion sedes -->
-										<div class="accordion marginBottom-1" id="accordionNuevaSede">
-											<div class="accordion-item">
-												<h2 class="accordion-header" id="headingOneNuevaSede">
-													<button class="accordion-button" type="button"
-														data-bs-toggle="collapse" data-bs-target="#collapseOneNuevaSede"
-														aria-expanded="true" aria-controls="collapseOneNuevaSede">
-														Sede <span
-															class="tag-status tag-active marginLeft-1">Principal</span>
-													</button>
-												</h2>
-												<div id="collapseOneNuevaSede" class="accordion-collapse collapse show"
-													aria-labelledby="headingOneNuevaSede"
-													data-bs-parent="#accordionNuevaSede">
-													<div class="accordion-body">
-														<form>
-															<div class="form-group">
-																<label for="nuevaSedeInputNombre1"
-																	class="form-label">Nombre Sede</label>
-																<input type="text" class="form-control"
-																	id="nuevaSedeInputNombre1">
-															</div>
 
-															<div class="row">
-																<div class="form-group col-md-4">
-																	<label class="form-label"
-																		for="nuevaSedeInputDepartamento1">Departamento</label>
-																	<select class="form-select select2"
-																		id="nuevaSedeInputDepartamento1">
-																		<option>Seleccione</option>
-																		<option>Arequipa</option>
-																		<option selected>Lima</option>
-																		<option>Tacna</option>
-																	</select>
-																</div>
-																<div class="form-group col-md-4">
-																	<label class="form-label"
-																		for="nuevaSedeInputProvincia1">Provincia</label>
-																	<select class="form-select select2"
-																		id="nuevaSedeInputProvincia1">
-																		<option>Seleccione</option>
-																		<option>Arequipa</option>
-																		<option selected>Lima</option>
-																		<option>Tacna</option>
-																	</select>
-																</div>
-																<div class="form-group col-md-4">
-																	<label class="form-label"
-																		for="nuevaSedeInputDistrito1">Distrito</label>
-																	<select class="form-select select2"
-																		id="nuevaSedeInputDistrito1">
-																		<option>Seleccione</option>
-																		<option>Breña</option>
-																		<option>Lince</option>
-																		<option selected>Magdalena</option>
-																		<option>Miraflores</option>
-																	</select>
-																</div>
-															</div>
-
-															<div class="form-group">
-																<label for="nuevaSedeInputDireccion1"
-																	class="form-label">Dirección</label>
-																<input type="text" class="form-control"
-																	id="nuevaSedeInputDireccion1"
-																	value="Av, Arenales 1912">
-															</div>
-
-															<div class="form-check form-switch">
-																<input class="form-check-input" type="checkbox"
-																	role="switch" id="switchCheckSedePrincipal1"
-																	checked>
-																<label class="form-check-label"
-																	for="switchCheckSedePrincipal1">Sede
-																	Principal</label>
-															</div>
-														</form>
-													</div>
-												</div>
-											</div>
-											<div class="accordion-item">
-												<h2 class="accordion-header" id="headingTwoNuevaSede">
-													<button class="accordion-button collapsed" type="button"
-														data-bs-toggle="collapse" data-bs-target="#collapseTwoNuevaSede"
-														aria-expanded="false" aria-controls="collapseTwoNuevaSede">
-														Sede Larco
-													</button>
-												</h2>
-												<div id="collapseTwoNuevaSede" class="accordion-collapse collapse"
-													aria-labelledby="headingTwoNuevaSede"
-													data-bs-parent="#accordionNuevaSede">
-													<div class="accordion-body">
-														<form>
-															<div class="form-group">
-																<label for="nuevaSedeInputNombre2"
-																	class="form-label">Nombre Sede</label>
-																<input type="text" class="form-control"
-																	id="nuevaSedeInputNombre2">
-															</div>
-
-															<div class="row">
-																<div class="form-group col-md-4">
-																	<label class="form-label"
-																		for="nuevaSedeInputDepartamento2">Departamento</label>
-																	<select class="form-select select2"
-																		id="nuevaSedeInputDepartamento2">
-																		<option>Seleccione</option>
-																		<option>Arequipa</option>
-																		<option>Lima</option>
-																		<option>Tacna</option>
-																	</select>
-																</div>
-																<div class="form-group col-md-4">
-																	<label class="form-label"
-																		for="nuevaSedeInputProvincia2">Provincia</label>
-																	<select class="form-select select2"
-																		id="nuevaSedeInputProvincia2">
-																		<option>Seleccione</option>
-																		<option>Arequipa</option>
-																		<option>Lima</option>
-																		<option>Tacna</option>
-																	</select>
-																</div>
-																<div class="form-group col-md-4">
-																	<label class="form-label"
-																		for="nuevaSedeInputDistrito2">Distrito</label>
-																	<select class="form-select select2"
-																		id="nuevaSedeInputDistrito2">
-																		<option>Seleccione</option>
-																		<option>Breña</option>
-																		<option>Lince</option>
-																		<option>Magdalena</option>
-																		<option>Miraflores</option>
-																	</select>
-																</div>
-															</div>
-
-															<div class="form-group">
-																<label for="nuevaSedeInputDireccion2"
-																	class="form-label">Dirección</label>
-																<input type="text" class="form-control"
-																	id="nuevaSedeInputDireccion2">
-															</div>
-
-															<div class="form-check form-switch marginBottom-1">
-																<input class="form-check-input" type="checkbox"
-																	role="switch" id="switchCheckSedePrincipal2">
-																<label class="form-check-label"
-																	for="switchCheckSedePrincipal2">Sede
-																	Principal</label>
-															</div>
-
-															<button type="button" name="button"
-																class="btn button-danger" data-bs-toggle="modal"
-																data-bs-target="#modalEliminarSede">
-																Eliminar Sede
-															</button>
-														</form>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- end accordion sedes -->
 
 										<div class="card-footer">
 											<button type="button" name="button"

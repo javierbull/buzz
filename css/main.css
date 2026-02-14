@@ -1165,7 +1165,7 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .accordion-body {
-  background-color: var(--white);
+  background-color: var(--gray-light);
 }
 
 .accordion-checkbox .accordion-header .form-check {
@@ -1512,6 +1512,13 @@ div.dataTables_wrapper div.dataTables_info {
   display: flex;
   justify-content: space-between;
 }
+
+.form-group-dominio {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
 /* END EMPRESAS */
 
 /* DICHA CANALES DE ATENCIÓN */
@@ -1696,7 +1703,7 @@ div.dataTables_wrapper div.dataTables_info {
   margin-bottom: .5rem;
 }
 
-#comunicadoNuevo-PruebaEnvio {
+#comunicadoNuevo-PruebaEnvio, #containerConvenioPlataforma1 {
   display: none;
 }
 

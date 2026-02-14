@@ -112,7 +112,6 @@ $(document).ready(function () {
   // MOSTRAR FICHA GRUPO EMPRESARIAL
   $('#checkMostrarFichaGrupo').on('change', function () {
 
-    // Opción A: Deslizar (Slide)
     if ($(this).is(':checked')) {
       $('#fichaGrupoEmpresarial').slideDown(); // Muestra suavemente
     } else {
@@ -121,6 +120,18 @@ $(document).ready(function () {
 
   });
   // END MOSTRAR FICHA GRUPO EMPRESARIAL
+
+  // MOSTRAR CONVENIOS 
+  $('#checkPlataformaConvenio1').on('change', function () {
+
+    if ($(this).is(':checked')) {
+      $('#containerConvenioPlataforma1').slideDown(); // Muestra suavemente
+    } else {
+      $('#containerConvenioPlataforma1').slideUp();   // Oculta suavemente
+    }
+
+  });
+  // END MOSTRAR CONVENIOS
 
   // Datatables
   // $(document).ready(function () {
