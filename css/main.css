@@ -1164,10 +1164,6 @@ div.dataTables_wrapper div.dataTables_info {
   align-items: center;
 }
 
-.accordion-body {
-  background-color: var(--gray-light);
-}
-
 .accordion-checkbox .accordion-header .form-check {
   /* background-color: lavender; */
   padding: 1rem 1.25rem;
@@ -1240,6 +1236,40 @@ div.dataTables_wrapper div.dataTables_info {
   border-color: var(--dark);
   outline: 0;
   box-shadow: 0 0 0 1px var(--gray);
+  background-color: var(--info-light);
+}
+
+.accordion-body {
+  background-color: var(--gray-light);
+}
+
+.accordion-item {
+  background-color: var(--white);
+  border: 1px solid var(--gray-medium);
+}
+
+.accordion-item:first-of-type {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: calc(0.5rem - 1px);
+  border-top-right-radius: calc(0.5rem - 1px);
+}
+.accordion-item:not(:first-of-type) {
+  border-top: 0;
+}
+.accordion-item:last-of-type {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: calc(0.5rem - 1px);
+  border-bottom-left-radius: calc(0.5rem - 1px);
+}
+.accordion-item:last-of-type .accordion-collapse {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
 }
 /* EN ACCORDION */
 
