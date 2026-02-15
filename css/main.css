@@ -1566,6 +1566,28 @@ div.dataTables_wrapper div.dataTables_info {
   -ms-border-radius: 2.5rem;
   -o-border-radius: 2.5rem;
 }
+
+.card-empresa-canal {
+  border: solid 1px var(--gray-medium);
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.card-empresa-canal__header {
+  background-color: var(--white);
+  padding: 1rem 1.25rem;
+  border-bottom: solid 1px var(--gray-medium);
+}
+
+.card-empresa-canal__body {
+  background-color: var(--gray-light);
+  padding: 1rem 1.25rem;
+}
 /* END FICHA CANALES DE ATENCIÓN */
 
 /* ASIGNACION DE VALES */
