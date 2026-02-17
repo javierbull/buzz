@@ -3091,7 +3091,7 @@
 															</div>
 															<div class="container-actions-sede">
 																<button class="btn button-danger button-icon-left"
-																	type="button">
+																	type="button" data-bs-toggle="modal" data-bs-target="#modalEliminarSede">
 																	<span class="material-icons-outlined">
 																		delete
 																	</span>
@@ -3333,7 +3333,7 @@
 															</div>
 															<div class="container-actions-sede">
 																<button class="btn button-danger button-icon-left"
-																	type="button">
+																	type="button" data-bs-toggle="modal" data-bs-target="#modalEliminarSede">
 																	<span class="material-icons-outlined">
 																		delete
 																	</span>
@@ -3352,7 +3352,7 @@
 															</button>
 
 															<button class="btn button-danger button-icon-left"
-																type="button">
+																type="button" data-bs-toggle="modal" data-bs-target="#modalEliminarEmpresa">
 																<span class="material-icons-outlined">
 																	delete
 																</span>
@@ -4651,7 +4651,7 @@
 															</div>
 															<div class="container-actions-sede">
 																<button class="btn button-danger button-icon-left"
-																	type="button">
+																	type="button" data-bs-toggle="modal" data-bs-target="#modalEliminarContacto">
 																	<span class="material-icons-outlined">
 																		delete
 																	</span>
@@ -4855,7 +4855,7 @@
 															</div>
 															<div class="container-actions-sede">
 																<button class="btn button-danger button-icon-left"
-																	type="button">
+																	type="button" data-bs-toggle="modal" data-bs-target="#modalEliminarContacto">
 																	<span class="material-icons-outlined">
 																		delete
 																	</span>
@@ -4884,7 +4884,7 @@
 															<img src="img/logos/plazaVea.png" alt="Intercorp"
 																class="accordion-logo">
 														</div>
-														Interbank
+														Plaza Vea
 													</button>
 												</h2>
 												<div id="collapseThreeNuevoContacto" class="accordion-collapse collapse"
@@ -5060,7 +5060,7 @@
 															</div>
 															<div class="container-actions-sede">
 																<button class="btn button-danger button-icon-left"
-																	type="button">
+																	type="button" data-bs-toggle="modal" data-bs-target="#modalEliminarContacto">
 																	<span class="material-icons-outlined">
 																		delete
 																	</span>
@@ -10540,25 +10540,6 @@
 		</div>
 	</div>
 
-	<div class="modal fade" id="modalEliminarContacto" tabindex="-1" aria-labelledby="exampleModalLabel"
-		aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Eliminar Contacto</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
-					¿Desea eliminar el contacto?
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
-					<button type="button" class="btn button-danger">Eliminar</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
 	<div class="modal fade" id="modalAgregarContacto" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -11092,6 +11073,66 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn button-primary" data-bs-dismiss="modal">Entendido</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalEliminarContacto" aria-labelledby="modalEliminarContacto" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalEliminarContacto">Eliminar contacto</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>
+						¿Está seguro de eliminar este contacto?
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-danger" data-bs-dismiss="modal">Eliminar Contacto</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalEliminarSede" aria-labelledby="modalEliminarSede" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalEliminarSede">Eliminar sede</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>
+						¿Está seguro de eliminar esta sede?
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-danger" data-bs-dismiss="modal">Eliminar Sede</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalEliminarEmpresa" aria-labelledby="modalEliminarEmpresa" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalEliminarEmpresa">Eliminar empresa</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>
+						¿Está seguro de eliminar esta empresa?
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-danger" data-bs-dismiss="modal">Eliminar Empresa</button>
 				</div>
 			</div>
 		</div>
