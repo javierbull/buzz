@@ -68,6 +68,20 @@
 				</li>
 				<li class="item-sidebar">
 					<button class="btn btn-toggle collapsed btn-icon-sidebar" data-bs-toggle="collapse"
+						data-bs-target="#inventario-collapse" aria-expanded="true">
+						Inventario
+						<span class="material-icons-outlined">
+							expand_more
+						</span>
+					</button>
+					<div class="collapse" id="inventario-collapse">
+						<ul class="btn-toggle-nav sidebar-list-collapse">
+							<li><a href="#" class="item-collapse rounded showInventarioCupones">Cupones</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="item-sidebar">
+					<button class="btn btn-toggle collapsed btn-icon-sidebar" data-bs-toggle="collapse"
 						data-bs-target="#admin-collapse" aria-expanded="true">
 						Administración (Pefil Ejecutivo)
 						<span class="material-icons-outlined">
@@ -409,6 +423,7 @@
 			</div>
 			<!-- END PRUEBAS -->
 
+			<!-- DASHBOARD -->
 			<div class="panel active-panel" id="dashboard-panel">
 				<div class="header-panel">
 					<h1>Dashboard</h1>
@@ -434,6 +449,85 @@
 					</div>
 				</div>
 			</div>
+			<!-- END DASHBOARD -->
+
+			<!-- INVENTARIO -->
+			<div class="panel" id="cupones-panel">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="action-btns">
+							<button type="button" name="button" class="btn button-outline button-icon-left"
+								data-bs-toggle="modal" data-bs-target="#modalFiltrarEmpresas">
+								<span class="material-icons-outlined">
+									filter_list
+								</span>
+								Filtrar
+							</button>
+
+							<button type="button" name="button"
+								class="btn button-primary showCrearCupon button-icon-left">
+								<span class="material-icons-outlined">
+									add
+								</span>
+								Nuevo
+							</button>
+						</div>
+					</div>
+
+					<div class="col-lg-12">
+						<div class="card-dtable">
+							<div class="card-dtable-header">
+								<div class="title-dtable">
+									Cupones
+								</div>
+								<button type="button" name="button" class="btn button-outline button-icon-left d-none">
+									<span class="material-icons-outlined">
+										download
+									</span>
+									Generar reporte
+								</button>
+							</div>
+							<table class="table dtable table-hover">
+								<thead>
+									<tr>
+										<th scope="col">Nombre</th>
+										<th scope="col">Vigencia</th>
+										<th scope="col">Proveedor</th>
+										<th scope="col">Marca</th>
+										<th scope="col">Categoría</th>
+										<th scope="col">Subcategoría</th>
+										<th scope="col">Segmento</th>
+										<th scope="col">Acciones</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Hot wings</td>
+										<td>10/10/2026 - 10/12/2026</td>
+										<td>Delosi</td>
+										<td>KFC</td>
+										<td>Restaurantes</td>
+										<td>KFC</td>
+										<td>Nombre segmento</td>
+										<td>
+											<div class="action-cell-btns">
+												<button type="button" name="button"
+													class="btn button-icon button-icon-sm">
+													<span class="material-icons-outlined" data-bs-toggle="tooltip"
+														data-bs-placement="left" title="Editar">
+														edit
+													</span>
+												</button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END INVENTARIO -->
 
 			<!-- ADMINISTRACIÓN -->
 			<div class="panel" id="usuarios-panel">
@@ -2454,8 +2548,6 @@
 					</div>
 				</div>
 			</div>
-
-
 			<!-- END OPERACIONES -->
 
 			<!-- ATENCIÓN AL CLIENTE -->
@@ -6977,6 +7069,8 @@
 				</div>
 			</div>
 			<!-- END COMUNICADOS -->
+
+
 		</div>
 		<!-- End main panel -->
 
