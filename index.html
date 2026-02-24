@@ -531,8 +531,8 @@
 			<div class="panel" id="crearCupon-panel">
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
-						<li class="breadcrumb-item showInventarioCupones"><a href="#"
-								class="button-link">Inventario</a></li>
+						<li class="breadcrumb-item showInventarioCupones"><a href="#" class="button-link">Inventario</a>
+						</li>
 						<li class="breadcrumb-item active" aria-current="page">Nuevo cupón</li>
 					</ol>
 				</nav>
@@ -548,9 +548,9 @@
 							<div class="card-body">
 								<nav>
 									<div class="nav nav-tabs nav-tabs-items-4" id="nav-tab" role="tablist">
-										<button class="nav-link active" id="nav-crearCuponDatos-tab" data-bs-toggle="tab"
-											data-bs-target="#nav-crearCuponDatos" type="button" role="tab"
-											aria-controls="nav-crearCuponDatos" aria-selected="true">
+										<button class="nav-link active" id="nav-crearCuponDatos-tab"
+											data-bs-toggle="tab" data-bs-target="#nav-crearCuponDatos" type="button"
+											role="tab" aria-controls="nav-crearCuponDatos" aria-selected="true">
 											Datos
 										</button>
 										<button class="nav-link" id="nav-crearCuponDescripcion-tab" data-bs-toggle="tab"
@@ -558,14 +558,16 @@
 											aria-controls="nav-crearCuponDescripcion" aria-selected="false">
 											Descripción
 										</button>
-										<button class="nav-link" id="nav-crearCuponConfiguracion-tab" data-bs-toggle="tab"
-											data-bs-target="#nav-crearCuponConfiguracion" type="button" role="tab"
-											aria-controls="nav-crearCuponConfiguracion" aria-selected="false">
+										<button class="nav-link" id="nav-crearCuponConfiguracion-tab"
+											data-bs-toggle="tab" data-bs-target="#nav-crearCuponConfiguracion"
+											type="button" role="tab" aria-controls="nav-crearCuponConfiguracion"
+											aria-selected="false">
 											Configuración
 										</button>
-										<button class="nav-link" id="nav-crearCuponConfirmacion-tab" data-bs-toggle="tab"
-											data-bs-target="#nav-crearCuponConfirmacion" type="button" role="tab"
-											aria-controls="nav-crearCuponConfirmacion" aria-selected="false">
+										<button class="nav-link" id="nav-crearCuponConfirmacion-tab"
+											data-bs-toggle="tab" data-bs-target="#nav-crearCuponConfirmacion"
+											type="button" role="tab" aria-controls="nav-crearCuponConfirmacion"
+											aria-selected="false">
 											Confirmación
 										</button>
 									</div>
@@ -576,7 +578,7 @@
 
 										<div class="container-cupon">
 											<div class="container-cupon__preliminar">
-												<h2>Cupón</h2>
+												<h2 class="cupon-title">Cupón</h2>
 												<div class="card-cupon">
 													<div class="card-cupon__img">
 														<img src="img/logos/default-img.jpg" alt="">
@@ -592,6 +594,42 @@
 												</div>
 											</div>
 											<div class="container-cupon__form">
+												<h2 class="cupon-title">Crear cupón</h2>
+												<div class="wrap-img-preview">
+													<div class="imageWrapper">
+														<img class="image-preview"
+															id="nueva-empresa-preview-logo-empresa"
+															src="img/logos/default-img.jpg">
+													</div>
+
+													<div class="wrap-label-file-upload">
+														<button class="file-upload btn button-outline">
+															<input type="file" class="file-input-image"
+																id="nueva-empresa-input-preview-img">Agregar
+															imágen
+														</button>
+														<p>
+															Formatos: JPG, PNG <br>
+															Tamaño recomendado: <br>
+															600px * 450px
+														</p>
+													</div>
+												</div>
+
+												<div class="form-group">
+													<label for="nombreCupon" class="form-label">
+														Nombre del beneficio
+													</label>
+													<input type="text" class="form-control" id="nombreCupon">
+												</div>
+
+												<div class="mb-3">
+													<label for="descripcionCupon" class="form-label">
+														Escriba una breve descripción
+													</label>
+													<textarea class="form-control" id="descripcionCupon"
+														rows="3"></textarea>
+												</div>
 
 											</div>
 										</div>
@@ -621,7 +659,7 @@
 
 									<div class="tab-pane fade" id="nav-crearCuponConfiguracion" role="tabpanel"
 										aria-labelledby="nav-crearCuponConfiguracion-tab">
-										
+
 										Configuración
 
 										<div class="card-footer">
@@ -3306,7 +3344,8 @@
 															</div>
 															<div class="container-actions-sede">
 																<button class="btn button-danger button-icon-left"
-																	type="button" data-bs-toggle="modal" data-bs-target="#modalEliminarSede">
+																	type="button" data-bs-toggle="modal"
+																	data-bs-target="#modalEliminarSede">
 																	<span class="material-icons-outlined">
 																		delete
 																	</span>
@@ -3548,7 +3587,8 @@
 															</div>
 															<div class="container-actions-sede">
 																<button class="btn button-danger button-icon-left"
-																	type="button" data-bs-toggle="modal" data-bs-target="#modalEliminarSede">
+																	type="button" data-bs-toggle="modal"
+																	data-bs-target="#modalEliminarSede">
 																	<span class="material-icons-outlined">
 																		delete
 																	</span>
@@ -3567,7 +3607,8 @@
 															</button>
 
 															<button class="btn button-danger button-icon-left"
-																type="button" data-bs-toggle="modal" data-bs-target="#modalEliminarEmpresa">
+																type="button" data-bs-toggle="modal"
+																data-bs-target="#modalEliminarEmpresa">
 																<span class="material-icons-outlined">
 																	delete
 																</span>
@@ -4866,7 +4907,8 @@
 															</div>
 															<div class="container-actions-sede">
 																<button class="btn button-danger button-icon-left"
-																	type="button" data-bs-toggle="modal" data-bs-target="#modalEliminarContacto">
+																	type="button" data-bs-toggle="modal"
+																	data-bs-target="#modalEliminarContacto">
 																	<span class="material-icons-outlined">
 																		delete
 																	</span>
@@ -5070,7 +5112,8 @@
 															</div>
 															<div class="container-actions-sede">
 																<button class="btn button-danger button-icon-left"
-																	type="button" data-bs-toggle="modal" data-bs-target="#modalEliminarContacto">
+																	type="button" data-bs-toggle="modal"
+																	data-bs-target="#modalEliminarContacto">
 																	<span class="material-icons-outlined">
 																		delete
 																	</span>
@@ -5275,7 +5318,8 @@
 															</div>
 															<div class="container-actions-sede">
 																<button class="btn button-danger button-icon-left"
-																	type="button" data-bs-toggle="modal" data-bs-target="#modalEliminarContacto">
+																	type="button" data-bs-toggle="modal"
+																	data-bs-target="#modalEliminarContacto">
 																	<span class="material-icons-outlined">
 																		delete
 																	</span>
