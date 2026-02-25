@@ -1923,7 +1923,19 @@ div.dataTables_wrapper div.dataTables_info {
 }
 
 .cupon-title {
-  font-size: 1.25rem;
+  font-size: 1rem;
+}
+
+.container-step-cupon {
+  /* background-color: pink; */
+  width: 640px;
+  margin: auto;
+}
+
+.form-group-description p {
+  /* color: var(--gray); */
+  font-size: .875rem;
+  margin-bottom: .5rem;
 }
 
 /* Ens cupones */
