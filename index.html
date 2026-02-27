@@ -742,6 +742,122 @@
 														</span>
 													</button>
 												</div>
+
+												<div class="cuponConfiguracion-row">
+													<div class="form-group col">
+														<label class="form-label"
+															for="configuracionCuponMarca">Marca</label>
+														<select class="form-select select2"
+															id="configuracionCuponMarca" tabindex="0"
+															aria-hidden="false">
+															<option>Seleccione</option>
+															<option>KFC</option>
+															<option>Starbucks</option>
+															<option>Pizza Hut</option>
+														</select>
+													</div>
+
+													<button type="button" name="button" class="btn button-icon-outline"
+														data-bs-toggle="modal" data-bs-target="#modalNuevoMarca">
+														<span class="material-icons-outlined">
+															add
+														</span>
+													</button>
+
+													<button type="button" name="button" class="btn button-icon-outline"
+														data-bs-toggle="modal" data-bs-target="#modalEditarMarca">
+														<span class="material-icons-outlined">
+															edit
+														</span>
+													</button>
+												</div>
+
+												<div class="cuponConfiguracion-row">
+													<div class="form-group col">
+														<label class="form-label"
+															for="configuracionCuponCategoria">Categoría</label>
+														<select class="form-select select2"
+															id="configuracionCuponCategoria" tabindex="0"
+															aria-hidden="false">
+															<option>Seleccione</option>
+															<option>Categoría 1</option>
+															<option>Categoría 2</option>
+															<option>Categoría 3</option>
+														</select>
+													</div>
+
+													<button type="button" name="button" class="btn button-icon-outline"
+														data-bs-toggle="modal" data-bs-target="#modalNuevoCategoria">
+														<span class="material-icons-outlined">
+															add
+														</span>
+													</button>
+
+													<button type="button" name="button" class="btn button-icon-outline"
+														data-bs-toggle="modal" data-bs-target="#modalEditarCategoria">
+														<span class="material-icons-outlined">
+															edit
+														</span>
+													</button>
+												</div>
+
+												<div class="cuponConfiguracion-row">
+													<div class="form-group col">
+														<label class="form-label"
+															for="configuracionCuponSubcategoria">Subcategoría</label>
+														<select class="form-select select2"
+															id="configuracionCuponSubcategoria" tabindex="0"
+															aria-hidden="false">
+															<option>Seleccione</option>
+															<option>Subcategoría 1</option>
+															<option>Subcategoría 2</option>
+															<option>Subcategoría 3</option>
+														</select>
+													</div>
+
+													<button type="button" name="button" class="btn button-icon-outline"
+														data-bs-toggle="modal" data-bs-target="#modalNuevoSubcategoria">
+														<span class="material-icons-outlined">
+															add
+														</span>
+													</button>
+
+													<button type="button" name="button" class="btn button-icon-outline"
+														data-bs-toggle="modal" data-bs-target="#modalEditarSubcategoria">
+														<span class="material-icons-outlined">
+															edit
+														</span>
+													</button>
+												</div>
+
+												<div class="cuponConfiguracion-row">
+													<div class="form-group col">
+														<label class="form-label"
+															for="configuracionCuponSegmento">Segmento</label>
+														<select class="form-select select2"
+															id="configuracionCuponSegmento" tabindex="0"
+															aria-hidden="false">
+															<option>Seleccione</option>
+															<option>Segmento 1</option>
+															<option>Segmento 2</option>
+															<option>Segmento 3</option>
+														</select>
+													</div>
+
+													<button type="button" name="button" class="btn button-icon-outline"
+														data-bs-toggle="modal" data-bs-target="#modalNuevoSegmento">
+														<span class="material-icons-outlined">
+															add
+														</span>
+													</button>
+
+													<button type="button" name="button" class="btn button-icon-outline"
+														data-bs-toggle="modal" data-bs-target="#modalEditarSegmento">
+														<span class="material-icons-outlined">
+															edit
+														</span>
+													</button>
+												</div>
 											</form>
 										</div>
 
@@ -11482,20 +11598,245 @@
 		</div>
 	</div>
 
-	<div class="modal fade" id="modalNuevoProveedor" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="modalNuevoProveedor" aria-labelledby="modalNuevoProveedor" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Agregar Proveedor</h5>
+					<h5 class="modal-title" id="modalNuevoProveedor">Agregar Proveedor</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
 					<form>
 						<div class="form-group">
 							<label for="nuevoProveedor" class="form-label">
-								Nombre del Proveedor
+								Nombre del proveedor
 							</label>
 							<input type="text" class="form-control" id="nuevoProveedor">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Guardar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalEditarProveedor" aria-labelledby="modalEditarProveedor" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalEditarProveedor">Editar Proveedor</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="editarProveedor" class="form-label">
+								Nombre del proveedor
+							</label>
+							<input type="text" class="form-control" id="editarProveedor">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Guardar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalNuevoMarca" aria-labelledby="modalNuevoMarca" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalNuevoMarca">Agregar Marca</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="nuevoMarca" class="form-label">
+								Nombre de la marca
+							</label>
+							<input type="text" class="form-control" id="nuevoMarca">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Guardar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalEditarMarca" aria-labelledby="modalEditarMarca" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalEditarMarca">Editar Marca</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="editarMarca" class="form-label">
+								Nombre de la marca
+							</label>
+							<input type="text" class="form-control" id="editarMarca">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Guardar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalNuevoCategoria" aria-labelledby="modalNuevoCategoria" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalNuevoCategoria">Agregar Categoría</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="nuevoProveedor" class="form-label">
+								Nombre de la categoría
+							</label>
+							<input type="text" class="form-control" id="nuevoProveedor">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Guardar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalEditarCategoria" aria-labelledby="modalEditarCategoria" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalEditarCategoria">Editar Categoría</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="editarCategoria" class="form-label">
+								Nombre de la categoría
+							</label>
+							<input type="text" class="form-control" id="editarCategoria">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Guardar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalNuevoSubcategoria" aria-labelledby="modalNuevoSubcategoria" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalNuevoSubcategoria">Agregar Subcategoría</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="nuevoSubcategoria" class="form-label">
+								Nombre de la subcategoría
+							</label>
+							<input type="text" class="form-control" id="nuevoSubcategoria">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Guardar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalEditarSubcategoria" aria-labelledby="modalEditarSubcategoria" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalEditarSubcategoria">Editar Subcategoría</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="editarSubcategoria" class="form-label">
+								Nombre de la subcategoría
+							</label>
+							<input type="text" class="form-control" id="editarSubcategoria">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Guardar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalNuevoSegmento" aria-labelledby="modalNuevoSegmento" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalNuevoSegmento">Agregar Segmento</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="nuevoSegmento" class="form-label">
+								Nombre de la segmento
+							</label>
+							<input type="text" class="form-control" id="nuevoSegmento">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn button-ghost" data-bs-dismiss="modal">Cerrar</button>
+					<button type="button" class="btn button-primary">Guardar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalEditarSegmento" aria-labelledby="modalEditarSegmento" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modalEditarSegmento">Editar Segmento</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="editarSegmento" class="form-label">
+								Nombre del segmento
+							</label>
+							<input type="text" class="form-control" id="editarSegmento">
 						</div>
 					</form>
 				</div>
