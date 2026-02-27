@@ -510,7 +510,7 @@ h4 {
 }
 
 .button-icon-outline:hover {
-  color: var(--white);
+  color: var(--dark);
   background-color: var(--gray-light);
 }
 
@@ -1938,5 +1938,16 @@ div.dataTables_wrapper div.dataTables_info {
   margin-bottom: .5rem;
 }
 
-/* Ens cupones */
+.cuponConfiguracion-row {
+  /* background-color: pink; */
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+}
+
+.cuponConfiguracion-row .btn {
+  margin-bottom: 1rem;
+}
+
+/* End cupones */
 /* END INVENTARIO */
