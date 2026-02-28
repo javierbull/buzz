@@ -816,7 +816,7 @@ video {
 }
 
 .active-item-collapse {
-  background-color: var(--gray-light);
+  background-color: var(--primary-light);
   font-weight: 500;
 }
 
@@ -845,7 +845,7 @@ video {
 }
 
 .item-collapse:hover {
-  background-color: var(--gray-light);
+  background-color: var(--gray-medium);
   color: var(--dark-light);
 }
 
