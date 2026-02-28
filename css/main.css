@@ -1953,5 +1953,60 @@ div.dataTables_wrapper div.dataTables_info {
   display: none;
 }
 
+.contenedor-imagenes-producto {
+  background-color: lavender;
+}
+
+.img-producto {
+  width: 8rem;
+  height: 8rem;
+  overflow: hidden;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  border: solid 1px var(--gray-medium);
+  position: relative;
+}
+
+.img-producto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.btn-delete-img {
+  background-color: var(--danger);
+  padding: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.btn-delete-img span {
+  font-size: 1rem;
+  color: var(--white);
+}
+
+.btn-delete-img:hover {
+  background-color: var(--danger-dark);
+}
+
+.btn-delete-img:focus {
+  box-shadow: var(--danger-light);
+}
+
 /* End cupones */
 /* END INVENTARIO */
