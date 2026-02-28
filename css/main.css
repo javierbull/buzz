@@ -2033,5 +2033,16 @@ div.dataTables_wrapper div.dataTables_info {
   border: solid 1px var(--info-dark);
 }
 
+.bloque-confirmacionCupon p {
+  color: var(--dark-light);
+}
+
+.title-bloque {
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+
+
+
 /* End cupones */
 /* END INVENTARIO */
