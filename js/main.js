@@ -151,6 +151,16 @@ $(document).ready(function () {
     }
 
   });
+
+  $('#checkCuponDescargaPdfEdit').on('change', function () {
+
+    if ($(this).is(':checked')) {
+      $('#contenedorDescargaPdfEdit').slideDown(); // Muestra suavemente
+    } else {
+      $('#contenedorDescargaPdfEdit').slideUp();   // Oculta suavemente
+    }
+
+  });
   // END MOSTRAR CONVENIOS
 
   // Datatables
@@ -235,6 +245,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showAdmninistracionUsuarios").click(function () {
@@ -269,6 +280,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showCrearUsuarios").click(function () {
@@ -303,6 +315,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showReporteStockDisponible").click(function () {
@@ -337,6 +350,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $("#showDetalleStock").click(function () {
@@ -371,6 +385,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showOperacionesPedidos").click(function () {
@@ -405,6 +420,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $("#showDetallePedido").click(function () {
@@ -439,6 +455,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showOperacionesEnviosPendientes").click(function () {
@@ -473,6 +490,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showOperacionesEnviosRealizados").click(function () {
@@ -507,6 +525,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showReportePc").click(function () {
@@ -541,6 +560,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showPruebas").click(function () {
@@ -575,6 +595,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showDetalleStock").click(function () {
@@ -609,6 +630,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showSupportReenvios").click(function () {
@@ -643,6 +665,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showSupportClientes").click(function () {
@@ -677,6 +700,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showOperacionesProgInHouse").click(function () {
@@ -711,6 +735,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showNuevaProgInhouse").click(function () {
@@ -745,6 +770,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showOperacionesProgPlataforma").click(function () {
@@ -779,6 +805,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showNuevaProgPlataforma").click(function () {
@@ -813,6 +840,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showOperacionesProgInHousePromotoria").click(function () {
@@ -847,6 +875,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showOperacionesProgInHouseAdmin").click(function () {
@@ -881,6 +910,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showOperacionesSolicitudComprobante").click(function () {
@@ -915,6 +945,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showNuevaSolicitudComprobante").click(function () {
@@ -949,6 +980,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showAdmninistracionEmpresas").click(function () {
@@ -983,6 +1015,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showCrearEmpresa").click(function () {
@@ -1017,6 +1050,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showAdmninistracionEmpresasAdmin").click(function () {
@@ -1051,6 +1085,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showEmpresaAdmin").click(function () {
@@ -1085,6 +1120,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showEditarEmpresa").click(function () {
@@ -1119,6 +1155,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showAsignarVales").click(function () {
@@ -1153,6 +1190,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showComunicados").click(function () {
@@ -1187,6 +1225,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-panel").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showComunicadoNuevo").click(function () {
@@ -1223,6 +1262,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-PruebaEnvio").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showInventarioCupones").click(function () {
@@ -1259,6 +1299,7 @@ $(document).ready(function () {
     $("#comunicadoNuevo-PruebaEnvio").hide();
     $("#cupones-panel").show();
     $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").hide();
   });
 
   $(".showCrearCupon").click(function () {
@@ -1295,6 +1336,44 @@ $(document).ready(function () {
     $("#comunicadoNuevo-PruebaEnvio").hide();
     $("#cupones-panel").hide();
     $("#crearCupon-panel").show();
+    $("#editarCupon-panel").hide();
+  });
+
+    $(".showEditarCupon").click(function () {
+    $("#dashboard-panel").hide();
+    $("#usuarios-panel").hide();
+    $("#crearUsuarios-panel").hide();
+    $("#reportesStock-panel").hide();
+    $("#detalleStock-panel").hide();
+    $("#pedidos-panel").hide();
+    $("#detallePedido-panel").hide();
+    $("#enviosPendientes-panel").hide();
+    $("#enviosRealizados-panel").hide();
+    $("#reportePc-panel").hide();
+    $("#pruebas-panel").hide();
+    $("#reenviosClientes-panel").hide();
+    $("#datosClientes-panel").hide();
+    $("#progInhouse-panel").hide();
+    $("#crearProgInhouse-panel").hide();
+    $("#progPlataforma-panel").hide();
+    $("#crearProgPlataforma-panel").hide();
+    $("#progInhousePromotoria-panel").hide();
+    $("#progInhouseAdmin-panel").hide();
+    $("#solicitudComprobante-panel").hide();
+    $("#nuevaSolicitudComprobante-panel").hide();
+    $("#empresas-panel").hide();
+    $("#crearEmpresa-panel").hide();
+    $("#empresas-panel-admin").hide();
+    $("#detalleEmpresa-panel-admin").hide();
+    $("#editarEmpresa-panel").hide();
+    $("#asignarVales-panel").hide();
+    $("#comunicados-panel").hide();
+    $("#comunicadoNuevo-panel").hide();
+    $("#comunicadoNuevo-crear").hide();
+    $("#comunicadoNuevo-PruebaEnvio").hide();
+    $("#cupones-panel").hide();
+    $("#crearCupon-panel").hide();
+    $("#editarCupon-panel").show();
   });
   // END SHOW HIDE PANELS
 

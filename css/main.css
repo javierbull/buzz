@@ -1954,7 +1954,7 @@ div.dataTables_wrapper div.dataTables_info {
   margin-bottom: 1rem;
 }
 
-#contenedorDescargaPdf {
+#contenedorDescargaPdf, #contenedorDescargaPdfEdit {
   display: none;
 }
 
@@ -1963,6 +1963,7 @@ div.dataTables_wrapper div.dataTables_info {
   display: flex;
   gap: .5rem;
   flex-wrap: wrap;
+  margin-bottom: 1rem;
 }
 
 .img-producto {

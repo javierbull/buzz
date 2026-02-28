@@ -512,7 +512,7 @@
 										<td>
 											<div class="action-cell-btns">
 												<button type="button" name="button"
-													class="btn button-icon button-icon-sm">
+													class="btn button-icon button-icon-sm showEditarCupon">
 													<span class="material-icons-outlined" data-bs-toggle="tooltip"
 														data-bs-placement="left" title="Editar">
 														edit
@@ -942,7 +942,7 @@
 
 									<div class="tab-pane fade" id="nav-crearCuponConfirmacion" role="tabpanel"
 										aria-labelledby="nav-crearCuponConfirmacion-tab">
-										
+
 										<div class="container-cupon">
 											<div class="container-cupon__preliminar">
 												<h2 class="cupon-title">Cupón</h2>
@@ -984,7 +984,9 @@
 												<div class="bloque-confirmacionCupon">
 													<h6 class="title-bloque">Descripción completa</h6>
 													<p>
-														Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nulla aut dicta soluta et officia, enim doloremque eveniet aliquam amet!
+														Lorem ipsum dolor sit amet consectetur, adipisicing elit. A
+														nulla aut dicta soluta et officia, enim doloremque eveniet
+														aliquam amet!
 													</p>
 												</div>
 
@@ -1019,7 +1021,9 @@
 												<div class="bloque-confirmacionCupon">
 													<h6 class="title-bloque">Instrucciones de canje</h6>
 													<p>
-														Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt placeat amet impedit, labore cupiditate nostrum cum sequi quam ullam rem.
+														Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
+														placeat amet impedit, labore cupiditate nostrum cum sequi quam
+														ullam rem.
 													</p>
 												</div>
 
@@ -1076,6 +1080,346 @@
 										</div>
 									</div>
 								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="panel" id="editarCupon-panel">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item showInventarioCupones"><a href="#" class="button-link">Inventario</a>
+						</li>
+						<li class="breadcrumb-item active" aria-current="page">Editar cupón</li>
+					</ol>
+				</nav>
+
+				<div class="row">
+					<div class="col-6 mx-auto">
+						<div class="card">
+							<div class="card-header">
+								<h2>
+									Editar cupón
+								</h2>
+							</div>
+							<div class="card-body">
+								<div class="mb-3">
+									<h2 class="cupon-title">1. Datos</h2>
+									<p class="descripcion">
+										Formato recomendado: JPG, PNG <br>
+										Tamaño recomendado: 480px * 480px
+									</p>
+
+									<div class="contenedor-imagenes-producto">
+										<div class="img-producto">
+											<img src="img/productos/kfc.jpg" alt="">
+											<button type="button" name="button" class="btn btn-delete-img">
+												<span class="material-icons-outlined">
+													close
+												</span>
+											</button>
+										</div>
+
+										<div class="img-producto">
+											<img src="img/productos/kfc.jpg" alt="">
+											<button type="button" name="button" class="btn btn-delete-img">
+												<span class="material-icons-outlined">
+													close
+												</span>
+											</button>
+										</div>
+
+										<div class="img-producto">
+											<img src="img/productos/kfc.jpg" alt="">
+											<button type="button" name="button" class="btn btn-delete-img">
+												<span class="material-icons-outlined">
+													close
+												</span>
+											</button>
+										</div>
+
+										<div class="img-producto">
+											<img src="img/productos/kfc.jpg" alt="">
+											<button type="button" name="button" class="btn btn-delete-img">
+												<span class="material-icons-outlined">
+													close
+												</span>
+											</button>
+										</div>
+
+										<button class="btn-addImg">
+											<span class="material-icons-outlined">
+												add
+											</span>
+											Agregar imagen
+										</button>
+									</div>
+
+									<div class="form-group">
+										<label for="nombreCuponEdit" class="form-label">
+											Nombre del beneficio
+										</label>
+										<input type="text" class="form-control" id="nombreCuponEdit">
+									</div>
+
+									<div class="mb-3">
+										<label for="descripcionCuponEdit" class="form-label">
+											Escriba una breve descripción
+										</label>
+										<textarea class="form-control" id="descripcionCuponEdit" rows="3"></textarea>
+									</div>
+								</div>
+
+								<div class="mb-3">
+									<h2 class="cupon-title">2. Descripción</h2>
+									<div>
+										<div class="mb-3 form-group">
+											<label for="cuponDescripcionCompletaEdit" class="form-label">
+												Descripción completa
+											</label>
+											<p>
+												Este mensaje aparecerá una vez los colaboradores haga clic en el
+												beneficio.
+											</p>
+											<textarea class="form-control" id="cuponDescripcionCompletaEdit"
+												rows="3"></textarea>
+										</div>
+
+										<div class="mb-3 form-group">
+											<label for="message-text" class="form-label">
+												Consideraciones
+											</label>
+											<p>
+												Agrega los términos y condiciones que los colaboradores deben tener
+												en cuenta al momento de utilizar el beneficio.
+											</p>
+											<richtextarea></richtextarea>
+										</div>
+
+										<div class="row g-3">
+											<div class="form-group col-md-6">
+												<label for="nuevaEmpresaPlataformaInicioPlan1Edit"
+													class="form-label">Vigemcia Desde</label>
+												<input type="date" class="form-control"
+													id="nuevaEmpresaPlataformaInicioPlan1Edit">
+											</div>
+
+											<div class="form-group col-md-6">
+												<label for="nuevaEmpresaPlataformaFinPlan1Edit"
+													class="form-label">Vigencia
+													Hasta</label>
+												<input type="date" class="form-control"
+													id="nuevaEmpresaPlataformaFinPlan1Edit">
+											</div>
+										</div>
+
+										<div class="mb-3 form-group">
+											<label for="cuponInstruccionesCanjeEdit" class="form-label">
+												Instrucciones de canje
+											</label>
+											<p>
+												Agrega los términos y condiciones que los colaboradores deben tener
+												en cuenta al momento de utilizar el beneficio.
+											</p>
+											<textarea class="form-control" id="cuponInstruccionesCanjeEdit"
+												rows="3"></textarea>
+										</div>
+
+									</div>
+								</div>
+
+								<div class="mb-3">
+									<h2 class="cupon-title">3. Configuración</h2>
+									<div>
+										<form>
+											<div class="cuponConfiguracion-row">
+												<div class="form-group col">
+													<label class="form-label"
+														for="configuracionCuponProveedorEdit">Proveedor</label>
+													<select class="form-select select2" id="configuracionCuponProveedorEdit"
+														tabindex="0" aria-hidden="false">
+														<option>Seleccione</option>
+														<option>Delosi</option>
+														<option>Proveedor 2</option>
+														<option>Proveedor 3</option>
+													</select>
+												</div>
+
+												<button type="button" name="button" class="btn button-icon-outline"
+													data-bs-toggle="modal" data-bs-target="#modalNuevoProveedor">
+													<span class="material-icons-outlined">
+														add
+													</span>
+												</button>
+
+												<button type="button" name="button" class="btn button-icon-outline"
+													data-bs-toggle="modal" data-bs-target="#modalEditarProveedor">
+													<span class="material-icons-outlined">
+														edit
+													</span>
+												</button>
+											</div>
+
+											<div class="cuponConfiguracion-row">
+												<div class="form-group col">
+													<label class="form-label"
+														for="configuracionCuponMarcaEdit">Marca</label>
+													<select class="form-select select2" id="configuracionCuponMarcaEdit"
+														tabindex="0" aria-hidden="false">
+														<option>Seleccione</option>
+														<option>KFC</option>
+														<option>Starbucks</option>
+														<option>Pizza Hut</option>
+													</select>
+												</div>
+
+												<button type="button" name="button" class="btn button-icon-outline"
+													data-bs-toggle="modal" data-bs-target="#modalNuevoMarca">
+													<span class="material-icons-outlined">
+														add
+													</span>
+												</button>
+
+												<button type="button" name="button" class="btn button-icon-outline"
+													data-bs-toggle="modal" data-bs-target="#modalEditarMarca">
+													<span class="material-icons-outlined">
+														edit
+													</span>
+												</button>
+											</div>
+
+											<div class="cuponConfiguracion-row">
+												<div class="form-group col">
+													<label class="form-label"
+														for="configuracionCuponCategoriaEdit">Categoría</label>
+													<select class="form-select select2" id="configuracionCuponCategoriaEdit"
+														tabindex="0" aria-hidden="false">
+														<option>Seleccione</option>
+														<option>Categoría 1</option>
+														<option>Categoría 2</option>
+														<option>Categoría 3</option>
+													</select>
+												</div>
+
+												<button type="button" name="button" class="btn button-icon-outline"
+													data-bs-toggle="modal" data-bs-target="#modalNuevoCategoria">
+													<span class="material-icons-outlined">
+														add
+													</span>
+												</button>
+
+												<button type="button" name="button" class="btn button-icon-outline"
+													data-bs-toggle="modal" data-bs-target="#modalEditarCategoria">
+													<span class="material-icons-outlined">
+														edit
+													</span>
+												</button>
+											</div>
+
+											<div class="cuponConfiguracion-row">
+												<div class="form-group col">
+													<label class="form-label"
+														for="configuracionCuponSubcategoriaEdit">Subcategoría</label>
+													<select class="form-select select2"
+														id="configuracionCuponSubcategoriaEdit" tabindex="0"
+														aria-hidden="false">
+														<option>Seleccione</option>
+														<option>Subcategoría 1</option>
+														<option>Subcategoría 2</option>
+														<option>Subcategoría 3</option>
+													</select>
+												</div>
+
+												<button type="button" name="button" class="btn button-icon-outline"
+													data-bs-toggle="modal" data-bs-target="#modalNuevoSubcategoria">
+													<span class="material-icons-outlined">
+														add
+													</span>
+												</button>
+
+												<button type="button" name="button" class="btn button-icon-outline"
+													data-bs-toggle="modal" data-bs-target="#modalEditarSubcategoria">
+													<span class="material-icons-outlined">
+														edit
+													</span>
+												</button>
+											</div>
+
+											<div class="cuponConfiguracion-row">
+												<div class="form-group col">
+													<label class="form-label"
+														for="configuracionCuponSegmentoEdit">Segmento</label>
+													<select class="form-select select2" id="configuracionCuponSegmentoEdit"
+														tabindex="0" aria-hidden="false">
+														<option>Seleccione</option>
+														<option>Segmento 1</option>
+														<option>Segmento 2</option>
+														<option>Segmento 3</option>
+													</select>
+												</div>
+
+												<button type="button" name="button" class="btn button-icon-outline"
+													data-bs-toggle="modal" data-bs-target="#modalNuevoSegmento">
+													<span class="material-icons-outlined">
+														add
+													</span>
+												</button>
+
+												<button type="button" name="button" class="btn button-icon-outline"
+													data-bs-toggle="modal" data-bs-target="#modalEditarSegmento">
+													<span class="material-icons-outlined">
+														edit
+													</span>
+												</button>
+											</div>
+
+											<div class="form-check mb-2">
+												<input class="form-check-input" type="checkbox" value=""
+													id="checkCuponDescargaPdfEdit">
+												<label class="form-check-label" for="checkCuponDescargaPdfEdit">
+													Descarga PDF
+												</label>
+											</div>
+
+											<div class="contenedor-descargaPdf" id="contenedorDescargaPdfEdit">
+												<p>Frecuencia de descargas</p>
+												<div class="container-optionsSuiteType mb-3">
+													<div class="form-check form-check-inline">
+														<input class="form-check-input" type="radio"
+															name="optionFrecuenciaDescargaPdf"
+															id="inlineRadioLimiteDescarga1Edit" value="option1">
+														<label class="form-check-label"
+															for="inlineRadioLimiteDescarga1Edit">
+															Por día
+														</label>
+													</div>
+													<div class="form-check form-check-inline">
+														<input class="form-check-input" type="radio"
+															name="optionFrecuenciaDescargaPdf"
+															id="inlineRadioLimiteDescarga2Edit" value="option2" checked="">
+														<label class="form-check-label"
+															for="inlineRadioLimiteDescarga2Edit">
+															Durante la vigencia
+														</label>
+													</div>
+												</div>
+
+												<div class="form-group col-md-4">
+													<label for="limiteDescargasEdit" class="form-label">
+														Límite de descargas
+													</label>
+													<input type="number" class="form-control" id="limiteDescargasEdit">
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-footer">
+									<button type="button" name="button" class="btn button-ghost showInventarioCupones">Cerrar</button>
+									<button type="button" name="button" class="btn button-primary" data-bs-toggle="modal" data-bs-target="#modalSuccessNuevaEmpresa">Guardar</button>
 							</div>
 						</div>
 					</div>
@@ -12041,6 +12385,8 @@
 			</div>
 		</div>
 	</div>
+
+
 	<!-- Modal -->
 
 	<!-- Fin Modals -->
