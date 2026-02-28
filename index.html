@@ -747,9 +747,8 @@
 													<div class="form-group col">
 														<label class="form-label"
 															for="configuracionCuponMarca">Marca</label>
-														<select class="form-select select2"
-															id="configuracionCuponMarca" tabindex="0"
-															aria-hidden="false">
+														<select class="form-select select2" id="configuracionCuponMarca"
+															tabindex="0" aria-hidden="false">
 															<option>Seleccione</option>
 															<option>KFC</option>
 															<option>Starbucks</option>
@@ -823,7 +822,8 @@
 													</button>
 
 													<button type="button" name="button" class="btn button-icon-outline"
-														data-bs-toggle="modal" data-bs-target="#modalEditarSubcategoria">
+														data-bs-toggle="modal"
+														data-bs-target="#modalEditarSubcategoria">
 														<span class="material-icons-outlined">
 															edit
 														</span>
@@ -857,6 +857,46 @@
 															edit
 														</span>
 													</button>
+												</div>
+
+												<div class="form-check mb-2">
+													<input class="form-check-input" type="checkbox" value=""
+														id="checkCuponDescargaPdf">
+													<label class="form-check-label" for="checkCuponDescargaPdf">
+														Descarga PDF
+													</label>
+												</div>
+
+												<div class="contenedor-descargaPdf" id="contenedorDescargaPdf">
+													<p>Frecuencia de descargas</p>
+													<div class="container-optionsSuiteType mb-3">
+														<div class="form-check form-check-inline">
+															<input class="form-check-input" type="radio"
+																name="optionFrecuenciaDescargaPdf"
+																id="inlineRadioLimiteDescarga1" value="option1">
+															<label class="form-check-label"
+																for="inlineRadioLimiteDescarga1">
+																Por día
+															</label>
+														</div>
+														<div class="form-check form-check-inline">
+															<input class="form-check-input" type="radio"
+																name="optionFrecuenciaDescargaPdf"
+																id="inlineRadioLimiteDescarga2" value="option2"
+																checked="">
+															<label class="form-check-label"
+																for="inlineRadioLimiteDescarga2">
+																Durante la vigencia
+															</label>
+														</div>
+													</div>
+
+													<div class="form-group col-md-4">
+														<label for="limiteDescargas" class="form-label">
+															Límite de descargas
+														</label>
+														<input type="number" class="form-control" id="limiteDescargas">
+													</div>
 												</div>
 											</form>
 										</div>

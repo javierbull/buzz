@@ -141,6 +141,16 @@ $(document).ready(function () {
     }
 
   });
+
+  $('#checkCuponDescargaPdf').on('change', function () {
+
+    if ($(this).is(':checked')) {
+      $('#contenedorDescargaPdf').slideDown(); // Muestra suavemente
+    } else {
+      $('#contenedorDescargaPdf').slideUp();   // Oculta suavemente
+    }
+
+  });
   // END MOSTRAR CONVENIOS
 
   // Datatables

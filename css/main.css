@@ -1949,5 +1949,9 @@ div.dataTables_wrapper div.dataTables_info {
   margin-bottom: 1rem;
 }
 
+#contenedorDescargaPdf {
+  display: none;
+}
+
 /* End cupones */
 /* END INVENTARIO */
