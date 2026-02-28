@@ -1501,11 +1501,27 @@ $(document).ready(function () {
   // END SHOW HIDE SELECT CANAL VENTA MODAL
 
   // Rich text editor
+  // tinymce.init({
+  //   selector: "richtextarea",
+  //   menubar: false,
+  //   plugins: "lists advlist autolink autoresize charmap code emoticons hr image insertdatetime link media paste preview searchreplace table textpattern toc visualblocks visualchars wordcount quickbars",
+  //   toolbar: "preview | undo redo | fontsizeselect | bold italic underline strikethrough forecolor backcolor | numlist bullist | alignleft aligncenter alignright alignjustify | outdent indent | paste | link image charmap emoticons hr | table tabledelete",
+  //   insertdatetime_element: true,
+  //   media_scripts: [
+  //     { filter: 'platform.twitter.com' },
+  //     { filter: 's.imgur.com' },
+  //     { filter: 'instagram.com' },
+  //     { filter: 'https://platform.twitter.com/widgets.js' },
+  //   ],
+  //   browser_spellcheck: true,
+  //   contextmenu: false,
+  // });
+
   tinymce.init({
     selector: "richtextarea",
     menubar: false,
     plugins: "lists advlist autolink autoresize charmap code emoticons hr image insertdatetime link media paste preview searchreplace table textpattern toc visualblocks visualchars wordcount quickbars",
-    toolbar: "preview | undo redo | fontsizeselect | bold italic underline strikethrough forecolor backcolor | numlist bullist | alignleft aligncenter alignright alignjustify | outdent indent | paste | link image charmap emoticons hr | table tabledelete",
+    toolbar: "bold italic underline strikethrough | numlist bullist | link emoticons",
     insertdatetime_element: true,
     media_scripts: [
       { filter: 'platform.twitter.com' },
