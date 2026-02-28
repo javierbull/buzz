@@ -1923,6 +1923,10 @@ div.dataTables_wrapper div.dataTables_info {
   gap: 1rem;
 }
 
+.descripcion {
+  color: var(--gray);
+}
+
 .cupon-title {
   font-size: 1rem;
 }
